@@ -12,6 +12,7 @@ def cache_temporario(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "CACHE", tmp_path / "cache")
     monkeypatch.setattr(config, "CACHE_JOGOS", tmp_path / "cache" / "jogos")
     monkeypatch.setattr(config, "CACHE_IMAGENS", tmp_path / "cache" / "img")
+    monkeypatch.setattr(config, "SOLOQ_PARTIDAS", tmp_path / "soloq-partidas.json")
     config.preparar_pastas()
     return tmp_path / "cache"
 

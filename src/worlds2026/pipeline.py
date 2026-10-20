@@ -127,7 +127,7 @@ def montar_times(por_codigo: dict[str, Json], titulares: dict[str, list[str]], j
 
 def anexar_soloq(times: dict[str, Json], so_cache: bool) -> None:
     contas = riot.contas_soloq()
-    arq = config.CACHE / "soloq-saida.json"
+    arq = config.SOLOQ_PARTIDAS
     soloq: dict[str, Json] = {}
     if config.RIOT_API_KEY and not so_cache:
         soloq = riot.soloq(contas, config.RIOT_API_KEY)
