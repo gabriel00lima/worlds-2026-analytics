@@ -1,6 +1,6 @@
 # Central do Worlds 2026
 
-Site com as chaves, estatísticas e replays do Mundial de League of Legends 2026, em português e no horário de Brasília.
+Site e API com as chaves, estatísticas e replays do Mundial de League of Legends 2026, em português e no horário de Brasília.
 
 **Site:** https://gabriel00lima.github.io/worlds-2026-analytics/
 
@@ -10,7 +10,15 @@ Site com as chaves, estatísticas e replays do Mundial de League of Legends 2026
 
 Comecei esse projeto porque queria acompanhar o Worlds num lugar só: ver a chave, abrir um confronto e entender o que aconteceu no jogo sem precisar rever a transmissão inteira.
 
-A parte em Python busca os dados na API do LoL Esports, processa a linha do tempo de cada partida e gera uma página estática com tudo embutido. Clicando num confronto dá para ver a prévia, os números de cada jogador e um replay animado com os principais lances narrados.
+A parte em Python busca os dados na API do LoL Esports, processa a linha do tempo de cada partida e gera um site estático com tudo embutido. Os mesmos dados vão para um banco SQL e ficam disponíveis numa API REST.
+
+No site dá para:
+
+- navegar pelo Play-In, pela Fase Suíça e pelo mata-mata, com a chance de classificação de cada time na Suíça;
+- abrir um jogo e assistir aos principais lances num mapa animado, com narração;
+- clicar em qualquer jogador e ver como ele foi naquele jogo, no torneio e na solo queue;
+- ver o meta do torneio (campeões mais escolhidos e banidos), comparar dois jogadores e conferir os destaques do dia;
+- deixar palpites e adicionar os jogos na agenda.
 
 ![Replay de Karmine Corp x MVK](docs/img/replay.png)
 
@@ -22,6 +30,7 @@ src/worlds2026/
   processamento.py  transforma os quadros do feed em lances, série de ouro e estatísticas
   pipeline.py       as etapas da coleta, da agenda até o site pronto
   site.py           junta o template, o CSS, o JS e os dados num único index.html
+  api/              API REST com FastAPI e SQLAlchemy
   cli.py            linha de comando
 web/                o site: index.html, estilo.css e app.js
 data/               curiosidades dos confrontos e contas de solo queue
@@ -36,17 +45,37 @@ O feed da Riot entrega o estado de cada jogo de 10 em 10 segundos, mas não diz 
 
 Os clientes em `fontes/` cuidam da parte chata: paginação, novas tentativas quando a API falha e cache em disco, para que rodar de novo só baixe o que é novo. Os quadros de cada jogo são buscados em paralelo. Se houver uma `RIOT_API_KEY` no ambiente, entram também as partidas de solo queue dos jogadores.
 
-O site é HTML, CSS e JavaScript sem framework. O `site.py` embute tudo num único `docs/index.html`, que o GitHub Pages publica.
+O site é HTML, CSS e JavaScript sem framework, com animações em GSAP. O `site.py` embute tudo num único `docs/index.html`, que o GitHub Pages publica.
 
-![Prévia de Gen.G x Invictus Gaming](docs/img/previa.png)
+![Painel do jogador](docs/img/jogador.png)
+
+## API
+
+A API carrega os dados da última coleta num banco (SQLite por padrão, ou o que estiver em `DATABASE_URL`) e responde em JSON. A documentação interativa fica em `/docs`.
+
+| Rota | O que devolve |
+|---|---|
+| `GET /partidas` | séries do torneio, com filtros por fase, estado e time |
+| `GET /partidas/{id}` | a série com cada jogo, as estatísticas dos 10 jogadores e os bans |
+| `GET /times` e `/times/{sigla}` | campanha, elenco, campeões mais jogados e mais banidos pelo time e contra ele |
+| `GET /jogadores/{id}` | desempenho no torneio, campeões no torneio e na solo queue, elo |
+| `GET /estatisticas/jogadores` | ranking por abates, KDA ou dano |
+| `GET /estatisticas/campeoes` | campeões por presença (escolhas + bans), com vitórias |
 
 ## Rodando
 
 ```bash
 pip install -e ".[dev]"
-python -m worlds2026            # coleta os dados e atualiza docs/index.html
-python -m worlds2026 --so-site  # só regera o site com o que já está em cache
+python -m worlds2026              # coleta os dados e atualiza docs/index.html
+python -m worlds2026 --so-site    # só regera o site com o que já está em cache
+python -m worlds2026 api          # carrega o banco e sobe a API em http://localhost:8000
 pytest --cov
+```
+
+Ou com Docker, depois de rodar a coleta uma vez:
+
+```bash
+docker compose up
 ```
 
 O CI roda `ruff`, `mypy` e os testes a cada push.
