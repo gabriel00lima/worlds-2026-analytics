@@ -1,5 +1,10 @@
 # Central do Worlds 2026
 
+[![CI](https://github.com/gabriel00lima/worlds-2026-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/gabriel00lima/worlds-2026-analytics/actions/workflows/ci.yml)
+[![Coleta](https://github.com/gabriel00lima/worlds-2026-analytics/actions/workflows/coleta.yml/badge.svg)](https://github.com/gabriel00lima/worlds-2026-analytics/actions/workflows/coleta.yml)
+![Python](https://img.shields.io/badge/python-3.10%2B-3776AB)
+![FastAPI](https://img.shields.io/badge/FastAPI-PostgreSQL-009688)
+
 Site e API com as chaves, estatísticas e replays do Mundial de League of Legends 2026, em português e no horário de Brasília.
 
 **Site:** https://gabriel00lima.github.io/worlds-2026-analytics/
@@ -41,11 +46,25 @@ docs/               site publicado no GitHub Pages
 
 ## Como funciona
 
+```mermaid
+flowchart LR
+    A[LoL Esports<br>agenda e times] --> P
+    B[Feed livestats<br>quadros de 10 s] --> P
+    C[Leaguepedia<br>bans e dano] --> P
+    D[API da Riot<br>solo queue] --> P
+    P[pipeline.py] --> J[(dados.json)]
+    J --> S[site.py] --> H[docs/index.html<br>GitHub Pages]
+    J --> L[carga.py] --> DB[(PostgreSQL)] --> F[API FastAPI]
+    G[GitHub Actions<br>0h30 e 16h] -.roda.-> P
+```
+
 O feed da Riot entrega o estado de cada jogo de 10 em 10 segundos, mas não diz o que aconteceu. O `processamento.py` encontra os abates, torres e dragões comparando um quadro com o seguinte e desconta as pausas técnicas do relógio. Essa parte não acessa a rede, o que deixa fácil de testar.
 
 Os clientes em `fontes/` cuidam da parte chata: paginação, novas tentativas quando a API falha e cache em disco, para que rodar de novo só baixe o que é novo. Os quadros de cada jogo são buscados em paralelo. Se houver uma `RIOT_API_KEY` no ambiente, entram também as partidas de solo queue dos jogadores.
 
 O site é HTML, CSS e JavaScript sem framework, com animações em GSAP. O `site.py` embute tudo num único `docs/index.html`, que o GitHub Pages publica.
+
+Uma tarefa agendada no GitHub Actions roda a coleta às 0h30 e às 16h de Brasília e publica o site atualizado. Os jogos já processados ficam no cache do Actions, então cada execução só baixa o que é novo.
 
 ![Painel do jogador](docs/img/jogador.png)
 
@@ -81,6 +100,14 @@ docker compose up
 ```
 
 O CI roda `ruff`, `mypy` e os testes a cada push. Os testes da API e das migrações rodam também contra um PostgreSQL de verdade.
+
+## Decisões técnicas
+
+- **Site estático com os dados embutidos.** O site não depende de servidor nenhum: abre rápido, funciona no GitHub Pages e continua no ar mesmo se a API da Riot cair. O custo é regerar o arquivo a cada coleta, que a tarefa agendada resolve.
+- **Lances deduzidos dos quadros.** O feed não tem eventos, só fotos do estado do jogo. Comparar quadros seguidos dá para reconstruir abates, torres e objetivos, e isso fica numa camada sem rede, testada com quadros montados à mão.
+- **Cache em disco antes de tudo.** Um jogo processado não é baixado de novo. Isso deixa a coleta rápida e evita estourar os limites das APIs, principalmente o da Riot.
+- **Banco separado do site.** O site lê um JSON pronto. A API usa o mesmo JSON para popular um banco relacional, onde as agregações (KDA, presença de campeões, campanha dos times) viram consultas SQL em vez de laços em Python.
+- **Migrações desde a primeira tabela.** Mesmo com um esquema pequeno, o Alembic deixa qualquer mudança reproduzível, e o CI confere que modelos e migrações não divergem.
 
 ## Limitações
 
