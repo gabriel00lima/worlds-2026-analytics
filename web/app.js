@@ -2362,6 +2362,7 @@
   <div class="bloco-f"><h3>Bans</h3>${blocoBans(c, s)}</div>`
       : `<div class="bloco-f"><p class="muted" style="margin:0">${esc(t.nome)} ainda não jogou neste Worlds.</p></div>`
   }
+  ${blocoHistTime(c)}
   <div class="bloco-f"><h3>Séries disputadas</h3><div style="display:grid;gap:8px">${
     campanha(c)
       .map((x) => cartao(x.p))
@@ -2826,6 +2827,7 @@
         blocoSoloq(pl) +
         `<div class="bloco-f"><h3>Estreia no Worlds 2026</h3><p style="margin:0 0 10px">${esc(pl.nick)} ainda não entrou em campo neste Worlds. Os números do torneio aparecem aqui depois do primeiro jogo.</p>${prox ? cartao(prox) : ""}</div>`;
     }
+    html += blocoHistJogador(pl, st);
     if (st) html += blocoSoloq(pl);
     JORN = st ? st.linhas : [];
     abrirFolha(html);
@@ -3135,10 +3137,10 @@
     const g15v =
       g15.filter((j) => j.s15[1] > j.s15[2] === (j.vencedor === "blue")).length / Math.max(1, g15.length);
     const linhas = Object.entries(c)
-      .map(([k, e]) => ({ k, ...e, pres: (e.p + e.b) / n }))
+      .map(([k, e]) => ({ ...e, id: k, pres: (e.p + e.b) / n, hist: presHist(k) }))
       .sort((a, b) => b.pres - a.pres || b.p - a.p);
     const tabela = (lst) =>
-      `<div class="tab-wrap"><table class="est meta"><thead><tr><th>Campeão</th><th title="Escolhido + banido, sobre o total de jogos">Presença</th><th>Escolhas</th><th>Bans</th><th>Vitórias</th><th>Aproveit.</th><th>KDA</th></tr></thead><tbody>${lst.map((e) => `<tr><td><div class="jog">${img(camp(e.k).icone, "camp", camp(e.k).nome)}<b>${esc(camp(e.k).nome)}</b></div></td><td>${pct(e.pres)}</td><td>${e.p}</td><td>${jogosLp ? e.b : "–"}</td><td>${e.v}</td><td>${e.p ? pct(e.v / e.p) : "–"}</td><td>${e.p ? n1((e.k + e.a) / Math.max(1, e.d)) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+      `<div class="tab-wrap"><table class="est meta"><thead><tr><th>Campeão</th><th title="Escolhido + banido, sobre o total de jogos">Presença</th><th>Escolhas</th><th>Bans</th><th>Vitórias</th><th>Aproveit.</th><th>KDA</th><th title="Presença média nos 15 Mundiais anteriores (2011 a 2025), contando zero quando não apareceu">Média histórica</th></tr></thead><tbody>${lst.map((e) => `<tr class="clic" data-camp="${esc(e.id)}" tabindex="0"><td><div class="jog">${img(camp(e.id).icone, "camp", camp(e.id).nome)}<b>${esc(camp(e.id).nome)}</b></div></td><td>${pct(e.pres)}</td><td>${e.p}</td><td>${jogosLp ? e.b : "–"}</td><td>${e.v}</td><td>${e.p ? pct(e.v / e.p) : "–"}</td><td>${e.p ? n1((e.k + e.a) / Math.max(1, e.d)) : "–"}</td><td class="muted">${e.hist == null ? "–" : pct(e.hist)}</td></tr>`).join("")}</tbody></table></div>`;
     const barraL = (rot, v, cor) =>
       `<div class="l" style="grid-template-columns:150px 1fr 52px"><span class="rot" style="text-align:left">${rot}</span><div class="barra"><i style="width:${v * 100}%;background:${cor || "var(--gold)"}"></i></div><span class="v">${pct(v)}</span></div>`;
     const dragTot = Object.values(drag).reduce((a, b) => a + b, 0) || 1;
@@ -3159,7 +3161,7 @@
     )
     .join("")}</div></div></div>
   <div class="bloco-f"><h3>Campeões <small>ordenados por presença · clique no título de uma coluna para reordenar</small></h3><div id="tab-meta">${tabela(linhas)}</div></div>`;
-    const chaves = ["k", "pres", "p", "b", "v", "wr", "kda"];
+    const chaves = ["nome", "pres", "p", "b", "v", "wr", "kda", "hist"];
     const ligar = () =>
       $("#p-meta")
         .querySelectorAll("table.meta th")
@@ -3168,18 +3170,20 @@
           th.onclick = () => {
             const k = chaves[i];
             const val = (e) =>
-              k === "k"
-                ? camp(e.k).nome
-                : k === "wr"
-                  ? e.p
-                    ? e.v / e.p
-                    : -1
-                  : k === "kda"
+              k === "nome"
+                ? camp(e.id).nome
+                : k === "hist"
+                  ? (e.hist ?? -1)
+                  : k === "wr"
                     ? e.p
-                      ? (e.k + e.a) / Math.max(1, e.d)
+                      ? e.v / e.p
                       : -1
-                    : e[k];
-            linhas.sort((x, y) => (k === "k" ? val(x).localeCompare(val(y)) : val(y) - val(x)));
+                    : k === "kda"
+                      ? e.p
+                        ? (e.k + e.a) / Math.max(1, e.d)
+                        : -1
+                      : e[k];
+            linhas.sort((x, y) => (k === "nome" ? val(x).localeCompare(val(y)) : val(y) - val(x)));
             $("#tab-meta").innerHTML = tabela(linhas);
             ligar();
           };
@@ -3304,6 +3308,129 @@
   }
 
   /* ---------- destaques do torneio ---------- */
+  /* ---------- tabela por posição (estilo Oracle's Elixir / gol.gg) ---------- */
+  function metricasPosicao() {
+    const M = {};
+    for (const j of JOGOS) {
+      const min = j.duracao / 60;
+      const f10 = j.serie.reduce((a, b) => (Math.abs(b[0] - 600) < Math.abs(a[0] - 600) ? b : a), j.serie[0]);
+      const ouroTime = {};
+      j.jog.forEach((x) => (ouroTime[x.lado] = (ouroTime[x.lado] || 0) + (x.ouro || 0)));
+      for (const x of j.jog) {
+        const m = (M[x.jogadorId] ??= {
+          id: x.jogadorId,
+          nick: x.nick,
+          time: x.time,
+          rota: x.rota,
+          j: 0,
+          v: 0,
+          k: 0,
+          d: 0,
+          a: 0,
+          ouro: 0,
+          min: 0,
+          cs: 0,
+          wards: 0,
+          parte: 0,
+          csd: 0,
+          ncsd: 0,
+          dano: 0,
+          minDano: 0,
+        });
+        m.j++;
+        if (j.venc === x.time) m.v++;
+        m.k += x.k;
+        m.d += x.d;
+        m.a += x.a;
+        m.ouro += x.ouro || 0;
+        m.min += min;
+        m.cs += x.cs || 0;
+        m.wards += x.wards || 0;
+        m.parte += ouroTime[x.lado] ? (x.ouro || 0) / ouroTime[x.lado] : 0;
+        if (x.danoTotal != null) {
+          m.dano += x.danoTotal;
+          m.minDano += min;
+        }
+        const op = j.jog.find((o) => o.lado !== x.lado && o.rota === x.rota);
+        if (op && j.duracao >= 600 && f10[3]) {
+          m.csd += f10[3][x.pid - 1][4] - f10[3][op.pid - 1][4];
+          m.ncsd++;
+        }
+      }
+    }
+    return Object.values(M).map((m) => ({
+      ...m,
+      kda: (m.k + m.a) / Math.max(1, m.d),
+      dpm: m.minDano ? m.dano / m.minDano : null,
+      gpm: m.ouro / m.min,
+      parteOuro: m.parte / m.j,
+      csd10: m.ncsd ? m.csd / m.ncsd : null,
+      csm: m.cs / m.min,
+      wpm: m.wards / m.min,
+    }));
+  }
+  const COLS_POS = [
+    ["nick", "Jogador", null],
+    ["j", "Jogos", (v) => v],
+    ["kda", "KDA", n1],
+    ["dpm", "Dano/min", (v) => (v == null ? "–" : Math.round(v))],
+    ["gpm", "Ouro/min", (v) => Math.round(v)],
+    ["parteOuro", "% do ouro", pct],
+    ["csd10", "CS dif. @10", (v) => (v == null ? "–" : (v > 0 ? "+" : "") + n1(v))],
+    ["csm", "CS/min", n1],
+    ["wpm", "Sentinelas/min", (v) => v.toFixed(2).replace(".", ",")],
+  ];
+  let _pos = { rota: "top", ord: "kda" };
+  function tabelaPosicao() {
+    const L = metricasPosicao().filter((m) => _pos.rota === "todas" || m.rota === _pos.rota);
+    const k = _pos.ord;
+    L.sort((a, b) => (k === "nick" ? a.nick.localeCompare(b.nick) : (b[k] ?? -1e9) - (a[k] ?? -1e9)));
+    return `<div class="filtros-pos" role="group" aria-label="Posição">${[
+      ["top", "Topo"],
+      ["jungle", "Selva"],
+      ["mid", "Meio"],
+      ["bottom", "Atirador"],
+      ["support", "Suporte"],
+      ["todas", "Todas"],
+    ]
+      .map(
+        ([r, n]) =>
+          `<button class="link ${_pos.rota === r ? "ativo" : ""}" data-pos="${r}" aria-pressed="${_pos.rota === r}">${n}</button>`,
+      )
+      .join("")}</div>
+  <div class="tab-wrap"><table class="est pos"><thead><tr>${COLS_POS.map(([c, n]) => `<th data-ord="${c}" class="${c === k ? "ord" : ""}" tabindex="0">${n}</th>`).join("")}</tr></thead><tbody>${L.map((m) => `<tr class="clic" data-jogador="${m.id}" tabindex="0">${COLS_POS.map(([c, n, f]) => (c === "nick" ? `<td><b>${esc(m.nick)}</b> <small class="muted">${esc(m.time)}</small></td>` : `<td class="num">${f(m[c])}</td>`)).join("")}</tr>`).join("")}</tbody></table></div>
+  <p class="muted" style="font-size:12px;margin:8px 0 0">Dano por minuto só nos jogos com placar da Leaguepedia. CS dif. @10 é a diferença de tropas abatidas para o rival da mesma rota aos 10 minutos.</p>`;
+  }
+  function ligarPosicao() {
+    const el = $("#tab-pos");
+    if (!el) return;
+    const r = () => {
+      el.innerHTML = tabelaPosicao();
+    };
+    r();
+    el.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-pos]");
+      if (b) {
+        _pos.rota = b.dataset.pos;
+        r();
+        return;
+      }
+      const th = e.target.closest("th[data-ord]");
+      if (th) {
+        _pos.ord = th.dataset.ord;
+        r();
+      }
+    });
+    el.addEventListener("keydown", (e) => {
+      const th = e.target.closest("th[data-ord]");
+      if (th && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        _pos.ord = th.dataset.ord;
+        r();
+      }
+    });
+  }
+
   function painelDestaques() {
     if (!JOGOS.length) {
       $("#p-destaques").innerHTML = '<p class="muted">Os destaques aparecem depois dos primeiros jogos.</p>';
@@ -3394,12 +3521,9 @@
     "média por jogo",
     (x) => x.st.visao,
     (v) => Math.round(v),
-  )}${lj(
-    "Mais mortes",
-    "",
-    (x) => x.st.d,
-    (v) => v,
   )}</div>
+  <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Por posição</h3>
+  <div class="bloco-f" id="tab-pos"></div>
   <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Campeões</h3>
   <div class="ranking">${lc("Mais escolhidos", `em ${JOGOS.length} jogos`, picks, (k, v) => `${vit[k] || 0} vitórias · ${pct((vit[k] || 0) / v)} de aproveitamento`)}${jogosLp ? lc("Mais banidos", `em ${jogosLp} de ${JOGOS.length} jogos com bans registrados${W.lpTentativa ? ` · Leaguepedia consultada em ${dataHora(new Date(W.lpTentativa).toISOString())}` : ""}`, bans, (k, v) => `banido em ${pct(v / jogosLp)} dos jogos`) : ""}${jogosLp ? lc("Mais presentes", "escolhidos + banidos", pres, (k, v) => `${picks[k] || 0} escolhas e ${bans[k] || 0} bans`) : ""}</div>
   <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Times</h3>
@@ -3408,6 +3532,7 @@
   <div class="ranking"><div class="bloco-f" id="ranking-palpites"></div></div>
   <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Jogos marcantes</h3>
   <div class="bloco-f"><div class="lista-linhas">${jm("Mais longo", porDur[0], (j) => mmss(j.duracao))}${jm("Mais curto", porDur[porDur.length - 1], (j) => mmss(j.duracao))}${jm("Mais abates", porAb[0], (j) => `${j.tot.blue.abates + j.tot.red.abates} abates`)}${jm("Menos abates", porAb[porAb.length - 1], (j) => `${j.tot.blue.abates + j.tot.red.abates} abates`)}</div></div>`;
+    ligarPosicao();
   }
   function blocoBans(c, s) {
     if (!s || !s.jogosLp) return `<p class="muted" style="margin:0">Sem bans registrados ainda.</p>`;
@@ -3759,6 +3884,259 @@
     };
   }
 
+  /* ---------- 2026 × história dos Mundiais (2011 a 2025, Leaguepedia) ---------- */
+  const HIST = W.historia || { jogadores: {}, times: {}, campeoes: {}, recordes: {}, jogosEd: {} };
+  const nrm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  const N_EDICOES = Object.keys(HIST.jogosEd || {}).length || 15;
+  // presença média do campeão nas edições anteriores, contando zero nas que ele não apareceu
+  function presHist(k) {
+    const H = HIST.campeoes?.[k]?.ed;
+    if (!HIST.campeoes || !Object.keys(HIST.campeoes).length) return null;
+    if (!H) return 0;
+    return H.reduce((s, e) => s + (e[3] || 0), 0) / 100 / N_EDICOES;
+  }
+  const chipsEd = (lst, agora) =>
+    `<div class="edicoes">${lst.map(([a, t, v]) => `<span class="ed ${t ? "top" : ""}" title="${esc(v.titulo || "")}"><b>${a}</b><small>${esc(t || v.txt)}</small></span>`).join("")}${agora ? `<span class="ed agora"><b>2026</b><small>${agora}</small></span>` : ""}</div>`;
+  function blocoHistTime(c) {
+    const h = HIST.times?.[c];
+    if (!h) return "";
+    const s = statsTime(c);
+    const agora = s ? `${s.v}V ${s.jogos - s.v}D até aqui` : "estreia em breve";
+    if (!h.participacoes)
+      return `<div class="bloco-f"><h3>Nos Mundiais <small>2011 a 2025</small></h3><p style="margin:0">Primeira participação de ${esc(nomeT(c))} num Mundial.</p>${chipsEd([], agora)}</div>`;
+    return `<div class="bloco-f"><h3>Nos Mundiais <small>2011 a 2025, segundo a Leaguepedia</small></h3><div class="tiles">${tile(h.participacoes, h.participacoes === 1 ? "participação" : "participações")}${tile(h.titulos, h.titulos === 1 ? "título" : "títulos")}${tile(h.finais, h.finais === 1 ? "final" : "finais")}${tile(`${h.vitorias}V ${h.jogos - h.vitorias}D`, "em jogos")}</div>
+    ${chipsEd(
+      h.ed.map(([a, n, jg, v, r]) => [
+        a,
+        r,
+        { txt: `${v}V ${jg - v}D`, titulo: `${n || ""} · ${v} vitórias em ${jg} jogos` },
+      ]),
+      agora,
+    )}</div>`;
+  }
+  function blocoHistJogador(pl, st) {
+    const h = HIST.jogadores?.[nrm(pl.nick)];
+    if (!h) return "";
+    const m = h.m || {};
+    if (m.estreante_2026 || !m.jogos)
+      return h.historia
+        ? `<div class="bloco-f"><h3>Carreira em Mundiais</h3><p class="historia" style="margin:0">${esc(h.historia)}</p></div>`
+        : "";
+    const k26 = st ? st.k : 0,
+      j26 = st ? st.jogos : 0,
+      v26 = st ? st.v : 0,
+      tot = (m.abates || 0) + k26;
+    // posição entre os que mais abateram na história, somando os abates deste ano
+    let rec = "";
+    const L = (HIST.recordes?.jogadores_mais_abates || []).map((r) => ({
+      n: r.jogador,
+      a: r.abates + (nrm(r.jogador) === nrm(pl.nick) ? k26 : 0),
+    }));
+    if (L.length) {
+      if (!L.some((r) => nrm(r.n) === nrm(pl.nick))) L.push({ n: pl.nick, a: tot });
+      L.sort((x, y) => y.a - x.a);
+      const pos = L.findIndex((r) => nrm(r.n) === nrm(pl.nick));
+      if (pos === 0)
+        rec = `É quem mais abateu na história do Worlds: ${tot} abates somando 2026${L[1] ? `, ${tot - L[1].a} à frente de ${esc(L[1].n)}` : ""}.`;
+      else if (pos > 0 && pos < 10)
+        rec = `É o ${pos + 1}º que mais abateu na história do Worlds, com ${tot} abates somando 2026. Faltam ${L[pos - 1].a - tot + 1} para passar ${esc(L[pos - 1].n)}.`;
+    }
+    return `<div class="bloco-f"><h3>Carreira em Mundiais <small>2011 a 2025, mais os jogos de 2026</small></h3>${h.historia ? `<p class="historia">${esc(h.historia)}</p>` : ""}
+    <div class="tiles">${tile((m.participacoes_ate_2025 || 0) + 1, "Mundiais, com 2026")}${tile((m.jogos || 0) + j26, "jogos")}${tile((m.vitorias || 0) + v26, "vitórias")}${tile(tot, "abates")}${tile(m.titulos?.length || 0, (m.titulos?.length || 0) === 1 ? "título" : "títulos")}</div>
+    ${rec ? `<p class="muted" style="font-size:13px;margin:10px 0 0">${rec}</p>` : ""}
+    ${chipsEd(
+      h.ed.map(([a, t, jg, v, kd, r, cs]) => [
+        a,
+        /campe|vice|semi/i.test(r || "") ? r : "",
+        {
+          txt: `${v}V ${jg - v}D`,
+          titulo: `${t || ""} · KDA ${kd ?? "–"}${cs.length ? " · " + cs.join(", ") : ""}`,
+        },
+      ]),
+      st ? `${v26}V ${j26 - v26}D até aqui` : "",
+    )}</div>`;
+  }
+
+  /* ---------- página de campeão ---------- */
+  const CAMP_NOME = {};
+  for (const [k, c] of Object.entries(W.campeoes || {})) CAMP_NOME[c.nome] = k;
+  function abrirCampeao(k) {
+    const c = camp(k);
+    if (!c) return;
+    const usos = [];
+    for (const j of JOGOS)
+      for (const x of j.jog) if (x.campeao === k) usos.push({ j, x, venceu: j.venc === x.time });
+    let bans = 0,
+      jl = 0;
+    for (const j of JOGOS)
+      if (j.lp) {
+        jl++;
+        if ([...j.lp.bans.blue, ...j.lp.bans.red].includes(k)) bans++;
+      }
+    const v = usos.filter((u) => u.venceu).length,
+      K = usos.reduce((s, u) => s + u.x.k, 0),
+      D = usos.reduce((s, u) => s + u.x.d, 0),
+      A = usos.reduce((s, u) => s + u.x.a, 0);
+    const pres = JOGOS.length ? (usos.length + bans) / JOGOS.length : 0; // mesmo cálculo da aba Meta
+    const H = HIST.campeoes?.[k]?.ed || [],
+      hp = presHist(k);
+    const tp = H.reduce((s, e) => s + e[1], 0),
+      tb = H.reduce((s, e) => s + e[2], 0),
+      tv = H.reduce((s, e) => s + e[4], 0);
+    const anos = Object.keys(HIST.jogosEd || {})
+      .map(Number)
+      .sort((a, b) => a - b);
+    const porAno = Object.fromEntries(H.map((e) => [e[0], e]));
+    const mx = Math.max(1, ...H.map((e) => e[3] || 0), pres * 100);
+    const graf = anos.length
+      ? `<div class="hist-camp">${[...anos, 2026]
+          .map((a) => {
+            const p = a === 2026 ? pres * 100 : porAno[a]?.[3] || 0;
+            return `<div class="hc ${a === 2026 ? "agora" : ""}" title="${a}: presença ${Math.round(p)}%"><i style="height:${Math.max(2, (p / mx) * 100)}%"></i><small>${String(a).slice(2)}</small></div>`;
+          })
+          .join("")}</div>`
+      : "";
+    const lista = usos
+      .slice()
+      .sort((a, b) => (PID[b.j.partida]?.inicio || "").localeCompare(PID[a.j.partida]?.inicio || ""))
+      .map((u) => {
+        const adv = u.j.lados[outro(u.x.lado)];
+        return `<div class="r clic" data-partida="${u.j.partida}" data-k="${jogosDe(u.j.partida).indexOf(u.j)}" tabindex="0"><span class="res ${u.venceu ? "v" : "d"}">${u.venceu ? "V" : "D"}</span><span><b>${esc(u.x.nick || "")}</b> <small class="muted">${mini(u.x.time)} contra ${esc(adv)}</small></span><span class="num">${u.x.k}/${u.x.d}/${u.x.a}</span></div>`;
+      })
+      .join("");
+    abrirFolha(`<div class="perfil camp-perfil">${img(c.icone, "f", c.nome)}<div><div class="eyebrow">Campeão</div><h2>${esc(c.nome)}</h2><div class="muted">${usos.length ? `${usos.length} ${usos.length === 1 ? "escolha" : "escolhas"} neste Worlds` : "Ainda não escolhido neste Worlds"}</div></div></div>
+    <div class="bloco-f"><h3>Neste Worlds</h3><div class="tiles">${tile(pct(pres), "presença")}${tile(usos.length, "escolhas")}${tile(usos.length ? pct(v / usos.length) : "–", "aproveitamento")}${tile(jl ? bans : "–", jl ? `bans em ${jl} jogos` : "bans")}${tile(usos.length ? n1((K + A) / Math.max(1, D)) : "–", "KDA")}</div></div>
+    ${usos.length ? `<div class="bloco-f"><h3>Quem jogou <small>toque para abrir o jogo</small></h3><div class="lista-linhas">${lista}</div></div>` : ""}
+    ${
+      anos.length
+        ? `<div class="bloco-f"><h3>Nos Mundiais anteriores <small>presença por edição, escolhas + bans</small></h3>${graf}
+      <p style="margin:10px 0 0;font-size:14px">${H.length ? `Apareceu em ${H.length} dos ${anos.length} Mundiais anteriores, com ${tp} escolhas, ${tb} bans e ${tp ? pct(tv / tp) : "–"} de aproveitamento. A presença média na história é de ${pct(hp)}; em 2026 está em ${pct(pres)}.` : `Nunca apareceu num Mundial antes de 2026.`}</p></div>`
+        : ""
+    }`);
+  }
+
+  /* ---------- busca única ---------- */
+  function indiceBusca() {
+    const L = [];
+    for (const [c, t] of Object.entries(TIMES))
+      L.push({ t: "time", id: c, nome: t.nome, sub: c, chave: nrm(t.nome + " " + c), img: t.logo });
+    for (const [c, t] of Object.entries(TIMES))
+      for (const pl of t.jogadores)
+        L.push({
+          t: "jogador",
+          id: pl.id,
+          nome: pl.nick,
+          sub: `${c} · ${ROTA_PT[pl.rota] || ""}`,
+          chave: nrm(pl.nick + " " + (pl.nome || "")),
+          img: pl.foto || FOTO[pl.id],
+        });
+    const usados = new Set(JOGOS.flatMap((j) => j.jog.map((x) => x.campeao)));
+    for (const [k, c] of Object.entries(W.campeoes || {}))
+      L.push({
+        t: "campeao",
+        id: k,
+        nome: c.nome,
+        sub: usados.has(k) ? "campeão · jogado em 2026" : "campeão",
+        chave: nrm(c.nome + " " + k),
+        img: c.icone,
+        peso: usados.has(k) ? 1 : 0,
+      });
+    return L;
+  }
+  let _idx = null;
+  function buscar(q) {
+    q = nrm(q);
+    if (!q) return [];
+    _idx = _idx || indiceBusca();
+    return _idx
+      .map((x) => ({ x, p: x.chave.startsWith(q) ? 3 : x.chave.includes(q) ? 1 : 0 }))
+      .filter((r) => r.p)
+      .sort(
+        (a, b) =>
+          b.p - a.p ||
+          (b.x.peso || 0) - (a.x.peso || 0) ||
+          (a.x.t === "campeao") - (b.x.t === "campeao") ||
+          a.x.nome.localeCompare(b.x.nome),
+      )
+      .slice(0, 8)
+      .map((r) => r.x);
+  }
+  function abrirResultado(x) {
+    if (x.t === "time") navegar(() => abrirTime(x.id));
+    else if (x.t === "jogador") navegar(() => abrirJogador(x.id));
+    else navegar(() => abrirCampeao(x.id));
+  }
+  function ligarBusca() {
+    const inp = $("#busca"),
+      lst = $("#busca-res");
+    if (!inp) return;
+    let res = [],
+      sel = 0;
+    const desenhar = () => {
+      lst.hidden = !res.length;
+      inp.setAttribute("aria-expanded", !!res.length);
+      lst.innerHTML = res
+        .map(
+          (x, i) =>
+            `<li role="option" id="br-${i}" aria-selected="${i === sel}" data-i="${i}">${x.img ? `<img src="${x.img}" alt="">` : `<span class="sem-foto">${esc(x.nome[0])}</span>`}<span><b>${esc(x.nome)}</b><small>${esc(x.t === "time" ? "time · " + x.sub : x.t === "jogador" ? "jogador · " + x.sub : x.sub)}</small></span></li>`,
+        )
+        .join("");
+      inp.setAttribute("aria-activedescendant", res.length ? "br-" + sel : "");
+    };
+    inp.addEventListener("input", () => {
+      res = buscar(inp.value);
+      sel = 0;
+      desenhar();
+    });
+    inp.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") {
+        sel = Math.min(res.length - 1, sel + 1);
+        desenhar();
+        e.preventDefault();
+      } else if (e.key === "ArrowUp") {
+        sel = Math.max(0, sel - 1);
+        desenhar();
+        e.preventDefault();
+      } else if (e.key === "Enter" && res[sel]) {
+        abrirResultado(res[sel]);
+        inp.value = "";
+        res = [];
+        desenhar();
+        inp.blur();
+      } else if (e.key === "Escape") {
+        inp.value = "";
+        res = [];
+        desenhar();
+        inp.blur();
+      }
+    });
+    lst.addEventListener("mousedown", (e) => {
+      const li = e.target.closest("li");
+      if (!li) return;
+      e.preventDefault();
+      abrirResultado(res[+li.dataset.i]);
+      inp.value = "";
+      res = [];
+      desenhar();
+    });
+    inp.addEventListener("blur", () =>
+      setTimeout(() => {
+        res = [];
+        desenhar();
+      }, 150),
+    );
+    document.addEventListener("keydown", (e) => {
+      if (
+        e.key === "/" &&
+        !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName || "") &&
+        !folha.open
+      ) {
+        e.preventDefault();
+        inp.focus();
+      }
+    });
+  }
+
   /* ---------- navegação ---------- */
   const ABAS = ["playin", "suica", "matamata", "destaques", "meta", "comparar", "times"];
   function aba(nome) {
@@ -3771,6 +4149,19 @@
     } catch (_) {}
   }
   document.addEventListener("click", (e) => {
+    const cp = e.target.closest("[data-camp]");
+    if (cp) {
+      navegar(() => abrirCampeao(cp.dataset.camp));
+      return;
+    }
+    if (
+      e.target.tagName === "IMG" &&
+      CAMP_NOME[e.target.alt] &&
+      !e.target.closest("button,a,[data-jogador],[data-partida],[data-time],.clic,canvas")
+    ) {
+      navegar(() => abrirCampeao(CAMP_NOME[e.target.alt]));
+      return;
+    }
     const ab = e.target.closest("[data-aba]");
     if (ab) {
       aba(ab.dataset.aba);
@@ -3818,6 +4209,7 @@
   painelComparar();
   painelTimes();
   aplicarSpoiler();
+  ligarBusca();
   ["p-destaques", "p-meta", "p-comparar"].forEach((id) =>
     new MutationObserver(() => {
       const el = document.getElementById(id);

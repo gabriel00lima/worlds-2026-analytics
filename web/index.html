@@ -4,6 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Central do Worlds 2026</title>
+    <meta
+      name="description"
+      content="Chaves, estatísticas, replays narrados e solo queue dos jogadores do Mundial de League of Legends 2026, em português e no horário de Brasília."
+    />
+    <meta property="og:title" content="Central do Worlds 2026" />
+    <meta
+      property="og:description"
+      content="Chaves, estatísticas, replays narrados e solo queue dos jogadores do Mundial de LoL 2026, em português."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gabriel00lima.github.io/worlds-2026-analytics/" />
+    <meta
+      property="og:image"
+      content="https://gabriel00lima.github.io/worlds-2026-analytics/img/inicio.png"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
@@ -21,6 +38,19 @@
         </div>
         <div class="topo-dir">
           <div class="atualizado" id="atualizado"></div>
+          <div class="busca">
+            <input
+              id="busca"
+              type="search"
+              placeholder="Buscar jogador, time ou campeão  /"
+              aria-label="Buscar jogador, time ou campeão"
+              autocomplete="off"
+              role="combobox"
+              aria-controls="busca-res"
+              aria-expanded="false"
+            />
+            <ul id="busca-res" role="listbox" hidden></ul>
+          </div>
           <button
             class="link bt-sp"
             id="bt-spoiler"

@@ -22,7 +22,8 @@ No site dá para:
 - navegar pelo Play-In, pela Fase Suíça e pelo mata-mata, com a chance de classificação de cada time na Suíça;
 - abrir um jogo e assistir aos principais lances num mapa animado, com narração em voz neural e a curva de chance de vitória ao longo da partida;
 - clicar em qualquer jogador e ver como ele foi naquele jogo, no torneio e na solo queue, com elo, histórico de PDL, campeões com mais maestria e um resumo do dia;
-- ver o meta do torneio (campeões mais escolhidos e banidos, com as restrições do Fearless Draft), comparar dois jogadores e conferir os destaques do dia;
+- ver o meta do torneio (campeões mais escolhidos e banidos, com as restrições do Fearless Draft e a média histórica), abrir a página de cada campeão, comparar dois jogadores e conferir os destaques do dia, com uma tabela por posição de dano, ouro e farm por minuto;
+- buscar qualquer jogador, time ou campeão (atalho `/`);
 - deixar palpites, adicionar os jogos na agenda e compartilhar o link direto de um time ou jogador;
 - ligar o modo sem spoiler, que esconde placares, vencedores e chances para quem ainda vai ver o jogo gravado, e abrir o VOD oficial no momento de cada lance;
 - comparar 2026 com os Mundiais de 2011 a 2025: carreira de cada jogador, campanhas dos times, campeões por edição e recordes.

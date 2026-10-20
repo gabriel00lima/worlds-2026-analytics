@@ -144,6 +144,147 @@ header.topo h1 span {
 .fases .agora b {
   color: var(--gold);
 }
+.filtros-pos {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.filtros-pos .ativo {
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: underline;
+}
+table.pos th {
+  cursor: pointer;
+  white-space: nowrap;
+}
+table.pos th.ord {
+  color: var(--gold);
+}
+.busca {
+  position: relative;
+  width: min(300px, 100%);
+}
+.busca input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--fg);
+}
+#busca-res {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: calc(100% + 4px);
+  z-index: 30;
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.35);
+  text-align: left;
+}
+#busca-res li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#busca-res li[aria-selected="true"],
+#busca-res li:hover {
+  background: var(--surface-2);
+}
+#busca-res img,
+#busca-res .sem-foto {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex: none;
+}
+#busca-res small {
+  display: block;
+  color: var(--muted);
+  font-size: 11.5px;
+}
+.edicoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.ed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  padding: 5px 7px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 12px;
+}
+.ed small {
+  color: var(--muted);
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+.ed.top {
+  border-color: var(--gold);
+  background: var(--gold-soft);
+}
+.ed.agora {
+  border-style: dashed;
+  border-color: var(--gold);
+}
+.hist-camp {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 4px;
+  align-items: end;
+  height: 110px;
+}
+.hc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.hc i {
+  display: block;
+  width: 100%;
+  background: color-mix(in srgb, var(--gold) 55%, transparent);
+  border-radius: 3px 3px 0 0;
+}
+.hc.agora i {
+  background: var(--gold);
+}
+.hc small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.camp-perfil .f {
+  width: 88px;
+  height: 88px;
+  border-radius: 14px;
+}
+.camps img,
+.bans img,
+.pool-l img,
+.pq img,
+.camp-cards img {
+  cursor: pointer;
+}
 .topo-dir {
   display: flex;
   flex-direction: column;
