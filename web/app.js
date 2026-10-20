@@ -342,7 +342,8 @@
       const n = NOMES_MATA[MATA.indexOf(p)] || p.bloco;
       return curto ? n.replace("Quartas de final", "Quartas").replace("Grande final", "Final") : n;
     }
-    return curto ? "Play-In" : "Play-In, " + (NOMES_PLAYIN[PLAYIN.indexOf(p)] || "").toLowerCase();
+    const nm = NOMES_PLAYIN[PLAYIN.indexOf(p)] || "";
+    return curto ? "Play-In" : /play-in/i.test(nm) ? nm : "Play-In, " + nm.toLowerCase();
   }
 
   /* ---------- topo ---------- */
@@ -999,7 +1000,7 @@
             `Começou! ${N("blue")} do lado azul, ${N("red")} do vermelho. Bora pro jogo 1!`,
           )
         : um(
-            `Jogo ${j.numero}! A série está ${Math.max(vA, vB)} a ${Math.min(vA, vB)}${vA === vB ? ", tudo igual" : ` para ${vA > vB ? T("blue") : T("red")}`}. ${T("blue")} agora no lado azul.`,
+            `Jogo ${j.numero}! A série está ${Math.max(vA, vB)} a ${Math.min(vA, vB)}${vA === vB ? ", tudo igual" : ` para ${vA > vB ? T("blue") : T("red")}`}. ${T("blue")} ${jogosDe(j.partida).find((g) => g.numero === j.numero - 1)?.az === j.az ? "segue" : "agora"} no lado azul.`,
             `Vamos pro jogo ${j.numero}, com ${vA > vB ? `${T("blue")} na frente, ${vA} a ${vB}` : vB > vA ? `${T("red")} na frente, ${vB} a ${vA}` : `a série empatada em ${vA} a ${vB}`}.`,
           ),
       "inicio",
@@ -2223,6 +2224,7 @@
   async function rankingPalpites() {
     const el = $("#ranking-palpites");
     if (!el) return;
+    // fora do artefato não há perfis compartilhados: só os palpites deste navegador
     if (!DB) {
       const r = pontosPalpites(meuLocal());
       el.innerHTML = r.n
@@ -3137,10 +3139,10 @@
     const g15v =
       g15.filter((j) => j.s15[1] > j.s15[2] === (j.vencedor === "blue")).length / Math.max(1, g15.length);
     const linhas = Object.entries(c)
-      .map(([k, e]) => ({ ...e, id: k, pres: (e.p + e.b) / n, hist: presHist(k) }))
+      .map(([k, e]) => ({ ...e, id: k, pres: e.p / n + (jogosLp ? e.b / jogosLp : 0), hist: presHist(k) }))
       .sort((a, b) => b.pres - a.pres || b.p - a.p);
     const tabela = (lst) =>
-      `<div class="tab-wrap"><table class="est meta"><thead><tr><th>Campeão</th><th title="Escolhido + banido, sobre o total de jogos">Presença</th><th>Escolhas</th><th>Bans</th><th>Vitórias</th><th>Aproveit.</th><th>KDA</th><th title="Presença média nos 15 Mundiais anteriores (2011 a 2025), contando zero quando não apareceu">Média histórica</th></tr></thead><tbody>${lst.map((e) => `<tr class="clic" data-camp="${esc(e.id)}" tabindex="0"><td><div class="jog">${img(camp(e.id).icone, "camp", camp(e.id).nome)}<b>${esc(camp(e.id).nome)}</b></div></td><td>${pct(e.pres)}</td><td>${e.p}</td><td>${jogosLp ? e.b : "–"}</td><td>${e.v}</td><td>${e.p ? pct(e.v / e.p) : "–"}</td><td>${e.p ? n1((e.k + e.a) / Math.max(1, e.d)) : "–"}</td><td class="muted">${e.hist == null ? "–" : pct(e.hist)}</td></tr>`).join("")}</tbody></table></div>`;
+      `<div class="tab-wrap"><table class="est meta"><thead><tr><th>Campeão</th><th title="Escolhas sobre todos os jogos mais bans sobre os jogos com bans registrados">Presença</th><th>Escolhas</th><th>Bans</th><th>Vitórias</th><th>Aproveit.</th><th>KDA</th><th title="Presença média nos 15 Mundiais anteriores (2011 a 2025), contando zero quando não apareceu">Média histórica</th></tr></thead><tbody>${lst.map((e) => `<tr class="clic" data-camp="${esc(e.id)}" tabindex="0"><td><div class="jog">${img(camp(e.id).icone, "camp", camp(e.id).nome)}<b>${esc(camp(e.id).nome)}</b></div></td><td>${pct(e.pres)}</td><td>${e.p}</td><td>${jogosLp ? e.b : "–"}</td><td>${e.v}</td><td>${e.p ? pct(e.v / e.p) : "–"}</td><td>${e.p ? n1((e.k + e.a) / Math.max(1, e.d)) : "–"}</td><td class="muted">${e.hist == null ? "–" : pct(e.hist)}</td></tr>`).join("")}</tbody></table></div>`;
     const barraL = (rot, v, cor) =>
       `<div class="l" style="grid-template-columns:150px 1fr 52px"><span class="rot" style="text-align:left">${rot}</span><div class="barra"><i style="width:${v * 100}%;background:${cor || "var(--gold)"}"></i></div><span class="v">${pct(v)}</span></div>`;
     const dragTot = Object.values(drag).reduce((a, b) => a + b, 0) || 1;
@@ -3505,7 +3507,7 @@
     n1,
     (x) => x.pl.rota !== "support",
   )}
-  ${lj("Maior vantagem aos 15", "ouro sobre o rival de rota", (x) => x.st.gd15, sinal)}${lj(
+  ${lj("Maior vantagem aos 15", "ouro sobre o rival de rota · mínimo 3 jogos", (x) => x.st.gd15, sinal, min3)}${lj(
     "Mais dano por minuto",
     "",
     (x) => x.st.dpm,
@@ -3977,7 +3979,7 @@
       K = usos.reduce((s, u) => s + u.x.k, 0),
       D = usos.reduce((s, u) => s + u.x.d, 0),
       A = usos.reduce((s, u) => s + u.x.a, 0);
-    const pres = JOGOS.length ? (usos.length + bans) / JOGOS.length : 0; // mesmo cálculo da aba Meta
+    const pres = JOGOS.length ? usos.length / JOGOS.length + (jl ? bans / jl : 0) : 0; // mesmo cálculo da aba Meta: bans só sobre os jogos com bans registrados
     const H = HIST.campeoes?.[k]?.ed || [],
       hp = presHist(k);
     const tp = H.reduce((s, e) => s + e[1], 0),
@@ -4573,19 +4575,27 @@
     inicial = d < "2026-10-23T17" ? "playin" : d < "2026-11-01" ? "suica" : "matamata";
   }
   aba(inicial);
-  if (/^p\d+$/.test(h)) navegar(() => abrirPartida(h.slice(1)));
-  else if (h.startsWith("time-")) {
-    const c = Object.keys(TIMES).find(
-      (x) => x.toLowerCase() === decodeURIComponent(h.slice(5)).toLowerCase(),
-    );
-    if (c) navegar(() => abrirTime(c));
-  } else if (h.startsWith("jogador-")) {
-    const n = decodeURIComponent(h.slice(8)).toLowerCase();
-    let id = null;
-    for (const t of Object.values(TIMES))
-      for (const p of t.jogadores) if (!id && slug(p.nick).toLowerCase() === n) id = p.id;
-    if (id) navegar(() => abrirJogador(id));
+  function rotearHash(h) {
+    if (/^p\d+$/.test(h)) navegar(() => abrirPartida(h.slice(1)));
+    else if (h.startsWith("time-")) {
+      const c = Object.keys(TIMES).find(
+        (x) => x.toLowerCase() === decodeURIComponent(h.slice(5)).toLowerCase(),
+      );
+      if (c) navegar(() => abrirTime(c));
+    } else if (h.startsWith("jogador-")) {
+      const n = decodeURIComponent(h.slice(8)).toLowerCase();
+      let id = null;
+      for (const t of Object.values(TIMES))
+        for (const p of t.jogadores) if (!id && slug(p.nick).toLowerCase() === n) id = p.id;
+      if (id) navegar(() => abrirJogador(id));
+    } else if (ABAS.includes(h)) {
+      if (folha.open) folha.close();
+      aba(h);
+    }
   }
+  rotearHash(h);
+  // link colado com a página já aberta (marcar() usa replaceState, que não dispara este evento)
+  addEventListener("hashchange", () => rotearHash((location.hash || "").slice(1)));
   contagens();
   setInterval(contagens, 1000);
   ligarVida();
