@@ -1,11 +1,28 @@
 services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: worlds2026
+      # o banco só é acessível pela rede interna do compose, sem porta exposta
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - banco:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 2s
+      retries: 15
+
   api:
     build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres@db/worlds2026
     ports:
       - "8000:8000"
     volumes:
       - ./.cache:/app/.cache
-      - banco:/dados
+    depends_on:
+      db:
+        condition: service_healthy
 
 volumes:
   banco:

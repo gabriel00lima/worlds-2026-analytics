@@ -1,6 +1,5 @@
 import pytest
 from fastapi.testclient import TestClient
-from sqlalchemy import StaticPool, create_engine
 from sqlalchemy.orm import sessionmaker
 
 from worlds2026.api import banco, carga
@@ -112,8 +111,7 @@ def dados_exemplo():
 
 
 @pytest.fixture
-def cliente():
-    engine = create_engine("sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool)
+def cliente(engine):
     carga.carregar(engine, dados_exemplo())
     fabrica = sessionmaker(bind=engine, expire_on_commit=False)
 
@@ -130,8 +128,7 @@ def test_saude(cliente):
     assert cliente.get("/saude").json() == {"status": "ok"}
 
 
-def test_carga_conta_linhas():
-    engine = create_engine("sqlite://")
+def test_carga_conta_linhas(engine):
     contagem = carga.carregar(engine, dados_exemplo())
     assert contagem == {
         "times": 2,

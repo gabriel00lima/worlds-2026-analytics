@@ -1,4 +1,7 @@
+import os
+
 import pytest
+from sqlalchemy import StaticPool, create_engine
 
 from worlds2026 import config
 
@@ -37,3 +40,15 @@ def meta_jogo():
         }
 
     return {"patchVersion": "16.20.123", "blueTeamMetadata": lado("azul", 1), "redTeamMetadata": lado("verm", 6)}
+
+
+@pytest.fixture
+def engine():
+    """SQLite em memória, ou o banco de TEST_DATABASE_URL (o CI usa um PostgreSQL)."""
+    url = os.environ.get("TEST_DATABASE_URL")
+    if url:
+        engine = create_engine(url)
+    else:
+        engine = create_engine("sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool)
+    yield engine
+    engine.dispose()

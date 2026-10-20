@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from .. import config
 from ..arquivos import ler_json
-from .banco import Base
+from .banco import migrar
 from .modelos import Ban, Jogador, Jogo, Participacao, Partida, PartidaSoloq, Time
 
 log = logging.getLogger(__name__)
@@ -122,7 +122,7 @@ def jogo(j: Json, codigo_do_id: dict[str, str]) -> Jogo:
 
 def carregar(engine: Engine, dados: Json) -> dict[str, int]:
     """Recria o conteúdo do banco a partir dos dados da coleta. Devolve quantas linhas entraram por tabela."""
-    Base.metadata.create_all(engine)
+    migrar(engine)
     codigo_do_id = {t["id"]: t["codigo"] for t in dados["times"].values()}
     with Session(engine) as s, s.begin():
         for tabela in TABELAS:

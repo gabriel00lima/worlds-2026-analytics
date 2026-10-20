@@ -30,7 +30,7 @@ src/worlds2026/
   processamento.py  transforma os quadros do feed em lances, série de ouro e estatísticas
   pipeline.py       as etapas da coleta, da agenda até o site pronto
   site.py           junta o template, o CSS, o JS e os dados num único index.html
-  api/              API REST com FastAPI e SQLAlchemy
+  api/              API REST com FastAPI e SQLAlchemy, com migrações do Alembic em api/migracoes
   cli.py            linha de comando
 web/                o site: index.html, estilo.css e app.js
 data/               curiosidades dos confrontos e contas de solo queue
@@ -51,7 +51,9 @@ O site é HTML, CSS e JavaScript sem framework, com animações em GSAP. O `site
 
 ## API
 
-A API carrega os dados da última coleta num banco (SQLite por padrão, ou o que estiver em `DATABASE_URL`) e responde em JSON. A documentação interativa fica em `/docs`.
+A API carrega os dados da última coleta num banco e responde em JSON. A documentação interativa fica em `/docs`.
+
+O banco é PostgreSQL no Docker e SQLite quando roda direto na máquina, escolhido pela `DATABASE_URL`. O esquema é versionado com Alembic: a API aplica as migrações que faltam ao subir. Uma mudança nos modelos vira migração com `alembic revision --autogenerate -m "..."`, e um teste falha se algum modelo mudar sem migração.
 
 | Rota | O que devolve |
 |---|---|
@@ -72,13 +74,13 @@ python -m worlds2026 api          # carrega o banco e sobe a API em http://local
 pytest --cov
 ```
 
-Ou com Docker, depois de rodar a coleta uma vez:
+Ou com Docker, que sobe a API junto com um PostgreSQL, depois de rodar a coleta uma vez:
 
 ```bash
 docker compose up
 ```
 
-O CI roda `ruff`, `mypy` e os testes a cada push.
+O CI roda `ruff`, `mypy` e os testes a cada push. Os testes da API e das migrações rodam também contra um PostgreSQL de verdade.
 
 ## Limitações
 
