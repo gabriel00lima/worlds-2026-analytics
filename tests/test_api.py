@@ -67,7 +67,7 @@ def dados_exemplo():
         "partidas": [
             [1791538149565, 1579, "Azir", True, 5, 1, 7, 300],
             [1791519902553, 1874, "Azir", False, 2, 4, 3, 250],
-            [1791384065583, 2040, "Ahri", True, 9, 0, 4, 280],
+            [1791384065583, 2040, "Ahri", True, 9, 0, 4, 280, 31000, 14000, "MIDDLE"],
         ],
     }
     campeoes_t1 = ["Gnar", "Vi", "Azir", "Jinx", "Nami"]
@@ -215,3 +215,11 @@ def test_campeoes_por_presenca(cliente):
     assert campeoes["Gnar"]["escolhas"] == 3 and campeoes["Gnar"]["presenca"] == 1.0
     assert campeoes["Kalista"] == {"campeao": "Kalista", "escolhas": 0, "vitorias": 0, "bans": 2, "presenca": 0.667}
     assert campeoes["Azir"]["vitorias"] == 2
+
+
+def test_partida_soloq_aceita_formato_antigo_e_novo():
+    antiga = carga.partida_soloq([1791538149565, 1579, "Azir", True, 5, 1, 7, 300])
+    nova = carga.partida_soloq([1791538149565, 1579, "Azir", True, 5, 1, 7, 300, 25000, 13000, ""])
+    assert antiga.dano is None and antiga.posicao is None
+    assert (nova.dano, nova.ouro, nova.posicao) == (25000, 13000, None)
+    assert nova.fim.year == 2026 and nova.cs == 300

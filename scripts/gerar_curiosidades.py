@@ -1,4 +1,5 @@
-import json, os
+import json
+import os
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "curiosidades")
 HOJE = "2026-10-20"

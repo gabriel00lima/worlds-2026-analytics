@@ -134,5 +134,8 @@ class PartidaSoloq(Base):
     mortes: Mapped[int]
     assistencias: Mapped[int]
     cs: Mapped[int]
+    dano: Mapped[int | None]
+    ouro: Mapped[int | None]
+    posicao: Mapped[str | None]
 
     jogador: Mapped[Jogador] = relationship(back_populates="partidas_soloq")

@@ -411,8 +411,82 @@
         : `<span class="tag">MD${p.melhorDe}</span>`;
     return `<button class="conf" data-partida="${p.id}"><div class="meta"><span>${dataHora(p.inicio)}</span>${tag}</div>${linha(p.times[0])}${linha(p.times[1])}${extra}</button>`;
   }
+  /* ---------- história das séries e destaque do Play-In ---------- */
+  function historiaSerie(p) {
+    const js = jogosDe(p.id);
+    if (!js.length || p.estado !== "completed") return "";
+    const w = p.times.find((t) => t.resultado === "win").codigo,
+      l = p.times.find((t) => t.resultado !== "win").codigo;
+    let a = 0,
+      b = 0,
+      atras = false;
+    const passos = [];
+    for (const g of js) {
+      g.venc === w ? a++ : b++;
+      if (b > a) atras = true;
+      passos.push([a, b]);
+    }
+    const mvp = js
+      .flatMap((g) => g.jog.filter((x) => x.time === w))
+      .reduce((m, x) => {
+        const k = m[x.jogadorId] || (m[x.jogadorId] = { ...x, k: 0, d: 0, a: 0 });
+        k.k += x.k;
+        k.d += x.d;
+        k.a += x.a;
+        return m;
+      }, {});
+    const top = Object.values(mvp).sort((x, y) => kda(y) - kda(x))[0];
+    const longo = js.slice().sort((x, y) => y.duracao - x.duracao)[0];
+    let txt;
+    if (b === 0) txt = `${esc(nomeT(w))} não deu chance: ${a} a 0, sem perder um mapa.`;
+    else if (atras)
+      txt = `Virada! ${esc(nomeT(w))} chegou a estar atrás, ${passos.find((x) => x[1] > x[0]).join(" a ")}, e buscou o ${a} a ${b}.`;
+    else if (a - b === 1 && a + b === p.melhorDe)
+      txt = `Série decidida no último jogo: ${esc(nomeT(w))} venceu por ${a} a ${b}.`;
+    else txt = `${esc(nomeT(w))} controlou a série e venceu por ${a} a ${b}.`;
+    return `${txt}${top ? ` Destaque para ${esc(top.nick)}, com ${top.k}/${top.d}/${top.a} na série.` : ""} Jogo mais longo: ${mmss(longo.duracao)}.`;
+  }
+  function heroiPlayin() {
+    const fin = PLAYIN[PLAYIN.length - 1];
+    if (!fin || fin.estado !== "completed") return "";
+    const camp_ = fin.times.find((t) => t.resultado === "win").codigo;
+    const swissComecou = SUICA.some((p) => p.estado !== "unstarted");
+    if (swissComecou) return "";
+    const series = PLAYIN.filter((p) => p.estado === "completed" && p.times.some((t) => t.codigo === camp_));
+    const gs = series.flatMap((p) => jogosDe(p.id));
+    const v = gs.filter((g) => g.venc === camp_).length;
+    const js = gs.flatMap((g) => g.jog.filter((x) => x.time === camp_));
+    const por = {};
+    js.forEach((x) => {
+      const k = por[x.jogadorId] || (por[x.jogadorId] = { ...x, k: 0, d: 0, a: 0, j: 0 });
+      k.k += x.k;
+      k.d += x.d;
+      k.a += x.a;
+      k.j++;
+    });
+    const craque = Object.values(por).sort((a, b) => kda(b) - kda(a))[0];
+    const foto = craque && FOTO[craque.jogadorId];
+    const estreia = PARTIDAS.find((p) => p.fase === "swiss" && p.times.some((t) => t.codigo === camp_));
+    const advE = estreia?.times.find((t) => t.codigo !== camp_)?.codigo;
+    return `<div class="heroi-pi">
+    <div class="h-logo">${img(logo(camp_), "", camp_)}</div>
+    <div class="h-txt"><div class="eyebrow">Campeã do Play-In · Los Angeles</div><h2>${esc(nomeT(camp_))} está no Mundial!</h2>
+      <p>Em sua primeira participação em Mundiais, a ${esc(nomeT(camp_))} venceu ${series.length} séries e ${v} de ${gs.length} jogos para ganhar a vaga do Play-In na Fase Suíça.${craque ? ` O craque da campanha foi <b>${esc(craque.nick)}</b>, com ${craque.k}/${craque.d}/${craque.a} em ${craque.j} jogos.` : ""}${estreia ? ` A estreia na Suíça é contra a ${esc(nomeT(advE))}, ${fmt(estreia.inicio, { weekday: "long", day: "numeric", month: "long" })} às ${hora(estreia.inicio)}.` : ""}</p>
+      <div class="h-series">${series
+        .map((p) => {
+          const eu = p.times.find((t) => t.codigo === camp_),
+            ele = p.times.find((t) => t.codigo !== camp_);
+          return `<button class="h-serie" data-partida="${p.id}"><span class="eyebrow">${esc(NOMES_PLAYIN[PLAYIN.indexOf(p)] || "")}</span><b>${eu.vitorias} × ${ele.vitorias} ${mini(ele.codigo)} ${esc(ele.codigo)}</b><span>${historiaSerie(p)}</span></button>`;
+        })
+        .join("")}</div>
+      <div class="h-acoes"><button class="botao-pi" data-aba="playin" data-rolar>Como foi o Play-In ›</button><button class="link" data-time="${camp_}">Ver o time</button>${craque ? `<button class="link" data-jogador="${craque.jogadorId}">Ver ${esc(craque.nick)}</button>` : ""}</div></div>
+    ${foto ? `<img class="h-foto" src="${foto}" alt="${esc(craque.nick)}">` : ""}</div>`;
+  }
   function painelPlayin() {
-    const g = (i) => (PLAYIN[i] ? `<h4>${NOMES_PLAYIN[i]}</h4>${cartao(PLAYIN[i])}` : "");
+    const g = (i) =>
+      PLAYIN[i]
+        ? `<h4>${NOMES_PLAYIN[i]}</h4>${cartao(PLAYIN[i])}${historiaSerie(PLAYIN[i]) ? `<p class="historia-serie">${historiaSerie(PLAYIN[i])}</p>` : ""}`
+        : "";
     $("#p-playin").innerHTML =
       `<p class="nota" style="margin:0 0 16px">Quatro times em dupla eliminação, todas as séries em melhor de 5. Só o campeão do Play-In avançou para a Fase Suíça. Clique numa série para ver os jogos, os números de cada jogador e assistir ao jogo narrado.</p>
   <div class="playin"><div class="bloco">${g(0)}${g(1)}</div><div class="bloco">${g(2)}${g(3)}</div><div class="bloco">${g(4)}${g(5)}</div></div>`;
@@ -607,6 +681,7 @@
     try {
       speechSynthesis.cancel();
     } catch (_) {}
+    pararGravadas();
   };
   // Pilha de telas da folha: abrir um jogador de dentro de um confronto permite voltar ao confronto.
   let pilha = [],
@@ -844,29 +919,69 @@
 
   /* ---------- narração de um jogo ---------- */
   function roteiroJogo(j) {
+    // Narração no estilo de transmissão brasileira: frases curtas, variadas e com emoção.
+    let sem = [...String(j.id)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) | 0, 7);
+    const rnd = () => {
+      sem = (sem * 1103515245 + 12345) | 0;
+      return ((sem >>> 8) & 0xffff) / 0x10000;
+    };
+    const um = (...op) => op[Math.floor(rnd() * op.length)];
     const jg = (pid) => j.jog[pid - 1];
-    const T = (l) => nomeT(j.lados[l]);
+    const T = (l) => j.lados[l];
+    const N = (l) => nomeT(j.lados[l]);
     const R = [];
-    const add = (s, txt, tipo, ev) => R.push({ s, txt, tipo, ev });
-    add(0, `Jogo ${j.numero}. ${T("blue")} começa do lado azul e ${T("red")} do lado vermelho.`, "inicio");
+    const add = (s, txt, tipo, ev, hype) => R.push({ s, txt, tipo, ev, hype });
+    const cm = (x) => camp(x.campeao).nome;
+    const vl = j.vencedor,
+      pd = outro(vl);
+    const placarSerie = jogosDe(j.partida).filter((g) => g.numero < j.numero);
+    const vA = placarSerie.filter((g) => g.venc === j.az).length,
+      vB = placarSerie.filter((g) => g.venc === j.vm).length;
+    add(
+      0,
+      j.numero === 1
+        ? um(
+            `Tá valendo! Jogo 1 entre ${N("blue")} e ${N("red")}. ${T("blue")} começa no lado azul.`,
+            `Começou! ${N("blue")} do lado azul, ${N("red")} do vermelho. Bora pro jogo 1!`,
+          )
+        : um(
+            `Jogo ${j.numero}! A série está ${Math.max(vA, vB)} a ${Math.min(vA, vB)}${vA === vB ? ", tudo igual" : ` para ${vA > vB ? T("blue") : T("red")}`}. ${T("blue")} agora no lado azul.`,
+            `Vamos pro jogo ${j.numero}, com ${vA > vB ? `${T("blue")} na frente, ${vA} a ${vB}` : vB > vA ? `${T("red")} na frente, ${vB} a ${vA}` : `a série empatada em ${vA} a ${vB}`}.`,
+          ),
+      "inicio",
+    );
     const fb = j.fb;
     if (fb) {
       const k = jg(fb.por[0]),
         v = jg(fb.vitimas[0]);
+      const onde = v ? (v.rota === "jungle" ? "na selva" : "na " + ROTA_LANE[v.rota]) : "";
       add(
         fb.s,
         k && v
-          ? `${k.nick}, de ${camp(k.campeao).nome}, consegue o first blood para ${T(fb.lado)} aos ${min(fb.s)} minutos, em cima de ${v.nick}${v.rota === "jungle" ? " na selva" : " na " + ROTA_LANE[v.rota]}.`
-          : `${T(fb.lado)} consegue o first blood aos ${min(fb.s)} minutos.`,
+          ? um(
+              `PRIMEIRO SANGUE! ${k.nick} de ${cm(k)} pega o ${v.nick} ${onde}!`,
+              `Abriu o placar! ${k.nick} acha o ${v.nick} ${onde} e o first blood é do ${T(fb.lado)}!`,
+              `Olha o first blood! ${k.nick}, de ${cm(k)}, em cima do ${v.nick}, com ${min(fb.s)} minutos de jogo!`,
+            )
+          : `First blood para ${N(fb.lado)}!`,
         "abate",
         fb,
+        true,
       );
     }
     if (j.fd) {
-      const mas = fb && fb.lado !== j.fd.lado ? "Mas o" : "O";
+      const d = DRAG[j.fd.dragao]?.[0] || "";
       add(
         j.fd.s,
-        `${mas} primeiro dragão, ${DRAG[j.fd.dragao] ? "de " + DRAG[j.fd.dragao][0] : ""}, fica com ${T(j.fd.lado)} aos ${min(j.fd.s)} minutos.`,
+        fb && fb.lado !== j.fd.lado
+          ? um(
+              `Mas ${T(j.fd.lado)} responde no objetivo: primeiro dragão${d ? ", o " + d : ""}, é deles.`,
+              `${T(j.fd.lado)} troca o abate pelo dragão${d ? " " + d : ""}. Negócio justo.`,
+            )
+          : um(
+              `E ${T(j.fd.lado)} emenda o primeiro dragão${d ? ", o " + d : ""}.`,
+              `Dragão ${d} garantido para ${T(j.fd.lado)}. Começo controlado.`,
+            ),
         "dragao",
         j.fd,
       );
@@ -874,7 +989,11 @@
     if (j.ft)
       add(
         j.ft.s,
-        `${T(j.ft.lado)} derruba a primeira torre do jogo aos ${min(j.ft.s)} minutos.`,
+        um(
+          `Caiu a primeira torre! Ponto pra ${T(j.ft.lado)}, com ${min(j.ft.s)} minutos.`,
+          `${T(j.ft.lado)} derruba a primeira torre e o mapa começa a abrir.`,
+          `Primeira torre no chão, e quem levou foi ${T(j.ft.lado)}.`,
+        ),
         "torre",
         j.ft,
       );
@@ -896,34 +1015,89 @@
       if (b + r < 3 || l.ev.includes(fb)) continue;
       const v = b > r ? "blue" : r > b ? "red" : null;
       const por = {};
-      l.ev.forEach((e) => e.por.forEach((p) => (por[p] = (por[p] || 0) + 1)));
+      l.ev.forEach((e) => e.por.slice(0, 1).forEach((p) => (por[p] = (por[p] || 0) + 1)));
       const top = Object.entries(por).sort((a, b) => b[1] - a[1])[0];
-      const heroi = top && top[1] >= 3 ? jg(+top[0]) : null;
+      const heroi = top && top[1] >= 2 ? jg(+top[0]) : null;
+      const mx = Math.max(b, r),
+        mn = Math.min(b, r);
+      const multi = heroi
+        ? { 2: "double kill", 3: "TRIPLE KILL", 4: "QUADRA KILL", 5: "PENTAKILL" }[Math.min(5, top[1])]
+        : "";
+      const txt = !v
+        ? um(
+            `Troca franca! ${b} pra cada lado e ninguém sai no lucro.`,
+            `Que briga! Termina ${b} a ${r}, tudo igual.`,
+          )
+        : mn === 0 && mx >= 4
+          ? um(
+              `QUE MASSACRE! ${T(v)} limpa a luta, ${mx} a zero!`,
+              `ACE! Não sobrou ninguém! ${T(v)} passa o rodo, ${mx} a 0!`,
+            )
+          : mx >= 5
+            ? um(
+                `LUTA GIGANTE! ${T(v)} leva a melhor, ${mx} a ${mn}!`,
+                `Que teamfight! ${T(v)} vence a briga, ${mx} abates contra ${mn}!`,
+              )
+            : um(
+                `Briga boa pra ${T(v)}, ${mx} a ${mn}.`,
+                `${T(v)} sai na frente na luta, ${mx} a ${mn}.`,
+                `Mais uma pra conta do ${T(v)}: ${mx} a ${mn} na briga.`,
+              );
       add(
         l.ini,
-        v
-          ? `${b + r >= 5 ? "Luta grande" : "Briga"} aos ${min(l.ini)} minutos: ${T(v)} leva a melhor, ${Math.max(b, r)} abates a ${Math.min(b, r)}.${heroi ? ` ${heroi.nick} faz ${top[1]} abates na luta.` : ""}`
-          : `Troca de abates aos ${min(l.ini)} minutos, ${b} para cada lado.`,
+        txt +
+          (heroi && top[1] >= 3
+            ? ` ${multi}! ${heroi.nick} de ${cm(heroi)} tá impossível!`
+            : heroi && top[1] === 2 && rnd() < 0.5
+              ? ` Double kill do ${heroi.nick}!`
+              : ""),
         "luta",
         { ...l.ev[0], lado: v || l.ev[0].lado },
+        mx >= 4 || (heroi && top[1] >= 3),
       );
     }
     for (const l of ["blue", "red"]) {
       const ds = j.ev.filter((e) => e.tipo === "dragao" && e.lado === l && e.dragao !== "elder");
       if (ds.length >= 4)
-        add(ds[3].s, `${T(l)} garante a alma do dragão aos ${min(ds[3].s)} minutos.`, "dragao", ds[3]);
+        add(
+          ds[3].s,
+          um(
+            `ALMA DO DRAGÃO! ${T(l)} garante a alma ${DRAG[ds[3].dragao] ? "de " + DRAG[ds[3].dragao][0] : ""}, e isso pesa demais!`,
+            `É a alma! ${T(l)} fecha os quatro dragões e fica muito mais forte.`,
+          ),
+          "dragao",
+          ds[3],
+          true,
+        );
     }
     j.ev
       .filter((e) => e.tipo === "dragao" && e.dragao === "elder")
-      .forEach((e) => add(e.s, `Dragão Ancião para ${T(e.lado)} aos ${min(e.s)} minutos.`, "dragao", e));
+      .forEach((e) =>
+        add(
+          e.s,
+          um(
+            `DRAGÃO ANCIÃO! ${T(e.lado)} pega o Ancião e agora queima tudo!`,
+            `O Ancião é do ${T(e.lado)}! Momento decisivo!`,
+          ),
+          "dragao",
+          e,
+          true,
+        ),
+      );
     j.ev
       .filter((e) => e.tipo === "barao")
       .forEach((e, i) =>
         add(
           e.s,
-          `${T(e.lado)} ${i ? "pega mais um" : "garante o"} Barão aos ${min(e.s)} minutos.`,
+          i
+            ? um(`Mais um Barão pro ${T(e.lado)}!`, `${T(e.lado)} de novo no Barão! Controle total.`)
+            : um(
+                `BARÃO! ${T(e.lado)} garante o Barão Na'Shor com ${min(e.s)} minutos!`,
+                `Olha o Barão! É do ${T(e.lado)}, e agora eles vão pra cima!`,
+              ),
           "barao",
           e,
+          !i,
         ),
       );
     for (const l of ["blue", "red"]) {
@@ -931,20 +1105,34 @@
       if (e)
         add(
           e.s,
-          `${T(l)} quebra o primeiro inibidor aos ${min(e.s)} minutos e abre a base adversária.`,
+          um(
+            `Caiu o inibidor! ${T(l)} invade a base adversária!`,
+            `${T(l)} quebra o inibidor e os super minions vêm aí!`,
+          ),
           "inibidor",
           e,
         );
     }
-    for (const m of [15]) {
-      if (m * 60 > j.duracao - 90) break;
-      const x = j.serie.reduce((a, b) => (Math.abs(b[0] - m * 60) < Math.abs(a[0] - m * 60) ? b : a));
+    if (j.duracao > 15 * 60 + 90) {
+      const x = j.serie.reduce((a, b) => (Math.abs(b[0] - 900) < Math.abs(a[0] - 900) ? b : a));
       const d = x[1] - x[2];
+      const k = (Math.abs(d) / 1000).toFixed(1).replace(".", ",").replace(",0", "");
       add(
-        m * 60,
+        900,
         Math.abs(d) < 800
-          ? `Aos ${m} minutos, o ouro está praticamente empatado.`
-          : `Aos ${m} minutos, ${T(d > 0 ? "blue" : "red")} lidera com ${(Math.abs(d) / 1000).toFixed(1).replace(".", ",")} mil de ouro de vantagem.`,
+          ? um(
+              `Quinze minutos e o ouro tá colado. Jogo aberto!`,
+              `Bateu os 15 e ninguém se distanciou. Tudo pode acontecer.`,
+            )
+          : Math.abs(d) > 5000
+            ? um(
+                `Quinze minutos e ${T(d > 0 ? "blue" : "red")} já abre ${k} mil de ouro. Tá dominando!`,
+                `${k} mil de vantagem pro ${T(d > 0 ? "blue" : "red")} aos 15. Que começo!`,
+              )
+            : um(
+                `Aos 15, ${T(d > 0 ? "blue" : "red")} tem ${k} mil de ouro a mais.`,
+                `${T(d > 0 ? "blue" : "red")} vai na frente aos 15, ${k} mil de vantagem.`,
+              ),
         "ouro",
       );
     }
@@ -954,26 +1142,96 @@
       if (x[0] > 600 && ant && Math.sign(d) !== Math.sign(ant) && Math.abs(ant) > 2500 && Math.abs(d) > 500) {
         add(
           x[0],
-          `Virada! ${T(d > 0 ? "blue" : "red")} passa à frente no ouro aos ${min(x[0])} minutos.`,
+          um(
+            `VIRADA! ${T(d > 0 ? "blue" : "red")} passa à frente no ouro! Que reação!`,
+            `Não acredito! ${T(d > 0 ? "blue" : "red")} virou o jogo no ouro!`,
+          ),
           "ouro",
+          null,
+          true,
         );
         ant = d;
         continue;
       }
       if (Math.abs(d) > Math.abs(ant) || Math.sign(d) !== Math.sign(ant)) ant = d;
     }
-    const vl = j.vencedor;
     const melhor = j.jog.filter((x) => x.lado === vl).sort((a, b) => kda(b) - kda(a))[0];
+    const dif = j.tot[vl].abates - j.tot[pd].abates;
+    const serieFim = placarSerie.filter((g) => g.venc === j.venc).length + 1;
+    const precisa = Math.ceil((PID[j.partida]?.melhorDe || 1) / 2);
     add(
       j.duracao,
-      `Fim de jogo aos ${min(j.duracao)} minutos: vitória de ${T(vl)}, com ${j.tot[vl].abates} abates contra ${j.tot[outro(vl)].abates}.${melhor ? ` Destaque para ${melhor.nick}, de ${camp(melhor.campeao).nome}, com ${melhor.k}, ${melhor.d} e ${melhor.a}.` : ""}`,
+      (serieFim >= precisa
+        ? um(
+            `ACABOU! ${N(vl)} vence e fecha a série!`,
+            `É DO ${T(vl).toUpperCase()}! Vitória e série garantida!`,
+          )
+        : um(`Fim de jogo! Vitória do ${N(vl)}!`, `Explode o nexus! ${N(vl)} leva essa!`)) +
+        ` ${dif >= 10 ? `Atropelo, ${j.tot[vl].abates} a ${j.tot[pd].abates} nos abates.` : dif <= 0 ? `E olha que perdeu nos abates, ${j.tot[vl].abates} a ${j.tot[pd].abates}!` : `${j.tot[vl].abates} a ${j.tot[pd].abates} nos abates.`}` +
+        (melhor
+          ? ` Grande nome: ${melhor.nick}, de ${cm(melhor)}, ${melhor.k} ${melhor.k === 1 ? "abate" : "abates"}, ${melhor.d} ${melhor.d === 1 ? "morte" : "mortes"} e ${melhor.a} ${melhor.a === 1 ? "assistência" : "assistências"}.`
+          : ""),
       "fim",
       { lado: vl },
+      true,
     );
     return R.sort((a, b) => a.s - b.s);
   }
 
+  // Usado por gerar_audio.py para gravar a narração com voz neural.
+  window.__roteiros = () =>
+    JOGOS.map((j) => ({ id: j.id, falas: roteiroJogo(j).map((r) => ({ txt: r.txt, hype: !!r.hype })) }));
+
   /* ---------- voz ---------- */
+  // Narração gravada (voz neural): um mp3 por jogo em audio/<id>.mp3, com o início e a duração de cada fala em W.audio.
+  const AUDIO = W.audio || {};
+  const _aud = {};
+  function falaGravada(j, k, txt) {
+    const a = AUDIO[j.id];
+    if (!a || !a.falas[k] || a.falas[k][0] !== txt) return null;
+    return a.falas[k];
+  }
+  function tocarGravada(j, f, vel) {
+    return new Promise((res) => {
+      let el = _aud[j.id];
+      if (!el) {
+        el = _aud[j.id] = new Audio("audio/" + j.id + ".mp3");
+        el.preload = "auto";
+      }
+      let feito = false;
+      const fim = () => {
+        if (feito) return;
+        feito = true;
+        try {
+          el.pause();
+        } catch (_) {}
+        res(true);
+      };
+      try {
+        el.playbackRate = vel || 1;
+        el.currentTime = f[1];
+        const pr = el.play();
+        if (pr && pr.catch)
+          pr.catch(() => {
+            if (!feito) {
+              feito = true;
+              res(false);
+            }
+          });
+        setTimeout(fim, (f[2] * 1000) / (vel || 1) + 60);
+      } catch (_) {
+        feito = true;
+        res(false);
+      }
+    });
+  }
+  function pararGravadas() {
+    Object.values(_aud).forEach((a) => {
+      try {
+        a.pause();
+      } catch (_) {}
+    });
+  }
   let vozLigada = true;
   // Vozes "Natural"/"Online" (Edge) e as do Google (Chrome) soam bem melhor que as vozes locais padrão.
   function notaVoz(v) {
@@ -1027,41 +1285,36 @@
       }),
     );
   } catch (_) {}
-  function falar(txt, vel) {
+  function falar(txt, vel, hype) {
+    // Sem pausas artificiais: a próxima fala começa assim que a voz termina. Falas de lance forte saem mais rápidas e agudas.
     return new Promise((res) => {
-      const espera = () => setTimeout(res, Math.min(4200, 1200 + txt.length * 30) / vel);
+      const estim = Math.min(4200, 900 + txt.length * 26) / vel;
       if (!vozLigada || !("speechSynthesis" in window)) {
-        espera();
+        setTimeout(res, estim);
         return;
       }
       try {
-        speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(txt);
         u.lang = "pt-BR";
         const v = vozPt();
         if (v) u.voice = v;
-        u.rate = Math.min(1.5, (/google/i.test(v?.name || "") ? 1.1 : 1.04) * Math.sqrt(vel));
-        u.pitch = 1;
+        const natural = /natural|neural|online|google/i.test(v?.name || "");
+        u.rate = Math.min(1.6, (natural ? 1.18 : 1.1) * (hype ? 1.08 : 1) * Math.sqrt(vel));
+        u.pitch = hype ? 1.15 : 1.02;
         let feito = false;
-        const t0 = Date.now(),
-          minimo = Math.min(4200, 1200 + txt.length * 30) / vel;
         const ok = () => {
           if (!feito) {
             feito = true;
-            setTimeout(res, Math.max(0, minimo * 0.5 - (Date.now() - t0)));
+            res();
           }
         };
         u.onend = ok;
-        u.onerror = () => {
-          if (!feito) {
-            feito = true;
-            setTimeout(res, Math.max(0, minimo - (Date.now() - t0)));
-          }
-        };
-        setTimeout(ok, 3000 + txt.length * 85);
+        u.onerror = () => setTimeout(ok, 300);
+        setTimeout(ok, 2500 + txt.length * 80);
+        if (speechSynthesis.speaking || speechSynthesis.pending) speechSynthesis.cancel();
         speechSynthesis.speak(u);
       } catch (_) {
-        espera();
+        setTimeout(res, estim);
       }
     });
   }
@@ -1390,12 +1643,13 @@
       } catch (_) {}
       for (i = k; i < rot.length; i++) {
         const r = rot[i];
-        await avancar(r.s, Math.min(1800, Math.max(450, (r.s - t) * 6)), meu);
+        await avancar(r.s, Math.min(1100, Math.max(300, (r.s - t) * 4)), meu);
         if (meu !== token) return;
         mostrar(i);
-        await falar(r.txt, 1);
-        if (meu !== token) return;
-        await espera(350);
+        {
+          const f = vozLigada && falaGravada(j, i, r.txt);
+          if (!(f && (await tocarGravada(j, f, 1)))) await falar(r.txt, 1, r.hype);
+        }
         if (meu !== token) return;
       }
       i = rot.length - 1;
@@ -1409,6 +1663,7 @@
       try {
         speechSynthesis.cancel();
       } catch (_) {}
+      pararGravadas();
       botao();
     }
     function irPara(k) {
@@ -1601,7 +1856,7 @@
     const S = [];
     S.push({
       tipo: "abre",
-      txt: `${rotuloFase(p)}. ${nomeT(A)} contra ${nomeT(B)}, ${fmt(p.inicio, { weekday: "long" })} às ${horaFalada(p.inicio)}, horário de Brasília, numa série melhor de ${p.melhorDe}.`,
+      txt: `Chegou a hora! ${nomeT(A)} contra ${nomeT(B)}, ${rotuloFase(p).toLowerCase()}, ${fmt(p.inicio, { weekday: "long" })} às ${horaFalada(p.inicio)}, horário de Brasília. ${p.melhorDe === 1 ? "Jogo único, sem margem pra erro!" : `Melhor de ${p.melhorDe}!`}`,
     });
     const cp = (c) => {
       const l = campanha(c);
@@ -1668,7 +1923,7 @@
       if (cs.length && p.melhorDe > 1)
         S.push({
           tipo: "camps",
-          txt: `De olho no draft: ${cs.join(" e ")}. Com o Fearless, cada campeão só pode ser usado uma vez por time na série.`,
+          txt: `De olho no draft: ${cs.join(" e ")}. Com o Fearless, campeão usado num jogo some da série para os dois times.`,
         });
     } else
       S.push({
@@ -1786,7 +2041,7 @@
       while (ativo && !pausado && i < S.length && meu === token) {
         render(S[i]);
         await falar(S[i].txt, 1);
-        await new Promise((r) => setTimeout(r, 700));
+        await new Promise((r) => setTimeout(r, 250));
         if (meu !== token || pausado || !ativo) return;
         if (i === S.length - 1) break;
         i++;
@@ -2079,7 +2334,6 @@
     if (y.d === 0 && y.k + y.a >= 5) partes.push(`jogo perfeito de ${c}, sem morrer`);
     else if (k >= 6) partes.push(`atuação dominante de ${c}`);
     else if (k >= 3) partes.push(`bom jogo de ${c}`);
-    else if (y.d >= 6) partes.push(`tarde difícil de ${c}, morrendo ${y.d} vezes`);
     else partes.push(`jogou de ${c}`);
     if (y.gd15 != null && op) {
       if (y.gd15 >= 1000) partes.push(`abriu ${mil(y.gd15)} de ouro sobre ${op.nick} aos 15`);
@@ -2333,16 +2587,6 @@
               : `Aos ${m} min, ${d > 0 ? `${mil(d)} de ouro à frente de` : `${mil(-d).replace("+", "")} de ouro atrás de`} ${esc(op.nick)}`,
         });
       }
-    const mortes = L.filter((x) => x.t === "morte");
-    for (let i = 0; i + 2 < mortes.length; i++)
-      if (mortes[i + 2].s - mortes[i].s <= 300) {
-        L.push({
-          s: mortes[i + 2].s + 1,
-          t: "alerta",
-          txt: `Momento difícil: 3 mortes em ${Math.ceil((mortes[i + 2].s - mortes[i].s) / 60)} minutos`,
-        });
-        break;
-      }
     L.push({
       s: g.duracao,
       t: "fim",
@@ -2522,13 +2766,115 @@
     <div class="bloco-f"><h3>Números no torneio <small>${st.v} ${st.v === 1 ? "vitória" : "vitórias"} em ${st.jogos}</small></h3>
       <div class="tiles">${tile(`${st.k}/${st.d}/${st.a}`, "K/D/A total")}${tile(n1(st.kda), "KDA")}${tile(n1(st.csm), "CS/min")}${tile(sinal(st.gd15), "Ouro@15 médio")}${tile(st.dpm ? Math.round(st.dpm) : "–", "Dano/min")}${tile(pct(st.dano), "% do dano")}${tile(pct(st.kp), "Particip.")}${tile(st.visao != null ? n1(st.visao, 0) : "–", "Visão média")}${tile(st.fbK, "First bloods")}</div></div>
     <div class="bloco-f"><h3>Campeões no torneio <small>anel: aproveitamento</small></h3>${cartoesCampeoes(st)}</div>`;
-    } else
-      html += `<div class="bloco-f"><h3>No Worlds 2026</h3><p class="muted" style="margin:0">${esc(pl.nick)} ainda não jogou neste Worlds. Os números aparecem depois da primeira partida.</p></div>`;
-    html += blocoSoloq(pl);
+    } else {
+      const prox = PARTIDAS.find((p) => p.estado !== "completed" && p.times.some((t) => t.codigo === time));
+      html +=
+        blocoSoloq(pl) +
+        `<div class="bloco-f"><h3>Estreia no Worlds 2026</h3><p style="margin:0 0 10px">${esc(pl.nick)} ainda não entrou em campo neste Worlds. Os números do torneio aparecem aqui depois do primeiro jogo.</p>${prox ? cartao(prox) : ""}</div>`;
+    }
+    if (st) html += blocoSoloq(pl);
     JORN = st ? st.linhas : [];
     abrirFolha(html);
     ligarJornada(folhaIn);
     marcar("jogador-" + slug(pl.nick));
+  }
+  const COR_TIER = {
+    IRON: "#6b5a50",
+    BRONZE: "#a0673f",
+    SILVER: "#8d9aa6",
+    GOLD: "#c99a3c",
+    PLATINUM: "#3fa79a",
+    EMERALD: "#2fa35b",
+    DIAMOND: "#5b7fe0",
+    MASTER: "#9d4dc9",
+    GRANDMASTER: "#d1453b",
+    CHALLENGER: "#e7b74a",
+  };
+  const duracaoFalada = (s) => {
+    const m = Math.round(s / 60),
+      h = Math.floor(m / 60);
+    return h ? `${h}h${String(m % 60).padStart(2, "0")}` : `${m} min`;
+  };
+  function historiaSoloq(pl, sq) {
+    const P = sq.partidas.slice().sort((a, b) => b[0] - a[0]);
+    if (!P.length) return "";
+    const dia = (x) => diaBR(new Date(x[0]).toISOString());
+    const d0 = dia(P[0]),
+      doDia = P.filter((x) => dia(x) === d0);
+    const hoje = diaBR(new Date().toISOString()),
+      ontem = diaBR(new Date(Date.now() - 864e5).toISOString());
+    const quando =
+      d0 === hoje
+        ? "Hoje"
+        : d0 === ontem
+          ? "Ontem"
+          : "No último dia em que jogou (" +
+            fmt(new Date(P[0][0]).toISOString(), { weekday: "long", day: "numeric", month: "numeric" }) +
+            ")";
+    const v = doDia.filter((x) => x[3]).length,
+      dur = doDia.reduce((s, x) => s + (x[1] || 0), 0);
+    const cs = {};
+    doDia.forEach((x) => (cs[x[2]] = (cs[x[2]] || 0) + 1));
+    const fav = Object.entries(cs).sort((a, b) => b[1] - a[1])[0];
+    const dest = doDia
+      .slice()
+      .sort(
+        (a, b) => (b[4] + b[6]) / Math.max(1, b[5]) - (a[4] + a[6]) / Math.max(1, a[5]) || b[4] - a[4],
+      )[0];
+    let pdl = "";
+    const H = sq.hist || [];
+    if (H.length >= 2) {
+      const ini = H.find((h) => diaBR(new Date(h[0]).toISOString()) >= d0) || H[H.length - 2];
+      const fim = H[H.length - 1];
+      const pts = (h) =>
+        (({ IRON: 0, BRONZE: 400, SILVER: 800, GOLD: 1200, PLATINUM: 1600, EMERALD: 2000, DIAMOND: 2400 })[
+          h[1]
+        ] ?? 2800) +
+        (["MASTER", "GRANDMASTER", "CHALLENGER"].includes(h[1])
+          ? 0
+          : { IV: 0, III: 100, II: 200, I: 300 }[h[2]] || 0) +
+        (h[3] || 0);
+      const dp = pts(fim) - pts(ini);
+      if (ini !== fim && dp) pdl = ` e ${dp > 0 ? "ganhou" : "perdeu"} <b>${Math.abs(dp)} PDL</b>`;
+    }
+    const m = dest ? Math.max(1, dest[1] / 60) : 1;
+    return `<p class="historia">${quando}, <b>${esc(pl.nick)}</b> jogou <b>${doDia.length} ${doDia.length === 1 ? "partida" : "partidas"}</b>, cerca de ${duracaoFalada(dur)} de jogo, ${doDia.length > 1 && v === doDia.length ? "e venceu todas" : doDia.length > 1 && !v ? "e perdeu todas" : `com ${v} ${v === 1 ? "vitória" : "vitórias"} e ${doDia.length - v} ${doDia.length - v === 1 ? "derrota" : "derrotas"}`}${pdl}.
+    ${fav && fav[1] > 1 ? `O campeão do dia foi <b>${esc(camp(fav[0]).nome)}</b>, ${fav[1]} vezes. ` : ""}${dest ? `O destaque foi uma ${dest[3] ? "vitória" : "derrota"} de <b>${esc(camp(dest[2]).nome)}</b> com ${dest[4]}/${dest[5]}/${dest[6]} e ${n1(dest[7] / m)} CS por minuto.` : ""}</p>`;
+  }
+  function ritmoSoloq(sq) {
+    const P = sq.partidas;
+    const por = {};
+    P.forEach((x) => {
+      const d = diaBR(new Date(x[0]).toISOString());
+      const o = por[d] || (por[d] = { min: 0, v: 0, d: 0 });
+      o.min += (x[1] || 0) / 60;
+      x[3] ? o.v++ : o.d++;
+    });
+    const dias = Object.keys(por).sort().slice(-7);
+    if (dias.length < 2) return "";
+    const mx = Math.max(...dias.map((d) => por[d].min));
+    return `<div class="ritmo">${dias
+      .map((d) => {
+        const o = por[d];
+        return `<div class="dia-r" title="${o.v}V ${o.d}D · ${duracaoFalada(o.min * 60)}"><span class="col-r"><i style="height:${Math.max(6, (o.min / mx) * 100)}%"><b style="height:${(o.v / (o.v + o.d)) * 100}%"></b></i></span><small>${d.slice(8)}/${d.slice(5, 7)}</small><small class="num">${duracaoFalada(o.min * 60)}</small></div>`;
+      })
+      .join("")}</div>
+  <div class="muted" style="font-size:12px;margin-top:4px">Tempo de jogo por dia nas últimas ranqueadas. A parte verde é a fatia de vitórias.</div>`;
+  }
+  // partida em andamento no momento da coleta; só aparece se a coleta for recente (até 2 h)
+  function agoraSoloq(sq) {
+    const a = sq.agora;
+    if (!a || Date.now() - a.visto > 2 * 3600e3) return "";
+    const c = camp(a.camp);
+    const min = a.inicio ? Math.max(0, Math.round((a.visto - a.inicio) / 60000)) : null;
+    return `<div class="sq-agora">${img(c.icone, "", c.nome)}<span><span class="tag vivo">Em partida</span> <b>ranqueada de ${esc(c.nome)}</b><small>visto às ${hora(new Date(a.visto).toISOString())}${min != null ? ` · ${min} min de jogo` : ""}</small></span></div>`;
+  }
+  function maestriaSoloq(sq) {
+    const M = sq.maestria || [];
+    if (!M.length) return "";
+    const top = Math.max(...M.map((m) => m[2] || 0), 1);
+    const fmt = (n) => (n >= 1e6 ? n1(n / 1e6) + " mi" : Math.round(n / 1e3) + " mil");
+    return `<h4 class="sub-h">Maestria <small>campeões com mais pontos na conta</small></h4><div class="pool">${M.map(([k, nv, pts]) => `<div class="pool-l">${img(camp(k).icone, "", camp(k).nome)}<span><b>${esc(camp(k).nome)}</b><small>nível ${nv} · ${fmt(pts || 0)} pontos</small></span><span class="pool-b mae"><i style="width:${((pts || 0) / top) * 100}%;background:var(--gold)"></i></span><span></span></div>`).join("")}</div>`;
   }
   function blocoSoloq(pl) {
     const sq = pl.soloq,
@@ -2541,27 +2887,49 @@
           )
           .join(" · ")
       : "";
-    let h = `<div class="bloco-f"><h3>Solo queue <small>fora do Worlds</small></h3>`;
-    if (sq) {
-      const vit = sq.partidas.filter((p) => p[3]).length;
+    let h = `<div class="bloco-f soloq"><h3>Solo queue <small>fora do Worlds · ${sq ? `conta ${sq.link ? `<a href="${esc(sq.link)}" target="_blank" rel="noopener">${esc(sq.conta)}</a>` : esc(sq.conta)} (${esc(sq.servidor)})` : ""}</small></h3>`;
+    if (sq && sq.partidas?.length) {
+      const P = sq.partidas.slice().sort((a, b) => b[0] - a[0]);
+      const vit = P.filter((p) => p[3]).length;
+      const e = sq.elo;
+      const alto = e && ["MASTER", "GRANDMASTER", "CHALLENGER"].includes(e.tier);
+      const cor = COR_TIER[e?.tier] || "var(--muted)";
+      const wr = e ? e.wins / Math.max(1, e.wins + e.losses) : null,
+        R = 22,
+        C = 2 * Math.PI * R;
       const camps = {};
-      sq.partidas.forEach((p) => {
-        const c = (camps[p[2]] = camps[p[2]] || { j: 0, v: 0 });
+      P.forEach((p) => {
+        const c = (camps[p[2]] = camps[p[2]] || { j: 0, v: 0, k: 0, d: 0, a: 0 });
         c.j++;
         c.v += p[3] ? 1 : 0;
+        c.k += p[4];
+        c.d += p[5];
+        c.a += p[6];
       });
-      h += `<div class="tiles">${tile(sq.elo ? `${TIER[sq.elo.tier] || sq.elo.tier} ${["MASTER", "GRANDMASTER", "CHALLENGER"].includes(sq.elo.tier) ? "" : sq.elo.rank}` : "Sem elo", "Elo atual")}${tile(sq.elo ? sq.elo.leaguePoints + " PDL" : "–", "Pontos")}${tile(sq.elo ? `${sq.elo.wins}V ${sq.elo.losses}D` : "–", "Na temporada")}${tile(`${vit}V ${sq.partidas.length - vit}D`, `Últimas ${sq.partidas.length}`)}</div>
-    <p class="muted" style="font-size:12.5px">Conta ${sq.link ? `<a href="${esc(sq.link)}" target="_blank" rel="noopener">${esc(sq.conta)}</a>` : esc(sq.conta)} (${esc(sq.servidor)})</p>
-    <div class="camps">${Object.entries(camps)
+      h += `<div class="sq-topo">
+      <div class="emblema" style="--cor:${cor}"><span>${e ? esc((TIER[e.tier] || e.tier).slice(0, 1)) : "–"}</span></div>
+      <div class="sq-elo"><b>${e ? `${TIER[e.tier] || e.tier}${alto ? "" : " " + e.rank}` : "Sem elo"}</b><span class="num">${e ? e.leaguePoints + " PDL" : ""}</span>${e && !alto ? `<span class="lp-barra"><i style="width:${Math.min(100, e.leaguePoints)}%;background:${cor}"></i></span>` : ""}</div>
+      ${wr != null ? `<div class="sq-temp"><svg viewBox="0 0 54 54" class="anel"><circle cx="27" cy="27" r="${R}" fill="none" stroke="var(--surface-2)" stroke-width="5"/><circle cx="27" cy="27" r="${R}" fill="none" stroke="${wr >= 0.5 ? "var(--good)" : "var(--red)"}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${C * wr} ${C}" transform="rotate(-90 27 27)"/><text x="27" y="31" text-anchor="middle" font-size="11.5" fill="var(--fg)" font-family="JetBrains Mono,monospace">${Math.round(wr * 100)}%</text></svg><span><b class="num">${e.wins}V ${e.losses}D</b><small>na temporada</small></span></div>` : ""}
+      <div class="sq-temp"><span><b class="num">${vit}V ${P.length - vit}D</b><small>nas últimas ${P.length}</small></span></div></div>
+    ${agoraSoloq(sq)}${historiaSoloq(pl, sq)}
+    <h4 class="sub-h">Últimas partidas <small>da mais recente para a mais antiga · passe o mouse para ver os números</small></h4>
+    <div class="faixa-sq">${P.map((p) => {
+      const c = camp(p[2]);
+      const m = Math.max(1, (p[1] || 1) / 60);
+      return `<div class="pq ${p[3] ? "v" : "d"}" tabindex="0" title="${esc(c.nome)} · ${p[3] ? "vitória" : "derrota"} · ${p[4]}/${p[5]}/${p[6]} · ${n1(p[7] / m)} CS/min · ${dataHora(new Date(p[0]).toISOString())}">${img(c.icone, "", c.nome)}<small class="num">${p[4]}/${p[5]}/${p[6]}</small></div>`;
+    }).join("")}</div>
+    ${ritmoSoloq(sq)}${maestriaSoloq(sq)}
+    <h4 class="sub-h">Campeões na solo queue</h4>
+    <div class="pool">${Object.entries(camps)
       .sort((a, b) => b[1].j - a[1].j)
+      .slice(0, 6)
       .map(
         ([k, c]) =>
-          `<span class="c">${img(camp(k).icone, "", camp(k).nome)}${esc(camp(k).nome)} <span class="muted num">${c.j} · ${c.v}V</span></span>`,
+          `<div class="pool-l">${img(camp(k).icone, "", camp(k).nome)}<span><b>${esc(camp(k).nome)}</b><small>${c.j} ${c.j === 1 ? "jogo" : "jogos"} · KDA ${n1((c.k + c.a) / Math.max(1, c.d))}</small></span><span class="pool-b"><i style="width:${(c.v / c.j) * 100}%"></i></span><span class="num">${Math.round((c.v / c.j) * 100)}%</span></div>`,
       )
-      .join("")}</div>
-    <div class="lista-linhas" style="margin-top:10px">${sq.partidas.map((p) => `<div class="r">${img(camp(p[2]).icone, "", camp(p[2]).nome)}<span><span class="res ${p[3] ? "v" : "d"}">${p[3] ? "V" : "D"}</span> ${esc(camp(p[2]).nome)} <span class="muted">· ${p[0] ? dataHora(new Date(p[0]).toISOString()) : ""}</span></span><span class="num">${p[4]}/${p[5]}/${p[6]} · ${p[7]} CS</span></div>`).join("")}</div>`;
+      .join("")}</div>`;
     } else if (ct && ct.contas.length) {
-      h += `<p class="muted" style="margin-top:0;font-size:13px">Elo e partidas recentes aparecem aqui assim que a chave da API da Riot for configurada. Por enquanto, as contas conhecidas (fonte: Leaguepedia):</p>
+      h += `<p class="muted" style="margin-top:0;font-size:13px">Não conseguimos ler as ranqueadas recentes deste jogador na API da Riot (a conta pode ter mudado de nome). As contas conhecidas, segundo a Leaguepedia:</p>
     <div class="lista-linhas">${ct.contas
       .slice(0, 8)
       .map(
@@ -2573,7 +2941,7 @@
       h += `<p class="muted" style="margin:0">Não encontramos contas de solo queue conhecidas deste jogador.</p>`;
     return (
       h +
-      (links ? `<p style="font-size:13px;margin-bottom:0">Mais sobre o jogador: ${links}</p>` : "") +
+      (links ? `<p style="font-size:13px;margin:12px 0 0">Mais sobre o jogador: ${links}</p>` : "") +
       `</div>`
     );
   }
@@ -3007,7 +3375,7 @@
   if (G && window.ScrollTrigger) G.registerPlugin(window.ScrollTrigger);
   const jaAnimado = new WeakSet();
   const SEL_ENTRA =
-    ".conf,.bloco-f,.classif .t,.chances .ch,.cartao-time,.rodada h3,.ranking li,.prox,.dd,.lista-linhas .r,.duelo,.tile";
+    ".pq,.pool-l,.dia-r,.conf,.bloco-f,.classif .t,.chances .ch,.cartao-time,.rodada h3,.ranking li,.prox,.dd,.lista-linhas .r,.duelo,.tile";
   function contar(el) {
     const txt = el.textContent.trim(),
       m = txt.match(/^([+−-]?)(\d{1,3}(?:\.\d{3})*|\d+)(?:,(\d+))?(%|k| PDL)?$/);
@@ -3073,7 +3441,7 @@
             ),
         });
     }
-    raiz.querySelectorAll(".barra i,.barra-ch>span,.votos i").forEach((b) => {
+    raiz.querySelectorAll(".barra i,.barra-ch>span,.votos i,.pool-b i,.lp-barra i").forEach((b) => {
       if (jaAnimado.has(b) || b.closest(".player")) return;
       jaAnimado.add(b);
       G.from(b, {
@@ -3289,6 +3657,34 @@
     if (vis) animarEm(vis);
     const dt = $("#dia-topo");
     if (dt && !dt.hidden) animarEm(dt);
+    const hp = $(".heroi-pi");
+    if (hp) {
+      G.from(hp, {
+        y: 24,
+        opacity: 0,
+        duration: 0.7,
+        delay: 0.35,
+        ease: "power3.out",
+        clearProps: "transform,opacity",
+      });
+      G.from(hp.querySelectorAll(".h-logo img,.h-foto"), {
+        scale: 0.6,
+        opacity: 0,
+        rotate: -8,
+        duration: 0.8,
+        delay: 0.6,
+        ease: "back.out(1.8)",
+        clearProps: "all",
+      });
+      G.from(hp.querySelectorAll(".h-serie"), {
+        y: 14,
+        opacity: 0,
+        stagger: 0.08,
+        delay: 0.8,
+        duration: 0.5,
+        clearProps: "transform,opacity",
+      });
+    }
     let pend = false;
     new MutationObserver(() => {
       if (pend) return;
@@ -3314,7 +3710,7 @@
   function aba(nome) {
     ABAS.forEach((a) => {
       $("#p-" + a).hidden = a !== nome;
-      $(`[data-aba="${a}"]`).setAttribute("aria-selected", a === nome);
+      $(`#abas [data-aba="${a}"]`).setAttribute("aria-selected", a === nome);
     });
     try {
       localStorage.setItem("aba", nome);
@@ -3324,6 +3720,7 @@
     const ab = e.target.closest("[data-aba]");
     if (ab) {
       aba(ab.dataset.aba);
+      if (ab.hasAttribute("data-rolar")) $("#abas").scrollIntoView({ behavior: PARADO ? "auto" : "smooth" });
       return;
     }
     const jg = e.target.closest("[data-jogador]");
@@ -3347,6 +3744,7 @@
     }
   });
   topo();
+  $("#heroi-topo").innerHTML = heroiPlayin();
   {
     const ult = JOGOS.map((j) => PID[j.partida]?.inicio)
       .filter(Boolean)
@@ -3374,7 +3772,7 @@
   }
   if (!ABAS.includes(inicial)) {
     const d = new Date().toISOString();
-    inicial = d < "2026-10-21" ? "suica" : d < "2026-11-01" ? "suica" : "matamata";
+    inicial = d < "2026-10-23T17" ? "playin" : d < "2026-11-01" ? "suica" : "matamata";
   }
   aba(inicial);
   if (/^p\d+$/.test(h)) navegar(() => abrirPartida(h.slice(1)));

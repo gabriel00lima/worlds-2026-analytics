@@ -17,6 +17,8 @@ CACHE_IMAGENS = CACHE / "img"
 
 WEB = RAIZ / "web"
 SITE = RAIZ / "docs" / "index.html"
+# Narração gravada por scripts/gerar_audio.py: um mp3 por jogo e o índice com o tempo de cada fala.
+AUDIO = RAIZ / "docs" / "audio"
 
 LIGA_WORLDS = "98767975604431411"
 TORNEIO_WORLDS_2026 = "115660540725177488"

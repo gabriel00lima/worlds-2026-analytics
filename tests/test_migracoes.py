@@ -25,7 +25,7 @@ def test_migrar_de_novo_nao_faz_nada(engine):
     banco.migrar(engine)
     banco.migrar(engine)
     with engine.connect() as conn:
-        assert MigrationContext.configure(conn).get_current_revision() == "0001"
+        assert MigrationContext.configure(conn).get_current_revision() == "0002"
 
 
 def test_downgrade_remove_tudo(engine):

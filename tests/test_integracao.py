@@ -77,7 +77,7 @@ def preparar_fontes(monkeypatch, tmp_path):
     monkeypatch.setattr(livestats, "baixar_quadros", lambda jogo_id, inicio: quadros)
     monkeypatch.setattr(livestats, "detalhes_finais", lambda jogo_id, ultimo: {})
     monkeypatch.setattr(ddragon, "versao_atual", lambda: "16.20.1")
-    monkeypatch.setattr(ddragon, "campeoes", lambda versao, idioma="pt_BR": {"Ahri": {"name": "Ahri"}})
+    monkeypatch.setattr(ddragon, "campeoes", lambda versao, idioma="pt_BR": {"Ahri": {"name": "Ahri", "key": "103"}})
     monkeypatch.setattr(ddragon, "itens", lambda versao: {})
     monkeypatch.setattr(leaguepedia, "placares", lambda chave_por_nome: {})
     monkeypatch.setattr(imagens, "miniatura", lambda url, lado, quadrado=False: None)

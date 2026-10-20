@@ -29,6 +29,27 @@ def _elo(soloq: Json | None) -> tuple[str | None, int | None]:
     return f"{elo['tier']} {elo['rank']}".title(), elo.get("leaguePoints")
 
 
+def partida_soloq(p: list[Any]) -> PartidaSoloq:
+    """[fim, duração, campeão, venceu, abates, mortes, assistências, cs, dano, ouro, posição].
+
+    Partidas baixadas antes de a coleta guardar dano, ouro e posição têm só os 8 primeiros campos.
+    """
+    fim, _duracao, campeao, venceu, k, d, a, cs = p[:8]
+    dano, ouro, posicao = (list(p[8:11]) + [None] * 3)[:3]
+    return PartidaSoloq(
+        fim=datetime.fromtimestamp(fim / 1000, timezone.utc),
+        campeao=campeao,
+        venceu=venceu,
+        abates=k,
+        mortes=d,
+        assistencias=a,
+        cs=cs,
+        dano=dano,
+        ouro=ouro,
+        posicao=posicao or None,
+    )
+
+
 def times_e_jogadores(dados: Json) -> list[Time]:
     times = []
     for t in dados["times"].values():
@@ -45,18 +66,8 @@ def times_e_jogadores(dados: Json) -> list[Time]:
                 elo=elo,
                 pdl=pdl,
             )
-            for fim, _dur, campeao, venceu, k, d, a, cs in (pl.get("soloq") or {}).get("partidas", []):
-                jogador.partidas_soloq.append(
-                    PartidaSoloq(
-                        fim=datetime.fromtimestamp(fim / 1000, timezone.utc),
-                        campeao=campeao,
-                        venceu=venceu,
-                        abates=k,
-                        mortes=d,
-                        assistencias=a,
-                        cs=cs,
-                    )
-                )
+            for p in (pl.get("soloq") or {}).get("partidas", []):
+                jogador.partidas_soloq.append(partida_soloq(p))
             time.jogadores.append(jogador)
         times.append(time)
     return times

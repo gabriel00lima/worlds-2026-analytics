@@ -125,12 +125,12 @@ def montar_times(por_codigo: dict[str, Json], titulares: dict[str, list[str]], j
     return times
 
 
-def anexar_soloq(times: dict[str, Json], so_cache: bool) -> None:
+def anexar_soloq(times: dict[str, Json], so_cache: bool, campeao_por_id: dict[str, str] | None = None) -> None:
     contas = riot.contas_soloq()
     arq = config.SOLOQ_PARTIDAS
     soloq: dict[str, Json] = {}
     if config.RIOT_API_KEY and not so_cache:
-        soloq = riot.soloq(contas, config.RIOT_API_KEY)
+        soloq = riot.soloq(contas, config.RIOT_API_KEY, campeao_por_id or {})
         if soloq:
             salvar_json(arq, soloq)
     soloq = soloq or ler_json(arq, {})
@@ -202,7 +202,7 @@ def executar(so_cache: bool = False) -> Json:
     times = montar_times(por_codigo, titulares, jogos)
 
     log.info("solo queue")
-    anexar_soloq(times, so_cache)
+    anexar_soloq(times, so_cache, {c["key"]: chave for chave, c in camp.items()})
 
     log.info("campeões e itens")
     dados = {
@@ -214,6 +214,7 @@ def executar(so_cache: bool = False) -> Json:
         "jogos": jogos,
         "campeoes": montar_campeoes(versao, camp, jogos, times),
         "itens": montar_itens(versao, jogos),
+        "audio": ler_json(config.AUDIO / "index.json", {}),
     }
     salvar_json(config.CACHE / "dados.json", dados)
     tamanho = site.gerar(dados)

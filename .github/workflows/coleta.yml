@@ -38,9 +38,18 @@ jobs:
         env:
           RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
 
+      # grava com voz neural a narração dos jogos novos; se falhar, o site sai com a voz do navegador
+      - name: Narração
+        continue-on-error: true
+        run: |
+          pip install -e ".[narracao]"
+          npm install -g playwright@1.56.1
+          CHROMIUM="$(which google-chrome)" python scripts/gerar_audio.py
+          python -m worlds2026 --so-site
+
       - name: Publicar
         run: |
-          git add docs/index.html data/soloq/partidas.json
+          git add docs/index.html docs/audio data/soloq/partidas.json
           if git diff --cached --quiet; then
             echo "nada mudou"
             exit 0

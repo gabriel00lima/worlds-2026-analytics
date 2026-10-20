@@ -49,6 +49,8 @@ class ClienteRiot:
                 if e.code in (401, 403):
                     raise ChaveRecusada("chave da Riot recusada (expirada ou inválida)") from e
                 time.sleep(3)
+            except (urllib.error.URLError, TimeoutError, ConnectionError):
+                time.sleep(5)  # rede instável: tenta de novo em vez de derrubar a coleta inteira
         return None
 
 
@@ -97,7 +99,7 @@ def _conta_mais_ativa(riot: ClienteRiot, contas: list[Json], cache: Json) -> tup
         if not puuid:
             continue
         ids = (
-            riot.get(c["regional"], f"/lol/match/v5/matches/by-puuid/{puuid}/ids?queue={FILA_RANQUEADA_SOLO}&count=10")
+            riot.get(c["regional"], f"/lol/match/v5/matches/by-puuid/{puuid}/ids?queue={FILA_RANQUEADA_SOLO}&count=20")
             or []
         )
         if ids and (not melhor or ids[0] > melhor[2][0]):
@@ -118,16 +120,58 @@ def _resumo_partida(partida: Json) -> Json:
                 x["deaths"],
                 x["assists"],
                 x["totalMinionsKilled"] + x["neutralMinionsKilled"],
+                x.get("totalDamageDealtToChampions"),
+                x.get("goldEarned"),
+                x.get("teamPosition"),
             ]
             for x in info["participants"]
         },
     }
 
 
-def soloq(contas: dict[str, Json], chave: str) -> dict[str, Json]:
-    """Elo e últimas partidas ranqueadas da conta mais ativa de cada jogador."""
+def _historico(cache: Json, jogador: str, elo: Json | None, agora_ms: int) -> list[list[Any]]:
+    """Um ponto por coleta em que o elo mudou (até 30), para o site mostrar ganhos e perdas de PDL."""
+    hist = cache["hist"].setdefault(jogador, [])
+    if elo:
+        ponto = [agora_ms, *(elo.get(k) for k in ("tier", "rank", "leaguePoints", "wins", "losses"))]
+        if not hist or hist[-1][1:] != ponto[1:]:
+            hist.append(ponto)
+        del hist[:-30]
+    return hist
+
+
+def _maestria(riot: ClienteRiot, plataforma: str, puuid: str, campeao_por_id: dict[str, str]) -> list[list[Any]]:
+    """Os 5 campeões com mais pontos de maestria: [campeão, nível, pontos]."""
+    caminho = f"/lol/champion-mastery/v4/champion-masteries/by-puuid/{puuid}/top?count=5"
+    return [
+        [
+            campeao_por_id.get(str(x["championId"]), str(x["championId"])),
+            x.get("championLevel"),
+            x.get("championPoints"),
+        ]
+        for x in riot.get(plataforma, caminho) or []
+    ]
+
+
+def _partida_ao_vivo(
+    riot: ClienteRiot, plataforma: str, puuid: str, campeao_por_id: dict[str, str], agora_ms: int
+) -> Json | None:
+    """A ranqueada solo que o jogador está jogando no momento da coleta, se houver."""
+    vivo = riot.get(plataforma, f"/lol/spectator/v5/active-games/by-summoner/{puuid}")
+    if not vivo or vivo.get("gameQueueConfigId") != FILA_RANQUEADA_SOLO:
+        return None
+    eu = next((x for x in vivo.get("participants", []) if x.get("puuid") == puuid), None)
+    if not eu:
+        return None
+    campeao = str(eu["championId"])
+    return {"camp": campeao_por_id.get(campeao, campeao), "inicio": vivo.get("gameStartTime"), "visto": agora_ms}
+
+
+def soloq(contas: dict[str, Json], chave: str, campeao_por_id: dict[str, str]) -> dict[str, Json]:
+    """Elo, histórico de PDL, maestria e últimas partidas ranqueadas da conta mais ativa de cada jogador."""
     arq = config.CACHE / "soloq.json"
     cache = ler_json(arq, {"puuid": {}, "partidas": {}})
+    cache.setdefault("hist", {})
     riot = ClienteRiot(chave)
     out = {}
     try:
@@ -148,15 +192,20 @@ def soloq(contas: dict[str, Json], chave: str) -> dict[str, Json]:
                 pm = cache["partidas"][mid]
                 if puuid in pm["p"]:
                     partidas.append([pm["fim"], pm["dur"], *pm["p"][puuid]])
+            agora_ms = int(time.time() * 1000)
             out[jogador] = {
                 "conta": c["riotId"],
                 "servidor": c["servidor"],
                 "link": c["link"],
                 "elo": elo and {k: elo.get(k) for k in ("tier", "rank", "leaguePoints", "wins", "losses")},
+                "hist": _historico(cache, jogador, elo, agora_ms),
+                "maestria": _maestria(riot, c["platform"], puuid, campeao_por_id),
+                "agora": _partida_ao_vivo(riot, c["platform"], puuid, campeao_por_id, agora_ms),
                 "partidas": partidas,
             }
             log.info("soloq %s: %s, %d partidas", jogador, c["riotId"], len(partidas))
     except ChaveRecusada as e:
         log.warning("solo queue interrompida: %s", e)
-    salvar_json(arq, cache)
+    finally:
+        salvar_json(arq, cache)
     return out

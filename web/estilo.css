@@ -401,6 +401,321 @@ section.painel {
   background: var(--surface-2);
   color: var(--muted);
 }
+.pool-b.mae {
+  background: var(--surface-2);
+}
+.sq-agora {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 0 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+.sq-agora img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+.sq-agora small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.sq-topo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.emblema {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  transform: rotate(45deg);
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--cor) 60%, #fff), var(--cor));
+  box-shadow:
+    0 6px 18px -6px var(--cor),
+    inset 0 0 0 3px color-mix(in srgb, #fff 35%, transparent);
+}
+.emblema span {
+  transform: rotate(-45deg);
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.sq-elo {
+  display: grid;
+  gap: 2px;
+  min-width: 140px;
+}
+.sq-elo b {
+  font-family: var(--display);
+  font-size: 26px;
+  line-height: 1;
+}
+.lp-barra {
+  display: block;
+  height: 6px;
+  border-radius: 99px;
+  background: var(--surface-2);
+  overflow: hidden;
+  width: 140px;
+}
+.lp-barra i {
+  display: block;
+  height: 100%;
+}
+.sq-temp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sq-temp .anel {
+  width: 54px;
+  height: 54px;
+}
+.sq-temp b {
+  display: block;
+  font-size: 15px;
+}
+.sq-temp small {
+  color: var(--muted);
+  font-size: 12px;
+}
+.faixa-sq {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px 2px 8px;
+}
+.pq {
+  flex: 0 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 8px;
+  background: var(--bg);
+  border-bottom: 3px solid var(--good);
+  cursor: default;
+  transition: transform 0.15s;
+}
+.pq.d {
+  border-bottom-color: var(--red);
+}
+.pq:hover,
+.pq:focus {
+  transform: translateY(-3px);
+  outline: none;
+}
+.pq img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+.pq.d img {
+  filter: saturate(0.5);
+}
+.pq small {
+  font-size: 10.5px;
+  color: var(--muted);
+}
+.ritmo {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  height: 130px;
+  margin-top: 6px;
+}
+.dia-r {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  justify-items: center;
+  height: 100%;
+  gap: 2px;
+  min-width: 0;
+}
+.col-r {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  max-width: 46px;
+}
+.col-r i {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  background: color-mix(in srgb, var(--red) 55%, transparent);
+  border-radius: 6px 6px 2px 2px;
+  overflow: hidden;
+}
+.col-r b {
+  display: block;
+  width: 100%;
+  background: var(--good);
+}
+.dia-r small {
+  font-size: 10.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.pool {
+  display: grid;
+  gap: 6px;
+}
+.pool-l {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) minmax(60px, 1.2fr) 42px;
+  gap: 10px;
+  align-items: center;
+}
+.pool-l img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+.pool-l small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.pool-b {
+  height: 8px;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--red) 30%, transparent);
+  overflow: hidden;
+}
+.pool-b i {
+  display: block;
+  height: 100%;
+  background: var(--good);
+}
+.heroi-pi {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid var(--gold);
+  overflow: hidden;
+  background: radial-gradient(
+      90% 140% at 0% 0%,
+      color-mix(in srgb, var(--gold) 26%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(70% 120% at 100% 100%, color-mix(in srgb, var(--blue) 14%, transparent), transparent 60%),
+    var(--surface);
+}
+.heroi-pi .h-logo img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px color-mix(in srgb, var(--gold) 40%, transparent));
+}
+.heroi-pi h2 {
+  font-size: clamp(30px, 4.5vw, 50px);
+  text-transform: uppercase;
+  margin: 4px 0 8px;
+}
+.heroi-pi p {
+  margin: 0 0 12px;
+  max-width: 68ch;
+  font-size: 15.5px;
+}
+.heroi-pi .h-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: end;
+  box-shadow:
+    0 0 0 4px var(--bg),
+    0 0 0 6px var(--gold);
+}
+.h-series {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.h-serie {
+  display: grid;
+  gap: 3px;
+  text-align: left;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.h-serie:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.h-serie b {
+  font-family: var(--display);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.h-serie span:last-child {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.h-acoes {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.botao-pi {
+  background: var(--gold);
+  color: var(--bg);
+  border: 0;
+  border-radius: 99px;
+  padding: 9px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--display);
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.historia-serie {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 6px 2px 0;
+}
+@media (max-width: 760px) {
+  .heroi-pi {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .heroi-pi .h-logo img {
+    width: 70px;
+    height: 70px;
+  }
+  .heroi-pi .h-foto {
+    display: none;
+  }
+}
 .perfil {
   position: relative;
   padding: 18px;

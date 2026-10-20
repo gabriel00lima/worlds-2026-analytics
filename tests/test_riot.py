@@ -1,4 +1,6 @@
+import io
 import json
+import urllib.error
 
 from worlds2026 import config
 from worlds2026.fontes import riot
@@ -52,8 +54,8 @@ def test_soloq_escolhe_a_conta_mais_ativa(monkeypatch):
     respostas = {
         "/riot/account/v1/accounts/by-riot-id/Principal/KR1": {"puuid": "pp"},
         "/riot/account/v1/accounts/by-riot-id/Smurf/KR2": {"puuid": "ps"},
-        "/lol/match/v5/matches/by-puuid/pp/ids?queue=420&count=10": ["KR_100"],
-        "/lol/match/v5/matches/by-puuid/ps/ids?queue=420&count=10": ["KR_200"],
+        "/lol/match/v5/matches/by-puuid/pp/ids?queue=420&count=20": ["KR_100"],
+        "/lol/match/v5/matches/by-puuid/ps/ids?queue=420&count=20": ["KR_200"],
         "/lol/league/v4/entries/by-puuid/ps": [
             {
                 "queueType": "RANKED_SOLO_5x5",
@@ -78,9 +80,20 @@ def test_soloq_escolhe_a_conta_mais_ativa(monkeypatch):
                         "assists": 7,
                         "totalMinionsKilled": 300,
                         "neutralMinionsKilled": 12,
+                        "totalDamageDealtToChampions": 25000,
+                        "goldEarned": 13000,
+                        "teamPosition": "MIDDLE",
                     }
                 ],
             }
+        },
+        "/lol/champion-mastery/v4/champion-masteries/by-puuid/ps/top?count=5": [
+            {"championId": 268, "championLevel": 50, "championPoints": 900000}
+        ],
+        "/lol/spectator/v5/active-games/by-summoner/ps": {
+            "gameQueueConfigId": 420,
+            "gameStartTime": 1234,
+            "participants": [{"puuid": "ps", "championId": 61}],
         },
     }
     monkeypatch.setattr(riot.ClienteRiot, "get", lambda self, regiao, caminho: respostas.get(caminho))
@@ -98,10 +111,17 @@ def test_soloq_escolhe_a_conta_mais_ativa(monkeypatch):
         }
 
     contas = {"faker|T1": {"contas": [conta("Principal", "KR1"), conta("Smurf", "KR2")]}}
-    resultado = riot.soloq(contas, "chave")["faker|T1"]
+    campeoes = {"268": "Azir", "61": "Orianna"}
+    resultado = riot.soloq(contas, "chave", campeoes)["faker|T1"]
     assert resultado["conta"] == "Smurf#KR2"
     assert resultado["elo"]["tier"] == "CHALLENGER"
-    assert resultado["partidas"] == [[1, 1800, "Azir", True, 5, 1, 7, 312]]
+    assert resultado["partidas"] == [[1, 1800, "Azir", True, 5, 1, 7, 312, 25000, 13000, "MIDDLE"]]
+    assert resultado["maestria"] == [["Azir", 50, 900000]]
+    assert resultado["agora"]["camp"] == "Orianna" and resultado["agora"]["inicio"] == 1234
+    assert [p[1:4] for p in resultado["hist"]] == [["CHALLENGER", "I", 1500]]
+
+    # numa nova coleta com o mesmo elo o histórico não ganha ponto repetido
+    assert len(riot.soloq(contas, "chave", campeoes)["faker|T1"]["hist"]) == 1
 
 
 def test_soloq_para_quando_a_chave_e_recusada(monkeypatch):
@@ -110,4 +130,37 @@ def test_soloq_para_quando_a_chave_e_recusada(monkeypatch):
 
     monkeypatch.setattr(riot.ClienteRiot, "get", recusa)
     contas = {"x|Y": {"contas": [{"riotId": "a#b", "gameName": "a", "tagLine": "b", "api": True, "regional": "asia"}]}}
-    assert riot.soloq(contas, "chave") == {}
+    assert riot.soloq(contas, "chave", {}) == {}
+    # o cache é salvo mesmo quando a coleta para no meio
+    assert (config.CACHE / "soloq.json").exists()
+
+
+def test_historico_registra_mudanca_de_pdl_e_guarda_so_os_ultimos():
+    cache: dict = {"hist": {}}
+    for i in range(40):
+        riot._historico(cache, "x", {"tier": "MASTER", "rank": "I", "leaguePoints": i}, i)
+    riot._historico(cache, "x", {"tier": "MASTER", "rank": "I", "leaguePoints": 39}, 99)
+    hist = cache["hist"]["x"]
+    assert len(hist) == 30 and hist[-1] == [39, "MASTER", "I", 39, None, None]
+
+
+def test_partida_ao_vivo_ignora_outras_filas(monkeypatch):
+    monkeypatch.setattr(
+        riot.ClienteRiot, "get", lambda self, regiao, caminho: {"gameQueueConfigId": 450, "participants": []}
+    )
+    assert riot._partida_ao_vivo(riot.ClienteRiot("c"), "kr", "p", {}, 0) is None
+
+
+def test_cliente_tenta_de_novo_quando_a_rede_falha(monkeypatch):
+    tentativas = []
+
+    def urlopen(req, timeout):
+        tentativas.append(req.full_url)
+        if len(tentativas) < 3:
+            raise urllib.error.URLError("conexão recusada")
+        return io.BytesIO(b'{"ok": true}')
+
+    monkeypatch.setattr(riot.urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr(riot.time, "sleep", lambda s: None)
+    assert riot.ClienteRiot("c").get("kr", "/x") == {"ok": True}
+    assert len(tentativas) == 3

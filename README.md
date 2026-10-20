@@ -20,10 +20,10 @@ A parte em Python busca os dados na API do LoL Esports, processa a linha do temp
 No site dá para:
 
 - navegar pelo Play-In, pela Fase Suíça e pelo mata-mata, com a chance de classificação de cada time na Suíça;
-- abrir um jogo e assistir aos principais lances num mapa animado, com narração;
-- clicar em qualquer jogador e ver como ele foi naquele jogo, no torneio e na solo queue;
-- ver o meta do torneio (campeões mais escolhidos e banidos), comparar dois jogadores e conferir os destaques do dia;
-- deixar palpites e adicionar os jogos na agenda.
+- abrir um jogo e assistir aos principais lances num mapa animado, com narração em voz neural e a curva de chance de vitória ao longo da partida;
+- clicar em qualquer jogador e ver como ele foi naquele jogo, no torneio e na solo queue, com elo, histórico de PDL, campeões com mais maestria e um resumo do dia;
+- ver o meta do torneio (campeões mais escolhidos e banidos, com as restrições do Fearless Draft), comparar dois jogadores e conferir os destaques do dia;
+- deixar palpites, adicionar os jogos na agenda e compartilhar o link direto de um time ou jogador.
 
 ![Replay de Karmine Corp x MVK](docs/img/replay.png)
 
@@ -39,9 +39,9 @@ src/worlds2026/
   cli.py            linha de comando
 web/                o site: index.html, estilo.css e app.js
 data/               curiosidades dos confrontos e contas de solo queue
-scripts/            gerador das curiosidades
+scripts/            gerador das curiosidades e da narração
 tests/              testes com pytest, incluindo uma coleta completa com as fontes simuladas
-docs/               site publicado no GitHub Pages
+docs/               site publicado no GitHub Pages, com os áudios da narração
 ```
 
 ## Como funciona
@@ -64,7 +64,13 @@ Os clientes em `fontes/` cuidam da parte chata: paginação, novas tentativas qu
 
 O site é HTML, CSS e JavaScript sem framework, com animações em GSAP. O `site.py` embute tudo num único `docs/index.html`, que o GitHub Pages publica.
 
-Uma tarefa agendada no GitHub Actions roda a coleta às 0h30 e às 16h de Brasília e publica o site atualizado. Os jogos já processados ficam no cache do Actions, então cada execução só baixa o que é novo.
+Uma tarefa agendada no GitHub Actions roda a coleta às 0h30 e às 16h de Brasília, grava a narração dos jogos novos e publica o site atualizado. Os jogos já processados ficam no cache do Actions, então cada execução só baixa o que é novo.
+
+Três partes do site fazem conta de verdade no navegador:
+
+- **Chance de classificação na Suíça.** Uma simulação de Monte Carlo joga 10 mil vezes o resto da fase, respeitando a regra de não repetir confronto entre times da mesma campanha. A chance de cada jogo vem das vitórias de cada time no torneio, puxada para 50% enquanto há poucos jogos.
+- **Chance de vitória durante o jogo.** Uma regressão logística é treinada na hora com os quadros de todos os jogos coletados. As variáveis são diferença de ouro (com peso maior no fim do jogo), torres, dragões e barões.
+- **Narração.** O roteiro de cada replay é montado a partir dos lances, e o `scripts/gerar_audio.py` grava esse roteiro com voz neural em pt-BR. Os áudios ficam em `docs/audio/`. Quando um jogo ainda não tem áudio gravado, o site usa a voz do navegador.
 
 ![Painel do jogador](docs/img/jogador.png)
 

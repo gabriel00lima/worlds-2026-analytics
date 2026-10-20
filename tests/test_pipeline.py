@@ -99,7 +99,7 @@ def test_soloq_sem_chave_usa_a_ultima_salva(monkeypatch):
 def test_soloq_com_chave_baixa_e_salva(monkeypatch):
     monkeypatch.setattr(pipeline.riot, "contas_soloq", lambda: {"doran|HLE": ["doran#KR1"]})
     monkeypatch.setattr(config, "RIOT_API_KEY", "chave")
-    monkeypatch.setattr(pipeline.riot, "soloq", lambda contas, chave: {"doran|HLE": {"elo": "novo"}})
+    monkeypatch.setattr(pipeline.riot, "soloq", lambda contas, chave, campeoes: {"doran|HLE": {"elo": "novo"}})
     salvar_json(config.SOLOQ_PARTIDAS, {"doran|HLE": {"elo": "salvo"}})
     times = times_com_doran()
     pipeline.anexar_soloq(times, so_cache=False)
@@ -110,7 +110,7 @@ def test_soloq_com_chave_baixa_e_salva(monkeypatch):
 def test_soloq_com_chave_recusada_mantem_a_salva(monkeypatch):
     monkeypatch.setattr(pipeline.riot, "contas_soloq", lambda: {"doran|HLE": ["doran#KR1"]})
     monkeypatch.setattr(config, "RIOT_API_KEY", "chave-vencida")
-    monkeypatch.setattr(pipeline.riot, "soloq", lambda contas, chave: {})
+    monkeypatch.setattr(pipeline.riot, "soloq", lambda contas, chave, campeoes: {})
     salvar_json(config.SOLOQ_PARTIDAS, {"doran|HLE": {"elo": "salvo"}})
     times = times_com_doran()
     pipeline.anexar_soloq(times, so_cache=False)
