@@ -210,10 +210,15 @@ def test_ranking_valida_parametros(cliente):
     assert cliente.get("/estatisticas/jogadores", params={"limite": 0}).status_code == 422
 
 
+def test_partidas_valida_fase_e_estado(cliente):
+    assert cliente.get("/partidas?fase=xyz").status_code == 422
+    assert cliente.get("/partidas?estado=foo").status_code == 422
+
+
 def test_campeoes_por_presenca(cliente):
     campeoes = {c["campeao"]: c for c in cliente.get("/estatisticas/campeoes", params={"limite": 50}).json()}
     assert campeoes["Gnar"]["escolhas"] == 3 and campeoes["Gnar"]["presenca"] == 1.0
-    assert campeoes["Kalista"] == {"campeao": "Kalista", "escolhas": 0, "vitorias": 0, "bans": 2, "presenca": 0.667}
+    assert campeoes["Kalista"] == {"campeao": "Kalista", "escolhas": 0, "vitorias": 0, "bans": 2, "presenca": 1.0}
     assert campeoes["Azir"]["vitorias"] == 2
 
 

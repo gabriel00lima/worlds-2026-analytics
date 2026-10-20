@@ -4,10 +4,21 @@ Entradas: soloq/contas-soloq.json (81 jogadores, Leaguepedia) e mundiais-passado
 Rodar: python3 gerar_jogadores.py
 """
 
-import json, os, re, unicodedata, urllib.parse
+import json
+import os
+import re
+import unicodedata
+import urllib.parse
 from collections import defaultdict
 
 DADOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+
+
+def ler(caminho):
+    with open(caminho, encoding="utf-8") as f:
+        return json.load(f)
+
+
 OUT = os.path.join(DADOS, "curiosidades", "jogadores")
 HOJE = "2026-10-20"
 
@@ -181,14 +192,14 @@ def anos_txt(a):
 
 
 def main():
-    jog = json.load(open(os.path.join(DADOS, "soloq", "contas.json")))["jogadores"]
-    J = json.load(open(os.path.join(DADOS, "mundiais-passados", "jogadores-por-edicao.json")))["edicoes"]
-    E = json.load(open(os.path.join(DADOS, "mundiais-passados", "edicoes.json")))["edicoes"]
+    jog = ler(os.path.join(DADOS, "soloq", "contas.json"))["jogadores"]
+    J = ler(os.path.join(DADOS, "mundiais-passados", "jogadores-por-edicao.json"))["edicoes"]
+    E = ler(os.path.join(DADOS, "mundiais-passados", "edicoes.json"))["edicoes"]
     ed_por_ano = {e["ano"]: e for e in E}
 
     # totais de carreira de todos os jogadores da história, para ranking
     tot = defaultdict(lambda: {"abates": 0, "jogos": 0, "vitorias": 0, "edicoes": 0})
-    for ano, ed in J.items():
+    for ed in J.values():
         for r in ed["jogadores"]:
             t = tot[r["pagina"].lower()]
             t["abates"] += r["abates"]
@@ -214,11 +225,11 @@ def main():
                 e = ed_por_ano[int(ano)]
                 res = None
                 times = r["times"]
-                if e["campeao"]["time"] in times and nome.lower() in [
-                    n.lower() for n in e["campeao"].get("elenco_que_jogou", [])
-                ] + [page.lower()]:
-                    res = "Campeão"
-                elif e["campeao"]["time"] in times:
+                if (
+                    e["campeao"]["time"] in times
+                    and nome.lower() in [n.lower() for n in e["campeao"].get("elenco_que_jogou", [])] + [page.lower()]
+                    or e["campeao"]["time"] in times
+                ):
                     res = "Campeão"
                 elif e["vice"]["time"] in times:
                     res = "Vice"

@@ -1,6 +1,15 @@
-import json, os, re
+import json
+import os
+import re
 
 DADOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+
+
+def ler(caminho):
+    with open(caminho, encoding="utf-8") as f:
+        return json.load(f)
+
+
 OUT = os.path.join(DADOS, "curiosidades")
 HOJE = "2026-10-20"
 
@@ -639,8 +648,8 @@ CONF = [
 os.makedirs(f"{OUT}/times", exist_ok=True)
 os.makedirs(f"{OUT}/confrontos", exist_ok=True)
 
-HIST = json.load(open(os.path.join(DADOS, "mundiais-passados", "times-2026-historico.json")))["times"]
-ROSTER = json.load(open(os.path.join(DADOS, "soloq", "contas.json")))["jogadores"]
+HIST = ler(os.path.join(DADOS, "mundiais-passados", "times-2026-historico.json"))["times"]
+ROSTER = ler(os.path.join(DADOS, "soloq", "contas.json"))["jogadores"]
 SIGLA_ID = {
     "GEN": "gen-g",
     "AL CN": "al",

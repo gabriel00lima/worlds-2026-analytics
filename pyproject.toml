@@ -43,6 +43,10 @@ target-version = "py310"
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM"]
 
+[tool.ruff.lint.per-file-ignores]
+# os geradores carregam textos longos de curiosidades
+"scripts/*" = ["E501"]
+
 [tool.mypy]
 python_version = "3.10"
 files = ["src"]

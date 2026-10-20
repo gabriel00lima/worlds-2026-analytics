@@ -1,4 +1,4 @@
-from typing import Annotated
+from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import or_, select
@@ -15,8 +15,8 @@ SessaoDep = Annotated[Session, Depends(sessao)]
 @router.get("", response_model=list[PartidaResumo])
 def listar(
     s: SessaoDep,
-    fase: Annotated[str | None, Query(description="play_ins, swiss ou knockouts")] = None,
-    estado: Annotated[str | None, Query(description="unstarted, inProgress ou completed")] = None,
+    fase: Literal["play_ins", "swiss", "knockouts"] | None = None,
+    estado: Literal["unstarted", "inProgress", "completed"] | None = None,
     time: Annotated[str | None, Query(description="sigla do time, como T1")] = None,
 ):
     q = select(Partida).order_by(Partida.inicio)

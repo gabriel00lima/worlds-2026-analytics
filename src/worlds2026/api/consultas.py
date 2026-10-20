@@ -109,4 +109,6 @@ def estatisticas_campeoes(s: Session):
     escolhas = {c: (n, v) for c, n, v in s.execute(q)}
     banidos = {c: n for c, n in s.execute(select(Ban.campeao, func.count()).group_by(Ban.campeao))}
     total_jogos = s.scalar(select(func.count()).select_from(Jogo)) or 0
-    return escolhas, banidos, total_jogos
+    # os bans vêm da Leaguepedia, que nem sempre tem todos os jogos
+    jogos_com_bans = s.scalar(select(func.count(func.distinct(Ban.jogo_id)))) or 0
+    return escolhas, banidos, total_jogos, jogos_com_bans

@@ -42,8 +42,11 @@ def ranking_jogadores(
 
 @router.get("/campeoes", response_model=list[EstatisticaCampeao])
 def campeoes(s: SessaoDep, limite: Annotated[int, Query(ge=1, le=200)] = 20):
-    """Campeões por presença: em quantos jogos foram escolhidos ou banidos."""
-    escolhas, banidos, total = consultas.estatisticas_campeoes(s)
+    """Campeões por presença: fração dos jogos em que foram escolhidos ou banidos.
+
+    As escolhas são contadas sobre todos os jogos e os bans só sobre os jogos que têm bans registrados.
+    """
+    escolhas, banidos, total, com_bans = consultas.estatisticas_campeoes(s)
     linhas = []
     for campeao in set(escolhas) | set(banidos):
         n, v = escolhas.get(campeao, (0, 0))
@@ -54,7 +57,7 @@ def campeoes(s: SessaoDep, limite: Annotated[int, Query(ge=1, le=200)] = 20):
                 escolhas=n,
                 vitorias=v,
                 bans=b,
-                presenca=round((n + b) / total, 3) if total else 0,
+                presenca=round(min(1, (n / total if total else 0) + (b / com_bans if com_bans else 0)), 3),
             )
         )
     return sorted(linhas, key=lambda x: (-x.presenca, x.campeao))[:limite]

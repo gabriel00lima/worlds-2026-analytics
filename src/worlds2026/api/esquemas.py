@@ -2,7 +2,7 @@
 
 from datetime import datetime
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class Modelo(BaseModel):
@@ -74,8 +74,8 @@ class TimeResumo(Modelo):
     nome: str
     liga: str | None
     regiao: str | None
-    vitorias: int = 0
-    derrotas: int = 0
+    vitorias: int = Field(0, description="jogos vencidos no torneio (não séries)")
+    derrotas: int = Field(0, description="jogos perdidos no torneio (não séries)")
 
 
 class ContagemCampeao(BaseModel):
