@@ -5,8 +5,8 @@ Fontes: API do LoL Esports (agenda, chaves, times, escalações), feed de
 estatísticas ao vivo do LoL Esports (linha do tempo de cada jogo, a cada 10 s),
 Data Dragon (ícones de campeões e itens) e static.lolesports.com (fotos e logos).
 
-Uso: python3 coletar.py            # coleta o que falta e gera index.html
-     python3 coletar.py --so-site  # só regera o index.html com o cache atual
+Uso: python -m worlds2026            # coleta o que falta e gera docs/index.html
+     python -m worlds2026 --so-site  # só regera o site com o cache atual
 """
 import base64, io, json, re, os, sys, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -14,10 +14,9 @@ from datetime import datetime, timedelta, timezone
 
 from PIL import Image
 
-import extras
+from . import config, extras
 
-AQUI = os.path.dirname(os.path.abspath(__file__))
-CACHE = os.path.join(AQUI, "cache")
+CACHE = str(config.CACHE)
 os.makedirs(os.path.join(CACHE, "jogos"), exist_ok=True)
 os.makedirs(os.path.join(CACHE, "img"), exist_ok=True)
 
@@ -319,8 +318,8 @@ CODIGO_CURIOSIDADES = {"gen-g": "GEN", "tl": "TLAW", "koi": "MKOI"}
 
 
 def ler_curiosidades():
-    """Curiosidades e histórico gerados por ../curiosidades/gerar.py (opcional)."""
-    base = os.path.join(AQUI, "..", "curiosidades")
+    """Curiosidades e histórico de data/curiosidades (opcional)."""
+    base = str(config.CURIOSIDADES)
     out = {"times": {}, "confrontos": []}
     if not os.path.isdir(base):
         return out
@@ -482,10 +481,10 @@ def main():
         "atualizado": iso(agora), "curiosidades": curiosidades, "versaoDD": versao,
         "partidas": partidas, "times": times, "jogos": jogos, "campeoes": campeoes, "itens": itens,
     }
-    json.dump(dados, open(os.path.join(AQUI, "dados.json"), "w"), ensure_ascii=False)
-    modelo = open(os.path.join(AQUI, "modelo.html"), encoding="utf-8").read()
+    json.dump(dados, open(os.path.join(CACHE, "dados.json"), "w"), ensure_ascii=False)
+    modelo = open(config.MODELO, encoding="utf-8").read()
     html = modelo.replace("/*__DADOS__*/null", json.dumps(dados, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"))
-    open(os.path.join(AQUI, "index.html"), "w", encoding="utf-8").write(html)
+    open(config.SITE, "w", encoding="utf-8").write(html)
     print(f"ok: {len(partidas)} partidas, {len(jogos)} jogos, {len(times)} times, index.html {len(html)/1e6:.2f} MB")
 
 

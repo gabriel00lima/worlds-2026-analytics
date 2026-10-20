@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worlds2026"
+version = "1.0.0"
+description = "Coleta os dados do Mundial de League of Legends 2026 e gera um site estático com chaves, estatísticas e replays."
+authors = [{ name = "Gabriel Lima" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+worlds2026 = "worlds2026.coletor:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

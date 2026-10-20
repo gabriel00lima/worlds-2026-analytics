@@ -1,8 +1,6 @@
 __pycache__/
+*.egg-info/
 .venv/
 .env
-
-# gerados pelo coletor
-site-worlds/cache/
-site-worlds/dados.json
-site-worlds/index.html
+.cache/
+.pytest_cache/

@@ -1,8 +1,9 @@
 """Dados complementares: placares da Leaguepedia (bans, arautos, dano) e solo queue pela API da Riot."""
 import json, os, re, time, urllib.parse, urllib.request
 
-AQUI = os.path.dirname(os.path.abspath(__file__))
-CACHE = os.path.join(AQUI, "cache")
+from . import config
+
+CACHE = str(config.CACHE)
 UA = "MetricasWorldsBot/0.1 (personal project)"
 
 # Páginas de placares do Worlds 2026 na Leaguepedia (as que ainda não existem são ignoradas).
@@ -101,7 +102,7 @@ OPGG = {"kr": "kr", "euw1": "euw", "na1": "na", "br1": "br", "vn2": "vn", "tw2":
 
 
 def contas_soloq():
-    arq = os.path.join(AQUI, "..", "soloq", "contas-soloq.json")
+    arq = str(config.CONTAS_SOLOQ)
     if not os.path.exists(arq):
         return {}
     out = {}
