@@ -9,31 +9,36 @@
     {
       "posicao": "top",
       "jogador": "BrokenBlade",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "brokenblade"
     },
     {
       "posicao": "jungle",
       "jogador": "SkewMond",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "skewmond"
     },
     {
       "posicao": "mid",
       "jogador": "Caps",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "caps"
     },
     {
       "posicao": "atirador",
       "jogador": "Hans Sama",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "hans-sama"
     },
     {
       "posicao": "suporte",
       "jogador": "Labrov",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "labrov"
     }
   ],
   "elenco_fontes": [
-    "https://www.dexerto.com/league-of-legends/how-to-watch-ewc-2026-league-of-legends-stream-schedule-results-teams-3387307/"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
   "melhor_mundial": "Vice-campeã em 2019 (0–3 para a FunPlus Phoenix).",
@@ -61,12 +66,160 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 9,
+    "nomes_usados": [
+      "G2 Esports"
+    ],
+    "titulos": 0,
+    "finais": 1,
+    "jogos": 101,
+    "vitorias": 49,
+    "edicoes": [
+      {
+        "ano": 2016,
+        "nome": "G2 Esports",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "Expect",
+          "Perkz",
+          "Trick",
+          "Zven",
+          "mithy"
+        ]
+      },
+      {
+        "ano": 2017,
+        "nome": "G2 Esports",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "resultado_top4": null,
+        "jogadores": [
+          "Zven",
+          "Perkz",
+          "Expect",
+          "mithy",
+          "Trick"
+        ]
+      },
+      {
+        "ano": 2018,
+        "nome": "G2 Esports",
+        "jogos": 24,
+        "vitorias": 14,
+        "derrotas": 10,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "Hjarnan",
+          "Perkz",
+          "Wunder",
+          "Jankos",
+          "Wadid"
+        ]
+      },
+      {
+        "ano": 2019,
+        "nome": "G2 Esports",
+        "jogos": 18,
+        "vitorias": 11,
+        "derrotas": 7,
+        "resultado_top4": "Vice",
+        "jogadores": [
+          "Perkz",
+          "Caps",
+          "Jankos",
+          "Wunder",
+          "Mikyx"
+        ]
+      },
+      {
+        "ano": 2020,
+        "nome": "G2 Esports",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "Caps",
+          "Perkz",
+          "Jankos",
+          "Wunder",
+          "Mikyx"
+        ]
+      },
+      {
+        "ano": 2022,
+        "nome": "G2 Esports",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "BrokenBlade",
+          "Flakked",
+          "caPs",
+          "Jankos",
+          "Targamas"
+        ]
+      },
+      {
+        "ano": 2023,
+        "nome": "G2 Esports",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "resultado_top4": null,
+        "jogadores": [
+          "Hans Sama",
+          "Caps",
+          "BrokenBlade",
+          "Yike",
+          "Mikyx"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "G2 Esports",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "Hans Sama",
+          "BrokenBlade",
+          "Yike",
+          "Caps",
+          "Mikyx"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "G2 Esports",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "Caps",
+          "SkewMond",
+          "Hans Sama",
+          "BrokenBlade",
+          "Labrov"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://dotesports.com/league-of-legends/news/g2-esports-eliminate-t1-from-msi-2026-ending-legendary-international-top-four-streak",
     "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
     "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship",
     "https://en.wikipedia.org/wiki/2019_Mid-Season_Invitational",
-    "https://www.dexerto.com/league-of-legends/how-to-watch-ewc-2026-league-of-legends-stream-schedule-results-teams-3387307/"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "atualizado_em": "2026-10-20"
 }

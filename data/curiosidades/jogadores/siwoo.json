@@ -1,0 +1,51 @@
+{
+  "id": "siwoo",
+  "jogador": "Siwoo",
+  "nome_real": "Jeon Si-woo",
+  "pais": "Coreia do Sul",
+  "time_id": "dk",
+  "time": "Dplus KIA",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Siwoo",
+  "historia": "Siwoo (Jeon Si-woo, Coreia do Sul) é top laner da Dplus KIA. Faz em 2026 o seu primeiro Mundial. A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Siwoo",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "wei",
+  "jogador": "Wei",
+  "nome_real": "Yan Yang-Wei",
+  "pais": "China",
+  "time_id": "ig",
+  "time": "Invictus Gaming",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Wei_(Yan_Yang-Wei)",
+  "historia": "Wei (Yan Yang-Wei, China) é caçador da Invictus Gaming. Está no 5º Mundial da carreira (antes: 2021, 2022, 2024 e 2025), somando 38 jogos e 21 vitórias até 2025. Disputou a final em 2024, ficando com o vice. Jogou Mundiais por 3 times diferentes: Royal Never Give Up, Bilibili Gaming e Invictus Gaming.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2021, 2022, 2024 e 2025), somando 38 jogos e 21 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2024, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Royal Never Give Up, Bilibili Gaming e Invictus Gaming.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2022: 5.62 em 19 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Vi.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 38,
+    "vitorias": 21,
+    "derrotas": 17,
+    "winrate_pct": 55.3,
+    "abates": 126,
+    "mortes": 108,
+    "assistencias": 308,
+    "kda": 4.02,
+    "titulos": [],
+    "vices": [
+      2024
+    ],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Royal Never Give Up",
+      "Bilibili Gaming",
+      "Invictus Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "Royal Never Give Up",
+        "jogos": 12,
+        "vitorias": 7,
+        "derrotas": 5,
+        "abates": 53,
+        "mortes": 41,
+        "assistencias": 95,
+        "kda": 3.61,
+        "campeoes_mais_usados": [
+          "Jarvan IV",
+          "Xin Zhao",
+          "Lee Sin"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "Royal Never Give Up",
+        "jogos": 19,
+        "vitorias": 12,
+        "derrotas": 7,
+        "abates": 55,
+        "mortes": 37,
+        "assistencias": 153,
+        "kda": 5.62,
+        "campeoes_mais_usados": [
+          "Viego",
+          "Vi",
+          "Graves"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Bilibili Gaming",
+        "jogos": 3,
+        "vitorias": 1,
+        "derrotas": 2,
+        "abates": 3,
+        "mortes": 12,
+        "assistencias": 34,
+        "kda": 3.08,
+        "campeoes_mais_usados": [
+          "Vi",
+          "Skarner"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2025,
+        "time": "Invictus Gaming",
+        "jogos": 4,
+        "vitorias": 1,
+        "derrotas": 3,
+        "abates": 15,
+        "mortes": 18,
+        "assistencias": 26,
+        "kda": 2.28,
+        "campeoes_mais_usados": [
+          "Qiyana",
+          "Vi",
+          "Wukong"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Wei_(Yan_Yang-Wei)",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

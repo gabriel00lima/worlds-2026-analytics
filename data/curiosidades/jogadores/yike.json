@@ -1,0 +1,97 @@
+{
+  "id": "yike",
+  "jogador": "Yike",
+  "nome_real": "Martin Sundelin",
+  "pais": "Suécia",
+  "time_id": "kc",
+  "time": "Karmine Corp",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Yike",
+  "historia": "Yike (Martin Sundelin, Suécia) é caçador da Karmine Corp. Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 17 jogos e 6 vitórias até 2025. Seu melhor Mundial em KDA foi 2024: 4.53 em 8 jogos. A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 17 jogos e 6 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2024: 4.53 em 8 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 17,
+    "vitorias": 6,
+    "derrotas": 11,
+    "winrate_pct": 35.3,
+    "abates": 38,
+    "mortes": 50,
+    "assistencias": 116,
+    "kda": 3.08,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "G2 Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "time": "G2 Esports",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "abates": 13,
+        "mortes": 31,
+        "assistencias": 55,
+        "kda": 2.19,
+        "campeoes_mais_usados": [
+          "Maokai",
+          "Poppy",
+          "Bel'Veth"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "G2 Esports",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 25,
+        "mortes": 19,
+        "assistencias": 61,
+        "kda": 4.53,
+        "campeoes_mais_usados": [
+          "Nocturne",
+          "Skarner",
+          "Brand"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Yike",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

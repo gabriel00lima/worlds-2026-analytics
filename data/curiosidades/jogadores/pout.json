@@ -1,0 +1,43 @@
+{
+  "id": "pout",
+  "jogador": "POUT",
+  "nome_real": "Han In-woong",
+  "pais": "Coreia do Sul",
+  "time_id": "cfo",
+  "time": "CTBC Flying Oyster",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/POUT",
+  "historia": "POUT (Han In-woong, Coreia do Sul) é mid laner da CTBC Flying Oyster. Faz em 2026 o seu primeiro Mundial.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/POUT",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

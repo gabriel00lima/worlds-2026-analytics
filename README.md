@@ -24,7 +24,8 @@ No site dá para:
 - clicar em qualquer jogador e ver como ele foi naquele jogo, no torneio e na solo queue, com elo, histórico de PDL, campeões com mais maestria e um resumo do dia;
 - ver o meta do torneio (campeões mais escolhidos e banidos, com as restrições do Fearless Draft), comparar dois jogadores e conferir os destaques do dia;
 - deixar palpites, adicionar os jogos na agenda e compartilhar o link direto de um time ou jogador;
-- ligar o modo sem spoiler, que esconde placares, vencedores e chances para quem ainda vai ver o jogo gravado.
+- ligar o modo sem spoiler, que esconde placares, vencedores e chances para quem ainda vai ver o jogo gravado, e abrir o VOD oficial no momento de cada lance;
+- comparar 2026 com os Mundiais de 2011 a 2025: carreira de cada jogador, campanhas dos times, campeões por edição e recordes.
 
 ![Replay de Karmine Corp x MVK](docs/img/replay.png)
 
@@ -39,8 +40,8 @@ src/worlds2026/
   api/              API REST com FastAPI e SQLAlchemy, com migrações do Alembic em api/migracoes
   cli.py            linha de comando
 web/                o site: index.html, estilo.css e app.js
-data/               curiosidades dos confrontos e contas de solo queue
-scripts/            gerador das curiosidades e da narração
+data/               curiosidades, história dos Mundiais de 2011 a 2025 e contas de solo queue
+scripts/            geradores das curiosidades, da carreira dos jogadores e da narração
 tests/              testes com pytest, incluindo uma coleta completa com as fontes simuladas
 docs/               site publicado no GitHub Pages, com os áudios da narração
 ```

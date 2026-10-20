@@ -1,0 +1,147 @@
+{
+  "id": "brokenblade",
+  "jogador": "BrokenBlade",
+  "nome_real": "Sergen Çelik",
+  "pais": "Alemanha",
+  "time_id": "g2",
+  "time": "G2 Esports",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/BrokenBlade",
+  "historia": "BrokenBlade (Sergen Çelik, Alemanha) é top laner da G2 Esports. Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 39 jogos e 12 vitórias até 2025. Campeões que mais aparecem nos seus Mundiais: Renekton, Ornn e Jax. A G2, seu time, é a campeã da LEC Summer 2026 e primeira cabeça de chave da Europa.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 39 jogos e 12 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Renekton, Ornn e Jax.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A G2, seu time, é a campeã da LEC Summer 2026 e primeira cabeça de chave da Europa.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 39,
+    "vitorias": 12,
+    "derrotas": 27,
+    "winrate_pct": 30.8,
+    "abates": 91,
+    "mortes": 107,
+    "assistencias": 166,
+    "kda": 2.4,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "TSM",
+      "G2 Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "TSM",
+        "jogos": 6,
+        "vitorias": 0,
+        "derrotas": 6,
+        "abates": 13,
+        "mortes": 18,
+        "assistencias": 16,
+        "kda": 1.61,
+        "campeoes_mais_usados": [
+          "Camille",
+          "Shen",
+          "Renekton"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "G2 Esports",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 16,
+        "mortes": 17,
+        "assistencias": 15,
+        "kda": 1.82,
+        "campeoes_mais_usados": [
+          "Ornn",
+          "Fiora",
+          "Darius"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "G2 Esports",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "abates": 14,
+        "mortes": 29,
+        "assistencias": 45,
+        "kda": 2.03,
+        "campeoes_mais_usados": [
+          "Renekton",
+          "Ornn",
+          "Poppy"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "G2 Esports",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 27,
+        "mortes": 20,
+        "assistencias": 47,
+        "kda": 3.7,
+        "campeoes_mais_usados": [
+          "Yasuo",
+          "Gnar",
+          "Jax"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "G2 Esports",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 21,
+        "mortes": 23,
+        "assistencias": 43,
+        "kda": 2.78,
+        "campeoes_mais_usados": [
+          "Galio",
+          "K'Sante",
+          "Jax"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/",
+    "https://lol.fandom.com/wiki/BrokenBlade",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

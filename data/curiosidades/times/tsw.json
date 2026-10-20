@@ -9,35 +9,39 @@
     {
       "posicao": "top",
       "jogador": "Pun",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "pun"
     },
     {
       "posicao": "jungle",
       "jogador": "Hizto",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "hizto"
     },
     {
       "posicao": "mid",
       "jogador": "Dire",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "dire"
     },
     {
       "posicao": "atirador",
       "jogador": "Eddie",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "eddie"
     },
     {
       "posicao": "suporte",
       "jogador": "Bie",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "bie"
     }
   ],
   "elenco_fontes": [
-    "https://lol.fandom.com/wiki/Team_Secret_Whales",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Sem campanha marcante.",
+  "melhor_mundial": "Um Mundial antes deste (2025).",
   "curiosidades": [
     {
       "texto": "Foi eliminada do MSI 2026 justamente pela LYON, por 3–0.",
@@ -47,10 +51,38 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 1,
+    "nomes_usados": [
+      "Team Secret Whales"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 6,
+    "vitorias": 2,
+    "edicoes": [
+      {
+        "ano": 2025,
+        "nome": "Team Secret Whales",
+        "jogos": 6,
+        "vitorias": 2,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Eddie",
+          "Hizto",
+          "Dire",
+          "Hiro02",
+          "Pun",
+          "Taki"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://liquipedia.net/leagueoflegends/Match:ID_MSI26Brakt_R02-M004",
-    "https://lol.fandom.com/wiki/Team_Secret_Whales",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "atualizado_em": "2026-10-20"
 }

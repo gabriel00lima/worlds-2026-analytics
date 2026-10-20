@@ -1,0 +1,80 @@
+{
+  "id": "duro",
+  "jogador": "Duro",
+  "nome_real": "Joo Min-kyu",
+  "pais": "Coreia do Sul",
+  "time_id": "gen-g",
+  "time": "Gen.G",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Duro",
+  "historia": "Duro (Joo Min-kyu, Coreia do Sul) é suporte da Gen.G. Está no segundo Mundial da carreira (antes: 2025), somando 13 jogos e 8 vitórias até 2025. Chegou à semifinal em 2025. A Gen.G, seu time, é a campeã da LCK 2026 (3–1 na Hanwha Life na final).",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (antes: 2025), somando 13 jogos e 8 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Gen.G, seu time, é a campeã da LCK 2026 (3–1 na Hanwha Life na final).",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 13,
+    "vitorias": 8,
+    "derrotas": 5,
+    "winrate_pct": 61.5,
+    "abates": 5,
+    "mortes": 49,
+    "assistencias": 169,
+    "kda": 3.55,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "Gen.G"
+    ],
+    "edicoes": [
+      {
+        "ano": 2025,
+        "time": "Gen.G",
+        "jogos": 13,
+        "vitorias": 8,
+        "derrotas": 5,
+        "abates": 5,
+        "mortes": 49,
+        "assistencias": 169,
+        "kda": 3.55,
+        "campeoes_mais_usados": [
+          "Braum",
+          "Nautilus",
+          "Rakan"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Duro",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "breathe",
+  "jogador": "Breathe",
+  "nome_real": "Chen Chen",
+  "pais": "China",
+  "time_id": "al",
+  "time": "Anyone's Legend",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Breathe",
+  "historia": "Breathe (Chen Chen, China) é top laner da Anyone's Legend. Está no 3º Mundial da carreira (antes: 2022 e 2024), somando 35 jogos e 20 vitórias até 2025. Chegou à semifinal em 2024. Campeões que mais aparecem nos seus Mundiais: Jax.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2022 e 2024), somando 35 jogos e 20 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2024.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Jax.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Anyone's Legend, seu time, venceu o Split 3 da LPL 2026 e é a primeira cabeça de chave da China.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/Anyone%27s_Legend"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 35,
+    "vitorias": 20,
+    "derrotas": 15,
+    "winrate_pct": 57.1,
+    "abates": 129,
+    "mortes": 92,
+    "assistencias": 156,
+    "kda": 3.1,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2024
+    ],
+    "mvp_final": [],
+    "times": [
+      "Royal Never Give Up",
+      "Weibo Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2022,
+        "time": "Royal Never Give Up",
+        "jogos": 19,
+        "vitorias": 12,
+        "derrotas": 7,
+        "abates": 68,
+        "mortes": 48,
+        "assistencias": 71,
+        "kda": 2.9,
+        "campeoes_mais_usados": [
+          "Aatrox",
+          "Jax",
+          "Fiora"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Weibo Gaming",
+        "jogos": 16,
+        "vitorias": 8,
+        "derrotas": 8,
+        "abates": 61,
+        "mortes": 44,
+        "assistencias": 85,
+        "kda": 3.32,
+        "campeoes_mais_usados": [
+          "Gnar",
+          "Jax",
+          "Rumble"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+    "https://lol.fandom.com/wiki/Breathe",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

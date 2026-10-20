@@ -1,0 +1,130 @@
+{
+  "id": "rest",
+  "jogador": "Rest",
+  "nome_real": "Hsu Shih-Chieh",
+  "pais": "Taiwan",
+  "time_id": "cfo",
+  "time": "CTBC Flying Oyster",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Rest",
+  "historia": "Rest (Hsu Shih-Chieh, Taiwan) é top laner da CTBC Flying Oyster. Está no 5º Mundial da carreira (antes: 2019, 2022, 2023 e 2025), somando 26 jogos e 9 vitórias até 2025. Campeões que mais aparecem nos seus Mundiais: Renekton e Aatrox. Fez parte da CFO que chegou às quartas em 2025, a melhor campanha da região em dez anos.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2019, 2022, 2023 e 2025), somando 26 jogos e 9 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Renekton e Aatrox.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Fez parte da CFO que chegou às quartas em 2025, a melhor campanha da região em dez anos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 26,
+    "vitorias": 9,
+    "derrotas": 17,
+    "winrate_pct": 34.6,
+    "abates": 57,
+    "mortes": 70,
+    "assistencias": 101,
+    "kda": 2.26,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "J Team",
+      "CTBC Flying Oyster"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "J Team",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "abates": 19,
+        "mortes": 17,
+        "assistencias": 24,
+        "kda": 2.53,
+        "campeoes_mais_usados": [
+          "Gangplank",
+          "Gnar",
+          "Renekton"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "CTBC Flying Oyster",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 7,
+        "mortes": 18,
+        "assistencias": 14,
+        "kda": 1.17,
+        "campeoes_mais_usados": [
+          "Aatrox",
+          "Renekton",
+          "Kennen"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "CTBC Flying Oyster",
+        "jogos": 7,
+        "vitorias": 3,
+        "derrotas": 4,
+        "abates": 18,
+        "mortes": 15,
+        "assistencias": 32,
+        "kda": 3.33,
+        "campeoes_mais_usados": [
+          "Rumble",
+          "Aatrox",
+          "Renekton"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "CTBC Flying Oyster",
+        "jogos": 7,
+        "vitorias": 2,
+        "derrotas": 5,
+        "abates": 13,
+        "mortes": 20,
+        "assistencias": 31,
+        "kda": 2.2,
+        "campeoes_mais_usados": [
+          "Renekton",
+          "Rek'Sai",
+          "Sion"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Rest",
+    "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

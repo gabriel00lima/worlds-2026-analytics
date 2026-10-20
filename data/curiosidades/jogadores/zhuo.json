@@ -1,0 +1,43 @@
+{
+  "id": "zhuo",
+  "jogador": "Zhuo",
+  "nome_real": "Wang Xu-Zhuo",
+  "pais": "China",
+  "time_id": "tes",
+  "time": "Top Esports",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Zhuo",
+  "historia": "Zhuo (Wang Xu-Zhuo, China) é suporte da Top Esports. Faz em 2026 o seu primeiro Mundial.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Zhuo",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

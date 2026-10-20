@@ -9,31 +9,42 @@
     {
       "posicao": "top",
       "jogador": "Bin",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "bin"
+    },
+    {
+      "posicao": "top",
+      "jogador": "Flandre",
+      "confianca": "confirmado",
+      "jogador_id": "flandre"
     },
     {
       "posicao": "jungle",
-      "jogador": "XUN",
-      "confianca": "confirmado"
+      "jogador": "Xun",
+      "confianca": "confirmado",
+      "jogador_id": "xun"
     },
     {
       "posicao": "mid",
       "jogador": "Knight",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "knight"
     },
     {
       "posicao": "atirador",
       "jogador": "Viper",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "viper"
     },
     {
       "posicao": "suporte",
       "jogador": "ON",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "on"
     }
   ],
   "elenco_fontes": [
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
   "melhor_mundial": "Vice-campeã em 2024 (2–3 para a T1).",
@@ -55,11 +66,71 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 3,
+    "nomes_usados": [
+      "Bilibili Gaming"
+    ],
+    "titulos": 0,
+    "finais": 1,
+    "jogos": 41,
+    "vitorias": 23,
+    "edicoes": [
+      {
+        "ano": 2023,
+        "nome": "Bilibili Gaming",
+        "jogos": 13,
+        "vitorias": 6,
+        "derrotas": 7,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "Elk",
+          "Bin",
+          "Yagao",
+          "XUN",
+          "ON"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "Bilibili Gaming",
+        "jogos": 20,
+        "vitorias": 13,
+        "derrotas": 7,
+        "resultado_top4": "Vice",
+        "jogadores": [
+          "knight",
+          "Elk",
+          "Bin",
+          "XUN",
+          "ON",
+          "Wei"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "Bilibili Gaming",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Elk",
+          "Knight",
+          "Bin",
+          "Shad0w",
+          "ON",
+          "Beichuan"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://en.wikipedia.org/wiki/2021_League_of_Legends_World_Championship",
     "https://en.wikipedia.org/wiki/2024_League_of_Legends_World_Championship",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://rdy.gg/en/lol/news/hle-wins-msi-2026",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
     "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
     "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en"
   ],

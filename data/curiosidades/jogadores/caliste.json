@@ -1,0 +1,69 @@
+{
+  "id": "caliste",
+  "jogador": "Caliste",
+  "nome_real": "Caliste Henry-Hennebert",
+  "pais": "França",
+  "time_id": "kc",
+  "time": "Karmine Corp",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Caliste",
+  "historia": "Caliste (Caliste Henry-Hennebert, França) é atirador da Karmine Corp. Faz em 2026 o seu primeiro Mundial. A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026. Estreou na LEC aos 18 anos, em 2025, e foi eleito o novato do ano.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    },
+    {
+      "texto": "Estreou na LEC aos 18 anos, em 2025, e foi eleito o novato do ano.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/lol-who-is-caliste/en"
+      ]
+    },
+    {
+      "texto": "Ele e Busio foram a dupla de destaque da KC no Play-In de 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Caliste",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins",
+    "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+    "https://www.sheepesports.com/articles/lol-who-is-caliste/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

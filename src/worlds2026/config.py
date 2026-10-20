@@ -7,6 +7,7 @@ RAIZ = Path(__file__).resolve().parents[2]
 
 DADOS = RAIZ / "data"
 CURIOSIDADES = DADOS / "curiosidades"
+MUNDIAIS_PASSADOS = DADOS / "mundiais-passados"
 CONTAS_SOLOQ = DADOS / "soloq" / "contas.json"
 # Última solo queue baixada. Fica versionada para o site manter os dados quando a coleta roda sem chave da Riot.
 SOLOQ_PARTIDAS = DADOS / "soloq" / "partidas.json"

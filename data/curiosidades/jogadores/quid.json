@@ -1,0 +1,80 @@
+{
+  "id": "quid",
+  "jogador": "Quid",
+  "nome_real": "Lim Hyeon-seung",
+  "pais": "Coreia do Sul",
+  "time_id": "tl",
+  "time": "Team Liquid",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Quid",
+  "historia": "Quid (Lim Hyeon-seung, Coreia do Sul) é mid laner da Team Liquid. Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 12 jogos e 4 vitórias até 2025.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 12 jogos e 4 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 12,
+    "vitorias": 4,
+    "derrotas": 8,
+    "winrate_pct": 33.3,
+    "abates": 52,
+    "mortes": 40,
+    "assistencias": 67,
+    "kda": 2.98,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "100 Thieves"
+    ],
+    "edicoes": [
+      {
+        "ano": 2024,
+        "time": "100 Thieves",
+        "jogos": 7,
+        "vitorias": 3,
+        "derrotas": 4,
+        "abates": 29,
+        "mortes": 26,
+        "assistencias": 43,
+        "kda": 2.77,
+        "campeoes_mais_usados": [
+          "Hwei",
+          "Yone",
+          "Orianna"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "100 Thieves",
+        "jogos": 5,
+        "vitorias": 1,
+        "derrotas": 4,
+        "abates": 23,
+        "mortes": 14,
+        "assistencias": 24,
+        "kda": 3.36,
+        "campeoes_mais_usados": [
+          "Taliyah",
+          "Sylas",
+          "Aurora"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Quid",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

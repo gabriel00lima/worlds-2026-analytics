@@ -1,0 +1,1235 @@
+{
+ "gerado_em": "2026-10-20",
+ "fonte": "Leaguepedia (lol.fandom.com), páginas Champion/Player Statistics e páginas das edições, lidas via action=parse",
+ "escopo": "Torneio completo de cada edição (play-in + evento principal), 2011 a 2025",
+ "obs": "Chave = id do time em curiosidades/times/. Jogos e vitórias por edição = maior número entre os jogadores do time (aproximação quando houve reserva). resultado_top4 só é preenchido para campeão, vice e semifinal.",
+ "times": {
+  "t1": {
+   "participacoes": 10,
+   "nomes_usados": [
+    "SK Telecom T1",
+    "T1"
+   ],
+   "titulos": 6,
+   "finais": 8,
+   "jogos": 172,
+   "vitorias": 127,
+   "edicoes": [
+    {
+     "ano": 2013,
+     "nome": "SK Telecom T1",
+     "jogos": 18,
+     "vitorias": 15,
+     "derrotas": 3,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Piglet",
+      "Faker",
+      "Impact",
+      "bengi",
+      "PoohManDu"
+     ]
+    },
+    {
+     "ano": 2015,
+     "nome": "SK Telecom T1",
+     "jogos": 16,
+     "vitorias": 15,
+     "derrotas": 1,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Bang",
+      "MaRin",
+      "Faker",
+      "Bengi",
+      "Easyhoon",
+      "Wolf"
+     ]
+    },
+    {
+     "ano": 2016,
+     "nome": "SK Telecom T1",
+     "jogos": 20,
+     "vitorias": 14,
+     "derrotas": 6,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Bang",
+      "Faker",
+      "Duke",
+      "Bengi",
+      "Blank",
+      "Wolf"
+     ]
+    },
+    {
+     "ano": 2017,
+     "nome": "SK Telecom T1",
+     "jogos": 19,
+     "vitorias": 11,
+     "derrotas": 8,
+     "resultado_top4": "Vice",
+     "jogadores": [
+      "Bang",
+      "Faker",
+      "Huni",
+      "Peanut",
+      "Blank",
+      "Wolf"
+     ]
+    },
+    {
+     "ano": 2019,
+     "nome": "SK Telecom T1",
+     "jogos": 14,
+     "vitorias": 9,
+     "derrotas": 5,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Khan",
+      "Teddy",
+      "Faker",
+      "Clid",
+      "Effort",
+      "Mata"
+     ]
+    },
+    {
+     "ano": 2021,
+     "nome": "T1",
+     "jogos": 14,
+     "vitorias": 10,
+     "derrotas": 4,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Gumayusi",
+      "Oner",
+      "Canna",
+      "Faker",
+      "Keria"
+     ]
+    },
+    {
+     "ano": 2022,
+     "nome": "T1",
+     "jogos": 18,
+     "vitorias": 13,
+     "derrotas": 5,
+     "resultado_top4": "Vice",
+     "jogadores": [
+      "Gumayusi",
+      "Zeus",
+      "Faker",
+      "Oner",
+      "Keria"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "T1",
+     "jogos": 12,
+     "vitorias": 10,
+     "derrotas": 2,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Gumayusi",
+      "Zeus",
+      "Faker",
+      "Oner",
+      "Keria"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "T1",
+     "jogos": 17,
+     "vitorias": 13,
+     "derrotas": 4,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Gumayusi",
+      "Faker",
+      "Oner",
+      "Zeus",
+      "Keria"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "T1",
+     "jogos": 24,
+     "vitorias": 17,
+     "derrotas": 7,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Gumayusi",
+      "Faker",
+      "Oner",
+      "Doran",
+      "Keria"
+     ]
+    }
+   ]
+  },
+  "gen-g": {
+   "participacoes": 10,
+   "nomes_usados": [
+    "Samsung White",
+    "Samsung Blue",
+    "Samsung Galaxy",
+    "Gen.G"
+   ],
+   "titulos": 2,
+   "finais": 3,
+   "jogos": 141,
+   "vitorias": 95,
+   "edicoes": [
+    {
+     "ano": 2014,
+     "nome": "Samsung White",
+     "jogos": 17,
+     "vitorias": 15,
+     "derrotas": 2,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "PawN",
+      "imp",
+      "Dandy",
+      "Looper",
+      "Mata"
+     ]
+    },
+    {
+     "ano": 2014,
+     "nome": "Samsung Blue",
+     "jogos": 13,
+     "vitorias": 8,
+     "derrotas": 5,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Deft",
+      "Dade",
+      "Spirit",
+      "Acorn",
+      "Heart"
+     ]
+    },
+    {
+     "ano": 2016,
+     "nome": "Samsung Galaxy",
+     "jogos": 17,
+     "vitorias": 13,
+     "derrotas": 4,
+     "resultado_top4": "Vice",
+     "jogadores": [
+      "Ruler",
+      "Crown",
+      "CuVee",
+      "Ambition",
+      "CoreJJ",
+      "Wraith"
+     ]
+    },
+    {
+     "ano": 2017,
+     "nome": "Samsung Galaxy",
+     "jogos": 16,
+     "vitorias": 13,
+     "derrotas": 3,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Ruler",
+      "Crown",
+      "CuVee",
+      "Ambition",
+      "CoreJJ",
+      "Haru"
+     ]
+    },
+    {
+     "ano": 2018,
+     "nome": "Gen.G",
+     "jogos": 6,
+     "vitorias": 1,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "CuVee",
+      "Crown",
+      "Haru",
+      "Ruler",
+      "CoreJJ",
+      "Ambition"
+     ]
+    },
+    {
+     "ano": 2020,
+     "nome": "Gen.G",
+     "jogos": 9,
+     "vitorias": 5,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Ruler",
+      "Bdd",
+      "Rascal",
+      "Clid",
+      "Life"
+     ]
+    },
+    {
+     "ano": 2021,
+     "nome": "Gen.G",
+     "jogos": 16,
+     "vitorias": 10,
+     "derrotas": 6,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Ruler",
+      "Bdd",
+      "Clid",
+      "Rascal",
+      "Life",
+      "Burdol"
+     ]
+    },
+    {
+     "ano": 2022,
+     "nome": "Gen.G",
+     "jogos": 16,
+     "vitorias": 10,
+     "derrotas": 6,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Chovy",
+      "Ruler",
+      "Doran",
+      "Peanut",
+      "Lehends"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "Gen.G",
+     "jogos": 4,
+     "vitorias": 4,
+     "derrotas": 0,
+     "resultado_top4": null,
+     "jogadores": [
+      "Chovy",
+      "Peyz",
+      "Peanut",
+      "Doran",
+      "Delight"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "Gen.G",
+     "jogos": 14,
+     "vitorias": 8,
+     "derrotas": 6,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Chovy",
+      "Peyz",
+      "Kiin",
+      "Canyon",
+      "Lehends"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "Gen.G",
+     "jogos": 13,
+     "vitorias": 8,
+     "derrotas": 5,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Ruler",
+      "Chovy",
+      "Kiin",
+      "Canyon",
+      "Duro"
+     ]
+    }
+   ]
+  },
+  "dk": {
+   "participacoes": 6,
+   "nomes_usados": [
+    "DAMWON Gaming",
+    "DWG KIA",
+    "Dplus Kia"
+   ],
+   "titulos": 1,
+   "finais": 2,
+   "jogos": 83,
+   "vitorias": 55,
+   "edicoes": [
+    {
+     "ano": 2019,
+     "nome": "DAMWON Gaming",
+     "jogos": 18,
+     "vitorias": 13,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Nuclear",
+      "ShowMaker",
+      "Canyon",
+      "Nuguri",
+      "BeryL"
+     ]
+    },
+    {
+     "ano": 2020,
+     "nome": "DAMWON Gaming",
+     "jogos": 17,
+     "vitorias": 14,
+     "derrotas": 3,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "Canyon",
+      "Ghost",
+      "ShowMaker",
+      "Nuguri",
+      "BeryL"
+     ]
+    },
+    {
+     "ano": 2021,
+     "nome": "DWG KIA",
+     "jogos": 19,
+     "vitorias": 14,
+     "derrotas": 5,
+     "resultado_top4": "Vice",
+     "jogadores": [
+      "ShowMaker",
+      "Ghost",
+      "Khan",
+      "Canyon",
+      "BeryL"
+     ]
+    },
+    {
+     "ano": 2022,
+     "nome": "DWG KIA",
+     "jogos": 12,
+     "vitorias": 7,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "deokdam",
+      "Canyon",
+      "ShowMaker",
+      "Nuguri",
+      "Kellin"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "Dplus Kia",
+     "jogos": 8,
+     "vitorias": 4,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Deft",
+      "ShowMaker",
+      "Canyon",
+      "Canna",
+      "Kellin"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "Dplus Kia",
+     "jogos": 9,
+     "vitorias": 3,
+     "derrotas": 6,
+     "resultado_top4": null,
+     "jogadores": [
+      "Aiming",
+      "ShowMaker",
+      "Lucid",
+      "Kingen",
+      "Moham"
+     ]
+    }
+   ]
+  },
+  "hle": {
+   "participacoes": 3,
+   "nomes_usados": [
+    "Hanwha Life Esports"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 38,
+   "vitorias": 21,
+   "edicoes": [
+    {
+     "ano": 2021,
+     "nome": "Hanwha Life Esports",
+     "jogos": 17,
+     "vitorias": 10,
+     "derrotas": 7,
+     "resultado_top4": null,
+     "jogadores": [
+      "Deft",
+      "Willer",
+      "Chovy",
+      "Morgan",
+      "Vsta"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "Hanwha Life Esports",
+     "jogos": 12,
+     "vitorias": 6,
+     "derrotas": 6,
+     "resultado_top4": null,
+     "jogadores": [
+      "Viper",
+      "Zeka",
+      "Doran",
+      "Peanut",
+      "Delight"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "Hanwha Life Esports",
+     "jogos": 9,
+     "vitorias": 5,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Viper",
+      "Zeka",
+      "Zeus",
+      "Peanut",
+      "Delight"
+     ]
+    }
+   ]
+  },
+  "blg": {
+   "participacoes": 3,
+   "nomes_usados": [
+    "Bilibili Gaming"
+   ],
+   "titulos": 0,
+   "finais": 1,
+   "jogos": 41,
+   "vitorias": 23,
+   "edicoes": [
+    {
+     "ano": 2023,
+     "nome": "Bilibili Gaming",
+     "jogos": 13,
+     "vitorias": 6,
+     "derrotas": 7,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Elk",
+      "Bin",
+      "Yagao",
+      "XUN",
+      "ON"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "Bilibili Gaming",
+     "jogos": 20,
+     "vitorias": 13,
+     "derrotas": 7,
+     "resultado_top4": "Vice",
+     "jogadores": [
+      "knight",
+      "Elk",
+      "Bin",
+      "XUN",
+      "ON",
+      "Wei"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "Bilibili Gaming",
+     "jogos": 8,
+     "vitorias": 4,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Elk",
+      "Knight",
+      "Bin",
+      "Shad0w",
+      "ON",
+      "Beichuan"
+     ]
+    }
+   ]
+  },
+  "tes": {
+   "participacoes": 4,
+   "nomes_usados": [
+    "Top Esports"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 45,
+   "vitorias": 23,
+   "edicoes": [
+    {
+     "ano": 2020,
+     "nome": "Top Esports",
+     "jogos": 15,
+     "vitorias": 9,
+     "derrotas": 6,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Karsa",
+      "knight",
+      "JackeyLove",
+      "369",
+      "yuyanjia"
+     ]
+    },
+    {
+     "ano": 2022,
+     "nome": "Top Esports",
+     "jogos": 6,
+     "vitorias": 3,
+     "derrotas": 3,
+     "resultado_top4": null,
+     "jogadores": [
+      "JackeyLove",
+      "knight",
+      "Tian",
+      "Mark",
+      "Wayward"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "Top Esports",
+     "jogos": 8,
+     "vitorias": 4,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "JackeyLove",
+      "Creme",
+      "369",
+      "Tian",
+      "Meiko"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "Top Esports",
+     "jogos": 16,
+     "vitorias": 7,
+     "derrotas": 9,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "JackeyLove",
+      "Kanavi",
+      "Creme",
+      "369",
+      "Hang"
+     ]
+    }
+   ]
+  },
+  "ig": {
+   "participacoes": 5,
+   "nomes_usados": [
+    "Invictus Gaming"
+   ],
+   "titulos": 1,
+   "finais": 1,
+   "jogos": 47,
+   "vitorias": 27,
+   "edicoes": [
+    {
+     "ano": 2012,
+     "nome": "Invictus Gaming",
+     "jogos": 5,
+     "vitorias": 2,
+     "derrotas": 3,
+     "resultado_top4": null,
+     "jogadores": [
+      "kid",
+      "zz1tai",
+      "Pdd",
+      "illuSioN",
+      "XiaoXiao"
+     ]
+    },
+    {
+     "ano": 2015,
+     "nome": "Invictus Gaming",
+     "jogos": 6,
+     "vitorias": 2,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Rookie",
+      "Zz1tai",
+      "KAKAO",
+      "Time",
+      "Kid",
+      "Kitties"
+     ]
+    },
+    {
+     "ano": 2018,
+     "nome": "Invictus Gaming",
+     "jogos": 18,
+     "vitorias": 14,
+     "derrotas": 4,
+     "resultado_top4": "Campeão",
+     "jogadores": [
+      "JackeyLove",
+      "Rookie",
+      "Ning",
+      "TheShy",
+      "Baolan",
+      "Duke"
+     ]
+    },
+    {
+     "ano": 2019,
+     "nome": "Invictus Gaming",
+     "jogos": 14,
+     "vitorias": 8,
+     "derrotas": 6,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "JackeyLove",
+      "Rookie",
+      "TheShy",
+      "Ning",
+      "Baolan",
+      "Leyan"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "Invictus Gaming",
+     "jogos": 4,
+     "vitorias": 1,
+     "derrotas": 3,
+     "resultado_top4": null,
+     "jogadores": [
+      "Rookie",
+      "Wei",
+      "GALA",
+      "TheShy",
+      "Meiko"
+     ]
+    }
+   ]
+  },
+  "al": {
+   "participacoes": 1,
+   "nomes_usados": [
+    "Anyone's Legend"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 10,
+   "vitorias": 6,
+   "edicoes": [
+    {
+     "ano": 2025,
+     "nome": "Anyone's Legend",
+     "jogos": 10,
+     "vitorias": 6,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Shanks",
+      "Hope",
+      "Flandre",
+      "Tarzan",
+      "Kael"
+     ]
+    }
+   ]
+  },
+  "g2": {
+   "participacoes": 9,
+   "nomes_usados": [
+    "G2 Esports"
+   ],
+   "titulos": 0,
+   "finais": 1,
+   "jogos": 101,
+   "vitorias": 49,
+   "edicoes": [
+    {
+     "ano": 2016,
+     "nome": "G2 Esports",
+     "jogos": 6,
+     "vitorias": 1,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Expect",
+      "Perkz",
+      "Trick",
+      "Zven",
+      "mithy"
+     ]
+    },
+    {
+     "ano": 2017,
+     "nome": "G2 Esports",
+     "jogos": 6,
+     "vitorias": 3,
+     "derrotas": 3,
+     "resultado_top4": null,
+     "jogadores": [
+      "Zven",
+      "Perkz",
+      "Expect",
+      "mithy",
+      "Trick"
+     ]
+    },
+    {
+     "ano": 2018,
+     "nome": "G2 Esports",
+     "jogos": 24,
+     "vitorias": 14,
+     "derrotas": 10,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Hjarnan",
+      "Perkz",
+      "Wunder",
+      "Jankos",
+      "Wadid"
+     ]
+    },
+    {
+     "ano": 2019,
+     "nome": "G2 Esports",
+     "jogos": 18,
+     "vitorias": 11,
+     "derrotas": 7,
+     "resultado_top4": "Vice",
+     "jogadores": [
+      "Perkz",
+      "Caps",
+      "Jankos",
+      "Wunder",
+      "Mikyx"
+     ]
+    },
+    {
+     "ano": 2020,
+     "nome": "G2 Esports",
+     "jogos": 14,
+     "vitorias": 8,
+     "derrotas": 6,
+     "resultado_top4": "Semifinal",
+     "jogadores": [
+      "Caps",
+      "Perkz",
+      "Jankos",
+      "Wunder",
+      "Mikyx"
+     ]
+    },
+    {
+     "ano": 2022,
+     "nome": "G2 Esports",
+     "jogos": 6,
+     "vitorias": 1,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "BrokenBlade",
+      "Flakked",
+      "caPs",
+      "Jankos",
+      "Targamas"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "G2 Esports",
+     "jogos": 9,
+     "vitorias": 3,
+     "derrotas": 6,
+     "resultado_top4": null,
+     "jogadores": [
+      "Hans Sama",
+      "Caps",
+      "BrokenBlade",
+      "Yike",
+      "Mikyx"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "G2 Esports",
+     "jogos": 8,
+     "vitorias": 3,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Hans Sama",
+      "BrokenBlade",
+      "Yike",
+      "Caps",
+      "Mikyx"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "G2 Esports",
+     "jogos": 10,
+     "vitorias": 5,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Caps",
+      "SkewMond",
+      "Hans Sama",
+      "BrokenBlade",
+      "Labrov"
+     ]
+    }
+   ]
+  },
+  "koi": {
+   "participacoes": 6,
+   "nomes_usados": [
+    "MAD Lions",
+    "MAD Lions KOI",
+    "Movistar KOI"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 58,
+   "vitorias": 24,
+   "edicoes": [
+    {
+     "ano": 2020,
+     "nome": "MAD Lions",
+     "jogos": 10,
+     "vitorias": 4,
+     "derrotas": 6,
+     "resultado_top4": null,
+     "jogadores": [
+      "Humanoid",
+      "Carzzy",
+      "Shad0w",
+      "Orome",
+      "Kaiser"
+     ]
+    },
+    {
+     "ano": 2021,
+     "nome": "MAD Lions",
+     "jogos": 11,
+     "vitorias": 4,
+     "derrotas": 7,
+     "resultado_top4": null,
+     "jogadores": [
+      "Humanoid",
+      "Carzzy",
+      "Armut",
+      "Elyoya",
+      "Kaiser"
+     ]
+    },
+    {
+     "ano": 2022,
+     "nome": "MAD Lions",
+     "jogos": 12,
+     "vitorias": 6,
+     "derrotas": 6,
+     "resultado_top4": null,
+     "jogadores": [
+      "UNF0RGIVEN",
+      "Elyoya",
+      "Nisqy",
+      "Armut",
+      "Kaiser"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "MAD Lions",
+     "jogos": 5,
+     "vitorias": 1,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Carzzy",
+      "Chasy",
+      "Nisqy",
+      "Elyoya",
+      "Hylissang"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "MAD Lions KOI",
+     "jogos": 10,
+     "vitorias": 5,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Supa",
+      "Fresskowy",
+      "Elyoya",
+      "Myrwn",
+      "Alvaro"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "Movistar KOI",
+     "jogos": 10,
+     "vitorias": 4,
+     "derrotas": 6,
+     "resultado_top4": null,
+     "jogadores": [
+      "Elyoya",
+      "Supa",
+      "Jojopyun",
+      "Myrwn",
+      "Alvaro"
+     ]
+    }
+   ]
+  },
+  "kc": {
+   "participacoes": 0,
+   "nomes_usados": [],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 0,
+   "vitorias": 0,
+   "edicoes": []
+  },
+  "tl": {
+   "participacoes": 6,
+   "nomes_usados": [
+    "Team Liquid"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 45,
+   "vitorias": 22,
+   "edicoes": [
+    {
+     "ano": 2018,
+     "nome": "Team Liquid",
+     "jogos": 6,
+     "vitorias": 3,
+     "derrotas": 3,
+     "resultado_top4": null,
+     "jogadores": [
+      "Doublelift",
+      "Pobelter",
+      "Xmithie",
+      "Impact",
+      "Olleh"
+     ]
+    },
+    {
+     "ano": 2019,
+     "nome": "Team Liquid",
+     "jogos": 6,
+     "vitorias": 3,
+     "derrotas": 3,
+     "resultado_top4": null,
+     "jogadores": [
+      "Doublelift",
+      "Jensen",
+      "Impact",
+      "Xmithie",
+      "CoreJJ"
+     ]
+    },
+    {
+     "ano": 2020,
+     "nome": "Team Liquid",
+     "jogos": 11,
+     "vitorias": 7,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Jensen",
+      "Tactical",
+      "Broxah",
+      "Impact",
+      "CoreJJ"
+     ]
+    },
+    {
+     "ano": 2021,
+     "nome": "Team Liquid",
+     "jogos": 7,
+     "vitorias": 3,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Jensen",
+      "Alphari",
+      "Tactical",
+      "Santorin",
+      "CoreJJ"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "Team Liquid",
+     "jogos": 5,
+     "vitorias": 1,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "APA",
+      "Pyosik",
+      "Yeon",
+      "Summit",
+      "CoreJJ"
+     ]
+    },
+    {
+     "ano": 2024,
+     "nome": "Team Liquid",
+     "jogos": 10,
+     "vitorias": 5,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Yeon",
+      "APA",
+      "Impact",
+      "UmTi",
+      "CoreJJ"
+     ]
+    }
+   ]
+  },
+  "lyon": {
+   "participacoes": 0,
+   "nomes_usados": [],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 0,
+   "vitorias": 0,
+   "edicoes": []
+  },
+  "tsw": {
+   "participacoes": 1,
+   "nomes_usados": [
+    "Team Secret Whales"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 6,
+   "vitorias": 2,
+   "edicoes": [
+    {
+     "ano": 2025,
+     "nome": "Team Secret Whales",
+     "jogos": 6,
+     "vitorias": 2,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Eddie",
+      "Hizto",
+      "Dire",
+      "Hiro02",
+      "Pun",
+      "Taki"
+     ]
+    }
+   ]
+  },
+  "cfo": {
+   "participacoes": 3,
+   "nomes_usados": [
+    "CTBC Flying Oyster"
+   ],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 25,
+   "vitorias": 9,
+   "edicoes": [
+    {
+     "ano": 2022,
+     "nome": "CTBC Flying Oyster",
+     "jogos": 6,
+     "vitorias": 1,
+     "derrotas": 5,
+     "resultado_top4": null,
+     "jogadores": [
+      "Shunn",
+      "Mission",
+      "Gemini",
+      "Rest",
+      "Koala",
+      "Atlen"
+     ]
+    },
+    {
+     "ano": 2023,
+     "nome": "CTBC Flying Oyster",
+     "jogos": 7,
+     "vitorias": 3,
+     "derrotas": 4,
+     "resultado_top4": null,
+     "jogadores": [
+      "Shunn",
+      "JimieN",
+      "Rest",
+      "Gemini",
+      "ShiauC"
+     ]
+    },
+    {
+     "ano": 2025,
+     "nome": "CTBC Flying Oyster",
+     "jogos": 12,
+     "vitorias": 5,
+     "derrotas": 7,
+     "resultado_top4": null,
+     "jogadores": [
+      "Doggo",
+      "HongQ",
+      "JunJia",
+      "Rest",
+      "Driver",
+      "Kaiwing"
+     ]
+    }
+   ]
+  },
+  "los": {
+   "participacoes": 0,
+   "nomes_usados": [],
+   "titulos": 0,
+   "finais": 0,
+   "jogos": 0,
+   "vitorias": 0,
+   "edicoes": []
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "creme",
+  "jogador": "Creme",
+  "nome_real": "Lin Jian",
+  "pais": "China",
+  "time_id": "tes",
+  "time": "Top Esports",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Creme",
+  "historia": "Creme (Lin Jian, China) é mid laner da Top Esports. Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 24 jogos e 11 vitórias até 2025. Chegou à semifinal em 2025.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 24 jogos e 11 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 24,
+    "vitorias": 11,
+    "derrotas": 13,
+    "winrate_pct": 45.8,
+    "abates": 74,
+    "mortes": 67,
+    "assistencias": 130,
+    "kda": 3.04,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "Top Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2024,
+        "time": "Top Esports",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 25,
+        "mortes": 19,
+        "assistencias": 43,
+        "kda": 3.58,
+        "campeoes_mais_usados": [
+          "Aurora",
+          "Sylas",
+          "Tristana"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Top Esports",
+        "jogos": 16,
+        "vitorias": 7,
+        "derrotas": 9,
+        "abates": 49,
+        "mortes": 48,
+        "assistencias": 87,
+        "kda": 2.83,
+        "campeoes_mais_usados": [
+          "Ryze",
+          "Akali",
+          "Orianna"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Creme",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

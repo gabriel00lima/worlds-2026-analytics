@@ -1,0 +1,154 @@
+{
+  "id": "elyoya",
+  "jogador": "Elyoya",
+  "nome_real": "Javier Prades Batalla",
+  "pais": "Espanha",
+  "time_id": "koi",
+  "time": "Movistar KOI",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Elyoya",
+  "historia": "Elyoya (Javier Prades Batalla, Espanha) é caçador da Movistar KOI. Está no 6º Mundial da carreira (antes: 2021, 2022, 2023, 2024 e 2025), somando 48 jogos e 20 vitórias até 2025. Jogou Mundiais por 3 times diferentes: MAD Lions, MAD Lions KOI e Movistar KOI. Seu melhor Mundial em KDA foi 2022: 5.29 em 12 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2021, 2022, 2023, 2024 e 2025), somando 48 jogos e 20 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: MAD Lions, MAD Lions KOI e Movistar KOI.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2022: 5.29 em 12 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Jarvan IV, Qiyana e Trundle.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 48,
+    "vitorias": 20,
+    "derrotas": 28,
+    "winrate_pct": 41.7,
+    "abates": 163,
+    "mortes": 132,
+    "assistencias": 345,
+    "kda": 3.85,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "MAD Lions",
+      "MAD Lions KOI",
+      "Movistar KOI"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "MAD Lions",
+        "jogos": 11,
+        "vitorias": 4,
+        "derrotas": 7,
+        "abates": 33,
+        "mortes": 44,
+        "assistencias": 85,
+        "kda": 2.68,
+        "campeoes_mais_usados": [
+          "Jarvan IV",
+          "Qiyana",
+          "Viego"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "MAD Lions",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "abates": 47,
+        "mortes": 24,
+        "assistencias": 80,
+        "kda": 5.29,
+        "campeoes_mais_usados": [
+          "Hecarim",
+          "Trundle",
+          "Bel'Veth"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "MAD Lions",
+        "jogos": 5,
+        "vitorias": 1,
+        "derrotas": 4,
+        "abates": 10,
+        "mortes": 13,
+        "assistencias": 33,
+        "kda": 3.31,
+        "campeoes_mais_usados": [
+          "Jarvan IV",
+          "Vi",
+          "Bel'Veth"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "MAD Lions KOI",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 24,
+        "mortes": 26,
+        "assistencias": 79,
+        "kda": 3.96,
+        "campeoes_mais_usados": [
+          "Nidalee",
+          "Vi",
+          "Skarner"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Movistar KOI",
+        "jogos": 10,
+        "vitorias": 4,
+        "derrotas": 6,
+        "abates": 49,
+        "mortes": 25,
+        "assistencias": 68,
+        "kda": 4.68,
+        "campeoes_mais_usados": [
+          "Qiyana",
+          "Trundle",
+          "Wukong"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Elyoya",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

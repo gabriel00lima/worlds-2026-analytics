@@ -1,0 +1,73 @@
+{
+  "id": "ackerman",
+  "jogador": "Ackerman",
+  "nome_real": "Gabriel Agustin Aparicio",
+  "pais": "Argentina",
+  "time_id": "los",
+  "time": "LOS",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Ackerman_(Gabriel_Aparicio)",
+  "historia": "Ackerman (Gabriel Agustin Aparicio, Argentina) é suporte da LOS. Está no segundo Mundial da carreira (o primeiro foi em 2021, pela INFINITY). Campeão do CBLOL 2026 (Etapa 2) com a LOS, 3–2 na FURIA na final de 10/10.",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (o primeiro foi em 2021, pela INFINITY).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão do CBLOL 2026 (Etapa 2) com a LOS, 3–2 na FURIA na final de 10/10.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml",
+        "https://maisesports.com.br/cblol-2026-curse-e-eleito-mvp-da-final-apos-titulo-da-los-contra-a-furia"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 4,
+    "vitorias": 0,
+    "derrotas": 4,
+    "winrate_pct": 0.0,
+    "abates": 0,
+    "mortes": 10,
+    "assistencias": 22,
+    "kda": 2.2,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "INFINITY"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "INFINITY",
+        "jogos": 4,
+        "vitorias": 0,
+        "derrotas": 4,
+        "abates": 0,
+        "mortes": 10,
+        "assistencias": 22,
+        "kda": 2.2,
+        "campeoes_mais_usados": [
+          "Nami",
+          "Rakan",
+          "Amumu"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Ackerman_(Gabriel_Aparicio)",
+    "https://maisesports.com.br/cblol-2026-curse-e-eleito-mvp-da-final-apos-titulo-da-los-contra-a-furia",
+    "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

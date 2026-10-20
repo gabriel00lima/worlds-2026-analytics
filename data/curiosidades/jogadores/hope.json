@@ -1,0 +1,105 @@
+{
+  "id": "hope",
+  "jogador": "Hope",
+  "nome_real": "Wang Jie",
+  "pais": "China",
+  "time_id": "al",
+  "time": "Anyone's Legend",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Hope_(Wang_Jie)",
+  "historia": "Hope (Wang Jie, China) é atirador da Anyone's Legend. Está no 3º Mundial da carreira (antes: 2022 e 2025), somando 24 jogos e 16 vitórias até 2025. Chegou à semifinal em 2022. Seu melhor Mundial em KDA foi 2025: 4.52 em 10 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2022 e 2025), somando 24 jogos e 16 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2022.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2025: 4.52 em 10 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Anyone's Legend, seu time, venceu o Split 3 da LPL 2026 e é a primeira cabeça de chave da China.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/Anyone%27s_Legend"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 24,
+    "vitorias": 16,
+    "derrotas": 8,
+    "winrate_pct": 66.7,
+    "abates": 96,
+    "mortes": 62,
+    "assistencias": 157,
+    "kda": 4.08,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2022
+    ],
+    "mvp_final": [],
+    "times": [
+      "JD Gaming",
+      "Anyone's Legend"
+    ],
+    "edicoes": [
+      {
+        "ano": 2022,
+        "time": "JD Gaming",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 59,
+        "mortes": 37,
+        "assistencias": 81,
+        "kda": 3.78,
+        "campeoes_mais_usados": [
+          "Aphelios",
+          "Lucian",
+          "Kai'Sa"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Anyone's Legend",
+        "jogos": 10,
+        "vitorias": 6,
+        "derrotas": 4,
+        "abates": 37,
+        "mortes": 25,
+        "assistencias": 76,
+        "kda": 4.52,
+        "campeoes_mais_usados": [
+          "Yunara",
+          "Corki",
+          "Jhin"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+    "https://lol.fandom.com/wiki/Hope_(Wang_Jie)",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

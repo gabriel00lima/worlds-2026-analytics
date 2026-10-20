@@ -1,0 +1,63 @@
+{
+  "id": "josedeodo",
+  "jogador": "Josedeodo",
+  "nome_real": "Brandon Joel Villegas",
+  "pais": "Argentina",
+  "time_id": "tl",
+  "time": "Team Liquid",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Josedeodo",
+  "historia": "Josedeodo (Brandon Joel Villegas, Argentina) é caçador da Team Liquid. Está no segundo Mundial da carreira (antes: 2020), somando 7 jogos e 2 vitórias até 2025.",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (antes: 2020), somando 7 jogos e 2 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 7,
+    "vitorias": 2,
+    "derrotas": 5,
+    "winrate_pct": 28.6,
+    "abates": 22,
+    "mortes": 19,
+    "assistencias": 27,
+    "kda": 2.58,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Rainbow7"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "Rainbow7",
+        "jogos": 7,
+        "vitorias": 2,
+        "derrotas": 5,
+        "abates": 22,
+        "mortes": 19,
+        "assistencias": 27,
+        "kda": 2.58,
+        "campeoes_mais_usados": [
+          "Graves",
+          "Nidalee",
+          "Hecarim"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Josedeodo",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

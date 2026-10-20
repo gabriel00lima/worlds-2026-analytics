@@ -1,0 +1,281 @@
+{
+  "id": "ruler",
+  "jogador": "Ruler",
+  "nome_real": "Park Jae-hyuk",
+  "pais": "Coreia do Sul",
+  "time_id": "gen-g",
+  "time": "Gen.G",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Ruler",
+  "historia": "Ruler (Park Jae-hyuk, Coreia do Sul) é atirador da Gen.G. Está no 9º Mundial da carreira (antes: 2016, 2017, 2018, 2020, 2021, 2022, 2023 e 2025), somando 102 jogos e 65 vitórias até 2025. Campeão mundial em 2017. Eleito MVP da final do Mundial em 2017.",
+  "destaques": [
+    {
+      "texto": "Está no 9º Mundial da carreira (antes: 2016, 2017, 2018, 2020, 2021, 2022, 2023 e 2025), somando 102 jogos e 65 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2017.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Eleito MVP da final do Mundial em 2017.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2016, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2021, 2022, 2023 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Samsung Galaxy, Gen.G e JD Gaming.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 3º jogador com mais abates na história dos Mundiais (398).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 4º com mais jogos disputados em Mundiais (102).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2017: 7.35 em 16 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Lucian, Jhin e Ezreal.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Gen.G, seu time, é a campeã da LCK 2026 (3–1 na Hanwha Life na final).",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    },
+    {
+      "texto": "Foi o MVP da final da LCK 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    },
+    {
+      "texto": "Na China, pela JD Gaming, venceu o MSI de 2023.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2023_Mid-Season_Invitational"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 8,
+    "estreante_2026": false,
+    "jogos": 102,
+    "vitorias": 65,
+    "derrotas": 37,
+    "winrate_pct": 63.7,
+    "abates": 398,
+    "mortes": 170,
+    "assistencias": 521,
+    "kda": 5.41,
+    "titulos": [
+      2017
+    ],
+    "vices": [
+      2016
+    ],
+    "semifinais": [
+      2021,
+      2022,
+      2023,
+      2025
+    ],
+    "mvp_final": [
+      2017
+    ],
+    "times": [
+      "Samsung Galaxy",
+      "Gen.G",
+      "JD Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2016,
+        "time": "Samsung Galaxy",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "abates": 74,
+        "mortes": 33,
+        "assistencias": 89,
+        "kda": 4.94,
+        "campeoes_mais_usados": [
+          "Jhin",
+          "Ezreal",
+          "Caitlyn"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2017,
+        "time": "Samsung Galaxy",
+        "jogos": 16,
+        "vitorias": 13,
+        "derrotas": 3,
+        "abates": 49,
+        "mortes": 17,
+        "assistencias": 76,
+        "kda": 7.35,
+        "campeoes_mais_usados": [
+          "Varus",
+          "Tristana",
+          "Xayah"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2018,
+        "time": "Gen.G",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 9,
+        "mortes": 10,
+        "assistencias": 17,
+        "kda": 2.6,
+        "campeoes_mais_usados": [
+          "Xayah",
+          "Lucian",
+          "Ashe"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2020,
+        "time": "Gen.G",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 33,
+        "mortes": 21,
+        "assistencias": 48,
+        "kda": 3.86,
+        "campeoes_mais_usados": [
+          "Ezreal",
+          "Ashe",
+          "Senna"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "Gen.G",
+        "jogos": 16,
+        "vitorias": 10,
+        "derrotas": 6,
+        "abates": 56,
+        "mortes": 25,
+        "assistencias": 91,
+        "kda": 5.88,
+        "campeoes_mais_usados": [
+          "Miss Fortune",
+          "Aphelios",
+          "Jhin"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "Gen.G",
+        "jogos": 16,
+        "vitorias": 10,
+        "derrotas": 6,
+        "abates": 62,
+        "mortes": 22,
+        "assistencias": 71,
+        "kda": 6.05,
+        "campeoes_mais_usados": [
+          "Lucian",
+          "Aphelios",
+          "Miss Fortune"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "JD Gaming",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 33,
+        "mortes": 14,
+        "assistencias": 43,
+        "kda": 5.43,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Kalista",
+          "Zeri"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Gen.G",
+        "jogos": 13,
+        "vitorias": 8,
+        "derrotas": 5,
+        "abates": 82,
+        "mortes": 28,
+        "assistencias": 86,
+        "kda": 6.0,
+        "campeoes_mais_usados": [
+          "Lucian",
+          "Kai'Sa",
+          "Corki"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2023_Mid-Season_Invitational",
+    "https://lol.fandom.com/wiki/Ruler",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

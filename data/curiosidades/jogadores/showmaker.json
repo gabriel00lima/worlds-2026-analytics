@@ -1,0 +1,211 @@
+{
+  "id": "showmaker",
+  "jogador": "ShowMaker",
+  "nome_real": "Heo Su",
+  "pais": "Coreia do Sul",
+  "time_id": "dk",
+  "time": "Dplus KIA",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/ShowMaker",
+  "historia": "ShowMaker (Heo Su, Coreia do Sul) é mid laner da Dplus KIA. Está no 7º Mundial da carreira (antes: 2019, 2020, 2021, 2022, 2023 e 2024), somando 83 jogos e 55 vitórias até 2025. Campeão mundial em 2020. Disputou a final em 2021, ficando com o vice.",
+  "destaques": [
+    {
+      "texto": "Está no 7º Mundial da carreira (antes: 2019, 2020, 2021, 2022, 2023 e 2024), somando 83 jogos e 55 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2020.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2021, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: DAMWON Gaming, DWG KIA e Dplus Kia.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 11º jogador com mais abates na história dos Mundiais (309).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 16º com mais jogos disputados em Mundiais (83).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2019: 7.61 em 18 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: LeBlanc, Twisted Fate e Syndra.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 6,
+    "estreante_2026": false,
+    "jogos": 83,
+    "vitorias": 55,
+    "derrotas": 28,
+    "winrate_pct": 66.3,
+    "abates": 309,
+    "mortes": 133,
+    "assistencias": 484,
+    "kda": 5.96,
+    "titulos": [
+      2020
+    ],
+    "vices": [
+      2021
+    ],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "DAMWON Gaming",
+      "DWG KIA",
+      "Dplus Kia"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "DAMWON Gaming",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 76,
+        "mortes": 23,
+        "assistencias": 99,
+        "kda": 7.61,
+        "campeoes_mais_usados": [
+          "Akali",
+          "LeBlanc",
+          "Yasuo"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2020,
+        "time": "DAMWON Gaming",
+        "jogos": 17,
+        "vitorias": 14,
+        "derrotas": 3,
+        "abates": 65,
+        "mortes": 31,
+        "assistencias": 102,
+        "kda": 5.39,
+        "campeoes_mais_usados": [
+          "Twisted Fate",
+          "Syndra",
+          "Orianna"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2021,
+        "time": "DWG KIA",
+        "jogos": 19,
+        "vitorias": 14,
+        "derrotas": 5,
+        "abates": 75,
+        "mortes": 27,
+        "assistencias": 125,
+        "kda": 7.41,
+        "campeoes_mais_usados": [
+          "LeBlanc",
+          "Syndra",
+          "Twisted Fate"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2022,
+        "time": "DWG KIA",
+        "jogos": 12,
+        "vitorias": 7,
+        "derrotas": 5,
+        "abates": 41,
+        "mortes": 18,
+        "assistencias": 69,
+        "kda": 6.11,
+        "campeoes_mais_usados": [
+          "LeBlanc",
+          "Azir",
+          "Lissandra"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "Dplus Kia",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 20,
+        "mortes": 10,
+        "assistencias": 46,
+        "kda": 6.6,
+        "campeoes_mais_usados": [
+          "Azir",
+          "Neeko",
+          "Ahri"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Dplus Kia",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "abates": 32,
+        "mortes": 24,
+        "assistencias": 43,
+        "kda": 3.12,
+        "campeoes_mais_usados": [
+          "LeBlanc",
+          "Yone",
+          "Orianna"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/ShowMaker",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

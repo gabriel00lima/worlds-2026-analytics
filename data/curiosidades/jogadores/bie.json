@@ -1,0 +1,113 @@
+{
+  "id": "bie",
+  "jogador": "Bie",
+  "nome_real": "Trần Đức Hiếu",
+  "pais": "Vietnã",
+  "time_id": "tsw",
+  "time": "Team Secret Whales",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Bie",
+  "historia": "Bie (Trần Đức Hiếu, Vietnã) é suporte da Team Secret Whales. Está no 4º Mundial da carreira (antes: 2022, 2023 e 2024), somando 20 jogos e 6 vitórias até 2025. Jogou Mundiais por 3 times diferentes: GAM Esports, Team Whales e Vikings Esports. Campeões que mais aparecem nos seus Mundiais: Rell.",
+  "destaques": [
+    {
+      "texto": "Está no 4º Mundial da carreira (antes: 2022, 2023 e 2024), somando 20 jogos e 6 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: GAM Esports, Team Whales e Vikings Esports.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Rell.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 3,
+    "estreante_2026": false,
+    "jogos": 20,
+    "vitorias": 6,
+    "derrotas": 14,
+    "winrate_pct": 30.0,
+    "abates": 15,
+    "mortes": 60,
+    "assistencias": 144,
+    "kda": 2.65,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "GAM Esports",
+      "Team Whales",
+      "Vikings Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2022,
+        "time": "GAM Esports",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 6,
+        "mortes": 19,
+        "assistencias": 32,
+        "kda": 2.0,
+        "campeoes_mais_usados": [
+          "Rell",
+          "Sett",
+          "Renata Glasc"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "Team Whales",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 7,
+        "mortes": 24,
+        "assistencias": 90,
+        "kda": 4.04,
+        "campeoes_mais_usados": [
+          "Nautilus",
+          "Rakan",
+          "Rell"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Vikings Esports (2023 Vietnamese Team)",
+        "jogos": 4,
+        "vitorias": 0,
+        "derrotas": 4,
+        "abates": 2,
+        "mortes": 17,
+        "assistencias": 22,
+        "kda": 1.41,
+        "campeoes_mais_usados": [
+          "Poppy",
+          "Alistar",
+          "Leona"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Bie",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

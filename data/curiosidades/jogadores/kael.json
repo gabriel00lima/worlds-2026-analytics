@@ -1,0 +1,71 @@
+{
+  "id": "kael",
+  "jogador": "Kael",
+  "nome_real": "Kim Jin-hong",
+  "pais": "Coreia do Sul",
+  "time_id": "al",
+  "time": "Anyone's Legend",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Kael_(Kim_Jin-hong)",
+  "historia": "Kael (Kim Jin-hong, Coreia do Sul) é suporte da Anyone's Legend. Está no segundo Mundial da carreira (antes: 2025), somando 10 jogos e 6 vitórias até 2025. A Anyone's Legend, seu time, venceu o Split 3 da LPL 2026 e é a primeira cabeça de chave da China.",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (antes: 2025), somando 10 jogos e 6 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Anyone's Legend, seu time, venceu o Split 3 da LPL 2026 e é a primeira cabeça de chave da China.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/Anyone%27s_Legend"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 10,
+    "vitorias": 6,
+    "derrotas": 4,
+    "winrate_pct": 60.0,
+    "abates": 12,
+    "mortes": 30,
+    "assistencias": 122,
+    "kda": 4.47,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Anyone's Legend"
+    ],
+    "edicoes": [
+      {
+        "ano": 2025,
+        "time": "Anyone's Legend",
+        "jogos": 10,
+        "vitorias": 6,
+        "derrotas": 4,
+        "abates": 12,
+        "mortes": 30,
+        "assistencias": 122,
+        "kda": 4.47,
+        "campeoes_mais_usados": [
+          "Neeko",
+          "Leona",
+          "Poppy"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+    "https://lol.fandom.com/wiki/Kael_(Kim_Jin-hong)",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

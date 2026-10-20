@@ -1,0 +1,197 @@
+{
+  "id": "jackeylove",
+  "jogador": "JackeyLove",
+  "nome_real": "Yu Wen-Bo",
+  "pais": "China",
+  "time_id": "tes",
+  "time": "Top Esports",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/JackeyLove",
+  "historia": "JackeyLove (Yu Wen-Bo, China) é atirador da Top Esports. Está no 7º Mundial da carreira (antes: 2018, 2019, 2020, 2022, 2024 e 2025), somando 77 jogos e 45 vitórias até 2025. Campeão mundial em 2018. Chegou à semifinal em 2019, 2020 e 2025.",
+  "destaques": [
+    {
+      "texto": "Está no 7º Mundial da carreira (antes: 2018, 2019, 2020, 2022, 2024 e 2025), somando 77 jogos e 45 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2018.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2019, 2020 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 7º jogador com mais abates na história dos Mundiais (325).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 19º com mais jogos disputados em Mundiais (77).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2018: 5.33 em 18 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Kai'Sa, Xayah e Lucian.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 6,
+    "estreante_2026": false,
+    "jogos": 77,
+    "vitorias": 45,
+    "derrotas": 32,
+    "winrate_pct": 58.4,
+    "abates": 325,
+    "mortes": 201,
+    "assistencias": 438,
+    "kda": 3.8,
+    "titulos": [
+      2018
+    ],
+    "vices": [],
+    "semifinais": [
+      2019,
+      2020,
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "Invictus Gaming",
+      "Top Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2018,
+        "time": "Invictus Gaming",
+        "jogos": 18,
+        "vitorias": 14,
+        "derrotas": 4,
+        "abates": 92,
+        "mortes": 36,
+        "assistencias": 100,
+        "kda": 5.33,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Xayah",
+          "Lucian"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2019,
+        "time": "Invictus Gaming",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 64,
+        "mortes": 41,
+        "assistencias": 68,
+        "kda": 3.22,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Ezreal",
+          "Varus"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2020,
+        "time": "Top Esports",
+        "jogos": 15,
+        "vitorias": 9,
+        "derrotas": 6,
+        "abates": 45,
+        "mortes": 38,
+        "assistencias": 109,
+        "kda": 4.05,
+        "campeoes_mais_usados": [
+          "Senna",
+          "Ezreal",
+          "Ashe"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "Top Esports",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "abates": 32,
+        "mortes": 14,
+        "assistencias": 31,
+        "kda": 4.5,
+        "campeoes_mais_usados": [
+          "Lucian",
+          "Draven",
+          "Varus"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Top Esports",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 32,
+        "mortes": 21,
+        "assistencias": 40,
+        "kda": 3.43,
+        "campeoes_mais_usados": [
+          "Jhin",
+          "Miss Fortune",
+          "Kalista"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Top Esports",
+        "jogos": 16,
+        "vitorias": 7,
+        "derrotas": 9,
+        "abates": 60,
+        "mortes": 51,
+        "assistencias": 90,
+        "kda": 2.94,
+        "campeoes_mais_usados": [
+          "Yunara",
+          "Corki",
+          "Xayah"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/JackeyLove",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

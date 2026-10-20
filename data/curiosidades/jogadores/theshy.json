@@ -1,0 +1,156 @@
+{
+  "id": "theshy",
+  "jogador": "TheShy",
+  "nome_real": "Kang Seung-lok",
+  "pais": "Coreia do Sul",
+  "time_id": "ig",
+  "time": "Invictus Gaming",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/TheShy",
+  "historia": "TheShy (Kang Seung-lok, Coreia do Sul) é top laner da Invictus Gaming. Está no 5º Mundial da carreira (antes: 2018, 2019, 2023 e 2025), somando 47 jogos e 28 vitórias até 2025. Campeão mundial em 2018. Disputou a final em 2023, ficando com o vice.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2018, 2019, 2023 e 2025), somando 47 jogos e 28 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2018.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2023, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2019.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2018: 4.61 em 13 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Sion, Aatrox e Rumble.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 47,
+    "vitorias": 28,
+    "derrotas": 19,
+    "winrate_pct": 59.6,
+    "abates": 148,
+    "mortes": 152,
+    "assistencias": 255,
+    "kda": 2.65,
+    "titulos": [
+      2018
+    ],
+    "vices": [
+      2023
+    ],
+    "semifinais": [
+      2019
+    ],
+    "mvp_final": [],
+    "times": [
+      "Invictus Gaming",
+      "Weibo Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2018,
+        "time": "Invictus Gaming",
+        "jogos": 13,
+        "vitorias": 11,
+        "derrotas": 2,
+        "abates": 43,
+        "mortes": 28,
+        "assistencias": 86,
+        "kda": 4.61,
+        "campeoes_mais_usados": [
+          "Sion",
+          "Aatrox",
+          "Fiora"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2019,
+        "time": "Invictus Gaming",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 54,
+        "mortes": 47,
+        "assistencias": 88,
+        "kda": 3.02,
+        "campeoes_mais_usados": [
+          "Vladimir",
+          "Kayle",
+          "Jayce"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "Weibo Gaming",
+        "jogos": 16,
+        "vitorias": 8,
+        "derrotas": 8,
+        "abates": 41,
+        "mortes": 56,
+        "assistencias": 68,
+        "kda": 1.95,
+        "campeoes_mais_usados": [
+          "Aatrox",
+          "Rumble",
+          "K'Sante"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2025,
+        "time": "Invictus Gaming",
+        "jogos": 4,
+        "vitorias": 1,
+        "derrotas": 3,
+        "abates": 10,
+        "mortes": 21,
+        "assistencias": 13,
+        "kda": 1.1,
+        "campeoes_mais_usados": [
+          "Rek'Sai",
+          "Rumble",
+          "Sion"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/TheShy",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

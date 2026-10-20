@@ -9,31 +9,36 @@
     {
       "posicao": "top",
       "jogador": "Doran",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "doran"
     },
     {
       "posicao": "jungle",
       "jogador": "Oner",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "oner"
     },
     {
       "posicao": "mid",
       "jogador": "Faker",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "faker"
     },
     {
       "posicao": "atirador",
       "jogador": "Peyz",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "peyz"
     },
     {
       "posicao": "suporte",
       "jogador": "Keria",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "keria"
     }
   ],
   "elenco_fontes": [
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [
     2013,
@@ -77,12 +82,180 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 10,
+    "nomes_usados": [
+      "SK Telecom T1",
+      "T1"
+    ],
+    "titulos": 6,
+    "finais": 8,
+    "jogos": 172,
+    "vitorias": 127,
+    "edicoes": [
+      {
+        "ano": 2013,
+        "nome": "SK Telecom T1",
+        "jogos": 18,
+        "vitorias": 15,
+        "derrotas": 3,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "Piglet",
+          "Faker",
+          "Impact",
+          "bengi",
+          "PoohManDu"
+        ]
+      },
+      {
+        "ano": 2015,
+        "nome": "SK Telecom T1",
+        "jogos": 16,
+        "vitorias": 15,
+        "derrotas": 1,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "Bang",
+          "MaRin",
+          "Faker",
+          "Bengi",
+          "Easyhoon",
+          "Wolf"
+        ]
+      },
+      {
+        "ano": 2016,
+        "nome": "SK Telecom T1",
+        "jogos": 20,
+        "vitorias": 14,
+        "derrotas": 6,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "Bang",
+          "Faker",
+          "Duke",
+          "Bengi",
+          "Blank",
+          "Wolf"
+        ]
+      },
+      {
+        "ano": 2017,
+        "nome": "SK Telecom T1",
+        "jogos": 19,
+        "vitorias": 11,
+        "derrotas": 8,
+        "resultado_top4": "Vice",
+        "jogadores": [
+          "Bang",
+          "Faker",
+          "Huni",
+          "Peanut",
+          "Blank",
+          "Wolf"
+        ]
+      },
+      {
+        "ano": 2019,
+        "nome": "SK Telecom T1",
+        "jogos": 14,
+        "vitorias": 9,
+        "derrotas": 5,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "Khan",
+          "Teddy",
+          "Faker",
+          "Clid",
+          "Effort",
+          "Mata"
+        ]
+      },
+      {
+        "ano": 2021,
+        "nome": "T1",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "Gumayusi",
+          "Oner",
+          "Canna",
+          "Faker",
+          "Keria"
+        ]
+      },
+      {
+        "ano": 2022,
+        "nome": "T1",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "resultado_top4": "Vice",
+        "jogadores": [
+          "Gumayusi",
+          "Zeus",
+          "Faker",
+          "Oner",
+          "Keria"
+        ]
+      },
+      {
+        "ano": 2023,
+        "nome": "T1",
+        "jogos": 12,
+        "vitorias": 10,
+        "derrotas": 2,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "Gumayusi",
+          "Zeus",
+          "Faker",
+          "Oner",
+          "Keria"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "T1",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "Gumayusi",
+          "Faker",
+          "Oner",
+          "Zeus",
+          "Keria"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "T1",
+        "jogos": 24,
+        "vitorias": 17,
+        "derrotas": 7,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "Gumayusi",
+          "Faker",
+          "Oner",
+          "Doran",
+          "Keria"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://diariodelsur.com.co/noticias/t1-y-faker-preparan-su-debut-en-la-fase-suiza-de-worlds-2026-en-estados-unidos",
     "https://dotesports.com/league-of-legends/news/g2-esports-eliminate-t1-from-msi-2026-ending-legendary-international-top-four-streak",
     "https://en.wikipedia.org/wiki/2025_League_of_Legends_World_Championship",
     "https://en.wikipedia.org/wiki/T1_(esports)",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://www.sheepesports.com/en/lol/matches/Esports%20World%20Cup%202026_Semifinals_1"
   ],
   "atualizado_em": "2026-10-20"

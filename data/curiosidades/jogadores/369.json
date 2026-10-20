@@ -1,0 +1,151 @@
+{
+  "id": "369",
+  "jogador": "369",
+  "nome_real": "Bai Jia-Hao",
+  "pais": "China",
+  "time_id": "tes",
+  "time": "Top Esports",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/369",
+  "historia": "369 (Bai Jia-Hao, China) é top laner da Top Esports. Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 62 jogos e 35 vitórias até 2025. Chegou à semifinal em 2020, 2022, 2023 e 2025. Campeões que mais aparecem nos seus Mundiais: K'Sante, Renekton e Rumble.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 62 jogos e 35 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2020, 2022, 2023 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: K'Sante, Renekton e Rumble.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 62,
+    "vitorias": 35,
+    "derrotas": 27,
+    "winrate_pct": 56.5,
+    "abates": 171,
+    "mortes": 170,
+    "assistencias": 326,
+    "kda": 2.92,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2020,
+      2022,
+      2023,
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "Top Esports",
+      "JD Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "Top Esports",
+        "jogos": 15,
+        "vitorias": 9,
+        "derrotas": 6,
+        "abates": 40,
+        "mortes": 33,
+        "assistencias": 64,
+        "kda": 3.15,
+        "campeoes_mais_usados": [
+          "Sion",
+          "Vladimir",
+          "Gangplank"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "JD Gaming",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 46,
+        "mortes": 47,
+        "assistencias": 89,
+        "kda": 2.87,
+        "campeoes_mais_usados": [
+          "Renekton",
+          "Ornn",
+          "Sejuani"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "JD Gaming",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 19,
+        "mortes": 23,
+        "assistencias": 55,
+        "kda": 3.22,
+        "campeoes_mais_usados": [
+          "K'Sante",
+          "Renekton",
+          "Aatrox"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2024,
+        "time": "Top Esports",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 20,
+        "mortes": 19,
+        "assistencias": 39,
+        "kda": 3.11,
+        "campeoes_mais_usados": [
+          "Rumble",
+          "K'Sante",
+          "Galio"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Top Esports",
+        "jogos": 16,
+        "vitorias": 7,
+        "derrotas": 9,
+        "abates": 46,
+        "mortes": 48,
+        "assistencias": 79,
+        "kda": 2.6,
+        "campeoes_mais_usados": [
+          "K'Sante",
+          "Rumble",
+          "Ambessa"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/369",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

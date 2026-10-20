@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timezone
 from typing import Any
 
-from . import config, curiosidades, imagens, site
+from . import config, curiosidades, historia, imagens, site
 from .arquivos import ler_json, salvar_json
 from .fontes import ddragon, leaguepedia, lolesports, riot
 from .jogos import jogo_em_cache, processar_jogo
@@ -44,6 +44,7 @@ def coletar_jogos(partidas: list[Json], so_cache: bool) -> list[Json]:
             else:
                 jogo = jogo_em_cache(g["id"])
             if jogo:
+                jogo["vod"] = lolesports.vod_do_jogo(g, jogo["duracao"])
                 jogos.append(jogo)
     return jogos
 
@@ -187,8 +188,9 @@ def executar(so_cache: bool = False) -> Json:
     log.info("Leaguepedia (bans, arautos, dano)")
     versao = ddragon.versao_atual()
     camp = ddragon.campeoes(versao)
+    camp_en = ddragon.campeoes(versao, "en_US")
     chave_por_nome = {}
-    for chave, c in ddragon.campeoes(versao, "en_US").items():
+    for chave, c in camp_en.items():
         chave_por_nome[norm(c["name"])] = chave
         chave_por_nome[norm(chave)] = chave
     lp = leaguepedia.placares_em_cache() if so_cache else leaguepedia.placares(chave_por_nome)
@@ -214,8 +216,12 @@ def executar(so_cache: bool = False) -> Json:
         "jogos": jogos,
         "campeoes": montar_campeoes(versao, camp, jogos, times),
         "itens": montar_itens(versao, jogos),
+        "historia": historia.ler_historia(camp_en),
         "audio": ler_json(config.AUDIO / "index.json", {}),
     }
+    tentativa = leaguepedia.ultima_tentativa()
+    if tentativa:
+        dados["lpTentativa"] = tentativa
     salvar_json(config.CACHE / "dados.json", dados)
     tamanho = site.gerar(dados)
     log.info(

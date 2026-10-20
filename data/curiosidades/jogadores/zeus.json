@@ -1,0 +1,172 @@
+{
+  "id": "zeus",
+  "jogador": "Zeus",
+  "nome_real": "Choi Woo-je",
+  "pais": "Coreia do Sul",
+  "time_id": "hle",
+  "time": "Hanwha Life Esports",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Zeus",
+  "historia": "Zeus (Choi Woo-je, Coreia do Sul) é top laner da Hanwha Life Esports. Está no 5º Mundial da carreira (antes: 2022, 2023, 2024 e 2025), somando 56 jogos e 41 vitórias até 2025. Campeão mundial em 2023 e 2024. Eleito MVP da final do Mundial em 2023.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2022, 2023, 2024 e 2025), somando 56 jogos e 41 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2023 e 2024.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Eleito MVP da final do Mundial em 2023.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2022, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2024: 4.75 em 17 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Yone e Gragas.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Hanwha Life, seu time, é a campeã do MSI 2026, com virada de 3–2 sobre a BLG na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    },
+    {
+      "texto": "Foi o MVP da final do MSI 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 56,
+    "vitorias": 41,
+    "derrotas": 15,
+    "winrate_pct": 73.2,
+    "abates": 186,
+    "mortes": 146,
+    "assistencias": 348,
+    "kda": 3.66,
+    "titulos": [
+      2023,
+      2024
+    ],
+    "vices": [
+      2022
+    ],
+    "semifinais": [],
+    "mvp_final": [
+      2023
+    ],
+    "times": [
+      "T1",
+      "Hanwha Life Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2022,
+        "time": "T1",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 65,
+        "mortes": 57,
+        "assistencias": 119,
+        "kda": 3.23,
+        "campeoes_mais_usados": [
+          "Yone",
+          "Fiora",
+          "Gangplank"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2023,
+        "time": "T1",
+        "jogos": 12,
+        "vitorias": 10,
+        "derrotas": 2,
+        "abates": 45,
+        "mortes": 22,
+        "assistencias": 46,
+        "kda": 4.14,
+        "campeoes_mais_usados": [
+          "Aatrox",
+          "Yone",
+          "Gragas"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2024,
+        "time": "T1",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "abates": 44,
+        "mortes": 32,
+        "assistencias": 108,
+        "kda": 4.75,
+        "campeoes_mais_usados": [
+          "Jax",
+          "Gragas",
+          "Gnar"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2025,
+        "time": "Hanwha Life Esports",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 32,
+        "mortes": 35,
+        "assistencias": 75,
+        "kda": 3.06,
+        "campeoes_mais_usados": [
+          "Rumble",
+          "Rek'Sai",
+          "Ambessa"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Zeus",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,166 @@
+{
+  "id": "doran",
+  "jogador": "Doran",
+  "nome_real": "Choi Hyeon-jun",
+  "pais": "Coreia do Sul",
+  "time_id": "t1",
+  "time": "T1",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Doran_(Choi_Hyeon-jun)",
+  "historia": "Doran (Choi Hyeon-jun, Coreia do Sul) é top laner da T1. Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 65 jogos e 41 vitórias até 2025. Campeão mundial em 2025. Chegou à semifinal em 2022.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 65 jogos e 41 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2022.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 4 times diferentes: DRX, Gen.G, Hanwha Life Esports e T1.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Jax, Gnar e K'Sante.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 65,
+    "vitorias": 41,
+    "derrotas": 24,
+    "winrate_pct": 63.1,
+    "abates": 171,
+    "mortes": 177,
+    "assistencias": 422,
+    "kda": 3.35,
+    "titulos": [
+      2025
+    ],
+    "vices": [],
+    "semifinais": [
+      2022
+    ],
+    "mvp_final": [],
+    "times": [
+      "DRX",
+      "Gen.G",
+      "Hanwha Life Esports",
+      "T1"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "DRX",
+        "jogos": 9,
+        "vitorias": 4,
+        "derrotas": 5,
+        "abates": 22,
+        "mortes": 19,
+        "assistencias": 43,
+        "kda": 3.42,
+        "campeoes_mais_usados": [
+          "Ornn",
+          "Jayce",
+          "Jax"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "Gen.G",
+        "jogos": 16,
+        "vitorias": 10,
+        "derrotas": 6,
+        "abates": 32,
+        "mortes": 39,
+        "assistencias": 76,
+        "kda": 2.77,
+        "campeoes_mais_usados": [
+          "Renekton",
+          "Camille",
+          "Gnar"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "Gen.G",
+        "jogos": 4,
+        "vitorias": 4,
+        "derrotas": 0,
+        "abates": 14,
+        "mortes": 4,
+        "assistencias": 31,
+        "kda": 11.25,
+        "campeoes_mais_usados": [
+          "K'Sante",
+          "Jax",
+          "Rumble"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Hanwha Life Esports",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "abates": 38,
+        "mortes": 36,
+        "assistencias": 66,
+        "kda": 2.89,
+        "campeoes_mais_usados": [
+          "Gnar",
+          "Jax",
+          "Rumble"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "T1",
+        "jogos": 24,
+        "vitorias": 17,
+        "derrotas": 7,
+        "abates": 65,
+        "mortes": 79,
+        "assistencias": 206,
+        "kda": 3.43,
+        "campeoes_mais_usados": [
+          "K'Sante",
+          "Ambessa",
+          "Sion"
+        ],
+        "resultado": "Campeão"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Doran_(Choi_Hyeon-jun)",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

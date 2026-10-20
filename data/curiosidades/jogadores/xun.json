@@ -1,0 +1,120 @@
+{
+  "id": "xun",
+  "jogador": "Xun",
+  "nome_real": "Peng Li-Xun",
+  "pais": "China",
+  "time_id": "blg",
+  "time": "Bilibili Gaming",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Xun",
+  "historia": "Xun (Peng Li-Xun, China) é caçador da Bilibili Gaming. Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 30 jogos e 18 vitórias até 2025. Disputou a final em 2024, ficando com o vice. Chegou à semifinal em 2023.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 30 jogos e 18 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2024, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2023.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2024: 5.11 em 17 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Sejuani.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 30,
+    "vitorias": 18,
+    "derrotas": 12,
+    "winrate_pct": 60.0,
+    "abates": 62,
+    "mortes": 69,
+    "assistencias": 252,
+    "kda": 4.55,
+    "titulos": [],
+    "vices": [
+      2024
+    ],
+    "semifinais": [
+      2023
+    ],
+    "mvp_final": [],
+    "times": [
+      "Bilibili Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "time": "Bilibili Gaming",
+        "jogos": 13,
+        "vitorias": 6,
+        "derrotas": 7,
+        "abates": 25,
+        "mortes": 31,
+        "assistencias": 95,
+        "kda": 3.87,
+        "campeoes_mais_usados": [
+          "Vi",
+          "Sejuani",
+          "Maokai"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2024,
+        "time": "Bilibili Gaming",
+        "jogos": 17,
+        "vitorias": 12,
+        "derrotas": 5,
+        "abates": 37,
+        "mortes": 38,
+        "assistencias": 157,
+        "kda": 5.11,
+        "campeoes_mais_usados": [
+          "Skarner",
+          "Sejuani",
+          "Wukong"
+        ],
+        "resultado": "Vice"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Xun",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "kanavi",
+  "jogador": "Kanavi",
+  "nome_real": "Seo Jin-hyeok",
+  "pais": "Coreia do Sul",
+  "time_id": "hle",
+  "time": "Hanwha Life Esports",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Kanavi",
+  "historia": "Kanavi (Seo Jin-hyeok, Coreia do Sul) é caçador da Hanwha Life Esports. Está no 5º Mundial da carreira (antes: 2020, 2022, 2023 e 2025), somando 49 jogos e 27 vitórias até 2025. Chegou à semifinal em 2022, 2023 e 2025. Campeões que mais aparecem nos seus Mundiais: Graves e Wukong.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2020, 2022, 2023 e 2025), somando 49 jogos e 27 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2022, 2023 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Graves e Wukong.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Hanwha Life, seu time, é a campeã do MSI 2026, com virada de 3–2 sobre a BLG na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 49,
+    "vitorias": 27,
+    "derrotas": 22,
+    "winrate_pct": 55.1,
+    "abates": 171,
+    "mortes": 152,
+    "assistencias": 300,
+    "kda": 3.1,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2022,
+      2023,
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "JD Gaming",
+      "Top Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "JD Gaming",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 26,
+        "mortes": 31,
+        "assistencias": 67,
+        "kda": 3.0,
+        "campeoes_mais_usados": [
+          "Lillia",
+          "Sylas",
+          "Graves"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "JD Gaming",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 64,
+        "mortes": 38,
+        "assistencias": 82,
+        "kda": 3.84,
+        "campeoes_mais_usados": [
+          "Viego",
+          "Graves",
+          "Bel'Veth"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "JD Gaming",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 25,
+        "mortes": 31,
+        "assistencias": 58,
+        "kda": 2.68,
+        "campeoes_mais_usados": [
+          "Vi",
+          "Jarvan IV",
+          "Wukong"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Top Esports",
+        "jogos": 16,
+        "vitorias": 7,
+        "derrotas": 9,
+        "abates": 56,
+        "mortes": 52,
+        "assistencias": 93,
+        "kda": 2.87,
+        "campeoes_mais_usados": [
+          "Trundle",
+          "Qiyana",
+          "Wukong"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Kanavi",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

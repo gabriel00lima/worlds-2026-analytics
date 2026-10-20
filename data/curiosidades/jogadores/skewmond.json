@@ -1,0 +1,71 @@
+{
+  "id": "skewmond",
+  "jogador": "SkewMond",
+  "nome_real": "Rudy Semaan",
+  "pais": "França",
+  "time_id": "g2",
+  "time": "G2 Esports",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/SkewMond",
+  "historia": "SkewMond (Rudy Semaan, França) é caçador da G2 Esports. Está no segundo Mundial da carreira (antes: 2025), somando 10 jogos e 5 vitórias até 2025. A G2, seu time, é a campeã da LEC Summer 2026 e primeira cabeça de chave da Europa.",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (antes: 2025), somando 10 jogos e 5 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A G2, seu time, é a campeã da LEC Summer 2026 e primeira cabeça de chave da Europa.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 10,
+    "vitorias": 5,
+    "derrotas": 5,
+    "winrate_pct": 50.0,
+    "abates": 31,
+    "mortes": 24,
+    "assistencias": 56,
+    "kda": 3.62,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "G2 Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2025,
+        "time": "G2 Esports",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 31,
+        "mortes": 24,
+        "assistencias": 56,
+        "kda": 3.62,
+        "campeoes_mais_usados": [
+          "Xin Zhao",
+          "Dr. Mundo",
+          "Ivern"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/",
+    "https://lol.fandom.com/wiki/SkewMond",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

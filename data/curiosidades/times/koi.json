@@ -9,34 +9,39 @@
     {
       "posicao": "top",
       "jogador": "Myrwn",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "myrwn"
     },
     {
       "posicao": "jungle",
       "jogador": "Elyoya",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "elyoya"
     },
     {
       "posicao": "mid",
       "jogador": "Jojopyun",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "jojopyun"
     },
     {
       "posicao": "atirador",
       "jogador": "Supa",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "supa"
     },
     {
       "posicao": "suporte",
       "jogador": "Alvaro",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "alvaro"
     }
   ],
   "elenco_fontes": [
-    "https://rft.gg/match/12396-bilibili-gaming-vs-movistar-koi-2026-07-15"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Sem campanha marcante com o nome atual.",
+  "melhor_mundial": "Seis Mundiais seguidos (2020 a 2025, como MAD Lions e depois KOI), sem chegar a uma semifinal.",
   "curiosidades": [
     {
       "texto": "Perdeu a final da LEC Summer 2026 para a G2 por 3–0.",
@@ -46,9 +51,114 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 6,
+    "nomes_usados": [
+      "MAD Lions",
+      "MAD Lions KOI",
+      "Movistar KOI"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 58,
+    "vitorias": 24,
+    "edicoes": [
+      {
+        "ano": 2020,
+        "nome": "MAD Lions",
+        "jogos": 10,
+        "vitorias": 4,
+        "derrotas": 6,
+        "resultado_top4": null,
+        "jogadores": [
+          "Humanoid",
+          "Carzzy",
+          "Shad0w",
+          "Orome",
+          "Kaiser"
+        ]
+      },
+      {
+        "ano": 2021,
+        "nome": "MAD Lions",
+        "jogos": 11,
+        "vitorias": 4,
+        "derrotas": 7,
+        "resultado_top4": null,
+        "jogadores": [
+          "Humanoid",
+          "Carzzy",
+          "Armut",
+          "Elyoya",
+          "Kaiser"
+        ]
+      },
+      {
+        "ano": 2022,
+        "nome": "MAD Lions",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "resultado_top4": null,
+        "jogadores": [
+          "UNF0RGIVEN",
+          "Elyoya",
+          "Nisqy",
+          "Armut",
+          "Kaiser"
+        ]
+      },
+      {
+        "ano": 2023,
+        "nome": "MAD Lions",
+        "jogos": 5,
+        "vitorias": 1,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Carzzy",
+          "Chasy",
+          "Nisqy",
+          "Elyoya",
+          "Hylissang"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "MAD Lions KOI",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "Supa",
+          "Fresskowy",
+          "Elyoya",
+          "Myrwn",
+          "Alvaro"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "Movistar KOI",
+        "jogos": 10,
+        "vitorias": 4,
+        "derrotas": 6,
+        "resultado_top4": null,
+        "jogadores": [
+          "Elyoya",
+          "Supa",
+          "Jojopyun",
+          "Myrwn",
+          "Alvaro"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/",
-    "https://rft.gg/match/12396-bilibili-gaming-vs-movistar-koi-2026-07-15"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "atualizado_em": "2026-10-20"
 }

@@ -1,0 +1,81 @@
+{
+  "id": "supa",
+  "jogador": "Supa",
+  "nome_real": "David Martínez García",
+  "pais": "Espanha",
+  "time_id": "koi",
+  "time": "Movistar KOI",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Supa",
+  "historia": "Supa (David Martínez García, Espanha) é atirador da Movistar KOI. Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 20 jogos e 9 vitórias até 2025.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 20 jogos e 9 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 20,
+    "vitorias": 9,
+    "derrotas": 11,
+    "winrate_pct": 45.0,
+    "abates": 101,
+    "mortes": 55,
+    "assistencias": 100,
+    "kda": 3.65,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "MAD Lions KOI",
+      "Movistar KOI"
+    ],
+    "edicoes": [
+      {
+        "ano": 2024,
+        "time": "MAD Lions KOI",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 56,
+        "mortes": 28,
+        "assistencias": 46,
+        "kda": 3.64,
+        "campeoes_mais_usados": [
+          "Ziggs",
+          "Jinx",
+          "Ezreal"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Movistar KOI",
+        "jogos": 10,
+        "vitorias": 4,
+        "derrotas": 6,
+        "abates": 45,
+        "mortes": 27,
+        "assistencias": 54,
+        "kda": 3.67,
+        "campeoes_mais_usados": [
+          "Corki",
+          "Vayne",
+          "Yunara"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Supa",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

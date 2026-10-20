@@ -1,0 +1,60 @@
+{
+  "id": "curse",
+  "jogador": "Curse",
+  "nome_real": "Raí Yamada",
+  "pais": "Brasil",
+  "time_id": "los",
+  "time": "LOS",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Curse_(Raí_Yamada)",
+  "historia": "Curse (Raí Yamada, Brasil) é caçador da LOS. Faz em 2026 o seu primeiro Mundial. Campeão do CBLOL 2026 (Etapa 2) com a LOS, 3–2 na FURIA na final de 10/10. Foi o MVP da final do CBLOL 2026; no terceiro jogo, de Wukong, fez 7/1/1.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão do CBLOL 2026 (Etapa 2) com a LOS, 3–2 na FURIA na final de 10/10.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml",
+        "https://maisesports.com.br/cblol-2026-curse-e-eleito-mvp-da-final-apos-titulo-da-los-contra-a-furia"
+      ]
+    },
+    {
+      "texto": "Foi o MVP da final do CBLOL 2026; no terceiro jogo, de Wukong, fez 7/1/1.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://maisesports.com.br/cblol-2026-curse-e-eleito-mvp-da-final-apos-titulo-da-los-contra-a-furia"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Curse_(Raí_Yamada)",
+    "https://maisesports.com.br/cblol-2026-curse-e-eleito-mvp-da-final-apos-titulo-da-los-contra-a-furia",
+    "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -117,3 +117,20 @@ def titulares_regionais(time: Json, ids_ligas: dict[str, str]) -> list[str]:
                 if meta[lado]["esportsTeamId"] == time["id"]:
                     return [p["esportsPlayerId"] for p in meta[lado]["participantMetadata"]]
     return []
+
+
+def vod_do_jogo(game: Json, duracao: int | None) -> Json | None:
+    """VOD oficial do jogo no YouTube, de preferência em português.
+
+    O trecho do vídeo começa no draft, então o início da partida é estimado contando a
+    duração para trás a partir do fim do trecho.
+    """
+    vods = [v for v in game.get("vods") or [] if v.get("provider") == "youtube" and v.get("parameter")]
+    for idioma in ("pt-BR", "en-US"):
+        v = next((v for v in vods if v.get("locale") == idioma), None)
+        if v:
+            inicio = None
+            if v.get("endMillis") and duracao:
+                inicio = max((v.get("startMillis") or 0) // 1000, v["endMillis"] // 1000 - duracao - 30)
+            return {"yt": v["parameter"], "t0": inicio, "idioma": idioma}
+    return None

@@ -1,0 +1,199 @@
+{
+  "id": "keria",
+  "jogador": "Keria",
+  "nome_real": "Ryu Min-seok",
+  "pais": "Coreia do Sul",
+  "time_id": "t1",
+  "time": "T1",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Keria",
+  "historia": "Keria (Ryu Min-seok, Coreia do Sul) é suporte da T1. Está no 7º Mundial da carreira (antes: 2020, 2021, 2022, 2023, 2024 e 2025), somando 94 jogos e 67 vitórias até 2025. Campeão mundial em 2023, 2024 e 2025. Disputou a final em 2022, ficando com o vice.",
+  "destaques": [
+    {
+      "texto": "Está no 7º Mundial da carreira (antes: 2020, 2021, 2022, 2023, 2024 e 2025), somando 94 jogos e 67 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2023, 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2022, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 7º com mais jogos disputados em Mundiais (94).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2023: 7.72 em 12 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Renata Glasc, Lulu e Rakan.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 6,
+    "estreante_2026": false,
+    "jogos": 94,
+    "vitorias": 67,
+    "derrotas": 27,
+    "winrate_pct": 71.3,
+    "abates": 90,
+    "mortes": 192,
+    "assistencias": 973,
+    "kda": 5.54,
+    "titulos": [
+      2023,
+      2024,
+      2025
+    ],
+    "vices": [
+      2022
+    ],
+    "semifinais": [
+      2021
+    ],
+    "mvp_final": [],
+    "times": [
+      "DRX",
+      "T1"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "DRX",
+        "jogos": 9,
+        "vitorias": 4,
+        "derrotas": 5,
+        "abates": 12,
+        "mortes": 23,
+        "assistencias": 55,
+        "kda": 2.91,
+        "campeoes_mais_usados": [
+          "Pantheon",
+          "Lulu",
+          "Lux"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "T1",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 8,
+        "mortes": 17,
+        "assistencias": 120,
+        "kda": 7.53,
+        "campeoes_mais_usados": [
+          "Lulu",
+          "Thresh",
+          "Zilean"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "T1",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 25,
+        "mortes": 29,
+        "assistencias": 196,
+        "kda": 7.62,
+        "campeoes_mais_usados": [
+          "Nami",
+          "Renata Glasc",
+          "Yuumi"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2023,
+        "time": "T1",
+        "jogos": 12,
+        "vitorias": 10,
+        "derrotas": 2,
+        "abates": 12,
+        "mortes": 18,
+        "assistencias": 127,
+        "kda": 7.72,
+        "campeoes_mais_usados": [
+          "Renata Glasc",
+          "Bard",
+          "Tahm Kench"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2024,
+        "time": "T1",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "abates": 8,
+        "mortes": 33,
+        "assistencias": 167,
+        "kda": 5.3,
+        "campeoes_mais_usados": [
+          "Renata Glasc",
+          "Pyke",
+          "Rakan"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2025,
+        "time": "T1",
+        "jogos": 24,
+        "vitorias": 17,
+        "derrotas": 7,
+        "abates": 25,
+        "mortes": 72,
+        "assistencias": 308,
+        "kda": 4.62,
+        "campeoes_mais_usados": [
+          "Neeko",
+          "Rakan",
+          "Leona"
+        ],
+        "resultado": "Campeão"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Keria",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

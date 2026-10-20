@@ -1,0 +1,43 @@
+{
+  "id": "jiaqi",
+  "jogador": "JiaQi",
+  "nome_real": "Zi Jia-Qi",
+  "pais": "China",
+  "time_id": "ig",
+  "time": "Invictus Gaming",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/JiaQi",
+  "historia": "JiaQi (Zi Jia-Qi, China) é atirador da Invictus Gaming. Faz em 2026 o seu primeiro Mundial.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/JiaQi",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

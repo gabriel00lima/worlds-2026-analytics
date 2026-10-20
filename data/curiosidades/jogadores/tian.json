@@ -1,0 +1,147 @@
+{
+  "id": "tian",
+  "jogador": "Tian",
+  "nome_real": "Gao Tian-Liang",
+  "pais": "China",
+  "time_id": "tes",
+  "time": "Top Esports",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Tian",
+  "historia": "Tian (Gao Tian-Liang, China) é caçador da Top Esports. Está no 5º Mundial da carreira (antes: 2019, 2021, 2022 e 2024), somando 39 jogos e 23 vitórias até 2025. Campeão mundial em 2019. Eleito MVP da final do Mundial em 2019.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2019, 2021, 2022 e 2024), somando 39 jogos e 23 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2019.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Eleito MVP da final do Mundial em 2019.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2019: 5.20 em 18 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Lee Sin.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 39,
+    "vitorias": 23,
+    "derrotas": 16,
+    "winrate_pct": 59.0,
+    "abates": 108,
+    "mortes": 99,
+    "assistencias": 293,
+    "kda": 4.05,
+    "titulos": [
+      2019
+    ],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [
+      2019
+    ],
+    "times": [
+      "FunPlus Phoenix",
+      "Top Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "FunPlus Phoenix",
+        "jogos": 18,
+        "vitorias": 14,
+        "derrotas": 4,
+        "abates": 71,
+        "mortes": 44,
+        "assistencias": 158,
+        "kda": 5.2,
+        "campeoes_mais_usados": [
+          "Lee Sin",
+          "Gragas",
+          "Qiyana"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2021,
+        "time": "FunPlus Phoenix",
+        "jogos": 7,
+        "vitorias": 2,
+        "derrotas": 5,
+        "abates": 10,
+        "mortes": 23,
+        "assistencias": 28,
+        "kda": 1.65,
+        "campeoes_mais_usados": [
+          "Jarvan IV",
+          "Viego",
+          "Lee Sin"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "Top Esports",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "abates": 11,
+        "mortes": 14,
+        "assistencias": 44,
+        "kda": 3.93,
+        "campeoes_mais_usados": [
+          "Poppy",
+          "Graves",
+          "Lee Sin"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Top Esports",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 16,
+        "mortes": 18,
+        "assistencias": 63,
+        "kda": 4.39,
+        "campeoes_mais_usados": [
+          "Skarner",
+          "Sejuani",
+          "Xin Zhao"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Tian",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

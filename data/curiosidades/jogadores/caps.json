@@ -1,0 +1,240 @@
+{
+  "id": "caps",
+  "jogador": "Caps",
+  "nome_real": "Rasmus Borregaard Winther",
+  "pais": "Dinamarca",
+  "time_id": "g2",
+  "time": "G2 Esports",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Caps",
+  "historia": "Caps (Rasmus Borregaard Winther, Dinamarca) é mid laner da G2 Esports. Está no 9º Mundial da carreira (antes: 2017, 2018, 2019, 2020, 2022, 2023, 2024 e 2025), somando 101 jogos e 54 vitórias até 2025. Disputou a final em 2018 e 2019, ficando com o vice. Chegou à semifinal em 2020.",
+  "destaques": [
+    {
+      "texto": "Está no 9º Mundial da carreira (antes: 2017, 2018, 2019, 2020, 2022, 2023, 2024 e 2025), somando 101 jogos e 54 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2018 e 2019, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2020.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 6º jogador com mais abates na história dos Mundiais (336).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 5º com mais jogos disputados em Mundiais (101).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Orianna, Ryze e Azir.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A G2, seu time, é a campeã da LEC Summer 2026 e primeira cabeça de chave da Europa.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/"
+      ]
+    },
+    {
+      "texto": "Venceu o MSI 2019 com a G2.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2019_Mid-Season_Invitational"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 8,
+    "estreante_2026": false,
+    "jogos": 101,
+    "vitorias": 54,
+    "derrotas": 47,
+    "winrate_pct": 53.5,
+    "abates": 336,
+    "mortes": 275,
+    "assistencias": 548,
+    "kda": 3.21,
+    "titulos": [],
+    "vices": [
+      2018,
+      2019
+    ],
+    "semifinais": [
+      2020
+    ],
+    "mvp_final": [],
+    "times": [
+      "Fnatic",
+      "G2 Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2017,
+        "time": "Fnatic",
+        "jogos": 19,
+        "vitorias": 11,
+        "derrotas": 8,
+        "abates": 61,
+        "mortes": 38,
+        "assistencias": 85,
+        "kda": 3.84,
+        "campeoes_mais_usados": [
+          "Syndra",
+          "Taliyah",
+          "Ryze",
+          "Cassiopeia"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2018,
+        "time": "Fnatic",
+        "jogos": 17,
+        "vitorias": 12,
+        "derrotas": 5,
+        "abates": 67,
+        "mortes": 47,
+        "assistencias": 88,
+        "kda": 3.3,
+        "campeoes_mais_usados": [
+          "Irelia",
+          "Aatrox",
+          "Azir"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2019,
+        "time": "G2 Esports",
+        "jogos": 18,
+        "vitorias": 11,
+        "derrotas": 7,
+        "abates": 59,
+        "mortes": 46,
+        "assistencias": 96,
+        "kda": 3.37,
+        "campeoes_mais_usados": [
+          "Ryze",
+          "Syndra",
+          "Orianna"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2020,
+        "time": "G2 Esports",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 62,
+        "mortes": 40,
+        "assistencias": 104,
+        "kda": 4.15,
+        "campeoes_mais_usados": [
+          "Sylas",
+          "Twisted Fate",
+          "Ekko"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "G2 Esports",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 14,
+        "mortes": 16,
+        "assistencias": 20,
+        "kda": 2.12,
+        "campeoes_mais_usados": [
+          "Sylas",
+          "Seraphine",
+          "Swain"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "G2 Esports",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "abates": 21,
+        "mortes": 36,
+        "assistencias": 44,
+        "kda": 1.81,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Azir",
+          "Jayce"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "G2 Esports",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 19,
+        "mortes": 22,
+        "assistencias": 60,
+        "kda": 3.59,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Yone",
+          "Sylas"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "G2 Esports",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 33,
+        "mortes": 30,
+        "assistencias": 51,
+        "kda": 2.8,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Azir",
+          "Ryze"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2019_Mid-Season_Invitational",
+    "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/",
+    "https://lol.fandom.com/wiki/Caps",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

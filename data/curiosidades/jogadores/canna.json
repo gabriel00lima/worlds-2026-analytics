@@ -1,0 +1,107 @@
+{
+  "id": "canna",
+  "jogador": "Canna",
+  "nome_real": "Kim Chang-dong",
+  "pais": "Coreia do Sul",
+  "time_id": "kc",
+  "time": "Karmine Corp",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Canna",
+  "historia": "Canna (Kim Chang-dong, Coreia do Sul) é top laner da Karmine Corp. Está no 3º Mundial da carreira (antes: 2021 e 2023), somando 22 jogos e 14 vitórias até 2025. Chegou à semifinal em 2021. Campeões que mais aparecem nos seus Mundiais: Jayce.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2021 e 2023), somando 22 jogos e 14 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Jayce.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 22,
+    "vitorias": 14,
+    "derrotas": 8,
+    "winrate_pct": 63.6,
+    "abates": 54,
+    "mortes": 45,
+    "assistencias": 104,
+    "kda": 3.51,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2021
+    ],
+    "mvp_final": [],
+    "times": [
+      "T1",
+      "Dplus Kia"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "T1",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 37,
+        "mortes": 26,
+        "assistencias": 63,
+        "kda": 3.85,
+        "campeoes_mais_usados": [
+          "Kennen",
+          "Jayce",
+          "Graves"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "Dplus Kia",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 17,
+        "mortes": 19,
+        "assistencias": 41,
+        "kda": 3.05,
+        "campeoes_mais_usados": [
+          "Rumble",
+          "K'Sante",
+          "Jayce"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Canna",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

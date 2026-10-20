@@ -1,0 +1,88 @@
+{
+  "id": "shad0w",
+  "jogador": "Shad0w",
+  "nome_real": "Zhao Zhi-Qiang",
+  "pais": "Itália",
+  "time_id": "cfo",
+  "time": "CTBC Flying Oyster",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Shad0w",
+  "historia": "Shad0w (Zhao Zhi-Qiang, Itália) é caçador da CTBC Flying Oyster. Está no 3º Mundial da carreira (antes: 2020 e 2025), somando 16 jogos e 8 vitórias até 2025. Seu melhor Mundial em KDA foi 2025: 4.50 em 6 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2020 e 2025), somando 16 jogos e 8 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2025: 4.50 em 6 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 16,
+    "vitorias": 8,
+    "derrotas": 8,
+    "winrate_pct": 50.0,
+    "abates": 43,
+    "mortes": 50,
+    "assistencias": 96,
+    "kda": 2.78,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "MAD Lions",
+      "Bilibili Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "MAD Lions",
+        "jogos": 10,
+        "vitorias": 4,
+        "derrotas": 6,
+        "abates": 26,
+        "mortes": 36,
+        "assistencias": 50,
+        "kda": 2.11,
+        "campeoes_mais_usados": [
+          "Graves",
+          "Evelynn",
+          "Lillia"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Bilibili Gaming",
+        "jogos": 6,
+        "vitorias": 4,
+        "derrotas": 2,
+        "abates": 17,
+        "mortes": 14,
+        "assistencias": 46,
+        "kda": 4.5,
+        "campeoes_mais_usados": [
+          "Xin Zhao",
+          "Naafiri",
+          "Trundle"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Shad0w",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -9,34 +9,39 @@
     {
       "posicao": "top",
       "jogador": "Breathe",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "breathe"
     },
     {
       "posicao": "jungle",
       "jogador": "Tarzan",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "tarzan"
     },
     {
       "posicao": "mid",
       "jogador": "Shanks",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "shanks"
     },
     {
       "posicao": "atirador",
       "jogador": "Hope",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "hope"
     },
     {
       "posicao": "suporte",
       "jogador": "Kael",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "kael"
     }
   ],
   "elenco_fontes": [
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Sem campanha marcante em Mundiais até aqui.",
+  "melhor_mundial": "Um Mundial antes deste (2025, 6 vitórias e 4 derrotas).",
   "curiosidades": [
     {
       "texto": "Primeira cabeça de chave da China em 2026, com o segundo título de LPL da história do clube.",
@@ -45,19 +50,39 @@
         "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
         "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
       ]
-    },
-    {
-      "texto": "Fontes divergem sobre o top: uma lista Breathe, outra (mais antiga) lista Flandre.",
-      "confianca": "fonte_unica",
-      "fontes": [
-        "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
-        "https://egamersworld.com/blog/every-worlds-2026-team-qualified-6Q23AMZcmS"
-      ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 1,
+    "nomes_usados": [
+      "Anyone's Legend"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 10,
+    "vitorias": 6,
+    "edicoes": [
+      {
+        "ano": 2025,
+        "nome": "Anyone's Legend",
+        "jogos": 10,
+        "vitorias": 6,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Shanks",
+          "Hope",
+          "Flandre",
+          "Tarzan",
+          "Kael"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
-    "https://egamersworld.com/blog/every-worlds-2026-team-qualified-6Q23AMZcmS",
     "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
   ],
   "atualizado_em": "2026-10-20"

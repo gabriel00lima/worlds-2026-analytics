@@ -1,0 +1,137 @@
+{
+  "id": "zeka",
+  "jogador": "Zeka",
+  "nome_real": "Kim Geon-woo",
+  "pais": "Coreia do Sul",
+  "time_id": "hle",
+  "time": "Hanwha Life Esports",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Zeka_(Kim_Geon-woo)",
+  "historia": "Zeka (Kim Geon-woo, Coreia do Sul) é mid laner da Hanwha Life Esports. Está no 4º Mundial da carreira (antes: 2022, 2024 e 2025), somando 47 jogos e 30 vitórias até 2025. Campeão mundial em 2022. Seu melhor Mundial em KDA foi 2022: 6.24 em 26 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 4º Mundial da carreira (antes: 2022, 2024 e 2025), somando 47 jogos e 30 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2022.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2022: 6.24 em 26 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Sylas e Azir.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Hanwha Life, seu time, é a campeã do MSI 2026, com virada de 3–2 sobre a BLG na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    },
+    {
+      "texto": "A DRX campeã de 2022 saiu do Play-In, uma das campanhas mais improváveis da história do torneio.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2022_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 3,
+    "estreante_2026": false,
+    "jogos": 47,
+    "vitorias": 30,
+    "derrotas": 17,
+    "winrate_pct": 63.8,
+    "abates": 200,
+    "mortes": 94,
+    "assistencias": 245,
+    "kda": 4.73,
+    "titulos": [
+      2022
+    ],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "DRX",
+      "Hanwha Life Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2022,
+        "time": "DRX",
+        "jogos": 26,
+        "vitorias": 19,
+        "derrotas": 7,
+        "abates": 121,
+        "mortes": 37,
+        "assistencias": 110,
+        "kda": 6.24,
+        "campeoes_mais_usados": [
+          "Sylas",
+          "Azir",
+          "Akali"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2024,
+        "time": "Hanwha Life Esports",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "abates": 45,
+        "mortes": 33,
+        "assistencias": 74,
+        "kda": 3.61,
+        "campeoes_mais_usados": [
+          "Yone",
+          "Sylas",
+          "Ahri"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Hanwha Life Esports",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 34,
+        "mortes": 24,
+        "assistencias": 61,
+        "kda": 3.96,
+        "campeoes_mais_usados": [
+          "Azir",
+          "Aurora",
+          "Taliyah"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2022_League_of_Legends_World_Championship",
+    "https://lol.fandom.com/wiki/Zeka_(Kim_Geon-woo)",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

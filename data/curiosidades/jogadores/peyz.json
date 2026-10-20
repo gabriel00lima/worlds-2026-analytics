@@ -1,0 +1,95 @@
+{
+  "id": "peyz",
+  "jogador": "Peyz",
+  "nome_real": "Kim Su-hwan",
+  "pais": "Coreia do Sul",
+  "time_id": "t1",
+  "time": "T1",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Peyz",
+  "historia": "Peyz (Kim Su-hwan, Coreia do Sul) é atirador da T1. Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 18 jogos e 12 vitórias até 2025. Chegou à semifinal em 2024. Seu melhor Mundial em KDA foi 2024: 8.53 em 14 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 18 jogos e 12 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2024.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2024: 8.53 em 14 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 18,
+    "vitorias": 12,
+    "derrotas": 6,
+    "winrate_pct": 66.7,
+    "abates": 80,
+    "mortes": 20,
+    "assistencias": 112,
+    "kda": 9.6,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2024
+    ],
+    "mvp_final": [],
+    "times": [
+      "Gen.G"
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "time": "Gen.G",
+        "jogos": 4,
+        "vitorias": 4,
+        "derrotas": 0,
+        "abates": 22,
+        "mortes": 3,
+        "assistencias": 25,
+        "kda": 15.67,
+        "campeoes_mais_usados": [
+          "Xayah",
+          "Kai'Sa"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Gen.G",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 58,
+        "mortes": 17,
+        "assistencias": 87,
+        "kda": 8.53,
+        "campeoes_mais_usados": [
+          "Ashe",
+          "Kalista",
+          "Ezreal"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Peyz",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

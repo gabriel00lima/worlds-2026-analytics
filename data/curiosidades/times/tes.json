@@ -9,34 +9,39 @@
     {
       "posicao": "top",
       "jogador": "369",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "369"
     },
     {
       "posicao": "jungle",
       "jogador": "Tian",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "tian"
     },
     {
       "posicao": "mid",
       "jogador": "Creme",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "creme"
     },
     {
       "posicao": "atirador",
       "jogador": "JackeyLove",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "jackeylove"
     },
     {
       "posicao": "suporte",
       "jogador": "Zhuo",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "zhuo"
     }
   ],
   "elenco_fontes": [
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Semifinal em 2020 (caiu para a Suning).",
+  "melhor_mundial": "Semifinal em 2020 e 2025.",
   "curiosidades": [
     {
       "texto": "O atirador JackeyLove foi campeão mundial em 2018 pela IG, adversária chinesa deste mesmo Mundial.",
@@ -53,11 +58,84 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 4,
+    "nomes_usados": [
+      "Top Esports"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 45,
+    "vitorias": 23,
+    "edicoes": [
+      {
+        "ano": 2020,
+        "nome": "Top Esports",
+        "jogos": 15,
+        "vitorias": 9,
+        "derrotas": 6,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "Karsa",
+          "knight",
+          "JackeyLove",
+          "369",
+          "yuyanjia"
+        ]
+      },
+      {
+        "ano": 2022,
+        "nome": "Top Esports",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "resultado_top4": null,
+        "jogadores": [
+          "JackeyLove",
+          "knight",
+          "Tian",
+          "Mark",
+          "Wayward"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "Top Esports",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "JackeyLove",
+          "Creme",
+          "369",
+          "Tian",
+          "Meiko"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "Top Esports",
+        "jogos": 16,
+        "vitorias": 7,
+        "derrotas": 9,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "JackeyLove",
+          "Kanavi",
+          "Creme",
+          "369",
+          "Hang"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
     "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship",
     "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "atualizado_em": "2026-10-20"
 }

@@ -1,0 +1,71 @@
+{
+  "id": "lucid",
+  "jogador": "Lucid",
+  "nome_real": "Choi Yong-hyeok",
+  "pais": "Coreia do Sul",
+  "time_id": "dk",
+  "time": "Dplus KIA",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Lucid_(Choi_Yong-hyeok)",
+  "historia": "Lucid (Choi Yong-hyeok, Coreia do Sul) é caçador da Dplus KIA. Está no segundo Mundial da carreira (antes: 2024), somando 9 jogos e 3 vitórias até 2025. A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final.",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (antes: 2024), somando 9 jogos e 3 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 9,
+    "vitorias": 3,
+    "derrotas": 6,
+    "winrate_pct": 33.3,
+    "abates": 17,
+    "mortes": 41,
+    "assistencias": 54,
+    "kda": 1.73,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Dplus Kia"
+    ],
+    "edicoes": [
+      {
+        "ano": 2024,
+        "time": "Dplus Kia",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "abates": 17,
+        "mortes": 41,
+        "assistencias": 54,
+        "kda": 1.73,
+        "campeoes_mais_usados": [
+          "Vi",
+          "Skarner",
+          "Sejuani"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Lucid_(Choi_Yong-hyeok)",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

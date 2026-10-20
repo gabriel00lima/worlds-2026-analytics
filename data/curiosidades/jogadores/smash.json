@@ -1,0 +1,66 @@
+{
+  "id": "smash",
+  "jogador": "Smash",
+  "nome_real": "Shin Geum-jae",
+  "pais": "Coreia do Sul",
+  "time_id": "dk",
+  "time": "Dplus KIA",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Smash_(Shin_Geum-jae)",
+  "historia": "Smash (Shin Geum-jae, Coreia do Sul) é atirador da Dplus KIA. Faz em 2026 o seu primeiro Mundial. A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final. Foi o MVP da final da Esports World Cup 2026.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Dplus KIA, seu time, venceu a Esports World Cup 2026 com 3–0 na Karmine Corp na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    },
+    {
+      "texto": "Foi o MVP da final da Esports World Cup 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    },
+    {
+      "texto": "Fez toda a carreira de base na T1 e chegou a substituir Gumayusi no time principal no começo de 2025, antes de assinar com a Dplus KIA.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/sources-smash-set-to-join-dplus-kia/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Smash_(Shin_Geum-jae)",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.sheepesports.com/articles/sources-smash-set-to-join-dplus-kia/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "flandre",
+  "jogador": "Flandre",
+  "nome_real": "Li Xuan-Jun",
+  "pais": "China",
+  "time_id": "blg",
+  "time": "Bilibili Gaming",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Flandre",
+  "historia": "Flandre (Li Xuan-Jun, China) é top laner da Bilibili Gaming. Está no 4º Mundial da carreira (antes: 2021, 2022 e 2025), somando 42 jogos e 25 vitórias até 2025. Campeão mundial em 2021. A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+  "destaques": [
+    {
+      "texto": "Está no 4º Mundial da carreira (antes: 2021, 2022 e 2025), somando 42 jogos e 25 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 3,
+    "estreante_2026": false,
+    "jogos": 42,
+    "vitorias": 25,
+    "derrotas": 17,
+    "winrate_pct": 59.5,
+    "abates": 114,
+    "mortes": 103,
+    "assistencias": 194,
+    "kda": 2.99,
+    "titulos": [
+      2021
+    ],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "EDward Gaming",
+      "Anyone's Legend"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "EDward Gaming",
+        "jogos": 21,
+        "vitorias": 13,
+        "derrotas": 8,
+        "abates": 56,
+        "mortes": 53,
+        "assistencias": 91,
+        "kda": 2.77,
+        "campeoes_mais_usados": [
+          "Graves",
+          "Jayce",
+          "Kennen"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2022,
+        "time": "EDward Gaming",
+        "jogos": 11,
+        "vitorias": 6,
+        "derrotas": 5,
+        "abates": 23,
+        "mortes": 20,
+        "assistencias": 46,
+        "kda": 3.45,
+        "campeoes_mais_usados": [
+          "Fiora",
+          "Aatrox",
+          "Jax"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Anyone's Legend",
+        "jogos": 10,
+        "vitorias": 6,
+        "derrotas": 4,
+        "abates": 35,
+        "mortes": 30,
+        "assistencias": 57,
+        "kda": 3.07,
+        "campeoes_mais_usados": [
+          "Rek'Sai",
+          "Ambessa",
+          "Mordekaiser"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Flandre",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

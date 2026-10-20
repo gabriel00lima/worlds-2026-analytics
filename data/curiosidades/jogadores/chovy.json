@@ -1,0 +1,232 @@
+{
+  "id": "chovy",
+  "jogador": "Chovy",
+  "nome_real": "Jeong Ji-hoon",
+  "pais": "Coreia do Sul",
+  "time_id": "gen-g",
+  "time": "Gen.G",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Chovy",
+  "historia": "Chovy (Jeong Ji-hoon, Coreia do Sul) é mid laner da Gen.G. Está no 8º Mundial da carreira (antes: 2019, 2020, 2021, 2022, 2023, 2024 e 2025), somando 84 jogos e 51 vitórias até 2025. Chegou à semifinal em 2022, 2024 e 2025. Jogou Mundiais por 4 times diferentes: Griffin, DRX, Hanwha Life Esports e Gen.G.",
+  "destaques": [
+    {
+      "texto": "Está no 8º Mundial da carreira (antes: 2019, 2020, 2021, 2022, 2023, 2024 e 2025), somando 84 jogos e 51 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2022, 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 4 times diferentes: Griffin, DRX, Hanwha Life Esports e Gen.G.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 15º jogador com mais abates na história dos Mundiais (296).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 14º com mais jogos disputados em Mundiais (84).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2024: 7.28 em 14 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Sylas, Galio e Orianna.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Gen.G, seu time, é a campeã da LCK 2026 (3–1 na Hanwha Life na final).",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    },
+    {
+      "texto": "Venceu o MSI em 2024 e 2025 com a Gen.G.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2024_Mid-Season_Invitational",
+        "https://en.wikipedia.org/wiki/2025_Mid-Season_Invitational"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 7,
+    "estreante_2026": false,
+    "jogos": 84,
+    "vitorias": 51,
+    "derrotas": 33,
+    "winrate_pct": 60.7,
+    "abates": 296,
+    "mortes": 135,
+    "assistencias": 476,
+    "kda": 5.72,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2022,
+      2024,
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "Griffin",
+      "DRX",
+      "Hanwha Life Esports",
+      "Gen.G"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "Griffin (Korean Team)",
+        "jogos": 11,
+        "vitorias": 7,
+        "derrotas": 4,
+        "abates": 30,
+        "mortes": 16,
+        "assistencias": 66,
+        "kda": 6.0,
+        "campeoes_mais_usados": [
+          "Sion",
+          "Galio",
+          "Camille"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2020,
+        "time": "DRX",
+        "jogos": 9,
+        "vitorias": 4,
+        "derrotas": 5,
+        "abates": 16,
+        "mortes": 12,
+        "assistencias": 37,
+        "kda": 4.42,
+        "campeoes_mais_usados": [
+          "Galio",
+          "Orianna",
+          "Sett"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "Hanwha Life Esports",
+        "jogos": 17,
+        "vitorias": 10,
+        "derrotas": 7,
+        "abates": 51,
+        "mortes": 32,
+        "assistencias": 88,
+        "kda": 4.34,
+        "campeoes_mais_usados": [
+          "Azir",
+          "LeBlanc",
+          "Sylas"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "Gen.G",
+        "jogos": 16,
+        "vitorias": 10,
+        "derrotas": 6,
+        "abates": 63,
+        "mortes": 22,
+        "assistencias": 58,
+        "kda": 5.5,
+        "campeoes_mais_usados": [
+          "Azir",
+          "Sylas",
+          "Ryze"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2023,
+        "time": "Gen.G",
+        "jogos": 4,
+        "vitorias": 4,
+        "derrotas": 0,
+        "abates": 23,
+        "mortes": 4,
+        "assistencias": 34,
+        "kda": 14.25,
+        "campeoes_mais_usados": [
+          "Akali",
+          "Ahri",
+          "Sylas"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Gen.G",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 59,
+        "mortes": 18,
+        "assistencias": 72,
+        "kda": 7.28,
+        "campeoes_mais_usados": [
+          "Ahri",
+          "Sylas",
+          "Smolder"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Gen.G",
+        "jogos": 13,
+        "vitorias": 8,
+        "derrotas": 5,
+        "abates": 54,
+        "mortes": 31,
+        "assistencias": 121,
+        "kda": 5.65,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Galio",
+          "Taliyah"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2024_Mid-Season_Invitational",
+    "https://en.wikipedia.org/wiki/2025_Mid-Season_Invitational",
+    "https://lol.fandom.com/wiki/Chovy",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

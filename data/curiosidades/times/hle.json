@@ -9,34 +9,39 @@
     {
       "posicao": "top",
       "jogador": "Zeus",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "zeus"
     },
     {
       "posicao": "jungle",
       "jogador": "Kanavi",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "kanavi"
     },
     {
       "posicao": "mid",
       "jogador": "Zeka",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "zeka"
     },
     {
       "posicao": "atirador",
       "jogador": "Gumayusi",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "gumayusi"
     },
     {
       "posicao": "suporte",
       "jogador": "Delight",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "delight"
     }
   ],
   "elenco_fontes": [
-    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Quartas de final.",
+  "melhor_mundial": "Nunca chegou a uma semifinal em três participações (2021, 2024 e 2025).",
   "curiosidades": [
     {
       "texto": "Campeã do MSI 2026 em casa (Daejeon), com virada de 3–2 sobre a BLG; Zeus foi o MVP da final. Primeiro MSI do clube e quinto da Coreia.",
@@ -47,11 +52,12 @@
       ]
     },
     {
-      "texto": "Tem dois ex-campeões mundiais pela T1: Zeus (2023) e Gumayusi.",
+      "texto": "Tem três campeões mundiais no elenco: Zeus (2023 e 2024) e Gumayusi (2023 a 2025) pela T1, e Zeka (2022) pela DRX.",
       "confianca": "confirmado",
       "fontes": [
         "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en",
-        "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship"
+        "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship",
+        "mundiais-passados/ (Leaguepedia)"
       ]
     },
     {
@@ -62,12 +68,72 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 3,
+    "nomes_usados": [
+      "Hanwha Life Esports"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 38,
+    "vitorias": 21,
+    "edicoes": [
+      {
+        "ano": 2021,
+        "nome": "Hanwha Life Esports",
+        "jogos": 17,
+        "vitorias": 10,
+        "derrotas": 7,
+        "resultado_top4": null,
+        "jogadores": [
+          "Deft",
+          "Willer",
+          "Chovy",
+          "Morgan",
+          "Vsta"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "Hanwha Life Esports",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "resultado_top4": null,
+        "jogadores": [
+          "Viper",
+          "Zeka",
+          "Doran",
+          "Peanut",
+          "Delight"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "Hanwha Life Esports",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Viper",
+          "Zeka",
+          "Zeus",
+          "Peanut",
+          "Delight"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://rdy.gg/en/lol/news/hle-wins-msi-2026",
     "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
     "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
-    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en"
+    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en",
+    "mundiais-passados/ (Leaguepedia)"
   ],
   "atualizado_em": "2026-10-20"
 }

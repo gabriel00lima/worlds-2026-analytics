@@ -9,31 +9,36 @@
     {
       "posicao": "top",
       "jogador": "Morgan",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "morgan"
     },
     {
       "posicao": "jungle",
       "jogador": "Josedeodo",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "josedeodo"
     },
     {
       "posicao": "mid",
       "jogador": "Quid",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "quid"
     },
     {
       "posicao": "atirador",
       "jogador": "Yeon",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "yeon"
     },
     {
       "posicao": "suporte",
       "jogador": "CoreJJ",
-      "confianca": "fonte_unica"
+      "confianca": "confirmado",
+      "jogador_id": "corejj"
     }
   ],
   "elenco_fontes": [
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
   "melhor_mundial": "Nunca chegou a uma semifinal de Mundial.",
@@ -44,19 +49,114 @@
       "fontes": [
         "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship"
       ]
-    },
-    {
-      "texto": "Há divergência na escalação: outra fonte lista Reignover e UmTi no elenco recente.",
-      "confianca": "fonte_unica",
-      "fontes": [
-        "https://egamersworld.com/lol/match/q8qUtLA6g/team-liquid-vs-ctbc-flying-oyster-zaN6r1ueRf"
-      ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 6,
+    "nomes_usados": [
+      "Team Liquid"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 45,
+    "vitorias": 22,
+    "edicoes": [
+      {
+        "ano": 2018,
+        "nome": "Team Liquid",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "resultado_top4": null,
+        "jogadores": [
+          "Doublelift",
+          "Pobelter",
+          "Xmithie",
+          "Impact",
+          "Olleh"
+        ]
+      },
+      {
+        "ano": 2019,
+        "nome": "Team Liquid",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "resultado_top4": null,
+        "jogadores": [
+          "Doublelift",
+          "Jensen",
+          "Impact",
+          "Xmithie",
+          "CoreJJ"
+        ]
+      },
+      {
+        "ano": 2020,
+        "nome": "Team Liquid",
+        "jogos": 11,
+        "vitorias": 7,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Jensen",
+          "Tactical",
+          "Broxah",
+          "Impact",
+          "CoreJJ"
+        ]
+      },
+      {
+        "ano": 2021,
+        "nome": "Team Liquid",
+        "jogos": 7,
+        "vitorias": 3,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Jensen",
+          "Alphari",
+          "Tactical",
+          "Santorin",
+          "CoreJJ"
+        ]
+      },
+      {
+        "ano": 2023,
+        "nome": "Team Liquid",
+        "jogos": 5,
+        "vitorias": 1,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "APA",
+          "Pyosik",
+          "Yeon",
+          "Summit",
+          "CoreJJ"
+        ]
+      },
+      {
+        "ano": 2024,
+        "nome": "Team Liquid",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "Yeon",
+          "APA",
+          "Impact",
+          "UmTi",
+          "CoreJJ"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
-    "https://egamersworld.com/lol/match/q8qUtLA6g/team-liquid-vs-ctbc-flying-oyster-zaN6r1ueRf",
     "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "atualizado_em": "2026-10-20"
 }

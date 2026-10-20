@@ -1,0 +1,130 @@
+{
+  "id": "on",
+  "jogador": "ON",
+  "nome_real": "Luo Wen-Jun",
+  "pais": "China",
+  "time_id": "blg",
+  "time": "Bilibili Gaming",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/ON",
+  "historia": "ON (Luo Wen-Jun, China) é suporte da Bilibili Gaming. Está no 4º Mundial da carreira (antes: 2023, 2024 e 2025), somando 41 jogos e 23 vitórias até 2025. Disputou a final em 2024, ficando com o vice. Chegou à semifinal em 2023.",
+  "destaques": [
+    {
+      "texto": "Está no 4º Mundial da carreira (antes: 2023, 2024 e 2025), somando 41 jogos e 23 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2024, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2023.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Rakan e Rell.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 3,
+    "estreante_2026": false,
+    "jogos": 41,
+    "vitorias": 23,
+    "derrotas": 18,
+    "winrate_pct": 56.1,
+    "abates": 26,
+    "mortes": 134,
+    "assistencias": 386,
+    "kda": 3.07,
+    "titulos": [],
+    "vices": [
+      2024
+    ],
+    "semifinais": [
+      2023
+    ],
+    "mvp_final": [],
+    "times": [
+      "Bilibili Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "time": "Bilibili Gaming",
+        "jogos": 13,
+        "vitorias": 6,
+        "derrotas": 7,
+        "abates": 12,
+        "mortes": 30,
+        "assistencias": 111,
+        "kda": 4.1,
+        "campeoes_mais_usados": [
+          "Rell",
+          "Rakan",
+          "Ashe"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2024,
+        "time": "Bilibili Gaming",
+        "jogos": 20,
+        "vitorias": 13,
+        "derrotas": 7,
+        "abates": 10,
+        "mortes": 74,
+        "assistencias": 193,
+        "kda": 2.74,
+        "campeoes_mais_usados": [
+          "Rell",
+          "Rakan",
+          "Alistar"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2025,
+        "time": "Bilibili Gaming",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 4,
+        "mortes": 30,
+        "assistencias": 82,
+        "kda": 2.87,
+        "campeoes_mais_usados": [
+          "Neeko",
+          "Rakan",
+          "Elise"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/ON",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "yeon",
+  "jogador": "Yeon",
+  "nome_real": "Sean Sung",
+  "pais": "Estados Unidos",
+  "time_id": "tl",
+  "time": "Team Liquid",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Yeon_(Sean_Sung)",
+  "historia": "Yeon (Sean Sung, Estados Unidos) é atirador da Team Liquid. Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 15 jogos e 6 vitórias até 2025. Seu melhor Mundial em KDA foi 2024: 4.89 em 10 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2023 e 2024), somando 15 jogos e 6 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2024: 4.89 em 10 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 15,
+    "vitorias": 6,
+    "derrotas": 9,
+    "winrate_pct": 40.0,
+    "abates": 45,
+    "mortes": 30,
+    "assistencias": 62,
+    "kda": 3.57,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Team Liquid"
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "time": "Team Liquid",
+        "jogos": 5,
+        "vitorias": 1,
+        "derrotas": 4,
+        "abates": 7,
+        "mortes": 12,
+        "assistencias": 12,
+        "kda": 1.58,
+        "campeoes_mais_usados": [
+          "Aphelios",
+          "Xayah",
+          "Kalista"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Team Liquid",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 38,
+        "mortes": 18,
+        "assistencias": 50,
+        "kda": 4.89,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Ezreal",
+          "Jhin"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Yeon_(Sean_Sung)",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

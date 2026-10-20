@@ -9,32 +9,36 @@
     {
       "posicao": "top",
       "jogador": "Canna",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "canna"
     },
     {
       "posicao": "jungle",
       "jogador": "Yike",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "yike"
     },
     {
       "posicao": "mid",
-      "jogador": "Kyeahoo",
-      "confianca": "confirmado"
+      "jogador": "kyeahoo",
+      "confianca": "confirmado",
+      "jogador_id": "kyeahoo"
     },
     {
       "posicao": "atirador",
       "jogador": "Caliste",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "caliste"
     },
     {
       "posicao": "suporte",
       "jogador": "Busio",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "busio"
     }
   ],
   "elenco_fontes": [
-    "https://bo3.gg/lol/news/official-karmine-corp-has-finalized-its-roster-for-the-2026-lec-season",
-    "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
   "melhor_mundial": "Estreia em Mundiais em 2026.",
@@ -64,10 +68,20 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 0,
+    "nomes_usados": [],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 0,
+    "vitorias": 0,
+    "edicoes": [],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
-    "https://bo3.gg/lol/news/official-karmine-corp-has-finalized-its-roster-for-the-2026-lec-season",
     "https://egamersworld.com/lol/news/37891/karmine-corp-sweep-mvk-esports-3-0-to-secure-histo-JGn7JUv8u",
     "https://escorenews.com/en/lol/esports-world-cup-2026/playoff/all-gamers-anyone-s-legen-vs-karmine-corp-639031",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
     "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins",
     "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",

@@ -9,35 +9,39 @@
     {
       "posicao": "top",
       "jogador": "Rest",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "rest"
     },
     {
       "posicao": "jungle",
       "jogador": "Shad0w",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "shad0w"
     },
     {
       "posicao": "mid",
-      "jogador": "Pout",
-      "confianca": "confirmado"
+      "jogador": "POUT",
+      "confianca": "confirmado",
+      "jogador_id": "pout"
     },
     {
       "posicao": "atirador",
       "jogador": "Doggo",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "doggo"
     },
     {
       "posicao": "suporte",
       "jogador": "Kino",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "kino"
     }
   ],
   "elenco_fontes": [
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
-    "https://liquipedia.net/leagueoflegends/CTBC_Flying_Oyster"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Quartas de final em 2025.",
+  "melhor_mundial": "Quartas de final em 2025, na terceira participação.",
   "curiosidades": [
     {
       "texto": "Em 2025 chegou às quartas do Mundial, a primeira vez em dez anos que um time da região ficou entre os oito melhores.",
@@ -54,10 +58,70 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 3,
+    "nomes_usados": [
+      "CTBC Flying Oyster"
+    ],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 25,
+    "vitorias": 9,
+    "edicoes": [
+      {
+        "ano": 2022,
+        "nome": "CTBC Flying Oyster",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "resultado_top4": null,
+        "jogadores": [
+          "Shunn",
+          "Mission",
+          "Gemini",
+          "Rest",
+          "Koala",
+          "Atlen"
+        ]
+      },
+      {
+        "ano": 2023,
+        "nome": "CTBC Flying Oyster",
+        "jogos": 7,
+        "vitorias": 3,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Shunn",
+          "JimieN",
+          "Rest",
+          "Gemini",
+          "ShiauC"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "CTBC Flying Oyster",
+        "jogos": 12,
+        "vitorias": 5,
+        "derrotas": 7,
+        "resultado_top4": null,
+        "jogadores": [
+          "Doggo",
+          "HongQ",
+          "JunJia",
+          "Rest",
+          "Driver",
+          "Kaiwing"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://liquipedia.net/leagueoflegends/CTBC_Flying_Oyster",
-    "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal",
-    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
+    "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal"
   ],
   "atualizado_em": "2026-10-20"
 }

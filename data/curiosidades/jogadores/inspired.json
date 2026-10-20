@@ -1,0 +1,157 @@
+{
+  "id": "inspired",
+  "jogador": "Inspired",
+  "nome_real": "Kacper Słoma",
+  "pais": "Polônia",
+  "time_id": "lyon",
+  "time": "LYON",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Inspired",
+  "historia": "Inspired (Kacper Słoma, Polônia) é caçador da LYON. Está no 6º Mundial da carreira (antes: 2020, 2021, 2022, 2024 e 2025), somando 52 jogos e 23 vitórias até 2025. Jogou Mundiais por 3 times diferentes: Rogue, Evil Geniuses e FlyQuest. Seu melhor Mundial em KDA foi 2022: 7.09 em 16 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2020, 2021, 2022, 2024 e 2025), somando 52 jogos e 23 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Rogue, Evil Geniuses e FlyQuest.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2022: 7.09 em 16 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A LYON, seu time, venceu o Lock-In e o Spring da LCS 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+        "https://en.wikipedia.org/wiki/2026_LCS_season"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 52,
+    "vitorias": 23,
+    "derrotas": 29,
+    "winrate_pct": 44.2,
+    "abates": 126,
+    "mortes": 120,
+    "assistencias": 347,
+    "kda": 3.94,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Rogue",
+      "Evil Geniuses",
+      "FlyQuest"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "Rogue (European Team)",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 15,
+        "mortes": 21,
+        "assistencias": 20,
+        "kda": 1.67,
+        "campeoes_mais_usados": [
+          "Lillia",
+          "Graves",
+          "Nidalee"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "Rogue (European Team)",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 26,
+        "mortes": 25,
+        "assistencias": 46,
+        "kda": 2.88,
+        "campeoes_mais_usados": [
+          "Qiyana",
+          "Fiddlesticks",
+          "Olaf"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "Evil Geniuses.NA",
+        "jogos": 16,
+        "vitorias": 9,
+        "derrotas": 7,
+        "abates": 42,
+        "mortes": 23,
+        "assistencias": 121,
+        "kda": 7.09,
+        "campeoes_mais_usados": [
+          "Hecarim",
+          "Trundle",
+          "Lee Sin"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "FlyQuest",
+        "jogos": 14,
+        "vitorias": 7,
+        "derrotas": 7,
+        "abates": 15,
+        "mortes": 29,
+        "assistencias": 121,
+        "kda": 4.69,
+        "campeoes_mais_usados": [
+          "Skarner",
+          "Ivern",
+          "Nunu & Willump"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "FlyQuest",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 28,
+        "mortes": 22,
+        "assistencias": 39,
+        "kda": 3.05,
+        "campeoes_mais_usados": [
+          "Wukong",
+          "Jarvan IV",
+          "Sejuani"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2026_LCS_season",
+    "https://lol.fandom.com/wiki/Inspired",
+    "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

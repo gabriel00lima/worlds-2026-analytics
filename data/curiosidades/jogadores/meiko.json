@@ -1,0 +1,222 @@
+{
+  "id": "meiko",
+  "jogador": "Meiko",
+  "nome_real": "Tian Ye",
+  "pais": "China",
+  "time_id": "ig",
+  "time": "Invictus Gaming",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Meiko",
+  "historia": "Meiko (Tian Ye, China) é suporte da Invictus Gaming. Está no 9º Mundial da carreira (antes: 2015, 2016, 2017, 2018, 2021, 2022, 2024 e 2025), somando 87 jogos e 46 vitórias até 2025. Campeão mundial em 2021. Jogou Mundiais por 3 times diferentes: EDward Gaming, Top Esports e Invictus Gaming.",
+  "destaques": [
+    {
+      "texto": "Está no 9º Mundial da carreira (antes: 2015, 2016, 2017, 2018, 2021, 2022, 2024 e 2025), somando 87 jogos e 46 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: EDward Gaming, Top Esports e Invictus Gaming.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 9º com mais jogos disputados em Mundiais (87).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2017: 7.62 em 6 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Lulu, Thresh e Tahm Kench.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 8,
+    "estreante_2026": false,
+    "jogos": 87,
+    "vitorias": 46,
+    "derrotas": 41,
+    "winrate_pct": 52.9,
+    "abates": 64,
+    "mortes": 206,
+    "assistencias": 779,
+    "kda": 4.09,
+    "titulos": [
+      2021
+    ],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "EDward Gaming",
+      "Top Esports",
+      "Invictus Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2015,
+        "time": "EDward Gaming",
+        "jogos": 9,
+        "vitorias": 4,
+        "derrotas": 5,
+        "abates": 7,
+        "mortes": 20,
+        "assistencias": 78,
+        "kda": 4.25,
+        "campeoes_mais_usados": [
+          "Thresh",
+          "Annie",
+          "Tahm Kench"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2016,
+        "time": "EDward Gaming",
+        "jogos": 11,
+        "vitorias": 5,
+        "derrotas": 6,
+        "abates": 10,
+        "mortes": 28,
+        "assistencias": 95,
+        "kda": 3.75,
+        "campeoes_mais_usados": [
+          "Nami",
+          "Karma",
+          "Tahm Kench"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2017,
+        "time": "EDward Gaming",
+        "jogos": 6,
+        "vitorias": 2,
+        "derrotas": 4,
+        "abates": 2,
+        "mortes": 8,
+        "assistencias": 59,
+        "kda": 7.62,
+        "campeoes_mais_usados": [
+          "Lulu",
+          "Janna",
+          "Rakan"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2018,
+        "time": "EDward Gaming",
+        "jogos": 17,
+        "vitorias": 11,
+        "derrotas": 6,
+        "abates": 16,
+        "mortes": 32,
+        "assistencias": 151,
+        "kda": 5.22,
+        "campeoes_mais_usados": [
+          "Rakan",
+          "Alistar",
+          "Gragas",
+          "Nautilus"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "EDward Gaming",
+        "jogos": 21,
+        "vitorias": 13,
+        "derrotas": 8,
+        "abates": 14,
+        "mortes": 41,
+        "assistencias": 188,
+        "kda": 4.93,
+        "campeoes_mais_usados": [
+          "Yuumi",
+          "Nami",
+          "Lulu"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2022,
+        "time": "EDward Gaming",
+        "jogos": 11,
+        "vitorias": 6,
+        "derrotas": 5,
+        "abates": 10,
+        "mortes": 29,
+        "assistencias": 95,
+        "kda": 3.62,
+        "campeoes_mais_usados": [
+          "Thresh",
+          "Renata Glasc",
+          "Lulu"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Top Esports",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 3,
+        "mortes": 25,
+        "assistencias": 75,
+        "kda": 3.12,
+        "campeoes_mais_usados": [
+          "Rell",
+          "Leona",
+          "Braum"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Invictus Gaming",
+        "jogos": 4,
+        "vitorias": 1,
+        "derrotas": 3,
+        "abates": 2,
+        "mortes": 23,
+        "assistencias": 38,
+        "kda": 1.74,
+        "campeoes_mais_usados": [
+          "Neeko",
+          "Leona",
+          "Karma"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Meiko",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

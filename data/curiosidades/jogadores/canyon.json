@@ -1,0 +1,258 @@
+{
+  "id": "canyon",
+  "jogador": "Canyon",
+  "nome_real": "Kim Geon-bu",
+  "pais": "Coreia do Sul",
+  "time_id": "gen-g",
+  "time": "Gen.G",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Canyon",
+  "historia": "Canyon (Kim Geon-bu, Coreia do Sul) é caçador da Gen.G. Está no 8º Mundial da carreira (antes: 2019, 2020, 2021, 2022, 2023, 2024 e 2025), somando 101 jogos e 68 vitórias até 2025. Campeão mundial em 2020. Eleito MVP da final do Mundial em 2020.",
+  "destaques": [
+    {
+      "texto": "Está no 8º Mundial da carreira (antes: 2019, 2020, 2021, 2022, 2023, 2024 e 2025), somando 101 jogos e 68 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2020.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Eleito MVP da final do Mundial em 2020.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2021, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 4 times diferentes: DAMWON Gaming, DWG KIA, Dplus Kia e Gen.G.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 10º jogador com mais abates na história dos Mundiais (313).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 5º com mais jogos disputados em Mundiais (101).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2020: 7.22 em 17 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Lee Sin, Graves e Xin Zhao.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Gen.G, seu time, é a campeã da LCK 2026 (3–1 na Hanwha Life na final).",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    },
+    {
+      "texto": "Venceu o MSI em 2024 e 2025 com a Gen.G.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2024_Mid-Season_Invitational",
+        "https://en.wikipedia.org/wiki/2025_Mid-Season_Invitational"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 7,
+    "estreante_2026": false,
+    "jogos": 101,
+    "vitorias": 68,
+    "derrotas": 33,
+    "winrate_pct": 67.3,
+    "abates": 313,
+    "mortes": 204,
+    "assistencias": 729,
+    "kda": 5.11,
+    "titulos": [
+      2020
+    ],
+    "vices": [
+      2021
+    ],
+    "semifinais": [
+      2024,
+      2025
+    ],
+    "mvp_final": [
+      2020
+    ],
+    "times": [
+      "DAMWON Gaming",
+      "DWG KIA",
+      "Dplus Kia",
+      "Gen.G"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "DAMWON Gaming",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 51,
+        "mortes": 38,
+        "assistencias": 128,
+        "kda": 4.71,
+        "campeoes_mais_usados": [
+          "Lee Sin",
+          "Taliyah",
+          "Rek'Sai"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2020,
+        "time": "DAMWON Gaming",
+        "jogos": 17,
+        "vitorias": 14,
+        "derrotas": 3,
+        "abates": 87,
+        "mortes": 27,
+        "assistencias": 108,
+        "kda": 7.22,
+        "campeoes_mais_usados": [
+          "Graves",
+          "Kindred",
+          "Hecarim"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2021,
+        "time": "DWG KIA",
+        "jogos": 19,
+        "vitorias": 14,
+        "derrotas": 5,
+        "abates": 55,
+        "mortes": 34,
+        "assistencias": 130,
+        "kda": 5.44,
+        "campeoes_mais_usados": [
+          "Lee Sin",
+          "Qiyana",
+          "Xin Zhao"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2022,
+        "time": "DWG KIA",
+        "jogos": 12,
+        "vitorias": 7,
+        "derrotas": 5,
+        "abates": 41,
+        "mortes": 32,
+        "assistencias": 81,
+        "kda": 3.81,
+        "campeoes_mais_usados": [
+          "Viego",
+          "Kayn",
+          "Graves"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "Dplus Kia",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 18,
+        "mortes": 14,
+        "assistencias": 48,
+        "kda": 4.71,
+        "campeoes_mais_usados": [
+          "Lee Sin",
+          "Jarvan IV",
+          "Vi"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Gen.G",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 27,
+        "mortes": 27,
+        "assistencias": 108,
+        "kda": 5.0,
+        "campeoes_mais_usados": [
+          "Skarner",
+          "Nocturne",
+          "Nidalee"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Gen.G",
+        "jogos": 13,
+        "vitorias": 8,
+        "derrotas": 5,
+        "abates": 34,
+        "mortes": 32,
+        "assistencias": 126,
+        "kda": 5.0,
+        "campeoes_mais_usados": [
+          "Xin Zhao",
+          "Wukong",
+          "Skarner"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2024_Mid-Season_Invitational",
+    "https://en.wikipedia.org/wiki/2025_Mid-Season_Invitational",
+    "https://lol.fandom.com/wiki/Canyon",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

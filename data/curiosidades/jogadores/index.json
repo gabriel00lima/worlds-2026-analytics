@@ -1,0 +1,735 @@
+{
+  "atualizado_em": "2026-10-20",
+  "total": 81,
+  "jogadores": [
+    {
+      "id": "kiin",
+      "jogador": "Kiin",
+      "time_id": "gen-g",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/kiin.json"
+    },
+    {
+      "id": "canyon",
+      "jogador": "Canyon",
+      "time_id": "gen-g",
+      "posicao": "jungle",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/canyon.json"
+    },
+    {
+      "id": "chovy",
+      "jogador": "Chovy",
+      "time_id": "gen-g",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/chovy.json"
+    },
+    {
+      "id": "ruler",
+      "jogador": "Ruler",
+      "time_id": "gen-g",
+      "posicao": "adc",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/ruler.json"
+    },
+    {
+      "id": "duro",
+      "jogador": "Duro",
+      "time_id": "gen-g",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/duro.json"
+    },
+    {
+      "id": "breathe",
+      "jogador": "Breathe",
+      "time_id": "al",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/breathe.json"
+    },
+    {
+      "id": "tarzan",
+      "jogador": "Tarzan",
+      "time_id": "al",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/tarzan.json"
+    },
+    {
+      "id": "shanks",
+      "jogador": "Shanks",
+      "time_id": "al",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/shanks.json"
+    },
+    {
+      "id": "hope",
+      "jogador": "Hope",
+      "time_id": "al",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/hope.json"
+    },
+    {
+      "id": "kael",
+      "jogador": "Kael",
+      "time_id": "al",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/kael.json"
+    },
+    {
+      "id": "morgan",
+      "jogador": "Morgan",
+      "time_id": "tl",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/morgan.json"
+    },
+    {
+      "id": "josedeodo",
+      "jogador": "Josedeodo",
+      "time_id": "tl",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/josedeodo.json"
+    },
+    {
+      "id": "quid",
+      "jogador": "Quid",
+      "time_id": "tl",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/quid.json"
+    },
+    {
+      "id": "yeon",
+      "jogador": "Yeon",
+      "time_id": "tl",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/yeon.json"
+    },
+    {
+      "id": "corejj",
+      "jogador": "CoreJJ",
+      "time_id": "tl",
+      "posicao": "suporte",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/corejj.json"
+    },
+    {
+      "id": "brokenblade",
+      "jogador": "BrokenBlade",
+      "time_id": "g2",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/brokenblade.json"
+    },
+    {
+      "id": "skewmond",
+      "jogador": "SkewMond",
+      "time_id": "g2",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/skewmond.json"
+    },
+    {
+      "id": "caps",
+      "jogador": "Caps",
+      "time_id": "g2",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/caps.json"
+    },
+    {
+      "id": "hans-sama",
+      "jogador": "Hans Sama",
+      "time_id": "g2",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/hans-sama.json"
+    },
+    {
+      "id": "labrov",
+      "jogador": "Labrov",
+      "time_id": "g2",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/labrov.json"
+    },
+    {
+      "id": "pun",
+      "jogador": "Pun",
+      "time_id": "tsw",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/pun.json"
+    },
+    {
+      "id": "hizto",
+      "jogador": "Hizto",
+      "time_id": "tsw",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/hizto.json"
+    },
+    {
+      "id": "dire",
+      "jogador": "Dire",
+      "time_id": "tsw",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/dire.json"
+    },
+    {
+      "id": "eddie",
+      "jogador": "Eddie",
+      "time_id": "tsw",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/eddie.json"
+    },
+    {
+      "id": "bie",
+      "jogador": "Bie",
+      "time_id": "tsw",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/bie.json"
+    },
+    {
+      "id": "zest",
+      "jogador": "Zest",
+      "time_id": "los",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/zest.json"
+    },
+    {
+      "id": "curse",
+      "jogador": "Curse",
+      "time_id": "los",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/curse.json"
+    },
+    {
+      "id": "feisty",
+      "jogador": "Feisty",
+      "time_id": "los",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/feisty.json"
+    },
+    {
+      "id": "duduhh",
+      "jogador": "Duduhh",
+      "time_id": "los",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/duduhh.json"
+    },
+    {
+      "id": "ackerman",
+      "jogador": "Ackerman",
+      "time_id": "los",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/ackerman.json"
+    },
+    {
+      "id": "zeus",
+      "jogador": "Zeus",
+      "time_id": "hle",
+      "posicao": "top",
+      "titulos": 2,
+      "estreante": false,
+      "arquivo": "jogadores/zeus.json"
+    },
+    {
+      "id": "kanavi",
+      "jogador": "Kanavi",
+      "time_id": "hle",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/kanavi.json"
+    },
+    {
+      "id": "zeka",
+      "jogador": "Zeka",
+      "time_id": "hle",
+      "posicao": "mid",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/zeka.json"
+    },
+    {
+      "id": "gumayusi",
+      "jogador": "Gumayusi",
+      "time_id": "hle",
+      "posicao": "adc",
+      "titulos": 3,
+      "estreante": false,
+      "arquivo": "jogadores/gumayusi.json"
+    },
+    {
+      "id": "delight",
+      "jogador": "Delight",
+      "time_id": "hle",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/delight.json"
+    },
+    {
+      "id": "bin",
+      "jogador": "Bin",
+      "time_id": "blg",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/bin.json"
+    },
+    {
+      "id": "flandre",
+      "jogador": "Flandre",
+      "time_id": "blg",
+      "posicao": "top",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/flandre.json"
+    },
+    {
+      "id": "xun",
+      "jogador": "Xun",
+      "time_id": "blg",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/xun.json"
+    },
+    {
+      "id": "knight",
+      "jogador": "Knight",
+      "time_id": "blg",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/knight.json"
+    },
+    {
+      "id": "viper",
+      "jogador": "Viper",
+      "time_id": "blg",
+      "posicao": "adc",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/viper.json"
+    },
+    {
+      "id": "on",
+      "jogador": "ON",
+      "time_id": "blg",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/on.json"
+    },
+    {
+      "id": "dhokla",
+      "jogador": "Dhokla",
+      "time_id": "lyon",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/dhokla.json"
+    },
+    {
+      "id": "inspired",
+      "jogador": "Inspired",
+      "time_id": "lyon",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/inspired.json"
+    },
+    {
+      "id": "saint",
+      "jogador": "Saint",
+      "time_id": "lyon",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/saint.json"
+    },
+    {
+      "id": "berserker",
+      "jogador": "Berserker",
+      "time_id": "lyon",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/berserker.json"
+    },
+    {
+      "id": "isles",
+      "jogador": "Isles",
+      "time_id": "lyon",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/isles.json"
+    },
+    {
+      "id": "myrwn",
+      "jogador": "Myrwn",
+      "time_id": "koi",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/myrwn.json"
+    },
+    {
+      "id": "elyoya",
+      "jogador": "Elyoya",
+      "time_id": "koi",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/elyoya.json"
+    },
+    {
+      "id": "jojopyun",
+      "jogador": "Jojopyun",
+      "time_id": "koi",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/jojopyun.json"
+    },
+    {
+      "id": "supa",
+      "jogador": "Supa",
+      "time_id": "koi",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/supa.json"
+    },
+    {
+      "id": "alvaro",
+      "jogador": "Alvaro",
+      "time_id": "koi",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/alvaro.json"
+    },
+    {
+      "id": "doran",
+      "jogador": "Doran",
+      "time_id": "t1",
+      "posicao": "top",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/doran.json"
+    },
+    {
+      "id": "oner",
+      "jogador": "Oner",
+      "time_id": "t1",
+      "posicao": "jungle",
+      "titulos": 3,
+      "estreante": false,
+      "arquivo": "jogadores/oner.json"
+    },
+    {
+      "id": "faker",
+      "jogador": "Faker",
+      "time_id": "t1",
+      "posicao": "mid",
+      "titulos": 6,
+      "estreante": false,
+      "arquivo": "jogadores/faker.json"
+    },
+    {
+      "id": "peyz",
+      "jogador": "Peyz",
+      "time_id": "t1",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/peyz.json"
+    },
+    {
+      "id": "keria",
+      "jogador": "Keria",
+      "time_id": "t1",
+      "posicao": "suporte",
+      "titulos": 3,
+      "estreante": false,
+      "arquivo": "jogadores/keria.json"
+    },
+    {
+      "id": "369",
+      "jogador": "369",
+      "time_id": "tes",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/369.json"
+    },
+    {
+      "id": "tian",
+      "jogador": "Tian",
+      "time_id": "tes",
+      "posicao": "jungle",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/tian.json"
+    },
+    {
+      "id": "creme",
+      "jogador": "Creme",
+      "time_id": "tes",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/creme.json"
+    },
+    {
+      "id": "jackeylove",
+      "jogador": "JackeyLove",
+      "time_id": "tes",
+      "posicao": "adc",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/jackeylove.json"
+    },
+    {
+      "id": "zhuo",
+      "jogador": "Zhuo",
+      "time_id": "tes",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/zhuo.json"
+    },
+    {
+      "id": "rest",
+      "jogador": "Rest",
+      "time_id": "cfo",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/rest.json"
+    },
+    {
+      "id": "shad0w",
+      "jogador": "Shad0w",
+      "time_id": "cfo",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/shad0w.json"
+    },
+    {
+      "id": "pout",
+      "jogador": "POUT",
+      "time_id": "cfo",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/pout.json"
+    },
+    {
+      "id": "doggo",
+      "jogador": "Doggo",
+      "time_id": "cfo",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/doggo.json"
+    },
+    {
+      "id": "kino",
+      "jogador": "Kino",
+      "time_id": "cfo",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/kino.json"
+    },
+    {
+      "id": "siwoo",
+      "jogador": "Siwoo",
+      "time_id": "dk",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/siwoo.json"
+    },
+    {
+      "id": "lucid",
+      "jogador": "Lucid",
+      "time_id": "dk",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/lucid.json"
+    },
+    {
+      "id": "showmaker",
+      "jogador": "ShowMaker",
+      "time_id": "dk",
+      "posicao": "mid",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/showmaker.json"
+    },
+    {
+      "id": "smash",
+      "jogador": "Smash",
+      "time_id": "dk",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/smash.json"
+    },
+    {
+      "id": "career",
+      "jogador": "Career",
+      "time_id": "dk",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/career.json"
+    },
+    {
+      "id": "theshy",
+      "jogador": "TheShy",
+      "time_id": "ig",
+      "posicao": "top",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/theshy.json"
+    },
+    {
+      "id": "wei",
+      "jogador": "Wei",
+      "time_id": "ig",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/wei.json"
+    },
+    {
+      "id": "rookie",
+      "jogador": "Rookie",
+      "time_id": "ig",
+      "posicao": "mid",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/rookie.json"
+    },
+    {
+      "id": "jiaqi",
+      "jogador": "JiaQi",
+      "time_id": "ig",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/jiaqi.json"
+    },
+    {
+      "id": "meiko",
+      "jogador": "Meiko",
+      "time_id": "ig",
+      "posicao": "suporte",
+      "titulos": 1,
+      "estreante": false,
+      "arquivo": "jogadores/meiko.json"
+    },
+    {
+      "id": "canna",
+      "jogador": "Canna",
+      "time_id": "kc",
+      "posicao": "top",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/canna.json"
+    },
+    {
+      "id": "yike",
+      "jogador": "Yike",
+      "time_id": "kc",
+      "posicao": "jungle",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/yike.json"
+    },
+    {
+      "id": "kyeahoo",
+      "jogador": "kyeahoo",
+      "time_id": "kc",
+      "posicao": "mid",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/kyeahoo.json"
+    },
+    {
+      "id": "caliste",
+      "jogador": "Caliste",
+      "time_id": "kc",
+      "posicao": "adc",
+      "titulos": 0,
+      "estreante": true,
+      "arquivo": "jogadores/caliste.json"
+    },
+    {
+      "id": "busio",
+      "jogador": "Busio",
+      "time_id": "kc",
+      "posicao": "suporte",
+      "titulos": 0,
+      "estreante": false,
+      "arquivo": "jogadores/busio.json"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
-import json
-import os
+import json, os, re
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "curiosidades")
+DADOS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+OUT = os.path.join(DADOS, "curiosidades")
 HOJE = "2026-10-20"
 
 S = {
@@ -98,7 +98,7 @@ TIMES = {
         elenco=elenco("Kiin", "Canyon", "Chovy", "Ruler", "Duro"),
         elenco_fontes=f("gosu_teams", "midgg"),
         titulos_mundiais=[],
-        melhor_mundial="A organização reivindica a linhagem da Samsung (campeã em 2014 e 2017); como Gen.G, semifinal.",
+        melhor_mundial="Campeã em 2014 (Samsung White) e 2017 (Samsung Galaxy), linhagem que a Gen.G herdou; como Gen.G, quatro semifinais (2021, 2022, 2024 e 2025).",
         curiosidades=[
             c(
                 "Bicampeã seguida da LCK (2025 e 2026) e sétimo título da liga; Ruler foi o MVP da final de 2026.",
@@ -140,11 +140,6 @@ TIMES = {
         melhor_mundial="Nunca chegou a uma semifinal de Mundial.",
         curiosidades=[
             c("O suporte CoreJJ é campeão mundial: venceu o Mundial de 2017 pela Samsung Galaxy.", f("wiki_2017")),
-            c(
-                "Há divergência na escalação: outra fonte lista Reignover e UmTi no elenco recente.",
-                f("egw_tl_cfo"),
-                "fonte_unica",
-            ),
         ],
     ),
     "cfo": dict(
@@ -156,7 +151,7 @@ TIMES = {
         elenco=elenco("Rest", "Shad0w", "Pout", "Doggo", "Kino"),
         elenco_fontes=f("gosu_teams", "cfo_lp"),
         titulos_mundiais=[],
-        melhor_mundial="Quartas de final em 2025.",
+        melhor_mundial="Quartas de final em 2025, na terceira participação.",
         curiosidades=[
             c(
                 "Em 2025 chegou às quartas do Mundial, a primeira vez em dez anos que um time da região ficou entre os oito melhores.",
@@ -174,16 +169,11 @@ TIMES = {
         elenco=elenco("Breathe", "Tarzan", "Shanks", "Hope", "Kael", "fonte_unica"),
         elenco_fontes=f("gosu_teams"),
         titulos_mundiais=[],
-        melhor_mundial="Sem campanha marcante em Mundiais até aqui.",
+        melhor_mundial="Um Mundial antes deste (2025, 6 vitórias e 4 derrotas).",
         curiosidades=[
             c(
                 "Primeira cabeça de chave da China em 2026, com o segundo título de LPL da história do clube.",
                 f("wiki_al", "gosu_teams"),
-            ),
-            c(
-                "Fontes divergem sobre o top: uma lista Breathe, outra (mais antiga) lista Flandre.",
-                f("gosu_teams", "egw_teams"),
-                "fonte_unica",
             ),
         ],
     ),
@@ -256,13 +246,16 @@ TIMES = {
         elenco=elenco("Zeus", "Kanavi", "Zeka", "Gumayusi", "Delight"),
         elenco_fontes=f("hle_roster"),
         titulos_mundiais=[],
-        melhor_mundial="Quartas de final.",
+        melhor_mundial="Nunca chegou a uma semifinal em três participações (2021, 2024 e 2025).",
         curiosidades=[
             c(
                 "Campeã do MSI 2026 em casa (Daejeon), com virada de 3–2 sobre a BLG; Zeus foi o MVP da final. Primeiro MSI do clube e quinto da Coreia.",
                 f("msi26_final", "msi26_rdy"),
             ),
-            c("Tem dois ex-campeões mundiais pela T1: Zeus (2023) e Gumayusi.", f("hle_roster", "wiki_2023")),
+            c(
+                "Tem três campeões mundiais no elenco: Zeus (2023 e 2024) e Gumayusi (2023 a 2025) pela T1, e Zeka (2022) pela DRX.",
+                f("hle_roster", "wiki_2023") + ["mundiais-passados/ (Leaguepedia)"],
+            ),
             c("Perdeu a final da LCK 2026 para a Gen.G por 3–1.", f("lck_final")),
         ],
     ),
@@ -275,7 +268,7 @@ TIMES = {
         elenco=elenco("369", "Tian", "Creme", "JackeyLove", "Zhuo", "fonte_unica"),
         elenco_fontes=f("gosu_teams"),
         titulos_mundiais=[],
-        melhor_mundial="Semifinal em 2020 (caiu para a Suning).",
+        melhor_mundial="Semifinal em 2020 e 2025.",
         curiosidades=[
             c(
                 "O atirador JackeyLove foi campeão mundial em 2018 pela IG, adversária chinesa deste mesmo Mundial.",
@@ -343,7 +336,7 @@ TIMES = {
         elenco=elenco("Pun", "Hizto", "Dire", "Eddie", "Bie", "fonte_unica"),
         elenco_fontes=f("tsw_lp", "gosu_teams"),
         titulos_mundiais=[],
-        melhor_mundial="Sem campanha marcante.",
+        melhor_mundial="Um Mundial antes deste (2025).",
         curiosidades=[
             c("Foi eliminada do MSI 2026 justamente pela LYON, por 3–0.", f("msi26_lyon_tsw")),
         ],
@@ -357,7 +350,7 @@ TIMES = {
         elenco=elenco("Dhokla", "Inspired", "Saint", "Berserker", "Isles"),
         elenco_fontes=f("lyon_preview", "wiki_lcs26"),
         titulos_mundiais=[],
-        melhor_mundial="Estreia com este elenco.",
+        melhor_mundial="Nenhuma participação anterior registrada com o nome LYON.",
         curiosidades=[
             c(
                 "No MSI 2026 chegou à final da chave inferior e só caiu numa virada da HLE, que depois foi campeã.",
@@ -396,7 +389,7 @@ TIMES = {
         elenco=elenco("Myrwn", "Elyoya", "Jojopyun", "Supa", "Alvaro", "fonte_unica"),
         elenco_fontes=f("ewc_blg_koi"),
         titulos_mundiais=[],
-        melhor_mundial="Sem campanha marcante com o nome atual.",
+        melhor_mundial="Seis Mundiais seguidos (2020 a 2025, como MAD Lions e depois KOI), sem chegar a uma semifinal.",
         curiosidades=[
             c("Perdeu a final da LEC Summer 2026 para a G2 por 3–0.", f("lec_summer"), "fonte_unica"),
         ],
@@ -646,7 +639,55 @@ CONF = [
 os.makedirs(f"{OUT}/times", exist_ok=True)
 os.makedirs(f"{OUT}/confrontos", exist_ok=True)
 
+HIST = json.load(open(os.path.join(DADOS, "mundiais-passados", "times-2026-historico.json")))["times"]
+ROSTER = json.load(open(os.path.join(DADOS, "soloq", "contas.json")))["jogadores"]
+SIGLA_ID = {
+    "GEN": "gen-g",
+    "AL CN": "al",
+    "TL": "tl",
+    "G2": "g2",
+    "TSTW": "tsw",
+    "LOS": "los",
+    "HLE": "hle",
+    "BLG": "blg",
+    "LYON24": "lyon",
+    "MKOI": "koi",
+    "T1": "t1",
+    "TES": "tes",
+    "CFO": "cfo",
+    "Dplus": "dk",
+    "IG": "ig",
+    "KCORP": "kc",
+}
+POSMAP = {"adc": "atirador"}
+LP_ROSTER = "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
 for tid, t in TIMES.items():
+    # elenco oficial da Leaguepedia (mesma lista da pasta soloq/), substitui as listas de notícias
+    t["elenco"] = [
+        dict(
+            posicao=POSMAP.get(r["posicao"], r["posicao"]),
+            jogador=r["jogador"],
+            confianca="confirmado",
+            jogador_id=re.sub(r"[^a-z0-9]+", "-", r["jogador"].lower()).strip("-"),
+        )
+        for r in ROSTER
+        if SIGLA_ID[r["sigla"]] == tid
+    ]
+    t["elenco_fontes"] = [LP_ROSTER]
+    h = HIST[tid]
+    t["historico_mundiais"] = {
+        "participacoes_ate_2025": h["participacoes"],
+        "nomes_usados": h["nomes_usados"],
+        "titulos": h["titulos"],
+        "finais": h["finais"],
+        "jogos": h["jogos"],
+        "vitorias": h["vitorias"],
+        "edicoes": [
+            {k: e.get(k) for k in ("ano", "nome", "jogos", "vitorias", "derrotas", "resultado_top4", "jogadores")}
+            for e in h["edicoes"]
+        ],
+        "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)",
+    }
     extra = {
         "ig": ["wiki_2018"],
         "dk": ["wiki_2020"],

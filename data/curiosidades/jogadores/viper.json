@@ -1,0 +1,178 @@
+{
+  "id": "viper",
+  "jogador": "Viper",
+  "nome_real": "Park Do-hyeon",
+  "pais": "Coreia do Sul",
+  "time_id": "blg",
+  "time": "Bilibili Gaming",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Viper_(Park_Do-hyeon)",
+  "historia": "Viper (Park Do-hyeon, Coreia do Sul) é atirador da Bilibili Gaming. Está no 6º Mundial da carreira (antes: 2019, 2021, 2022, 2024 e 2025), somando 64 jogos e 37 vitórias até 2025. Campeão mundial em 2021. Jogou Mundiais por 3 times diferentes: Griffin, EDward Gaming e Hanwha Life Esports.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2019, 2021, 2022, 2024 e 2025), somando 64 jogos e 37 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Griffin, EDward Gaming e Hanwha Life Esports.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 12º jogador com mais abates na história dos Mundiais (302).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2019: 8.36 em 11 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Xayah, Lucian e Kai'Sa.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 64,
+    "vitorias": 37,
+    "derrotas": 27,
+    "winrate_pct": 57.8,
+    "abates": 302,
+    "mortes": 119,
+    "assistencias": 336,
+    "kda": 5.36,
+    "titulos": [
+      2021
+    ],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Griffin",
+      "EDward Gaming",
+      "Hanwha Life Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "Griffin (Korean Team)",
+        "jogos": 11,
+        "vitorias": 7,
+        "derrotas": 4,
+        "abates": 54,
+        "mortes": 14,
+        "assistencias": 63,
+        "kda": 8.36,
+        "campeoes_mais_usados": [
+          "Xayah",
+          "Garen",
+          "Lucian"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "EDward Gaming",
+        "jogos": 21,
+        "vitorias": 13,
+        "derrotas": 8,
+        "abates": 73,
+        "mortes": 41,
+        "assistencias": 104,
+        "kda": 4.32,
+        "campeoes_mais_usados": [
+          "Lucian",
+          "Jhin",
+          "Miss Fortune"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2022,
+        "time": "EDward Gaming",
+        "jogos": 11,
+        "vitorias": 6,
+        "derrotas": 5,
+        "abates": 46,
+        "mortes": 20,
+        "assistencias": 58,
+        "kda": 5.2,
+        "campeoes_mais_usados": [
+          "Aphelios",
+          "Kalista",
+          "Sivir"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Hanwha Life Esports",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "abates": 67,
+        "mortes": 30,
+        "assistencias": 60,
+        "kda": 4.23,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Xayah",
+          "Ezreal"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Hanwha Life Esports",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 62,
+        "mortes": 14,
+        "assistencias": 51,
+        "kda": 8.07,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Corki",
+          "Ziggs"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Viper_(Park_Do-hyeon)",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

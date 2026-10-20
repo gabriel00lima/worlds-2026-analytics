@@ -1,0 +1,87 @@
+{
+  "id": "kino",
+  "jogador": "Kino",
+  "nome_real": "Chu Wu Hsin-Jung",
+  "pais": "Taiwan",
+  "time_id": "cfo",
+  "time": "CTBC Flying Oyster",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Kino",
+  "historia": "Kino (Chu Wu Hsin-Jung, Taiwan) é suporte da CTBC Flying Oyster. Está no 3º Mundial da carreira (antes: 2021 e 2022), somando 18 jogos e 7 vitórias até 2025. Campeões que mais aparecem nos seus Mundiais: Amumu e Leona.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2021 e 2022), somando 18 jogos e 7 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Amumu e Leona.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 18,
+    "vitorias": 7,
+    "derrotas": 11,
+    "winrate_pct": 38.9,
+    "abates": 12,
+    "mortes": 76,
+    "assistencias": 156,
+    "kda": 2.21,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Beyond Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "Beyond Gaming",
+        "jogos": 13,
+        "vitorias": 5,
+        "derrotas": 8,
+        "abates": 11,
+        "mortes": 51,
+        "assistencias": 111,
+        "kda": 2.39,
+        "campeoes_mais_usados": [
+          "Rakan",
+          "Amumu",
+          "Leona"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2022,
+        "time": "Beyond Gaming",
+        "jogos": 5,
+        "vitorias": 2,
+        "derrotas": 3,
+        "abates": 1,
+        "mortes": 25,
+        "assistencias": 45,
+        "kda": 1.84,
+        "campeoes_mais_usados": [
+          "Amumu",
+          "Alistar",
+          "Leona"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Kino",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

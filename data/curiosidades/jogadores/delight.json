@@ -1,0 +1,112 @@
+{
+  "id": "delight",
+  "jogador": "Delight",
+  "nome_real": "Yoo Hwan-joong",
+  "pais": "Coreia do Sul",
+  "time_id": "hle",
+  "time": "Hanwha Life Esports",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Delight",
+  "historia": "Delight (Yoo Hwan-joong, Coreia do Sul) é suporte da Hanwha Life Esports. Está no 4º Mundial da carreira (antes: 2023, 2024 e 2025), somando 25 jogos e 15 vitórias até 2025. Campeões que mais aparecem nos seus Mundiais: Alistar e Rakan. A Hanwha Life, seu time, é a campeã do MSI 2026, com virada de 3–2 sobre a BLG na final.",
+  "destaques": [
+    {
+      "texto": "Está no 4º Mundial da carreira (antes: 2023, 2024 e 2025), somando 25 jogos e 15 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Alistar e Rakan.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Hanwha Life, seu time, é a campeã do MSI 2026, com virada de 3–2 sobre a BLG na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 3,
+    "estreante_2026": false,
+    "jogos": 25,
+    "vitorias": 15,
+    "derrotas": 10,
+    "winrate_pct": 60.0,
+    "abates": 19,
+    "mortes": 83,
+    "assistencias": 287,
+    "kda": 3.69,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Gen.G",
+      "Hanwha Life Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "time": "Gen.G",
+        "jogos": 4,
+        "vitorias": 4,
+        "derrotas": 0,
+        "abates": 3,
+        "mortes": 6,
+        "assistencias": 53,
+        "kda": 9.33,
+        "campeoes_mais_usados": [
+          "Rakan",
+          "Alistar"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Hanwha Life Esports",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "abates": 6,
+        "mortes": 39,
+        "assistencias": 120,
+        "kda": 3.23,
+        "campeoes_mais_usados": [
+          "Rell",
+          "Poppy",
+          "Alistar"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "Hanwha Life Esports",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 10,
+        "mortes": 38,
+        "assistencias": 114,
+        "kda": 3.26,
+        "campeoes_mais_usados": [
+          "Alistar",
+          "Rakan",
+          "Braum"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Delight",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

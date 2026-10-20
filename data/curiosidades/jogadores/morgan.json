@@ -1,0 +1,63 @@
+{
+  "id": "morgan",
+  "jogador": "Morgan",
+  "nome_real": "Park Ru-han",
+  "pais": "Coreia do Sul",
+  "time_id": "tl",
+  "time": "Team Liquid",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Morgan",
+  "historia": "Morgan (Park Ru-han, Coreia do Sul) é top laner da Team Liquid. Está no segundo Mundial da carreira (antes: 2021), somando 17 jogos e 10 vitórias até 2025.",
+  "destaques": [
+    {
+      "texto": "Está no segundo Mundial da carreira (antes: 2021), somando 17 jogos e 10 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 1,
+    "estreante_2026": false,
+    "jogos": 17,
+    "vitorias": 10,
+    "derrotas": 7,
+    "winrate_pct": 58.8,
+    "abates": 37,
+    "mortes": 47,
+    "assistencias": 100,
+    "kda": 2.91,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Hanwha Life Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "Hanwha Life Esports",
+        "jogos": 17,
+        "vitorias": 10,
+        "derrotas": 7,
+        "abates": 37,
+        "mortes": 47,
+        "assistencias": 100,
+        "kda": 2.91,
+        "campeoes_mais_usados": [
+          "Renekton",
+          "Irelia",
+          "Camille"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Morgan",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -9,32 +9,36 @@
     {
       "posicao": "top",
       "jogador": "TheShy",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "theshy"
     },
     {
       "posicao": "jungle",
       "jogador": "Wei",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "wei"
     },
     {
       "posicao": "mid",
       "jogador": "Rookie",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "rookie"
     },
     {
       "posicao": "atirador",
       "jogador": "JiaQi",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "jiaqi"
     },
     {
       "posicao": "suporte",
       "jogador": "Meiko",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "meiko"
     }
   ],
   "elenco_fontes": [
-    "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/",
-    "https://mid.gg/esports/worlds-2026"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [
     2018
@@ -57,9 +61,100 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 5,
+    "nomes_usados": [
+      "Invictus Gaming"
+    ],
+    "titulos": 1,
+    "finais": 1,
+    "jogos": 47,
+    "vitorias": 27,
+    "edicoes": [
+      {
+        "ano": 2012,
+        "nome": "Invictus Gaming",
+        "jogos": 5,
+        "vitorias": 2,
+        "derrotas": 3,
+        "resultado_top4": null,
+        "jogadores": [
+          "kid",
+          "zz1tai",
+          "Pdd",
+          "illuSioN",
+          "XiaoXiao"
+        ]
+      },
+      {
+        "ano": 2015,
+        "nome": "Invictus Gaming",
+        "jogos": 6,
+        "vitorias": 2,
+        "derrotas": 4,
+        "resultado_top4": null,
+        "jogadores": [
+          "Rookie",
+          "Zz1tai",
+          "KAKAO",
+          "Time",
+          "Kid",
+          "Kitties"
+        ]
+      },
+      {
+        "ano": 2018,
+        "nome": "Invictus Gaming",
+        "jogos": 18,
+        "vitorias": 14,
+        "derrotas": 4,
+        "resultado_top4": "Campeão",
+        "jogadores": [
+          "JackeyLove",
+          "Rookie",
+          "Ning",
+          "TheShy",
+          "Baolan",
+          "Duke"
+        ]
+      },
+      {
+        "ano": 2019,
+        "nome": "Invictus Gaming",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "resultado_top4": "Semifinal",
+        "jogadores": [
+          "JackeyLove",
+          "Rookie",
+          "TheShy",
+          "Ning",
+          "Baolan",
+          "Leyan"
+        ]
+      },
+      {
+        "ano": 2025,
+        "nome": "Invictus Gaming",
+        "jogos": 4,
+        "vitorias": 1,
+        "derrotas": 3,
+        "resultado_top4": null,
+        "jogadores": [
+          "Rookie",
+          "Wei",
+          "GALA",
+          "TheShy",
+          "Meiko"
+        ]
+      }
+    ],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
     "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
-    "https://mid.gg/esports/worlds-2026",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/"
   ],
   "atualizado_em": "2026-10-20"

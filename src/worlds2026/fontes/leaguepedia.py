@@ -136,7 +136,13 @@ def placares(chave_por_nome: dict[str, str]) -> dict[str, Json]:
         if wt:
             jogos.update(ler_placares(wt, chave_por_nome))
     salvar_json(caminho_cache(), jogos)
+    # a Leaguepedia preenche os placares aos poucos; o site mostra quando foi a última tentativa
+    salvar_json(config.CACHE / "leaguepedia-tentativa.json", {"ts": int(time.time() * 1000)})
     return jogos
+
+
+def ultima_tentativa() -> int | None:
+    return ler_json(config.CACHE / "leaguepedia-tentativa.json", {}).get("ts")
 
 
 def placares_em_cache() -> dict[str, Json]:

@@ -1,0 +1,172 @@
+{
+  "id": "tarzan",
+  "jogador": "Tarzan",
+  "nome_real": "Lee Seung-yong",
+  "pais": "Coreia do Sul",
+  "time_id": "al",
+  "time": "Anyone's Legend",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Tarzan_(Lee_Seung-yong)",
+  "historia": "Tarzan (Lee Seung-yong, Coreia do Sul) é caçador da Anyone's Legend. Está no 6º Mundial da carreira (antes: 2019, 2021, 2023, 2024 e 2025), somando 56 jogos e 33 vitórias até 2025. Chegou à semifinal em 2024. Jogou Mundiais por 4 times diferentes: Griffin, LNG Esports, Weibo Gaming e Anyone's Legend.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2019, 2021, 2023, 2024 e 2025), somando 56 jogos e 33 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2024.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 4 times diferentes: Griffin, LNG Esports, Weibo Gaming e Anyone's Legend.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2021: 5.71 em 11 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Lee Sin e Qiyana.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Anyone's Legend, seu time, venceu o Split 3 da LPL 2026 e é a primeira cabeça de chave da China.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/Anyone%27s_Legend"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 56,
+    "vitorias": 33,
+    "derrotas": 23,
+    "winrate_pct": 58.9,
+    "abates": 144,
+    "mortes": 134,
+    "assistencias": 450,
+    "kda": 4.43,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2024
+    ],
+    "mvp_final": [],
+    "times": [
+      "Griffin",
+      "LNG Esports",
+      "Weibo Gaming",
+      "Anyone's Legend"
+    ],
+    "edicoes": [
+      {
+        "ano": 2019,
+        "time": "Griffin (Korean Team)",
+        "jogos": 11,
+        "vitorias": 7,
+        "derrotas": 4,
+        "abates": 43,
+        "mortes": 25,
+        "assistencias": 78,
+        "kda": 4.84,
+        "campeoes_mais_usados": [
+          "Elise",
+          "Lee Sin",
+          "Qiyana"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "LNG Esports",
+        "jogos": 11,
+        "vitorias": 7,
+        "derrotas": 4,
+        "abates": 27,
+        "mortes": 17,
+        "assistencias": 70,
+        "kda": 5.71,
+        "campeoes_mais_usados": [
+          "Viego",
+          "Lee Sin",
+          "Qiyana"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "LNG Esports",
+        "jogos": 8,
+        "vitorias": 5,
+        "derrotas": 3,
+        "abates": 16,
+        "mortes": 15,
+        "assistencias": 62,
+        "kda": 5.2,
+        "campeoes_mais_usados": [
+          "Jarvan IV",
+          "Lee Sin",
+          "Vi"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Weibo Gaming",
+        "jogos": 16,
+        "vitorias": 8,
+        "derrotas": 8,
+        "abates": 26,
+        "mortes": 49,
+        "assistencias": 145,
+        "kda": 3.49,
+        "campeoes_mais_usados": [
+          "Skarner",
+          "Maokai",
+          "Brand"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Anyone's Legend",
+        "jogos": 10,
+        "vitorias": 6,
+        "derrotas": 4,
+        "abates": 32,
+        "mortes": 28,
+        "assistencias": 95,
+        "kda": 4.54,
+        "campeoes_mais_usados": [
+          "Qiyana",
+          "Pantheon",
+          "Wukong"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+    "https://lol.fandom.com/wiki/Tarzan_(Lee_Seung-yong)",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

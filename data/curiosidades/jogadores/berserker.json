@@ -1,0 +1,90 @@
+{
+  "id": "berserker",
+  "jogador": "Berserker",
+  "nome_real": "Kim Min-cheol",
+  "pais": "Coreia do Sul",
+  "time_id": "lyon",
+  "time": "LYON",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Berserker_(Kim_Min-cheol)",
+  "historia": "Berserker (Kim Min-cheol, Coreia do Sul) é atirador da LYON. Está no 3º Mundial da carreira (antes: 2022 e 2023), somando 12 jogos e 3 vitórias até 2025. A LYON, seu time, venceu o Lock-In e o Spring da LCS 2026.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2022 e 2023), somando 12 jogos e 3 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A LYON, seu time, venceu o Lock-In e o Spring da LCS 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+        "https://en.wikipedia.org/wiki/2026_LCS_season"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 12,
+    "vitorias": 3,
+    "derrotas": 9,
+    "winrate_pct": 25.0,
+    "abates": 27,
+    "mortes": 22,
+    "assistencias": 32,
+    "kda": 2.68,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Cloud9"
+    ],
+    "edicoes": [
+      {
+        "ano": 2022,
+        "time": "Cloud9",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 8,
+        "mortes": 12,
+        "assistencias": 16,
+        "kda": 2.0,
+        "campeoes_mais_usados": [
+          "Miss Fortune",
+          "Jinx",
+          "Varus"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "Cloud9",
+        "jogos": 6,
+        "vitorias": 2,
+        "derrotas": 4,
+        "abates": 19,
+        "mortes": 10,
+        "assistencias": 16,
+        "kda": 3.5,
+        "campeoes_mais_usados": [
+          "Xayah",
+          "Kai'Sa",
+          "Zeri"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2026_LCS_season",
+    "https://lol.fandom.com/wiki/Berserker_(Kim_Min-cheol)",
+    "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

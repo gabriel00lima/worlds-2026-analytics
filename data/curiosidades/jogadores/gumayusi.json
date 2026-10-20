@@ -1,0 +1,205 @@
+{
+  "id": "gumayusi",
+  "jogador": "Gumayusi",
+  "nome_real": "Lee Min-hyeong",
+  "pais": "Coreia do Sul",
+  "time_id": "hle",
+  "time": "Hanwha Life Esports",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Gumayusi",
+  "historia": "Gumayusi (Lee Min-hyeong, Coreia do Sul) é atirador da Hanwha Life Esports. Está no 6º Mundial da carreira (antes: 2021, 2022, 2023, 2024 e 2025), somando 85 jogos e 63 vitórias até 2025. Campeão mundial em 2023, 2024 e 2025. Eleito MVP da final do Mundial em 2025.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2021, 2022, 2023, 2024 e 2025), somando 85 jogos e 63 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2023, 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Eleito MVP da final do Mundial em 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2022, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 4º jogador com mais abates na história dos Mundiais (387).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 12º com mais jogos disputados em Mundiais (85).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2023: 10.40 em 12 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Varus, Xayah e Caitlyn.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Hanwha Life, seu time, é a campeã do MSI 2026, com virada de 3–2 sobre a BLG na final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 85,
+    "vitorias": 63,
+    "derrotas": 22,
+    "winrate_pct": 74.1,
+    "abates": 387,
+    "mortes": 147,
+    "assistencias": 487,
+    "kda": 5.95,
+    "titulos": [
+      2023,
+      2024,
+      2025
+    ],
+    "vices": [
+      2022
+    ],
+    "semifinais": [
+      2021
+    ],
+    "mvp_final": [
+      2025
+    ],
+    "times": [
+      "T1"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "T1",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 49,
+        "mortes": 14,
+        "assistencias": 52,
+        "kda": 7.21,
+        "campeoes_mais_usados": [
+          "Aphelios",
+          "Jhin",
+          "Miss Fortune"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "T1",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 90,
+        "mortes": 26,
+        "assistencias": 107,
+        "kda": 7.58,
+        "campeoes_mais_usados": [
+          "Varus",
+          "Lucian",
+          "Sivir"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2023,
+        "time": "T1",
+        "jogos": 12,
+        "vitorias": 10,
+        "derrotas": 2,
+        "abates": 45,
+        "mortes": 10,
+        "assistencias": 59,
+        "kda": 10.4,
+        "campeoes_mais_usados": [
+          "Xayah",
+          "Kalista",
+          "Caitlyn"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2024,
+        "time": "T1",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "abates": 73,
+        "mortes": 25,
+        "assistencias": 88,
+        "kda": 6.44,
+        "campeoes_mais_usados": [
+          "Ashe",
+          "Xayah",
+          "Caitlyn"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2025,
+        "time": "T1",
+        "jogos": 24,
+        "vitorias": 17,
+        "derrotas": 7,
+        "abates": 130,
+        "mortes": 72,
+        "assistencias": 181,
+        "kda": 4.32,
+        "campeoes_mais_usados": [
+          "Varus",
+          "Kai'Sa",
+          "Ashe"
+        ],
+        "resultado": "Campeão"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Gumayusi",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

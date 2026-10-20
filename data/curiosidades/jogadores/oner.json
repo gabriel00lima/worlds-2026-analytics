@@ -1,0 +1,188 @@
+{
+  "id": "oner",
+  "jogador": "Oner",
+  "nome_real": "Mun Hyeon-jun",
+  "pais": "Coreia do Sul",
+  "time_id": "t1",
+  "time": "T1",
+  "posicao": "jungle",
+  "leaguepedia": "https://lol.fandom.com/wiki/Oner",
+  "historia": "Oner (Mun Hyeon-jun, Coreia do Sul) é caçador da T1. Está no 6º Mundial da carreira (antes: 2021, 2022, 2023, 2024 e 2025), somando 85 jogos e 63 vitórias até 2025. Campeão mundial em 2023, 2024 e 2025. Disputou a final em 2022, ficando com o vice.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2021, 2022, 2023, 2024 e 2025), somando 85 jogos e 63 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2023, 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2022, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 16º jogador com mais abates na história dos Mundiais (282).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 12º com mais jogos disputados em Mundiais (85).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2023: 6.08 em 12 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Poppy, Xin Zhao e Sejuani.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 85,
+    "vitorias": 63,
+    "derrotas": 22,
+    "winrate_pct": 74.1,
+    "abates": 282,
+    "mortes": 191,
+    "assistencias": 664,
+    "kda": 4.95,
+    "titulos": [
+      2023,
+      2024,
+      2025
+    ],
+    "vices": [
+      2022
+    ],
+    "semifinais": [
+      2021
+    ],
+    "mvp_final": [],
+    "times": [
+      "T1"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "T1",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 44,
+        "mortes": 24,
+        "assistencias": 72,
+        "kda": 4.83,
+        "campeoes_mais_usados": [
+          "Poppy",
+          "Xin Zhao",
+          "Talon"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "T1",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 50,
+        "mortes": 43,
+        "assistencias": 145,
+        "kda": 4.53,
+        "campeoes_mais_usados": [
+          "Sejuani",
+          "Viego",
+          "Graves"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2023,
+        "time": "T1",
+        "jogos": 12,
+        "vitorias": 10,
+        "derrotas": 2,
+        "abates": 35,
+        "mortes": 24,
+        "assistencias": 111,
+        "kda": 6.08,
+        "campeoes_mais_usados": [
+          "Jarvan IV",
+          "Lee Sin",
+          "Rell"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2024,
+        "time": "T1",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "abates": 45,
+        "mortes": 29,
+        "assistencias": 127,
+        "kda": 5.93,
+        "campeoes_mais_usados": [
+          "Vi",
+          "Sejuani",
+          "Poppy"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2025,
+        "time": "T1",
+        "jogos": 24,
+        "vitorias": 17,
+        "derrotas": 7,
+        "abates": 108,
+        "mortes": 71,
+        "assistencias": 209,
+        "kda": 4.46,
+        "campeoes_mais_usados": [
+          "Xin Zhao",
+          "Jarvan IV",
+          "Wukong"
+        ],
+        "resultado": "Campeão"
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Oner",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

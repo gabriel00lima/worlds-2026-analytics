@@ -1,0 +1,151 @@
+{
+  "id": "kiin",
+  "jogador": "Kiin",
+  "nome_real": "Kim Gi-in",
+  "pais": "Coreia do Sul",
+  "time_id": "gen-g",
+  "time": "Gen.G",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Kiin",
+  "historia": "Kiin (Kim Gi-in, Coreia do Sul) é top laner da Gen.G. Está no 5º Mundial da carreira (antes: 2018, 2023, 2024 e 2025), somando 44 jogos e 25 vitórias até 2025. Chegou à semifinal em 2024 e 2025. Jogou Mundiais por 3 times diferentes: Afreeca Freecs, KT Rolster e Gen.G.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2018, 2023, 2024 e 2025), somando 44 jogos e 25 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Afreeca Freecs, KT Rolster e Gen.G.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Gen.G, seu time, é a campeã da LCK 2026 (3–1 na Hanwha Life na final).",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    },
+    {
+      "texto": "Venceu o MSI em 2024 e 2025 com a Gen.G.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2024_Mid-Season_Invitational",
+        "https://en.wikipedia.org/wiki/2025_Mid-Season_Invitational"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 44,
+    "vitorias": 25,
+    "derrotas": 19,
+    "winrate_pct": 56.8,
+    "abates": 108,
+    "mortes": 114,
+    "assistencias": 249,
+    "kda": 3.13,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [
+      2024,
+      2025
+    ],
+    "mvp_final": [],
+    "times": [
+      "Afreeca Freecs",
+      "KT Rolster",
+      "Gen.G"
+    ],
+    "edicoes": [
+      {
+        "ano": 2018,
+        "time": "Afreeca Freecs",
+        "jogos": 9,
+        "vitorias": 4,
+        "derrotas": 5,
+        "abates": 16,
+        "mortes": 19,
+        "assistencias": 37,
+        "kda": 2.79,
+        "campeoes_mais_usados": [
+          "Viktor",
+          "Akali",
+          "Ryze"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "KT Rolster",
+        "jogos": 8,
+        "vitorias": 5,
+        "derrotas": 3,
+        "abates": 16,
+        "mortes": 24,
+        "assistencias": 49,
+        "kda": 2.71,
+        "campeoes_mais_usados": [
+          "K'Sante",
+          "Renekton",
+          "Ornn"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Gen.G",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 31,
+        "mortes": 35,
+        "assistencias": 86,
+        "kda": 3.34,
+        "campeoes_mais_usados": [
+          "Rumble",
+          "Aurora",
+          "Jax"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Gen.G",
+        "jogos": 13,
+        "vitorias": 8,
+        "derrotas": 5,
+        "abates": 45,
+        "mortes": 36,
+        "assistencias": 77,
+        "kda": 3.39,
+        "campeoes_mais_usados": [
+          "Sion",
+          "Aatrox",
+          "Ambessa"
+        ],
+        "resultado": "Semifinal"
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2024_Mid-Season_Invitational",
+    "https://en.wikipedia.org/wiki/2025_Mid-Season_Invitational",
+    "https://lol.fandom.com/wiki/Kiin",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,230 @@
+{
+  "id": "corejj",
+  "jogador": "CoreJJ",
+  "nome_real": "Jo Yong-in",
+  "pais": "Coreia do Sul",
+  "time_id": "tl",
+  "time": "Team Liquid",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/CoreJJ",
+  "historia": "CoreJJ (Jo Yong-in, Coreia do Sul) é suporte da Team Liquid. Está no 9º Mundial da carreira (antes: 2016, 2017, 2018, 2019, 2020, 2021, 2023 e 2024), somando 76 jogos e 45 vitórias até 2025. Campeão mundial em 2017. Disputou a final em 2016, ficando com o vice.",
+  "destaques": [
+    {
+      "texto": "Está no 9º Mundial da carreira (antes: 2016, 2017, 2018, 2019, 2020, 2021, 2023 e 2024), somando 76 jogos e 45 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2017.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2016, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Samsung Galaxy, Gen.G e Team Liquid.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o 20º com mais jogos disputados em Mundiais (76).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2017: 7.94 em 16 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Rakan, Rell e Tahm Kench.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 8,
+    "estreante_2026": false,
+    "jogos": 76,
+    "vitorias": 45,
+    "derrotas": 31,
+    "winrate_pct": 59.2,
+    "abates": 66,
+    "mortes": 167,
+    "assistencias": 586,
+    "kda": 3.9,
+    "titulos": [
+      2017
+    ],
+    "vices": [
+      2016
+    ],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Samsung Galaxy",
+      "Gen.G",
+      "Team Liquid"
+    ],
+    "edicoes": [
+      {
+        "ano": 2016,
+        "time": "Samsung Galaxy",
+        "jogos": 15,
+        "vitorias": 12,
+        "derrotas": 3,
+        "abates": 20,
+        "mortes": 31,
+        "assistencias": 122,
+        "kda": 4.58,
+        "campeoes_mais_usados": [
+          "Karma",
+          "Zyra",
+          "Tahm Kench"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2017,
+        "time": "Samsung Galaxy",
+        "jogos": 16,
+        "vitorias": 13,
+        "derrotas": 3,
+        "abates": 7,
+        "mortes": 17,
+        "assistencias": 128,
+        "kda": 7.94,
+        "campeoes_mais_usados": [
+          "Taric",
+          "Lulu",
+          "Janna"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2018,
+        "time": "Gen.G",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 8,
+        "mortes": 12,
+        "assistencias": 26,
+        "kda": 2.83,
+        "campeoes_mais_usados": [
+          "Braum",
+          "Rakan",
+          "Tahm Kench"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2019,
+        "time": "Team Liquid",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "abates": 5,
+        "mortes": 17,
+        "assistencias": 42,
+        "kda": 2.76,
+        "campeoes_mais_usados": [
+          "Rakan",
+          "Nautilus",
+          "Galio"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2020,
+        "time": "Team Liquid",
+        "jogos": 11,
+        "vitorias": 7,
+        "derrotas": 4,
+        "abates": 9,
+        "mortes": 18,
+        "assistencias": 106,
+        "kda": 6.39,
+        "campeoes_mais_usados": [
+          "Rakan",
+          "Sett",
+          "Bard"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "Team Liquid",
+        "jogos": 7,
+        "vitorias": 3,
+        "derrotas": 4,
+        "abates": 6,
+        "mortes": 25,
+        "assistencias": 47,
+        "kda": 2.12,
+        "campeoes_mais_usados": [
+          "Leona",
+          "Rell",
+          "Thresh"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "Team Liquid",
+        "jogos": 5,
+        "vitorias": 1,
+        "derrotas": 4,
+        "abates": 3,
+        "mortes": 18,
+        "assistencias": 18,
+        "kda": 1.17,
+        "campeoes_mais_usados": [
+          "Rell",
+          "Rakan",
+          "Thresh"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "Team Liquid",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 8,
+        "mortes": 29,
+        "assistencias": 97,
+        "kda": 3.62,
+        "campeoes_mais_usados": [
+          "Rakan",
+          "Leona",
+          "Rell"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/CoreJJ",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

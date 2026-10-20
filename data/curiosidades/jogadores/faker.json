@@ -1,0 +1,289 @@
+{
+  "id": "faker",
+  "jogador": "Faker",
+  "nome_real": "Lee Sang-hyeok",
+  "pais": "Coreia do Sul",
+  "time_id": "t1",
+  "time": "T1",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Faker",
+  "historia": "Faker (Lee Sang-hyeok, Coreia do Sul) é mid laner da T1. Está no 11º Mundial da carreira (antes: 2013, 2015, 2016, 2017, 2019, 2021, 2022, 2023, 2024 e 2025), somando 168 jogos e 123 vitórias até 2025. Campeão mundial em 2013, 2015, 2016, 2023, 2024 e 2025. Eleito MVP da final do Mundial em 2024.",
+  "destaques": [
+    {
+      "texto": "Está no 11º Mundial da carreira (antes: 2013, 2015, 2016, 2017, 2019, 2021, 2022, 2023, 2024 e 2025), somando 168 jogos e 123 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2013, 2015, 2016, 2023, 2024 e 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Eleito MVP da final do Mundial em 2024.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2017 e 2022, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2019 e 2021.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "É o jogador com mais abates na história dos Mundiais (609).",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2015: 7.33 em 12 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Ryze, Orianna e Sylas.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Além dos seis Mundiais, venceu o MSI em 2016 e 2017.",
+      "confianca": "conhecimento_previo",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/Faker_(gamer)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 10,
+    "estreante_2026": false,
+    "jogos": 168,
+    "vitorias": 123,
+    "derrotas": 45,
+    "winrate_pct": 73.2,
+    "abates": 609,
+    "mortes": 369,
+    "assistencias": 985,
+    "kda": 4.32,
+    "titulos": [
+      2013,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+    ],
+    "vices": [
+      2017,
+      2022
+    ],
+    "semifinais": [
+      2019,
+      2021
+    ],
+    "mvp_final": [
+      2024
+    ],
+    "times": [
+      "SK Telecom T1",
+      "T1"
+    ],
+    "edicoes": [
+      {
+        "ano": 2013,
+        "time": "SK Telecom T1",
+        "jogos": 18,
+        "vitorias": 15,
+        "derrotas": 3,
+        "abates": 80,
+        "mortes": 39,
+        "assistencias": 108,
+        "kda": 4.82,
+        "campeoes_mais_usados": [
+          "Ahri",
+          "Gragas",
+          "Orianna"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2015,
+        "time": "SK Telecom T1",
+        "jogos": 12,
+        "vitorias": 11,
+        "derrotas": 1,
+        "abates": 55,
+        "mortes": 18,
+        "assistencias": 77,
+        "kda": 7.33,
+        "campeoes_mais_usados": [
+          "Ryze",
+          "Lulu",
+          "Kassadin"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2016,
+        "time": "SK Telecom T1",
+        "jogos": 20,
+        "vitorias": 14,
+        "derrotas": 6,
+        "abates": 82,
+        "mortes": 51,
+        "assistencias": 104,
+        "kda": 3.65,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Viktor",
+          "Varus"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2017,
+        "time": "SK Telecom T1",
+        "jogos": 19,
+        "vitorias": 11,
+        "derrotas": 8,
+        "abates": 45,
+        "mortes": 36,
+        "assistencias": 89,
+        "kda": 3.72,
+        "campeoes_mais_usados": [
+          "Galio",
+          "Taliyah",
+          "Ryze"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2019,
+        "time": "SK Telecom T1",
+        "jogos": 14,
+        "vitorias": 9,
+        "derrotas": 5,
+        "abates": 51,
+        "mortes": 34,
+        "assistencias": 77,
+        "kda": 3.76,
+        "campeoes_mais_usados": [
+          "Ryze",
+          "Tristana",
+          "Akali"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2021,
+        "time": "T1",
+        "jogos": 14,
+        "vitorias": 10,
+        "derrotas": 4,
+        "abates": 26,
+        "mortes": 20,
+        "assistencias": 67,
+        "kda": 4.65,
+        "campeoes_mais_usados": [
+          "Ryze",
+          "Lissandra",
+          "Twisted Fate"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "T1",
+        "jogos": 18,
+        "vitorias": 13,
+        "derrotas": 5,
+        "abates": 61,
+        "mortes": 56,
+        "assistencias": 96,
+        "kda": 2.8,
+        "campeoes_mais_usados": [
+          "Akali",
+          "Viktor",
+          "Azir"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2023,
+        "time": "T1",
+        "jogos": 12,
+        "vitorias": 10,
+        "derrotas": 2,
+        "abates": 39,
+        "mortes": 19,
+        "assistencias": 74,
+        "kda": 5.95,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Azir",
+          "Sylas"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2024,
+        "time": "T1",
+        "jogos": 17,
+        "vitorias": 13,
+        "derrotas": 4,
+        "abates": 60,
+        "mortes": 36,
+        "assistencias": 97,
+        "kda": 4.36,
+        "campeoes_mais_usados": [
+          "Sylas",
+          "Ahri",
+          "Yone"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2025,
+        "time": "T1",
+        "jogos": 24,
+        "vitorias": 17,
+        "derrotas": 7,
+        "abates": 110,
+        "mortes": 60,
+        "assistencias": 196,
+        "kda": 5.1,
+        "campeoes_mais_usados": [
+          "Taliyah",
+          "Anivia",
+          "Sylas"
+        ],
+        "resultado": "Campeão"
+      }
+    ]
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/Faker_(gamer)",
+    "https://lol.fandom.com/wiki/Faker",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

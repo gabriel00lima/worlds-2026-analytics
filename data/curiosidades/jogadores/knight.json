@@ -1,0 +1,181 @@
+{
+  "id": "knight",
+  "jogador": "Knight",
+  "nome_real": "Zhuo Ding",
+  "pais": "China",
+  "time_id": "blg",
+  "time": "Bilibili Gaming",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Knight_(Zhuo_Ding)",
+  "historia": "Knight (Zhuo Ding, China) é mid laner da Bilibili Gaming. Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 58 jogos e 34 vitórias até 2025. Disputou a final em 2024, ficando com o vice. Chegou à semifinal em 2020 e 2023.",
+  "destaques": [
+    {
+      "texto": "Está no 6º Mundial da carreira (antes: 2020, 2022, 2023, 2024 e 2025), somando 58 jogos e 34 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2024, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2020 e 2023.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Top Esports, JD Gaming e Bilibili Gaming.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2022: 8.43 em 6 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Ahri, Orianna e Sylas.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 5,
+    "estreante_2026": false,
+    "jogos": 58,
+    "vitorias": 34,
+    "derrotas": 24,
+    "winrate_pct": 58.6,
+    "abates": 227,
+    "mortes": 109,
+    "assistencias": 343,
+    "kda": 5.23,
+    "titulos": [],
+    "vices": [
+      2024
+    ],
+    "semifinais": [
+      2020,
+      2023
+    ],
+    "mvp_final": [],
+    "times": [
+      "Top Esports",
+      "JD Gaming",
+      "Bilibili Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "Top Esports",
+        "jogos": 15,
+        "vitorias": 9,
+        "derrotas": 6,
+        "abates": 52,
+        "mortes": 25,
+        "assistencias": 68,
+        "kda": 4.8,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Sylas",
+          "Akali"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2022,
+        "time": "Top Esports",
+        "jogos": 6,
+        "vitorias": 3,
+        "derrotas": 3,
+        "abates": 26,
+        "mortes": 7,
+        "assistencias": 33,
+        "kda": 8.43,
+        "campeoes_mais_usados": [
+          "Ahri",
+          "Azir",
+          "Akali"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "JD Gaming",
+        "jogos": 9,
+        "vitorias": 5,
+        "derrotas": 4,
+        "abates": 23,
+        "mortes": 18,
+        "assistencias": 58,
+        "kda": 4.5,
+        "campeoes_mais_usados": [
+          "Orianna",
+          "Ahri",
+          "Neeko"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2024,
+        "time": "Bilibili Gaming",
+        "jogos": 20,
+        "vitorias": 13,
+        "derrotas": 7,
+        "abates": 93,
+        "mortes": 40,
+        "assistencias": 133,
+        "kda": 5.65,
+        "campeoes_mais_usados": [
+          "Ahri",
+          "Sylas",
+          "Galio"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2025,
+        "time": "Bilibili Gaming",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 33,
+        "mortes": 19,
+        "assistencias": 51,
+        "kda": 4.42,
+        "campeoes_mais_usados": [
+          "Ziggs",
+          "LeBlanc",
+          "Aurora"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Knight_(Zhuo_Ding)",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

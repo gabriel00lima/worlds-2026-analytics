@@ -1,0 +1,179 @@
+{
+  "id": "hans-sama",
+  "jogador": "Hans Sama",
+  "nome_real": "Steven Liv",
+  "pais": "França",
+  "time_id": "g2",
+  "time": "G2 Esports",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Hans_Sama",
+  "historia": "Hans Sama (Steven Liv, França) é atirador da G2 Esports. Está no 7º Mundial da carreira (antes: 2017, 2020, 2021, 2023, 2024 e 2025), somando 53 jogos e 21 vitórias até 2025. Jogou Mundiais por 3 times diferentes: Misfits Gaming, Rogue e G2 Esports. Seu melhor Mundial em KDA foi 2021: 4.67 em 8 jogos.",
+  "destaques": [
+    {
+      "texto": "Está no 7º Mundial da carreira (antes: 2017, 2020, 2021, 2023, 2024 e 2025), somando 53 jogos e 21 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Jogou Mundiais por 3 times diferentes: Misfits Gaming, Rogue e G2 Esports.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2021: 4.67 em 8 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Xayah, Varus e Kalista.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A G2, seu time, é a campeã da LEC Summer 2026 e primeira cabeça de chave da Europa.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 6,
+    "estreante_2026": false,
+    "jogos": 53,
+    "vitorias": 21,
+    "derrotas": 32,
+    "winrate_pct": 39.6,
+    "abates": 200,
+    "mortes": 130,
+    "assistencias": 219,
+    "kda": 3.22,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Misfits Gaming",
+      "Rogue",
+      "G2 Esports"
+    ],
+    "edicoes": [
+      {
+        "ano": 2017,
+        "time": "Misfits Gaming",
+        "jogos": 12,
+        "vitorias": 6,
+        "derrotas": 6,
+        "abates": 47,
+        "mortes": 21,
+        "assistencias": 42,
+        "kda": 4.24,
+        "campeoes_mais_usados": [
+          "Tristana",
+          "Xayah",
+          "Varus"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2020,
+        "time": "Rogue (European Team)",
+        "jogos": 6,
+        "vitorias": 1,
+        "derrotas": 5,
+        "abates": 14,
+        "mortes": 14,
+        "assistencias": 21,
+        "kda": 2.5,
+        "campeoes_mais_usados": [
+          "Kalista",
+          "Ashe",
+          "Senna"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2021,
+        "time": "Rogue (European Team)",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 33,
+        "mortes": 15,
+        "assistencias": 37,
+        "kda": 4.67,
+        "campeoes_mais_usados": [
+          "Lucian",
+          "Miss Fortune",
+          "Draven"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2023,
+        "time": "G2 Esports",
+        "jogos": 9,
+        "vitorias": 3,
+        "derrotas": 6,
+        "abates": 38,
+        "mortes": 31,
+        "assistencias": 29,
+        "kda": 2.16,
+        "campeoes_mais_usados": [
+          "Kai'Sa",
+          "Xayah",
+          "Draven"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2024,
+        "time": "G2 Esports",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 38,
+        "mortes": 25,
+        "assistencias": 39,
+        "kda": 3.08,
+        "campeoes_mais_usados": [
+          "Kalista",
+          "Jhin",
+          "Kai'Sa"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "G2 Esports",
+        "jogos": 10,
+        "vitorias": 5,
+        "derrotas": 5,
+        "abates": 30,
+        "mortes": 24,
+        "assistencias": 51,
+        "kda": 3.38,
+        "campeoes_mais_usados": [
+          "Xayah",
+          "Varus",
+          "Caitlyn"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/",
+    "https://lol.fandom.com/wiki/Hans_Sama",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

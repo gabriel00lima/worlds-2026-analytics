@@ -1,0 +1,146 @@
+{
+  "id": "rookie",
+  "jogador": "Rookie",
+  "nome_real": "Song Eui-jin",
+  "pais": "Coreia do Sul",
+  "time_id": "ig",
+  "time": "Invictus Gaming",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Rookie",
+  "historia": "Rookie (Song Eui-jin, Coreia do Sul) é mid laner da Invictus Gaming. Está no 5º Mundial da carreira (antes: 2015, 2018, 2019 e 2025), somando 42 jogos e 25 vitórias até 2025. Campeão mundial em 2018. Chegou à semifinal em 2019.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2015, 2018, 2019 e 2025), somando 42 jogos e 25 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeão mundial em 2018.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2019.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2018: 6.79 em 18 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Orianna.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 42,
+    "vitorias": 25,
+    "derrotas": 17,
+    "winrate_pct": 59.5,
+    "abates": 164,
+    "mortes": 89,
+    "assistencias": 286,
+    "kda": 5.06,
+    "titulos": [
+      2018
+    ],
+    "vices": [],
+    "semifinais": [
+      2019
+    ],
+    "mvp_final": [],
+    "times": [
+      "Invictus Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2015,
+        "time": "Invictus Gaming",
+        "jogos": 6,
+        "vitorias": 2,
+        "derrotas": 4,
+        "abates": 22,
+        "mortes": 13,
+        "assistencias": 29,
+        "kda": 3.92,
+        "campeoes_mais_usados": [
+          "Viktor",
+          "Yasuo",
+          "Lulu"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2018,
+        "time": "Invictus Gaming",
+        "jogos": 18,
+        "vitorias": 14,
+        "derrotas": 4,
+        "abates": 70,
+        "mortes": 29,
+        "assistencias": 127,
+        "kda": 6.79,
+        "campeoes_mais_usados": [
+          "Lissandra",
+          "LeBlanc",
+          "Galio"
+        ],
+        "resultado": "Campeão"
+      },
+      {
+        "ano": 2019,
+        "time": "Invictus Gaming",
+        "jogos": 14,
+        "vitorias": 8,
+        "derrotas": 6,
+        "abates": 54,
+        "mortes": 36,
+        "assistencias": 100,
+        "kda": 4.28,
+        "campeoes_mais_usados": [
+          "Qiyana",
+          "Orianna",
+          "Lucian"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2025,
+        "time": "Invictus Gaming",
+        "jogos": 4,
+        "vitorias": 1,
+        "derrotas": 3,
+        "abates": 18,
+        "mortes": 11,
+        "assistencias": 30,
+        "kda": 4.36,
+        "campeoes_mais_usados": [
+          "Ryze",
+          "Hwei",
+          "Orianna"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Rookie",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

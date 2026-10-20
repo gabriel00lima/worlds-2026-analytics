@@ -1,0 +1,1970 @@
+{
+ "gerado_em": "2026-10-20",
+ "fonte": "Leaguepedia (lol.fandom.com), páginas Champion/Player Statistics e páginas das edições, lidas via action=parse",
+ "escopo": "Torneio completo de cada edição (play-in + evento principal), 2011 a 2025",
+ "recordes": {
+  "titulos_por_time": [
+   {
+    "time": "T1",
+    "id_2026": "t1",
+    "nomes_usados": [
+     "SK Telecom T1",
+     "T1"
+    ],
+    "titulos": 6,
+    "anos": [
+     2013,
+     2015,
+     2016,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "time": "Gen.G",
+    "id_2026": "gen-g",
+    "nomes_usados": [
+     "Samsung White",
+     "Samsung Galaxy"
+    ],
+    "titulos": 2,
+    "anos": [
+     2014,
+     2017
+    ]
+   },
+   {
+    "time": "Fnatic",
+    "id_2026": null,
+    "nomes_usados": [
+     "Fnatic"
+    ],
+    "titulos": 1,
+    "anos": [
+     2011
+    ]
+   },
+   {
+    "time": "Taipei Assassins",
+    "id_2026": null,
+    "nomes_usados": [
+     "Taipei Assassins"
+    ],
+    "titulos": 1,
+    "anos": [
+     2012
+    ]
+   },
+   {
+    "time": "Invictus Gaming",
+    "id_2026": "ig",
+    "nomes_usados": [
+     "Invictus Gaming"
+    ],
+    "titulos": 1,
+    "anos": [
+     2018
+    ]
+   },
+   {
+    "time": "FunPlus Phoenix",
+    "id_2026": null,
+    "nomes_usados": [
+     "FunPlus Phoenix"
+    ],
+    "titulos": 1,
+    "anos": [
+     2019
+    ]
+   },
+   {
+    "time": "Dplus KIA",
+    "id_2026": "dk",
+    "nomes_usados": [
+     "DAMWON Gaming"
+    ],
+    "titulos": 1,
+    "anos": [
+     2020
+    ]
+   },
+   {
+    "time": "EDward Gaming",
+    "id_2026": null,
+    "nomes_usados": [
+     "EDward Gaming"
+    ],
+    "titulos": 1,
+    "anos": [
+     2021
+    ]
+   },
+   {
+    "time": "DRX",
+    "id_2026": null,
+    "nomes_usados": [
+     "DRX"
+    ],
+    "titulos": 1,
+    "anos": [
+     2022
+    ]
+   }
+  ],
+  "finais_por_time": [
+   {
+    "time": "T1",
+    "id_2026": "t1",
+    "nomes_usados": [
+     "SK Telecom T1",
+     "T1"
+    ],
+    "finais": 8,
+    "anos": [
+     2013,
+     2015,
+     2016,
+     2017,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "time": "Gen.G",
+    "id_2026": "gen-g",
+    "nomes_usados": [
+     "Samsung White",
+     "Samsung Galaxy"
+    ],
+    "finais": 3,
+    "anos": [
+     2014,
+     2016,
+     2017
+    ]
+   },
+   {
+    "time": "Fnatic",
+    "id_2026": null,
+    "nomes_usados": [
+     "Fnatic"
+    ],
+    "finais": 2,
+    "anos": [
+     2011,
+     2018
+    ]
+   },
+   {
+    "time": "Dplus KIA",
+    "id_2026": "dk",
+    "nomes_usados": [
+     "DAMWON Gaming",
+     "DWG KIA"
+    ],
+    "finais": 2,
+    "anos": [
+     2020,
+     2021
+    ]
+   },
+   {
+    "time": "Against All authority",
+    "id_2026": null,
+    "nomes_usados": [
+     "Against All authority"
+    ],
+    "finais": 1,
+    "anos": [
+     2011
+    ]
+   },
+   {
+    "time": "Taipei Assassins",
+    "id_2026": null,
+    "nomes_usados": [
+     "Taipei Assassins"
+    ],
+    "finais": 1,
+    "anos": [
+     2012
+    ]
+   },
+   {
+    "time": "Azubu Frost",
+    "id_2026": null,
+    "nomes_usados": [
+     "Azubu Frost"
+    ],
+    "finais": 1,
+    "anos": [
+     2012
+    ]
+   },
+   {
+    "time": "Royal Club",
+    "id_2026": null,
+    "nomes_usados": [
+     "Royal Club"
+    ],
+    "finais": 1,
+    "anos": [
+     2013
+    ]
+   },
+   {
+    "time": "Star Horn Royal Club",
+    "id_2026": null,
+    "nomes_usados": [
+     "Star Horn Royal Club"
+    ],
+    "finais": 1,
+    "anos": [
+     2014
+    ]
+   },
+   {
+    "time": "KOO Tigers",
+    "id_2026": null,
+    "nomes_usados": [
+     "KOO Tigers"
+    ],
+    "finais": 1,
+    "anos": [
+     2015
+    ]
+   },
+   {
+    "time": "Invictus Gaming",
+    "id_2026": "ig",
+    "nomes_usados": [
+     "Invictus Gaming"
+    ],
+    "finais": 1,
+    "anos": [
+     2018
+    ]
+   },
+   {
+    "time": "FunPlus Phoenix",
+    "id_2026": null,
+    "nomes_usados": [
+     "FunPlus Phoenix"
+    ],
+    "finais": 1,
+    "anos": [
+     2019
+    ]
+   },
+   {
+    "time": "G2 Esports",
+    "id_2026": "g2",
+    "nomes_usados": [
+     "G2 Esports"
+    ],
+    "finais": 1,
+    "anos": [
+     2019
+    ]
+   },
+   {
+    "time": "Suning",
+    "id_2026": null,
+    "nomes_usados": [
+     "Suning"
+    ],
+    "finais": 1,
+    "anos": [
+     2020
+    ]
+   },
+   {
+    "time": "EDward Gaming",
+    "id_2026": null,
+    "nomes_usados": [
+     "EDward Gaming"
+    ],
+    "finais": 1,
+    "anos": [
+     2021
+    ]
+   },
+   {
+    "time": "DRX",
+    "id_2026": null,
+    "nomes_usados": [
+     "DRX"
+    ],
+    "finais": 1,
+    "anos": [
+     2022
+    ]
+   },
+   {
+    "time": "Weibo Gaming",
+    "id_2026": null,
+    "nomes_usados": [
+     "Weibo Gaming"
+    ],
+    "finais": 1,
+    "anos": [
+     2023
+    ]
+   },
+   {
+    "time": "Bilibili Gaming",
+    "id_2026": "blg",
+    "nomes_usados": [
+     "Bilibili Gaming"
+    ],
+    "finais": 1,
+    "anos": [
+     2024
+    ]
+   },
+   {
+    "time": "KT Rolster",
+    "id_2026": null,
+    "nomes_usados": [
+     "KT Rolster"
+    ],
+    "finais": 1,
+    "anos": [
+     2025
+    ]
+   }
+  ],
+  "titulos_por_regiao": [
+   {
+    "regiao": "KR",
+    "titulos": 10,
+    "anos": [
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2020,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "regiao": "CN",
+    "titulos": 3,
+    "anos": [
+     2018,
+     2019,
+     2021
+    ]
+   },
+   {
+    "regiao": "EU",
+    "titulos": 1,
+    "anos": [
+     2011
+    ]
+   },
+   {
+    "regiao": "LMS",
+    "titulos": 1,
+    "anos": [
+     2012
+    ]
+   }
+  ],
+  "jogadores_mais_titulos": [
+   {
+    "jogador": "Faker",
+    "pagina": "Faker",
+    "titulos": 6,
+    "anos": [
+     2013,
+     2015,
+     2016,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Bengi",
+    "pagina": "Bengi",
+    "titulos": 3,
+    "anos": [
+     2013,
+     2015,
+     2016
+    ]
+   },
+   {
+    "jogador": "Gumayusi",
+    "pagina": "Gumayusi",
+    "titulos": 3,
+    "anos": [
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Oner",
+    "pagina": "Oner",
+    "titulos": 3,
+    "anos": [
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Keria",
+    "pagina": "Keria",
+    "titulos": 3,
+    "anos": [
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Bang",
+    "pagina": "Bang",
+    "titulos": 2,
+    "anos": [
+     2015,
+     2016
+    ]
+   },
+   {
+    "jogador": "Wolf",
+    "pagina": "Wolf (Lee Jae-wan)",
+    "titulos": 2,
+    "anos": [
+     2015,
+     2016
+    ]
+   },
+   {
+    "jogador": "Duke",
+    "pagina": "Duke (Lee Ho-seong)",
+    "titulos": 2,
+    "anos": [
+     2016,
+     2018
+    ]
+   },
+   {
+    "jogador": "BeryL",
+    "pagina": "BeryL",
+    "titulos": 2,
+    "anos": [
+     2020,
+     2022
+    ]
+   },
+   {
+    "jogador": "Zeus",
+    "pagina": "Zeus",
+    "titulos": 2,
+    "anos": [
+     2023,
+     2024
+    ]
+   }
+  ],
+  "jogadores_mais_abates": [
+   {
+    "jogador": "Faker",
+    "pagina": "Faker",
+    "abates": 609,
+    "jogos": 168,
+    "edicoes": 10
+   },
+   {
+    "jogador": "Deft",
+    "pagina": "Deft",
+    "abates": 405,
+    "jogos": 104,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Ruler",
+    "pagina": "Ruler",
+    "abates": 398,
+    "jogos": 102,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Gumayusi",
+    "pagina": "Gumayusi",
+    "abates": 387,
+    "jogos": 85,
+    "edicoes": 5
+   },
+   {
+    "jogador": "Uzi",
+    "pagina": "Uzi (Jian Zi-Hao)",
+    "abates": 350,
+    "jogos": 72,
+    "edicoes": 6
+   },
+   {
+    "jogador": "Caps",
+    "pagina": "Caps",
+    "abates": 336,
+    "jogos": 101,
+    "edicoes": 8
+   },
+   {
+    "jogador": "JackeyLove",
+    "pagina": "JackeyLove",
+    "abates": 325,
+    "jogos": 77,
+    "edicoes": 6
+   },
+   {
+    "jogador": "Xiaohu",
+    "pagina": "Xiaohu",
+    "abates": 317,
+    "jogos": 106,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Perkz",
+    "pagina": "Perkz",
+    "abates": 316,
+    "jogos": 86,
+    "edicoes": 6
+   },
+   {
+    "jogador": "Canyon",
+    "pagina": "Canyon",
+    "abates": 313,
+    "jogos": 101,
+    "edicoes": 7
+   },
+   {
+    "jogador": "ShowMaker",
+    "pagina": "ShowMaker",
+    "abates": 309,
+    "jogos": 83,
+    "edicoes": 6
+   },
+   {
+    "jogador": "Viper",
+    "pagina": "Viper (Park Do-hyeon)",
+    "abates": 302,
+    "jogos": 64,
+    "edicoes": 5
+   },
+   {
+    "jogador": "Scout",
+    "pagina": "Scout",
+    "abates": 300,
+    "jogos": 78,
+    "edicoes": 7
+   },
+   {
+    "jogador": "Jensen",
+    "pagina": "Jensen",
+    "abates": 299,
+    "jogos": 86,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Chovy",
+    "pagina": "Chovy",
+    "abates": 296,
+    "jogos": 84,
+    "edicoes": 7
+   }
+  ],
+  "jogadores_mais_jogos": [
+   {
+    "jogador": "Faker",
+    "pagina": "Faker",
+    "jogos": 168,
+    "vitorias": 123,
+    "edicoes": 10
+   },
+   {
+    "jogador": "Xiaohu",
+    "pagina": "Xiaohu",
+    "jogos": 106,
+    "vitorias": 59,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Deft",
+    "pagina": "Deft",
+    "jogos": 104,
+    "vitorias": 61,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Ruler",
+    "pagina": "Ruler",
+    "jogos": 102,
+    "vitorias": 65,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Caps",
+    "pagina": "Caps",
+    "jogos": 101,
+    "vitorias": 54,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Canyon",
+    "pagina": "Canyon",
+    "jogos": 101,
+    "vitorias": 68,
+    "edicoes": 7
+   },
+   {
+    "jogador": "Impact",
+    "pagina": "Impact",
+    "jogos": 94,
+    "vitorias": 57,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Keria",
+    "pagina": "Keria",
+    "jogos": 94,
+    "vitorias": 67,
+    "edicoes": 6
+   },
+   {
+    "jogador": "Meiko",
+    "pagina": "Meiko",
+    "jogos": 87,
+    "vitorias": 46,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Jensen",
+    "pagina": "Jensen",
+    "jogos": 86,
+    "vitorias": 46,
+    "edicoes": 8
+   },
+   {
+    "jogador": "Perkz",
+    "pagina": "Perkz",
+    "jogos": 86,
+    "vitorias": 46,
+    "edicoes": 6
+   },
+   {
+    "jogador": "Gumayusi",
+    "pagina": "Gumayusi",
+    "jogos": 85,
+    "vitorias": 63,
+    "edicoes": 5
+   },
+   {
+    "jogador": "Oner",
+    "pagina": "Oner",
+    "jogos": 85,
+    "vitorias": 63,
+    "edicoes": 5
+   },
+   {
+    "jogador": "Peanut",
+    "pagina": "Peanut",
+    "jogos": 84,
+    "vitorias": 52,
+    "edicoes": 7
+   },
+   {
+    "jogador": "Chovy",
+    "pagina": "Chovy",
+    "jogos": 84,
+    "vitorias": 51,
+    "edicoes": 7
+   }
+  ],
+  "jogadores_mais_vitorias": [
+   {
+    "jogador": "Faker",
+    "pagina": "Faker",
+    "vitorias": 123,
+    "jogos": 168
+   },
+   {
+    "jogador": "Canyon",
+    "pagina": "Canyon",
+    "vitorias": 68,
+    "jogos": 101
+   },
+   {
+    "jogador": "Keria",
+    "pagina": "Keria",
+    "vitorias": 67,
+    "jogos": 94
+   },
+   {
+    "jogador": "Ruler",
+    "pagina": "Ruler",
+    "vitorias": 65,
+    "jogos": 102
+   },
+   {
+    "jogador": "Gumayusi",
+    "pagina": "Gumayusi",
+    "vitorias": 63,
+    "jogos": 85
+   },
+   {
+    "jogador": "Oner",
+    "pagina": "Oner",
+    "vitorias": 63,
+    "jogos": 85
+   },
+   {
+    "jogador": "Deft",
+    "pagina": "Deft",
+    "vitorias": 61,
+    "jogos": 104
+   },
+   {
+    "jogador": "BeryL",
+    "pagina": "BeryL",
+    "vitorias": 60,
+    "jogos": 80
+   },
+   {
+    "jogador": "Xiaohu",
+    "pagina": "Xiaohu",
+    "vitorias": 59,
+    "jogos": 106
+   },
+   {
+    "jogador": "Impact",
+    "pagina": "Impact",
+    "vitorias": 57,
+    "jogos": 94
+   },
+   {
+    "jogador": "ShowMaker",
+    "pagina": "ShowMaker",
+    "vitorias": 55,
+    "jogos": 83
+   },
+   {
+    "jogador": "Caps",
+    "pagina": "Caps",
+    "vitorias": 54,
+    "jogos": 101
+   },
+   {
+    "jogador": "Peanut",
+    "pagina": "Peanut",
+    "vitorias": 52,
+    "jogos": 84
+   },
+   {
+    "jogador": "Chovy",
+    "pagina": "Chovy",
+    "vitorias": 51,
+    "jogos": 84
+   },
+   {
+    "jogador": "Jensen",
+    "pagina": "Jensen",
+    "vitorias": 46,
+    "jogos": 86
+   }
+  ],
+  "jogadores_mais_participacoes": [
+   {
+    "jogador": "Faker",
+    "pagina": "Faker",
+    "edicoes": 10,
+    "anos": [
+     2013,
+     2015,
+     2016,
+     2017,
+     2019,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Maple",
+    "pagina": "Maple (Huang Yi-Tang)",
+    "edicoes": 9,
+    "anos": [
+     2013,
+     2015,
+     2016,
+     2017,
+     2018,
+     2021,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Xiaohu",
+    "pagina": "Xiaohu",
+    "edicoes": 8,
+    "anos": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2021,
+     2022,
+     2023,
+     2024
+    ]
+   },
+   {
+    "jogador": "Deft",
+    "pagina": "Deft",
+    "edicoes": 8,
+    "anos": [
+     2014,
+     2015,
+     2016,
+     2018,
+     2020,
+     2021,
+     2022,
+     2023
+    ]
+   },
+   {
+    "jogador": "Ruler",
+    "pagina": "Ruler",
+    "edicoes": 8,
+    "anos": [
+     2016,
+     2017,
+     2018,
+     2020,
+     2021,
+     2022,
+     2023,
+     2025
+    ]
+   },
+   {
+    "jogador": "Caps",
+    "pagina": "Caps",
+    "edicoes": 8,
+    "anos": [
+     2017,
+     2018,
+     2019,
+     2020,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Impact",
+    "pagina": "Impact",
+    "edicoes": 8,
+    "anos": [
+     2013,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2022,
+     2024
+    ]
+   },
+   {
+    "jogador": "Meiko",
+    "pagina": "Meiko",
+    "edicoes": 8,
+    "anos": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2021,
+     2022,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Jensen",
+    "pagina": "Jensen",
+    "edicoes": 8,
+    "anos": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ]
+   },
+   {
+    "jogador": "CoreJJ",
+    "pagina": "CoreJJ",
+    "edicoes": 8,
+    "anos": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2023,
+     2024
+    ]
+   },
+   {
+    "jogador": "Doublelift",
+    "pagina": "Doublelift",
+    "edicoes": 8,
+    "anos": [
+     2011,
+     2012,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020
+    ]
+   },
+   {
+    "jogador": "Canyon",
+    "pagina": "Canyon",
+    "edicoes": 7,
+    "anos": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Peanut",
+    "pagina": "Peanut",
+    "edicoes": 7,
+    "anos": [
+     2016,
+     2017,
+     2020,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Chovy",
+    "pagina": "Chovy",
+    "edicoes": 7,
+    "anos": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ]
+   },
+   {
+    "jogador": "Scout",
+    "pagina": "Scout",
+    "edicoes": 7,
+    "anos": [
+     2016,
+     2017,
+     2018,
+     2021,
+     2022,
+     2023,
+     2024
+    ]
+   }
+  ],
+  "melhor_kda_carreira_min_40_jogos": [
+   {
+    "jogador": "Bang",
+    "pagina": "Bang",
+    "kda": 7.3,
+    "jogos": 55
+   },
+   {
+    "jogador": "Broxah",
+    "pagina": "Broxah",
+    "kda": 6.17,
+    "jogos": 57
+   },
+   {
+    "jogador": "Bengi",
+    "pagina": "Bengi",
+    "kda": 5.98,
+    "jogos": 44
+   },
+   {
+    "jogador": "ShowMaker",
+    "pagina": "ShowMaker",
+    "kda": 5.96,
+    "jogos": 83
+   },
+   {
+    "jogador": "Gumayusi",
+    "pagina": "Gumayusi",
+    "kda": 5.95,
+    "jogos": 85
+   },
+   {
+    "jogador": "GALA",
+    "pagina": "GALA",
+    "kda": 5.94,
+    "jogos": 51
+   },
+   {
+    "jogador": "Light",
+    "pagina": "Light (Wang Guang-Yu)",
+    "kda": 5.82,
+    "jogos": 43
+   },
+   {
+    "jogador": "Chovy",
+    "pagina": "Chovy",
+    "kda": 5.72,
+    "jogos": 84
+   },
+   {
+    "jogador": "Keria",
+    "pagina": "Keria",
+    "kda": 5.54,
+    "jogos": 94
+   },
+   {
+    "jogador": "Rekkles",
+    "pagina": "Rekkles",
+    "kda": 5.49,
+    "jogos": 75
+   },
+   {
+    "jogador": "Ruler",
+    "pagina": "Ruler",
+    "kda": 5.41,
+    "jogos": 102
+   },
+   {
+    "jogador": "Viper",
+    "pagina": "Viper (Park Do-hyeon)",
+    "kda": 5.36,
+    "jogos": 64
+   },
+   {
+    "jogador": "Wolf",
+    "pagina": "Wolf (Lee Jae-wan)",
+    "kda": 5.33,
+    "jogos": 55
+   },
+   {
+    "jogador": "Knight",
+    "pagina": "Knight (Zhuo Ding)",
+    "kda": 5.23,
+    "jogos": 58
+   },
+   {
+    "jogador": "Canyon",
+    "pagina": "Canyon",
+    "kda": 5.11,
+    "jogos": 101
+   }
+  ],
+  "mais_abates_em_uma_edicao": [
+   {
+    "ano": 2025,
+    "jogador": "Gumayusi",
+    "times": [
+     "T1"
+    ],
+    "abates": 130,
+    "jogos": 24
+   },
+   {
+    "ano": 2022,
+    "jogador": "Zeka",
+    "times": [
+     "DRX"
+    ],
+    "abates": 121,
+    "jogos": 26
+   },
+   {
+    "ano": 2013,
+    "jogador": "Piglet",
+    "times": [
+     "SK Telecom T1"
+    ],
+    "abates": 115,
+    "jogos": 18
+   },
+   {
+    "ano": 2014,
+    "jogador": "Uzi",
+    "times": [
+     "Star Horn Royal Club"
+    ],
+    "abates": 112,
+    "jogos": 20
+   },
+   {
+    "ano": 2019,
+    "jogador": "Lwx",
+    "times": [
+     "FunPlus Phoenix"
+    ],
+    "abates": 110,
+    "jogos": 18
+   },
+   {
+    "ano": 2025,
+    "jogador": "Faker",
+    "times": [
+     "T1"
+    ],
+    "abates": 110,
+    "jogos": 24
+   },
+   {
+    "ano": 2025,
+    "jogador": "Oner",
+    "times": [
+     "T1"
+    ],
+    "abates": 108,
+    "jogos": 24
+   },
+   {
+    "ano": 2014,
+    "jogador": "PawN",
+    "times": [
+     "Samsung White"
+    ],
+    "abates": 106,
+    "jogos": 17
+   },
+   {
+    "ano": 2014,
+    "jogador": "imp",
+    "times": [
+     "Samsung White"
+    ],
+    "abates": 105,
+    "jogos": 17
+   },
+   {
+    "ano": 2013,
+    "jogador": "xPeke",
+    "times": [
+     "Fnatic"
+    ],
+    "abates": 103,
+    "jogos": 15
+   },
+   {
+    "ano": 2013,
+    "jogador": "Puszu",
+    "times": [
+     "Fnatic"
+    ],
+    "abates": 96,
+    "jogos": 15
+   },
+   {
+    "ano": 2019,
+    "jogador": "Kobbe",
+    "times": [
+     "Splyce"
+    ],
+    "abates": 96,
+    "jogos": 20
+   },
+   {
+    "ano": 2024,
+    "jogador": "knight",
+    "times": [
+     "Bilibili Gaming"
+    ],
+    "abates": 93,
+    "jogos": 20
+   },
+   {
+    "ano": 2018,
+    "jogador": "JackeyLove",
+    "times": [
+     "Invictus Gaming"
+    ],
+    "abates": 92,
+    "jogos": 18
+   },
+   {
+    "ano": 2024,
+    "jogador": "Elk",
+    "times": [
+     "Bilibili Gaming"
+    ],
+    "abates": 91,
+    "jogos": 20
+   }
+  ],
+  "campeoes_mais_escolhidos": [
+   {
+    "campeao": "Lee Sin",
+    "picks": 334,
+    "bans": 192,
+    "vitorias": 175,
+    "edicoes": 15
+   },
+   {
+    "campeao": "Rakan",
+    "picks": 282,
+    "bans": 222,
+    "vitorias": 156,
+    "edicoes": 9
+   },
+   {
+    "campeao": "Kai'Sa",
+    "picks": 277,
+    "bans": 123,
+    "vitorias": 140,
+    "edicoes": 7
+   },
+   {
+    "campeao": "Alistar",
+    "picks": 266,
+    "bans": 267,
+    "vitorias": 129,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Jarvan IV",
+    "picks": 254,
+    "bans": 187,
+    "vitorias": 121,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Orianna",
+    "picks": 254,
+    "bans": 249,
+    "vitorias": 135,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Ezreal",
+    "picks": 248,
+    "bans": 122,
+    "vitorias": 113,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Gragas",
+    "picks": 241,
+    "bans": 103,
+    "vitorias": 134,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Leona",
+    "picks": 235,
+    "bans": 102,
+    "vitorias": 127,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Syndra",
+    "picks": 232,
+    "bans": 295,
+    "vitorias": 109,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Ryze",
+    "picks": 227,
+    "bans": 213,
+    "vitorias": 115,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Xayah",
+    "picks": 224,
+    "bans": 204,
+    "vitorias": 127,
+    "edicoes": 9
+   },
+   {
+    "campeao": "Tristana",
+    "picks": 214,
+    "bans": 83,
+    "vitorias": 95,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Lucian",
+    "picks": 205,
+    "bans": 252,
+    "vitorias": 98,
+    "edicoes": 12
+   },
+   {
+    "campeao": "Renekton",
+    "picks": 203,
+    "bans": 216,
+    "vitorias": 91,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Thresh",
+    "picks": 199,
+    "bans": 141,
+    "vitorias": 96,
+    "edicoes": 11
+   },
+   {
+    "campeao": "Maokai",
+    "picks": 186,
+    "bans": 183,
+    "vitorias": 92,
+    "edicoes": 12
+   },
+   {
+    "campeao": "Sejuani",
+    "picks": 172,
+    "bans": 159,
+    "vitorias": 79,
+    "edicoes": 8
+   },
+   {
+    "campeao": "Rumble",
+    "picks": 171,
+    "bans": 164,
+    "vitorias": 90,
+    "edicoes": 12
+   },
+   {
+    "campeao": "Graves",
+    "picks": 170,
+    "bans": 110,
+    "vitorias": 87,
+    "edicoes": 10
+   }
+  ],
+  "campeoes_mais_banidos": [
+   {
+    "campeao": "Kalista",
+    "picks": 112,
+    "bans": 306,
+    "vitorias": 56,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Syndra",
+    "picks": 232,
+    "bans": 295,
+    "vitorias": 109,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Alistar",
+    "picks": 266,
+    "bans": 267,
+    "vitorias": 129,
+    "edicoes": 14
+   },
+   {
+    "campeao": "LeBlanc",
+    "picks": 130,
+    "bans": 267,
+    "vitorias": 73,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Lucian",
+    "picks": 205,
+    "bans": 252,
+    "vitorias": 98,
+    "edicoes": 12
+   },
+   {
+    "campeao": "Orianna",
+    "picks": 254,
+    "bans": 249,
+    "vitorias": 135,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Rakan",
+    "picks": 282,
+    "bans": 222,
+    "vitorias": 156,
+    "edicoes": 9
+   },
+   {
+    "campeao": "Renekton",
+    "picks": 203,
+    "bans": 216,
+    "vitorias": 91,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Akali",
+    "picks": 127,
+    "bans": 214,
+    "vitorias": 63,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Ryze",
+    "picks": 227,
+    "bans": 213,
+    "vitorias": 115,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Nidalee",
+    "picks": 85,
+    "bans": 207,
+    "vitorias": 49,
+    "edicoes": 15
+   },
+   {
+    "campeao": "Xayah",
+    "picks": 224,
+    "bans": 204,
+    "vitorias": 127,
+    "edicoes": 9
+   },
+   {
+    "campeao": "Caitlyn",
+    "picks": 137,
+    "bans": 202,
+    "vitorias": 61,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Twisted Fate",
+    "picks": 91,
+    "bans": 200,
+    "vitorias": 46,
+    "edicoes": 11
+   },
+   {
+    "campeao": "Lee Sin",
+    "picks": 334,
+    "bans": 192,
+    "vitorias": 175,
+    "edicoes": 15
+   },
+   {
+    "campeao": "Azir",
+    "picks": 144,
+    "bans": 190,
+    "vitorias": 73,
+    "edicoes": 8
+   },
+   {
+    "campeao": "Jarvan IV",
+    "picks": 254,
+    "bans": 187,
+    "vitorias": 121,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Aatrox",
+    "picks": 157,
+    "bans": 185,
+    "vitorias": 81,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Yuumi",
+    "picks": 42,
+    "bans": 184,
+    "vitorias": 25,
+    "edicoes": 4
+   },
+   {
+    "campeao": "Maokai",
+    "picks": 186,
+    "bans": 183,
+    "vitorias": 92,
+    "edicoes": 12
+   }
+  ],
+  "campeoes_melhor_winrate_min_30_jogos": [
+   {
+    "campeao": "Yone",
+    "winrate_pct": 67.2,
+    "picks": 58,
+    "bans": 93,
+    "vitorias": 39,
+    "edicoes": 5
+   },
+   {
+    "campeao": "Janna",
+    "winrate_pct": 66.9,
+    "picks": 124,
+    "bans": 47,
+    "vitorias": 83,
+    "edicoes": 5
+   },
+   {
+    "campeao": "Renata Glasc",
+    "winrate_pct": 63.8,
+    "picks": 58,
+    "bans": 70,
+    "vitorias": 37,
+    "edicoes": 4
+   },
+   {
+    "campeao": "Neeko",
+    "winrate_pct": 63.6,
+    "picks": 55,
+    "bans": 104,
+    "vitorias": 35,
+    "edicoes": 4
+   },
+   {
+    "campeao": "Kindred",
+    "winrate_pct": 61.7,
+    "picks": 47,
+    "bans": 43,
+    "vitorias": 29,
+    "edicoes": 6
+   },
+   {
+    "campeao": "Twitch",
+    "winrate_pct": 60.3,
+    "picks": 63,
+    "bans": 50,
+    "vitorias": 38,
+    "edicoes": 6
+   },
+   {
+    "campeao": "Ornn",
+    "winrate_pct": 59.6,
+    "picks": 114,
+    "bans": 128,
+    "vitorias": 68,
+    "edicoes": 8
+   },
+   {
+    "campeao": "Yuumi",
+    "winrate_pct": 59.5,
+    "picks": 42,
+    "bans": 184,
+    "vitorias": 25,
+    "edicoes": 4
+   },
+   {
+    "campeao": "Yasuo",
+    "winrate_pct": 59.2,
+    "picks": 49,
+    "bans": 51,
+    "vitorias": 29,
+    "edicoes": 8
+   },
+   {
+    "campeao": "Viego",
+    "winrate_pct": 58.9,
+    "picks": 73,
+    "bans": 43,
+    "vitorias": 43,
+    "edicoes": 5
+   },
+   {
+    "campeao": "Jhin",
+    "winrate_pct": 58.9,
+    "picks": 158,
+    "bans": 51,
+    "vitorias": 93,
+    "edicoes": 10
+   },
+   {
+    "campeao": "Kassadin",
+    "winrate_pct": 58.5,
+    "picks": 41,
+    "bans": 46,
+    "vitorias": 24,
+    "edicoes": 11
+   },
+   {
+    "campeao": "Nidalee",
+    "winrate_pct": 57.6,
+    "picks": 85,
+    "bans": 207,
+    "vitorias": 49,
+    "edicoes": 15
+   },
+   {
+    "campeao": "Qiyana",
+    "winrate_pct": 57.4,
+    "picks": 54,
+    "bans": 136,
+    "vitorias": 31,
+    "edicoes": 3
+   },
+   {
+    "campeao": "Kennen",
+    "winrate_pct": 57.0,
+    "picks": 107,
+    "bans": 104,
+    "vitorias": 61,
+    "edicoes": 10
+   }
+  ],
+  "campeoes_em_mais_edicoes": [
+   {
+    "campeao": "Lee Sin",
+    "picks": 334,
+    "bans": 192,
+    "vitorias": 175,
+    "edicoes": 15
+   },
+   {
+    "campeao": "Nidalee",
+    "picks": 85,
+    "bans": 207,
+    "vitorias": 49,
+    "edicoes": 15
+   },
+   {
+    "campeao": "Alistar",
+    "picks": 266,
+    "bans": 267,
+    "vitorias": 129,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Jarvan IV",
+    "picks": 254,
+    "bans": 187,
+    "vitorias": 121,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Orianna",
+    "picks": 254,
+    "bans": 249,
+    "vitorias": 135,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Gragas",
+    "picks": 241,
+    "bans": 103,
+    "vitorias": 134,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Ryze",
+    "picks": 227,
+    "bans": 213,
+    "vitorias": 115,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Tristana",
+    "picks": 214,
+    "bans": 83,
+    "vitorias": 95,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Jayce",
+    "picks": 161,
+    "bans": 158,
+    "vitorias": 79,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Caitlyn",
+    "picks": 137,
+    "bans": 202,
+    "vitorias": 61,
+    "edicoes": 14
+   },
+   {
+    "campeao": "Ezreal",
+    "picks": 248,
+    "bans": 122,
+    "vitorias": 113,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Leona",
+    "picks": 235,
+    "bans": 102,
+    "vitorias": 127,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Syndra",
+    "picks": 232,
+    "bans": 295,
+    "vitorias": 109,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Lulu",
+    "picks": 169,
+    "bans": 98,
+    "vitorias": 72,
+    "edicoes": 13
+   },
+   {
+    "campeao": "Ashe",
+    "picks": 141,
+    "bans": 113,
+    "vitorias": 77,
+    "edicoes": 13
+   }
+  ],
+  "campeao_mais_presente_por_edicao": [
+   {
+    "ano": 2011,
+    "campeao": "Nunu & Willump",
+    "presenca": 27,
+    "presenca_pct": 96.4,
+    "picks": 18,
+    "bans": 9,
+    "winrate_pct": 66.7
+   },
+   {
+    "ano": 2012,
+    "campeao": "Ezreal",
+    "presenca": 28,
+    "presenca_pct": 90.3,
+    "picks": 24,
+    "bans": 4,
+    "winrate_pct": 45.8
+   },
+   {
+    "ano": 2013,
+    "campeao": "Zed",
+    "presenca": 63,
+    "presenca_pct": 100.0,
+    "picks": 11,
+    "bans": 52,
+    "winrate_pct": 54.5
+   },
+   {
+    "ano": 2014,
+    "campeao": "Alistar",
+    "presenca": 78,
+    "presenca_pct": 100.0,
+    "picks": 5,
+    "bans": 73,
+    "winrate_pct": 80.0
+   },
+   {
+    "ano": 2015,
+    "campeao": "Gangplank",
+    "presenca": 73,
+    "presenca_pct": 100.0,
+    "picks": 4,
+    "bans": 69,
+    "winrate_pct": 100.0
+   },
+   {
+    "ano": 2016,
+    "campeao": "Nidalee",
+    "presenca": 77,
+    "presenca_pct": 100.0,
+    "picks": 11,
+    "bans": 66,
+    "winrate_pct": 72.7
+   },
+   {
+    "ano": 2017,
+    "campeao": "Kalista",
+    "presenca": 119,
+    "presenca_pct": 100.0,
+    "picks": 5,
+    "bans": 114,
+    "winrate_pct": 80.0
+   },
+   {
+    "ano": 2018,
+    "campeao": "Aatrox",
+    "presenca": 118,
+    "presenca_pct": 99.2,
+    "picks": 42,
+    "bans": 76,
+    "winrate_pct": 47.6
+   },
+   {
+    "ano": 2019,
+    "campeao": "Pantheon",
+    "presenca": 120,
+    "presenca_pct": 100.0,
+    "picks": 1,
+    "bans": 119,
+    "winrate_pct": 100.0
+   },
+   {
+    "ano": 2020,
+    "campeao": "Ornn",
+    "presenca": 102,
+    "presenca_pct": 89.5,
+    "picks": 40,
+    "bans": 62,
+    "winrate_pct": 60.0
+   },
+   {
+    "ano": 2021,
+    "campeao": "Lee Sin",
+    "presenca": 118,
+    "presenca_pct": 97.5,
+    "picks": 58,
+    "bans": 60,
+    "winrate_pct": 56.9
+   },
+   {
+    "ano": 2022,
+    "campeao": "Aatrox",
+    "presenca": 125,
+    "presenca_pct": 98.4,
+    "picks": 46,
+    "bans": 79,
+    "winrate_pct": 63.0
+   },
+   {
+    "ano": 2023,
+    "campeao": "Orianna",
+    "presenca": 89,
+    "presenca_pct": 93.7,
+    "picks": 29,
+    "bans": 60,
+    "winrate_pct": 62.1
+   },
+   {
+    "ano": 2024,
+    "campeao": "Yone",
+    "presenca": 99,
+    "presenca_pct": 93.4,
+    "picks": 36,
+    "bans": 63,
+    "winrate_pct": 66.7
+   },
+   {
+    "ano": 2025,
+    "campeao": "Yunara",
+    "presenca": 74,
+    "presenca_pct": 88.1,
+    "picks": 16,
+    "bans": 58,
+    "winrate_pct": 68.8
+   }
+  ],
+  "campeao_mais_banido_por_edicao": [
+   {
+    "ano": 2011,
+    "campeao": "Rumble",
+    "bans": 21
+   },
+   {
+    "ano": 2012,
+    "campeao": "Jayce",
+    "bans": 14
+   },
+   {
+    "ano": 2013,
+    "campeao": "Zed",
+    "bans": 52
+   },
+   {
+    "ano": 2014,
+    "campeao": "Alistar",
+    "bans": 73
+   },
+   {
+    "ano": 2015,
+    "campeao": "Gangplank",
+    "bans": 69
+   },
+   {
+    "ano": 2016,
+    "campeao": "Nidalee",
+    "bans": 66
+   },
+   {
+    "ano": 2017,
+    "campeao": "Kalista",
+    "bans": 114
+   },
+   {
+    "ano": 2018,
+    "campeao": "Aatrox",
+    "bans": 76
+   },
+   {
+    "ano": 2019,
+    "campeao": "Pantheon",
+    "bans": 119
+   },
+   {
+    "ano": 2020,
+    "campeao": "Lucian",
+    "bans": 78
+   },
+   {
+    "ano": 2021,
+    "campeao": "LeBlanc",
+    "bans": 71
+   },
+   {
+    "ano": 2022,
+    "campeao": "Caitlyn",
+    "bans": 86
+   },
+   {
+    "ano": 2023,
+    "campeao": "Orianna",
+    "bans": 60
+   },
+   {
+    "ano": 2024,
+    "campeao": "Aurora",
+    "bans": 77
+   },
+   {
+    "ano": 2025,
+    "campeao": "Yunara",
+    "bans": 58
+   }
+  ]
+ }
+}

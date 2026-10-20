@@ -1,0 +1,98 @@
+{
+  "id": "busio",
+  "jogador": "Busio",
+  "nome_real": "Alan Cwalina",
+  "pais": "Estados Unidos",
+  "time_id": "kc",
+  "time": "Karmine Corp",
+  "posicao": "suporte",
+  "leaguepedia": "https://lol.fandom.com/wiki/Busio",
+  "historia": "Busio (Alan Cwalina, Estados Unidos) é suporte da Karmine Corp. Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 22 jogos e 10 vitórias até 2025. A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026. Ele e Caliste foram a dupla de destaque da KC no Play-In de 2026.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2024 e 2025), somando 22 jogos e 10 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A Karmine Corp, seu time, venceu o Play-In e joga o primeiro Mundial da sua história, depois de ser vice da Esports World Cup 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    },
+    {
+      "texto": "Ele e Caliste foram a dupla de destaque da KC no Play-In de 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 22,
+    "vitorias": 10,
+    "derrotas": 12,
+    "winrate_pct": 45.5,
+    "abates": 21,
+    "mortes": 62,
+    "assistencias": 181,
+    "kda": 3.26,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "FlyQuest"
+    ],
+    "edicoes": [
+      {
+        "ano": 2024,
+        "time": "FlyQuest",
+        "jogos": 14,
+        "vitorias": 7,
+        "derrotas": 7,
+        "abates": 15,
+        "mortes": 35,
+        "assistencias": 113,
+        "kda": 3.66,
+        "campeoes_mais_usados": [
+          "Leona",
+          "Rakan",
+          "Rell"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "FlyQuest",
+        "jogos": 8,
+        "vitorias": 3,
+        "derrotas": 5,
+        "abates": 6,
+        "mortes": 27,
+        "assistencias": 68,
+        "kda": 2.74,
+        "campeoes_mais_usados": [
+          "Alistar",
+          "Neeko",
+          "Nautilus"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Busio",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins",
+    "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

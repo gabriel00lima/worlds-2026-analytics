@@ -9,35 +9,39 @@
     {
       "posicao": "top",
       "jogador": "Dhokla",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "dhokla"
     },
     {
       "posicao": "jungle",
       "jogador": "Inspired",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "inspired"
     },
     {
       "posicao": "mid",
       "jogador": "Saint",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "saint"
     },
     {
       "posicao": "atirador",
       "jogador": "Berserker",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "berserker"
     },
     {
       "posicao": "suporte",
       "jogador": "Isles",
-      "confianca": "confirmado"
+      "confianca": "confirmado",
+      "jogador_id": "isles"
     }
   ],
   "elenco_fontes": [
-    "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
-    "https://en.wikipedia.org/wiki/2026_LCS_season"
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event"
   ],
   "titulos_mundiais": [],
-  "melhor_mundial": "Estreia com este elenco.",
+  "melhor_mundial": "Nenhuma participação anterior registrada com o nome LYON.",
   "curiosidades": [
     {
       "texto": "No MSI 2026 chegou à final da chave inferior e só caiu numa virada da HLE, que depois foi campeã.",
@@ -54,8 +58,18 @@
       ]
     }
   ],
+  "historico_mundiais": {
+    "participacoes_ate_2025": 0,
+    "nomes_usados": [],
+    "titulos": 0,
+    "finais": 0,
+    "jogos": 0,
+    "vitorias": 0,
+    "edicoes": [],
+    "fonte": "mundiais-passados/times-2026-historico.json (Leaguepedia)"
+  },
   "fontes": [
-    "https://en.wikipedia.org/wiki/2026_LCS_season",
+    "https://lol.fandom.com/wiki/2026_Season_World_Championship/Main_Event",
     "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
     "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263"
   ],

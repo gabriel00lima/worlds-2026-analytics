@@ -1,0 +1,149 @@
+{
+  "id": "bin",
+  "jogador": "Bin",
+  "nome_real": "Chen Ze-Bin",
+  "pais": "China",
+  "time_id": "blg",
+  "time": "Bilibili Gaming",
+  "posicao": "top",
+  "leaguepedia": "https://lol.fandom.com/wiki/Bin_(Chen_Ze-Bin)",
+  "historia": "Bin (Chen Ze-Bin, China) é top laner da Bilibili Gaming. Está no 5º Mundial da carreira (antes: 2020, 2023, 2024 e 2025), somando 60 jogos e 35 vitórias até 2025. Disputou a final em 2020 e 2024, ficando com o vice. Chegou à semifinal em 2023.",
+  "destaques": [
+    {
+      "texto": "Está no 5º Mundial da carreira (antes: 2020, 2023, 2024 e 2025), somando 60 jogos e 35 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Disputou a final em 2020 e 2024, ficando com o vice.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Chegou à semifinal em 2023.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Campeões que mais aparecem nos seus Mundiais: Jax e Renekton.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A BLG, seu time, foi vice do MSI 2026 e só perdeu a final no quinto jogo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 4,
+    "estreante_2026": false,
+    "jogos": 60,
+    "vitorias": 35,
+    "derrotas": 25,
+    "winrate_pct": 58.3,
+    "abates": 218,
+    "mortes": 150,
+    "assistencias": 273,
+    "kda": 3.27,
+    "titulos": [],
+    "vices": [
+      2020,
+      2024
+    ],
+    "semifinais": [
+      2023
+    ],
+    "mvp_final": [],
+    "times": [
+      "Suning",
+      "Bilibili Gaming"
+    ],
+    "edicoes": [
+      {
+        "ano": 2020,
+        "time": "Suning",
+        "jogos": 19,
+        "vitorias": 12,
+        "derrotas": 7,
+        "abates": 74,
+        "mortes": 55,
+        "assistencias": 98,
+        "kda": 3.13,
+        "campeoes_mais_usados": [
+          "Gangplank",
+          "Jax",
+          "Wukong"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2023,
+        "time": "Bilibili Gaming",
+        "jogos": 13,
+        "vitorias": 6,
+        "derrotas": 7,
+        "abates": 44,
+        "mortes": 33,
+        "assistencias": 40,
+        "kda": 2.55,
+        "campeoes_mais_usados": [
+          "Jax",
+          "Renekton",
+          "Aatrox"
+        ],
+        "resultado": "Semifinal"
+      },
+      {
+        "ano": 2024,
+        "time": "Bilibili Gaming",
+        "jogos": 20,
+        "vitorias": 13,
+        "derrotas": 7,
+        "abates": 71,
+        "mortes": 40,
+        "assistencias": 101,
+        "kda": 4.3,
+        "campeoes_mais_usados": [
+          "Jax",
+          "Rumble",
+          "Gnar"
+        ],
+        "resultado": "Vice"
+      },
+      {
+        "ano": 2025,
+        "time": "Bilibili Gaming",
+        "jogos": 8,
+        "vitorias": 4,
+        "derrotas": 4,
+        "abates": 29,
+        "mortes": 22,
+        "assistencias": 34,
+        "kda": 2.86,
+        "campeoes_mais_usados": [
+          "Jax",
+          "Renekton",
+          "Rek'Sai"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Bin_(Chen_Ze-Bin)",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

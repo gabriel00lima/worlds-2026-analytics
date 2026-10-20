@@ -1,0 +1,96 @@
+{
+  "id": "doggo",
+  "jogador": "Doggo",
+  "nome_real": "Chiu Tzu-Chuan",
+  "pais": "Taiwan",
+  "time_id": "cfo",
+  "time": "CTBC Flying Oyster",
+  "posicao": "adc",
+  "leaguepedia": "https://lol.fandom.com/wiki/Doggo",
+  "historia": "Doggo (Chiu Tzu-Chuan, Taiwan) é atirador da CTBC Flying Oyster. Está no 3º Mundial da carreira (antes: 2021 e 2025), somando 25 jogos e 10 vitórias até 2025. Seu melhor Mundial em KDA foi 2021: 5.46 em 13 jogos. Fez parte da CFO que chegou às quartas em 2025, a melhor campanha da região em dez anos.",
+  "destaques": [
+    {
+      "texto": "Está no 3º Mundial da carreira (antes: 2021 e 2025), somando 25 jogos e 10 vitórias até 2025.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Seu melhor Mundial em KDA foi 2021: 5.46 em 13 jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "Fez parte da CFO que chegou às quartas em 2025, a melhor campanha da região em dez anos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 2,
+    "estreante_2026": false,
+    "jogos": 25,
+    "vitorias": 10,
+    "derrotas": 15,
+    "winrate_pct": 40.0,
+    "abates": 137,
+    "mortes": 52,
+    "assistencias": 137,
+    "kda": 5.27,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [
+      "Beyond Gaming",
+      "CTBC Flying Oyster"
+    ],
+    "edicoes": [
+      {
+        "ano": 2021,
+        "time": "Beyond Gaming",
+        "jogos": 13,
+        "vitorias": 5,
+        "derrotas": 8,
+        "abates": 77,
+        "mortes": 26,
+        "assistencias": 65,
+        "kda": 5.46,
+        "campeoes_mais_usados": [
+          "Miss Fortune",
+          "Ezreal",
+          "Lucian"
+        ],
+        "resultado": null
+      },
+      {
+        "ano": 2025,
+        "time": "CTBC Flying Oyster",
+        "jogos": 12,
+        "vitorias": 5,
+        "derrotas": 7,
+        "abates": 60,
+        "mortes": 26,
+        "assistencias": 72,
+        "kda": 5.08,
+        "campeoes_mais_usados": [
+          "Corki",
+          "Draven",
+          "Caitlyn"
+        ],
+        "resultado": null
+      }
+    ]
+  },
+  "fontes": [
+    "https://lol.fandom.com/wiki/Doggo",
+    "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}

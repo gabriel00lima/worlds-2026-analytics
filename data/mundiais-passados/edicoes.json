@@ -1,0 +1,2639 @@
+{
+ "gerado_em": "2026-10-20",
+ "fonte": "Leaguepedia (lol.fandom.com), páginas Champion/Player Statistics e páginas das edições, lidas via action=parse",
+ "escopo": "Torneio completo de cada edição (play-in + evento principal), 2011 a 2025",
+ "edicoes": [
+  {
+   "ano": 2011,
+   "nome": "Season 1 World Championship",
+   "sede": "Suécia",
+   "inicio": "2011-06-18",
+   "fim": "2011-06-20",
+   "jogos_total": 28,
+   "campeao": {
+    "time": "Fnatic",
+    "regiao": "EU",
+    "time_no_worlds_2026": null,
+    "elenco_que_jogou": [
+     "Shushei",
+     "LaMiaZlt",
+     "xPeke",
+     "Cyanide FI",
+     "Mellisan",
+     "wewillfailer"
+    ]
+   },
+   "vice": {
+    "time": "Against All authority",
+    "regiao": "EU",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "TSM",
+     "regiao": "NA",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Epik Gamer",
+     "regiao": "NA",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "2-1",
+   "mvp_final": null,
+   "mais_presentes": [
+    {
+     "campeao": "Nunu & Willump",
+     "presenca": 27,
+     "presenca_pct": 96.4,
+     "picks": 18,
+     "bans": 9,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Alistar",
+     "presenca": 25,
+     "presenca_pct": 89.3,
+     "picks": 13,
+     "bans": 12,
+     "winrate_pct": 61.5
+    },
+    {
+     "campeao": "Rumble",
+     "presenca": 23,
+     "presenca_pct": 82.1,
+     "picks": 2,
+     "bans": 21,
+     "winrate_pct": 100.0
+    },
+    {
+     "campeao": "Vladimir",
+     "presenca": 22,
+     "presenca_pct": 78.6,
+     "picks": 8,
+     "bans": 14,
+     "winrate_pct": 37.5
+    },
+    {
+     "campeao": "Twisted Fate",
+     "presenca": 22,
+     "presenca_pct": 78.6,
+     "picks": 4,
+     "bans": 18,
+     "winrate_pct": 50.0
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Nunu & Willump",
+     "picks": 18,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Janna",
+     "picks": 18,
+     "winrate_pct": 55.6
+    },
+    {
+     "campeao": "Ashe",
+     "picks": 17,
+     "winrate_pct": 76.5
+    },
+    {
+     "campeao": "Malzahar",
+     "picks": 16,
+     "winrate_pct": 56.2
+    },
+    {
+     "campeao": "Corki",
+     "picks": 15,
+     "winrate_pct": 53.3
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Rumble",
+     "bans": 21
+    },
+    {
+     "campeao": "Twisted Fate",
+     "bans": 18
+    },
+    {
+     "campeao": "Nidalee",
+     "bans": 15
+    },
+    {
+     "campeao": "Vladimir",
+     "bans": 14
+    },
+    {
+     "campeao": "Alistar",
+     "bans": 12
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Ashe",
+     "picks": 17,
+     "vitorias": 13,
+     "winrate_pct": 76.5
+    },
+    {
+     "campeao": "Nunu & Willump",
+     "picks": 18,
+     "vitorias": 12,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Alistar",
+     "picks": 13,
+     "vitorias": 8,
+     "winrate_pct": 61.5
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 46,
+   "lider_abates": {
+    "jogador": "Shushei",
+    "times": [
+     "Fnatic"
+    ],
+    "abates": 69,
+    "jogos": 11
+   },
+   "lider_kda": {
+    "jogador": "LaMiaZlt",
+    "times": [
+     "Fnatic"
+    ],
+    "kda": 6.55,
+    "jogos": 11
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/Season_1_World_Championship",
+    "https://lol.fandom.com/wiki/Season_1_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/Season_1_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2012,
+   "nome": "Season 2 World Championship",
+   "sede": "Estados Unidos",
+   "inicio": "2012-10-04",
+   "fim": "2012-10-13",
+   "jogos_total": 31,
+   "campeao": {
+    "time": "Taipei Assassins",
+    "regiao": "LMS",
+    "time_no_worlds_2026": null,
+    "elenco_que_jogou": [
+     "bebe",
+     "Toyz",
+     "Stanley",
+     "Lilballz",
+     "MiSTakE"
+    ]
+   },
+   "vice": {
+    "time": "Azubu Frost",
+    "regiao": "KR",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "Moscow Five",
+     "regiao": "EU",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Counter Logic Gaming Europe",
+     "regiao": "EU",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-1",
+   "mvp_final": null,
+   "mais_presentes": [
+    {
+     "campeao": "Ezreal",
+     "presenca": 28,
+     "presenca_pct": 90.3,
+     "picks": 24,
+     "bans": 4,
+     "winrate_pct": 45.8
+    },
+    {
+     "campeao": "Jayce",
+     "presenca": 26,
+     "presenca_pct": 83.9,
+     "picks": 12,
+     "bans": 14,
+     "winrate_pct": 58.3
+    },
+    {
+     "campeao": "Sona",
+     "presenca": 24,
+     "presenca_pct": 77.4,
+     "picks": 16,
+     "bans": 8,
+     "winrate_pct": 75.0
+    },
+    {
+     "campeao": "Shen",
+     "presenca": 23,
+     "presenca_pct": 74.2,
+     "picks": 18,
+     "bans": 5,
+     "winrate_pct": 38.9
+    },
+    {
+     "campeao": "Orianna",
+     "presenca": 22,
+     "presenca_pct": 71.0,
+     "picks": 9,
+     "bans": 13,
+     "winrate_pct": 88.9
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Ezreal",
+     "picks": 24,
+     "winrate_pct": 45.8
+    },
+    {
+     "campeao": "Shen",
+     "picks": 18,
+     "winrate_pct": 38.9
+    },
+    {
+     "campeao": "Sona",
+     "picks": 16,
+     "winrate_pct": 75.0
+    },
+    {
+     "campeao": "Karthus",
+     "picks": 16,
+     "winrate_pct": 43.8
+    },
+    {
+     "campeao": "Maokai",
+     "picks": 15,
+     "winrate_pct": 60.0
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Jayce",
+     "bans": 14
+    },
+    {
+     "campeao": "Alistar",
+     "bans": 14
+    },
+    {
+     "campeao": "Orianna",
+     "bans": 13
+    },
+    {
+     "campeao": "Skarner",
+     "bans": 12
+    },
+    {
+     "campeao": "Anivia",
+     "bans": 12
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Sona",
+     "picks": 16,
+     "vitorias": 12,
+     "winrate_pct": 75.0
+    },
+    {
+     "campeao": "Maokai",
+     "picks": 15,
+     "vitorias": 9,
+     "winrate_pct": 60.0
+    },
+    {
+     "campeao": "Kog'Maw",
+     "picks": 10,
+     "vitorias": 6,
+     "winrate_pct": 60.0
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 54,
+   "lider_abates": {
+    "jogador": "bebe",
+    "times": [
+     "Taipei Assassins"
+    ],
+    "abates": 50,
+    "jogos": 9
+   },
+   "lider_kda": {
+    "jogador": "Toyz",
+    "times": [
+     "Taipei Assassins"
+    ],
+    "kda": 8.82,
+    "jogos": 9
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/Season_2_World_Championship",
+    "https://lol.fandom.com/wiki/Season_2_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/Season_2_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2013,
+   "nome": "Season 3 World Championship",
+   "sede": "Estados Unidos",
+   "inicio": "2013-09-15",
+   "fim": "2013-10-04",
+   "jogos_total": 63,
+   "campeao": {
+    "time": "SK Telecom T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1",
+    "elenco_que_jogou": [
+     "Piglet",
+     "Faker",
+     "Impact",
+     "bengi",
+     "PoohManDu"
+    ]
+   },
+   "vice": {
+    "time": "Royal Club",
+    "regiao": "CN",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "NaJin Black Sword",
+     "regiao": "KR",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Fnatic",
+     "regiao": "EU",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-0",
+   "mvp_final": null,
+   "mais_presentes": [
+    {
+     "campeao": "Zed",
+     "presenca": 63,
+     "presenca_pct": 100.0,
+     "picks": 11,
+     "bans": 52,
+     "winrate_pct": 54.5
+    },
+    {
+     "campeao": "Shen",
+     "presenca": 61,
+     "presenca_pct": 96.8,
+     "picks": 26,
+     "bans": 35,
+     "winrate_pct": 57.7
+    },
+    {
+     "campeao": "Corki",
+     "presenca": 59,
+     "presenca_pct": 93.7,
+     "picks": 33,
+     "bans": 26,
+     "winrate_pct": 48.5
+    },
+    {
+     "campeao": "Ahri",
+     "presenca": 52,
+     "presenca_pct": 82.5,
+     "picks": 26,
+     "bans": 26,
+     "winrate_pct": 46.2
+    },
+    {
+     "campeao": "Zyra",
+     "presenca": 48,
+     "presenca_pct": 76.2,
+     "picks": 42,
+     "bans": 6,
+     "winrate_pct": 54.8
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Zyra",
+     "picks": 42,
+     "winrate_pct": 54.8
+    },
+    {
+     "campeao": "Elise",
+     "picks": 37,
+     "winrate_pct": 43.2
+    },
+    {
+     "campeao": "Sona",
+     "picks": 36,
+     "winrate_pct": 36.1
+    },
+    {
+     "campeao": "Corki",
+     "picks": 33,
+     "winrate_pct": 48.5
+    },
+    {
+     "campeao": "Shen",
+     "picks": 26,
+     "winrate_pct": 57.7
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Zed",
+     "bans": 52
+    },
+    {
+     "campeao": "Shen",
+     "bans": 35
+    },
+    {
+     "campeao": "Corki",
+     "bans": 26
+    },
+    {
+     "campeao": "Ahri",
+     "bans": 26
+    },
+    {
+     "campeao": "Thresh",
+     "bans": 22
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Jax",
+     "picks": 10,
+     "vitorias": 7,
+     "winrate_pct": 70.0
+    },
+    {
+     "campeao": "Leona",
+     "picks": 10,
+     "vitorias": 7,
+     "winrate_pct": 70.0
+    },
+    {
+     "campeao": "Renekton",
+     "picks": 21,
+     "vitorias": 14,
+     "winrate_pct": 66.7
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 68,
+   "lider_abates": {
+    "jogador": "Piglet",
+    "times": [
+     "SK Telecom T1"
+    ],
+    "abates": 115,
+    "jogos": 18
+   },
+   "lider_kda": {
+    "jogador": "Piglet",
+    "times": [
+     "SK Telecom T1"
+    ],
+    "kda": 9.73,
+    "jogos": 18
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/Season_3_World_Championship",
+    "https://lol.fandom.com/wiki/Season_3_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/Season_3_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2014,
+   "nome": "2014 Season World Championship",
+   "sede": "Coreia do Sul",
+   "inicio": "2014-09-18",
+   "fim": "2014-10-19",
+   "jogos_total": 78,
+   "campeao": {
+    "time": "Samsung White",
+    "regiao": "KR",
+    "time_no_worlds_2026": "gen-g",
+    "elenco_que_jogou": [
+     "PawN",
+     "imp",
+     "Dandy",
+     "Looper",
+     "Mata"
+    ]
+   },
+   "vice": {
+    "time": "Star Horn Royal Club",
+    "regiao": "CN",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "Samsung Blue",
+     "regiao": "KR",
+     "time_no_worlds_2026": "gen-g"
+    },
+    {
+     "time": "Oh My God",
+     "regiao": "CN",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-1",
+   "mvp_final": null,
+   "mais_presentes": [
+    {
+     "campeao": "Alistar",
+     "presenca": 78,
+     "presenca_pct": 100.0,
+     "picks": 5,
+     "bans": 73,
+     "winrate_pct": 80.0
+    },
+    {
+     "campeao": "Zilean",
+     "presenca": 75,
+     "presenca_pct": 96.2,
+     "picks": 13,
+     "bans": 62,
+     "winrate_pct": 46.2
+    },
+    {
+     "campeao": "Lee Sin",
+     "presenca": 72,
+     "presenca_pct": 92.3,
+     "picks": 43,
+     "bans": 29,
+     "winrate_pct": 55.8
+    },
+    {
+     "campeao": "Maokai",
+     "presenca": 72,
+     "presenca_pct": 92.3,
+     "picks": 27,
+     "bans": 45,
+     "winrate_pct": 63.0
+    },
+    {
+     "campeao": "Ryze",
+     "presenca": 68,
+     "presenca_pct": 87.2,
+     "picks": 37,
+     "bans": 31,
+     "winrate_pct": 59.5
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Kha'Zix",
+     "picks": 58,
+     "winrate_pct": 43.1
+    },
+    {
+     "campeao": "Janna",
+     "picks": 45,
+     "winrate_pct": 62.2
+    },
+    {
+     "campeao": "Thresh",
+     "picks": 44,
+     "winrate_pct": 54.5
+    },
+    {
+     "campeao": "Lucian",
+     "picks": 44,
+     "winrate_pct": 52.3
+    },
+    {
+     "campeao": "Lee Sin",
+     "picks": 43,
+     "winrate_pct": 55.8
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Alistar",
+     "bans": 73
+    },
+    {
+     "campeao": "Zilean",
+     "bans": 62
+    },
+    {
+     "campeao": "Maokai",
+     "bans": 45
+    },
+    {
+     "campeao": "Ryze",
+     "bans": 31
+    },
+    {
+     "campeao": "Lee Sin",
+     "bans": 29
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Rengar",
+     "picks": 14,
+     "vitorias": 12,
+     "winrate_pct": 85.7
+    },
+    {
+     "campeao": "Twitch",
+     "picks": 24,
+     "vitorias": 17,
+     "winrate_pct": 70.8
+    },
+    {
+     "campeao": "Yasuo",
+     "picks": 15,
+     "vitorias": 10,
+     "winrate_pct": 66.7
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 59,
+   "lider_abates": {
+    "jogador": "Uzi",
+    "times": [
+     "Star Horn Royal Club"
+    ],
+    "abates": 112,
+    "jogos": 20
+   },
+   "lider_kda": {
+    "jogador": "Looper",
+    "times": [
+     "Samsung White"
+    ],
+    "kda": 12.14,
+    "jogos": 17
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2014_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2014_Season_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2014_Season_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2015,
+   "nome": "2015 Season World Championship",
+   "sede": "Europa",
+   "inicio": "2015-10-01",
+   "fim": "2015-10-31",
+   "jogos_total": 73,
+   "campeao": {
+    "time": "SK Telecom T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1",
+    "elenco_que_jogou": [
+     "Bang",
+     "MaRin",
+     "Faker",
+     "Bengi",
+     "Easyhoon",
+     "Wolf"
+    ]
+   },
+   "vice": {
+    "time": "KOO Tigers",
+    "regiao": "KR",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "Origen",
+     "regiao": "EU",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Fnatic",
+     "regiao": "EU",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-1",
+   "mvp_final": null,
+   "mais_presentes": [
+    {
+     "campeao": "Gangplank",
+     "presenca": 73,
+     "presenca_pct": 100.0,
+     "picks": 4,
+     "bans": 69,
+     "winrate_pct": 100.0
+    },
+    {
+     "campeao": "Mordekaiser",
+     "presenca": 72,
+     "presenca_pct": 98.6,
+     "picks": 4,
+     "bans": 68,
+     "winrate_pct": 100.0
+    },
+    {
+     "campeao": "Elise",
+     "presenca": 71,
+     "presenca_pct": 97.3,
+     "picks": 39,
+     "bans": 32,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Lulu",
+     "presenca": 69,
+     "presenca_pct": 94.5,
+     "picks": 26,
+     "bans": 43,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Rek'Sai",
+     "presenca": 56,
+     "presenca_pct": 76.7,
+     "picks": 37,
+     "bans": 19,
+     "winrate_pct": 40.5
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Elise",
+     "picks": 39,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Darius",
+     "picks": 38,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Rek'Sai",
+     "picks": 37,
+     "winrate_pct": 40.5
+    },
+    {
+     "campeao": "Alistar",
+     "picks": 30,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Kalista",
+     "picks": 29,
+     "winrate_pct": 48.3
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Gangplank",
+     "bans": 69
+    },
+    {
+     "campeao": "Mordekaiser",
+     "bans": 68
+    },
+    {
+     "campeao": "Lulu",
+     "bans": 43
+    },
+    {
+     "campeao": "Elise",
+     "bans": 32
+    },
+    {
+     "campeao": "Azir",
+     "bans": 28
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Shen",
+     "picks": 12,
+     "vitorias": 10,
+     "winrate_pct": 83.3
+    },
+    {
+     "campeao": "Azir",
+     "picks": 14,
+     "vitorias": 10,
+     "winrate_pct": 71.4
+    },
+    {
+     "campeao": "Tahm Kench",
+     "picks": 14,
+     "vitorias": 10,
+     "winrate_pct": 71.4
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 74,
+   "lider_abates": {
+    "jogador": "Kuro",
+    "times": [
+     "KOO Tigers"
+    ],
+    "abates": 83,
+    "jogos": 17
+   },
+   "lider_kda": {
+    "jogador": "Bang",
+    "times": [
+     "SK Telecom T1"
+    ],
+    "kda": 15.83,
+    "jogos": 16
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2015_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2015_Season_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2015_Season_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2016,
+   "nome": "2016 Season World Championship",
+   "sede": "Estados Unidos",
+   "inicio": "2016-09-29",
+   "fim": "2016-10-29",
+   "jogos_total": 77,
+   "campeao": {
+    "time": "SK Telecom T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1",
+    "elenco_que_jogou": [
+     "Bang",
+     "Faker",
+     "Duke",
+     "Bengi",
+     "Blank",
+     "Wolf"
+    ]
+   },
+   "vice": {
+    "time": "Samsung Galaxy",
+    "regiao": "KR",
+    "time_no_worlds_2026": "gen-g"
+   },
+   "semifinalistas": [
+    {
+     "time": "ROX Tigers",
+     "regiao": "KR",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "H2k-Gaming",
+     "regiao": "EU",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-2",
+   "mvp_final": null,
+   "mais_presentes": [
+    {
+     "campeao": "Nidalee",
+     "presenca": 77,
+     "presenca_pct": 100.0,
+     "picks": 11,
+     "bans": 66,
+     "winrate_pct": 72.7
+    },
+    {
+     "campeao": "Syndra",
+     "presenca": 75,
+     "presenca_pct": 97.4,
+     "picks": 16,
+     "bans": 59,
+     "winrate_pct": 62.5
+    },
+    {
+     "campeao": "Olaf",
+     "presenca": 59,
+     "presenca_pct": 76.6,
+     "picks": 36,
+     "bans": 23,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Karma",
+     "presenca": 58,
+     "presenca_pct": 75.3,
+     "picks": 42,
+     "bans": 16,
+     "winrate_pct": 45.2
+    },
+    {
+     "campeao": "Jhin",
+     "presenca": 51,
+     "presenca_pct": 66.2,
+     "picks": 39,
+     "bans": 12,
+     "winrate_pct": 61.5
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Karma",
+     "picks": 42,
+     "winrate_pct": 45.2
+    },
+    {
+     "campeao": "Jhin",
+     "picks": 39,
+     "winrate_pct": 61.5
+    },
+    {
+     "campeao": "Lee Sin",
+     "picks": 37,
+     "winrate_pct": 56.8
+    },
+    {
+     "campeao": "Olaf",
+     "picks": 36,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Caitlyn",
+     "picks": 34,
+     "winrate_pct": 47.1
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Nidalee",
+     "bans": 66
+    },
+    {
+     "campeao": "Syndra",
+     "bans": 59
+    },
+    {
+     "campeao": "Ryze",
+     "bans": 27
+    },
+    {
+     "campeao": "Olaf",
+     "bans": 23
+    },
+    {
+     "campeao": "Elise",
+     "bans": 21
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Nidalee",
+     "picks": 11,
+     "vitorias": 8,
+     "winrate_pct": 72.7
+    },
+    {
+     "campeao": "Aurelion Sol",
+     "picks": 12,
+     "vitorias": 8,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Alistar",
+     "picks": 23,
+     "vitorias": 15,
+     "winrate_pct": 65.2
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 56,
+   "lider_abates": {
+    "jogador": "Bang",
+    "times": [
+     "SK Telecom T1"
+    ],
+    "abates": 87,
+    "jogos": 20
+   },
+   "lider_kda": {
+    "jogador": "FORG1VEN",
+    "times": [
+     "H2k-Gaming"
+    ],
+    "kda": 7.92,
+    "jogos": 13
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2016_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2016_Season_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2016_Season_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2017,
+   "nome": "2017 Season World Championship",
+   "sede": "China",
+   "inicio": "2017-09-23",
+   "fim": "2017-11-04",
+   "jogos_total": 119,
+   "campeao": {
+    "time": "Samsung Galaxy",
+    "regiao": "KR",
+    "time_no_worlds_2026": "gen-g",
+    "elenco_que_jogou": [
+     "Ruler",
+     "Crown",
+     "CuVee",
+     "Ambition",
+     "CoreJJ",
+     "Haru"
+    ]
+   },
+   "vice": {
+    "time": "SK Telecom T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1"
+   },
+   "semifinalistas": [
+    {
+     "time": "Royal Never Give Up",
+     "regiao": "CN",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Team WE",
+     "regiao": "CN",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-0",
+   "mvp_final": {
+    "jogador": "Ruler",
+    "time": "Samsung Galaxy"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Kalista",
+     "presenca": 119,
+     "presenca_pct": 100.0,
+     "picks": 5,
+     "bans": 114,
+     "winrate_pct": 80.0
+    },
+    {
+     "campeao": "Sejuani",
+     "presenca": 117,
+     "presenca_pct": 98.3,
+     "picks": 60,
+     "bans": 57,
+     "winrate_pct": 48.3
+    },
+    {
+     "campeao": "Jarvan IV",
+     "presenca": 116,
+     "presenca_pct": 97.5,
+     "picks": 55,
+     "bans": 61,
+     "winrate_pct": 54.5
+    },
+    {
+     "campeao": "Galio",
+     "presenca": 108,
+     "presenca_pct": 90.8,
+     "picks": 39,
+     "bans": 69,
+     "winrate_pct": 69.2
+    },
+    {
+     "campeao": "Xayah",
+     "presenca": 98,
+     "presenca_pct": 82.4,
+     "picks": 45,
+     "bans": 53,
+     "winrate_pct": 51.1
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Tristana",
+     "picks": 69,
+     "winrate_pct": 49.3
+    },
+    {
+     "campeao": "Lulu",
+     "picks": 61,
+     "winrate_pct": 39.3
+    },
+    {
+     "campeao": "Sejuani",
+     "picks": 60,
+     "winrate_pct": 48.3
+    },
+    {
+     "campeao": "Gragas",
+     "picks": 59,
+     "winrate_pct": 62.7
+    },
+    {
+     "campeao": "Janna",
+     "picks": 58,
+     "winrate_pct": 74.1
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Kalista",
+     "bans": 114
+    },
+    {
+     "campeao": "Galio",
+     "bans": 69
+    },
+    {
+     "campeao": "Jarvan IV",
+     "bans": 61
+    },
+    {
+     "campeao": "Sejuani",
+     "bans": 57
+    },
+    {
+     "campeao": "Xayah",
+     "bans": 53
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Malzahar",
+     "picks": 11,
+     "vitorias": 9,
+     "winrate_pct": 81.8
+    },
+    {
+     "campeao": "Janna",
+     "picks": 58,
+     "vitorias": 43,
+     "winrate_pct": 74.1
+    },
+    {
+     "campeao": "Gnar",
+     "picks": 20,
+     "vitorias": 14,
+     "winrate_pct": 70.0
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 82,
+   "lider_abates": {
+    "jogador": "Mystic",
+    "times": [
+     "Team WE"
+    ],
+    "abates": 84,
+    "jogos": 22
+   },
+   "lider_kda": {
+    "jogador": "Smoothie",
+    "times": [
+     "Cloud9"
+    ],
+    "kda": 9.24,
+    "jogos": 18
+   },
+   "kda_minimo_jogos": 6,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2017_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2017_Season_World_Championship/Main_Event/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2017_Season_World_Championship/Play-In/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2017_Season_World_Championship/Main_Event/Player_Statistics",
+    "https://lol.fandom.com/wiki/2017_Season_World_Championship/Play-In/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2018,
+   "nome": "2018 Season World Championship",
+   "sede": "Coreia do Sul",
+   "inicio": "2018-10-01",
+   "fim": "2018-11-03",
+   "jogos_total": 119,
+   "campeao": {
+    "time": "Invictus Gaming",
+    "regiao": "CN",
+    "time_no_worlds_2026": "ig",
+    "elenco_que_jogou": [
+     "JackeyLove",
+     "Rookie",
+     "Ning",
+     "TheShy",
+     "Baolan",
+     "Duke"
+    ]
+   },
+   "vice": {
+    "time": "Fnatic",
+    "regiao": "EU",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "G2 Esports",
+     "regiao": "EU",
+     "time_no_worlds_2026": "g2"
+    },
+    {
+     "time": "Cloud9",
+     "regiao": "NA",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-0",
+   "mvp_final": {
+    "jogador": "Ning",
+    "time": "Invictus Gaming"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Aatrox",
+     "presenca": 118,
+     "presenca_pct": 99.2,
+     "picks": 42,
+     "bans": 76,
+     "winrate_pct": 47.6
+    },
+    {
+     "campeao": "Urgot",
+     "presenca": 115,
+     "presenca_pct": 96.6,
+     "picks": 47,
+     "bans": 68,
+     "winrate_pct": 55.3
+    },
+    {
+     "campeao": "Alistar",
+     "presenca": 113,
+     "presenca_pct": 95.0,
+     "picks": 50,
+     "bans": 63,
+     "winrate_pct": 56.0
+    },
+    {
+     "campeao": "Akali",
+     "presenca": 95,
+     "presenca_pct": 79.8,
+     "picks": 19,
+     "bans": 76,
+     "winrate_pct": 57.9
+    },
+    {
+     "campeao": "Kai'Sa",
+     "presenca": 94,
+     "presenca_pct": 79.0,
+     "picks": 69,
+     "bans": 25,
+     "winrate_pct": 56.5
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Kai'Sa",
+     "picks": 69,
+     "winrate_pct": 56.5
+    },
+    {
+     "campeao": "Alistar",
+     "picks": 50,
+     "winrate_pct": 56.0
+    },
+    {
+     "campeao": "Gragas",
+     "picks": 49,
+     "winrate_pct": 40.8
+    },
+    {
+     "campeao": "Urgot",
+     "picks": 47,
+     "winrate_pct": 55.3
+    },
+    {
+     "campeao": "Rakan",
+     "picks": 44,
+     "winrate_pct": 54.5
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Aatrox",
+     "bans": 76
+    },
+    {
+     "campeao": "Akali",
+     "bans": 76
+    },
+    {
+     "campeao": "Urgot",
+     "bans": 68
+    },
+    {
+     "campeao": "Alistar",
+     "bans": 63
+    },
+    {
+     "campeao": "Irelia",
+     "bans": 57
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "LeBlanc",
+     "picks": 27,
+     "vitorias": 18,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Sivir",
+     "picks": 18,
+     "vitorias": 12,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Taliyah",
+     "picks": 25,
+     "vitorias": 16,
+     "winrate_pct": 64.0
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 90,
+   "lider_abates": {
+    "jogador": "JackeyLove",
+    "times": [
+     "Invictus Gaming"
+    ],
+    "abates": 92,
+    "jogos": 18
+   },
+   "lider_kda": {
+    "jogador": "Clearlove",
+    "times": [
+     "EDward Gaming"
+    ],
+    "kda": 9.0,
+    "jogos": 6
+   },
+   "kda_minimo_jogos": 6,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2018_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2018_Season_World_Championship/Main_Event/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2018_Season_World_Championship/Play-In/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2018_Season_World_Championship/Main_Event/Player_Statistics",
+    "https://lol.fandom.com/wiki/2018_Season_World_Championship/Play-In/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2019,
+   "nome": "2019 Season World Championship",
+   "sede": "Europa",
+   "inicio": "2019-10-02",
+   "fim": "2019-11-10",
+   "jogos_total": 120,
+   "campeao": {
+    "time": "FunPlus Phoenix",
+    "regiao": "CN",
+    "time_no_worlds_2026": null,
+    "elenco_que_jogou": [
+     "Lwx",
+     "Doinb",
+     "Tian",
+     "GimGoon",
+     "Crisp"
+    ]
+   },
+   "vice": {
+    "time": "G2 Esports",
+    "regiao": "EU",
+    "time_no_worlds_2026": "g2"
+   },
+   "semifinalistas": [
+    {
+     "time": "Invictus Gaming",
+     "regiao": "CN",
+     "time_no_worlds_2026": "ig"
+    },
+    {
+     "time": "SK Telecom T1",
+     "regiao": "KR",
+     "time_no_worlds_2026": "t1"
+    }
+   ],
+   "final_placar": "3-0",
+   "mvp_final": {
+    "jogador": "Tian",
+    "time": "FunPlus Phoenix"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Pantheon",
+     "presenca": 120,
+     "presenca_pct": 100.0,
+     "picks": 1,
+     "bans": 119,
+     "winrate_pct": 100.0
+    },
+    {
+     "campeao": "Qiyana",
+     "presenca": 109,
+     "presenca_pct": 90.8,
+     "picks": 23,
+     "bans": 86,
+     "winrate_pct": 56.5
+    },
+    {
+     "campeao": "Xayah",
+     "presenca": 102,
+     "presenca_pct": 85.0,
+     "picks": 57,
+     "bans": 45,
+     "winrate_pct": 61.4
+    },
+    {
+     "campeao": "Syndra",
+     "presenca": 96,
+     "presenca_pct": 80.0,
+     "picks": 29,
+     "bans": 67,
+     "winrate_pct": 44.8
+    },
+    {
+     "campeao": "Renekton",
+     "presenca": 95,
+     "presenca_pct": 79.2,
+     "picks": 33,
+     "bans": 62,
+     "winrate_pct": 51.5
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Kai'Sa",
+     "picks": 71,
+     "winrate_pct": 52.1
+    },
+    {
+     "campeao": "Lee Sin",
+     "picks": 58,
+     "winrate_pct": 51.7
+    },
+    {
+     "campeao": "Xayah",
+     "picks": 57,
+     "winrate_pct": 61.4
+    },
+    {
+     "campeao": "Nautilus",
+     "picks": 52,
+     "winrate_pct": 53.8
+    },
+    {
+     "campeao": "Gragas",
+     "picks": 49,
+     "winrate_pct": 65.3
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Pantheon",
+     "bans": 119
+    },
+    {
+     "campeao": "Qiyana",
+     "bans": 86
+    },
+    {
+     "campeao": "Syndra",
+     "bans": 67
+    },
+    {
+     "campeao": "Renekton",
+     "bans": 62
+    },
+    {
+     "campeao": "Akali",
+     "bans": 54
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Ornn",
+     "picks": 10,
+     "vitorias": 7,
+     "winrate_pct": 70.0
+    },
+    {
+     "campeao": "Yasuo",
+     "picks": 15,
+     "vitorias": 10,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Gragas",
+     "picks": 49,
+     "vitorias": 32,
+     "winrate_pct": 65.3
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 98,
+   "lider_abates": {
+    "jogador": "Lwx",
+    "times": [
+     "FunPlus Phoenix"
+    ],
+    "abates": 110,
+    "jogos": 18
+   },
+   "lider_kda": {
+    "jogador": "Lehends",
+    "times": [
+     "Griffin (Korean Team)"
+    ],
+    "kda": 8.44,
+    "jogos": 11
+   },
+   "kda_minimo_jogos": 6,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2019_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2019_Season_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2019_Season_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2020,
+   "nome": "2020 Season World Championship",
+   "sede": "China",
+   "inicio": "2020-09-25",
+   "fim": "2020-10-31",
+   "jogos_total": 114,
+   "campeao": {
+    "time": "DAMWON Gaming",
+    "regiao": "KR",
+    "time_no_worlds_2026": "dk",
+    "elenco_que_jogou": [
+     "Canyon",
+     "Ghost",
+     "ShowMaker",
+     "Nuguri",
+     "BeryL"
+    ]
+   },
+   "vice": {
+    "time": "Suning",
+    "regiao": "CN",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "G2 Esports",
+     "regiao": "EU",
+     "time_no_worlds_2026": "g2"
+    },
+    {
+     "time": "Top Esports",
+     "regiao": "CN",
+     "time_no_worlds_2026": "tes"
+    }
+   ],
+   "final_placar": "3-1",
+   "mvp_final": {
+    "jogador": "Canyon",
+    "time": "DAMWON Gaming"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Ornn",
+     "presenca": 102,
+     "presenca_pct": 89.5,
+     "picks": 40,
+     "bans": 62,
+     "winrate_pct": 60.0
+    },
+    {
+     "campeao": "Nidalee",
+     "presenca": 102,
+     "presenca_pct": 89.5,
+     "picks": 31,
+     "bans": 71,
+     "winrate_pct": 58.1
+    },
+    {
+     "campeao": "Graves",
+     "presenca": 99,
+     "presenca_pct": 86.8,
+     "picks": 69,
+     "bans": 30,
+     "winrate_pct": 50.7
+    },
+    {
+     "campeao": "Lucian",
+     "presenca": 94,
+     "presenca_pct": 82.5,
+     "picks": 16,
+     "bans": 78,
+     "winrate_pct": 56.2
+    },
+    {
+     "campeao": "Syndra",
+     "presenca": 84,
+     "presenca_pct": 73.7,
+     "picks": 37,
+     "bans": 47,
+     "winrate_pct": 51.4
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Graves",
+     "picks": 69,
+     "winrate_pct": 50.7
+    },
+    {
+     "campeao": "Senna",
+     "picks": 46,
+     "winrate_pct": 45.7
+    },
+    {
+     "campeao": "Jhin",
+     "picks": 43,
+     "winrate_pct": 65.1
+    },
+    {
+     "campeao": "Ashe",
+     "picks": 42,
+     "winrate_pct": 40.5
+    },
+    {
+     "campeao": "Leona",
+     "picks": 42,
+     "winrate_pct": 61.9
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Lucian",
+     "bans": 78
+    },
+    {
+     "campeao": "Nidalee",
+     "bans": 71
+    },
+    {
+     "campeao": "Ornn",
+     "bans": 62
+    },
+    {
+     "campeao": "Twisted Fate",
+     "bans": 55
+    },
+    {
+     "campeao": "Camille",
+     "bans": 53
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Jhin",
+     "picks": 43,
+     "vitorias": 28,
+     "winrate_pct": 65.1
+    },
+    {
+     "campeao": "Shen",
+     "picks": 14,
+     "vitorias": 9,
+     "winrate_pct": 64.3
+    },
+    {
+     "campeao": "Orianna",
+     "picks": 39,
+     "vitorias": 25,
+     "winrate_pct": 64.1
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 88,
+   "lider_abates": {
+    "jogador": "Canyon",
+    "times": [
+     "DAMWON Gaming"
+    ],
+    "abates": 87,
+    "jogos": 17
+   },
+   "lider_kda": {
+    "jogador": "Ghost",
+    "times": [
+     "DAMWON Gaming"
+    ],
+    "kda": 7.62,
+    "jogos": 17
+   },
+   "kda_minimo_jogos": 6,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2020_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2020_Season_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2020_Season_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2021,
+   "nome": "2021 Season World Championship",
+   "sede": "Islândia",
+   "inicio": "2021-10-05",
+   "fim": "2021-11-06",
+   "jogos_total": 121,
+   "campeao": {
+    "time": "EDward Gaming",
+    "regiao": "CN",
+    "time_no_worlds_2026": null,
+    "elenco_que_jogou": [
+     "Viper",
+     "Scout",
+     "Flandre",
+     "JieJie",
+     "Meiko"
+    ]
+   },
+   "vice": {
+    "time": "DWG KIA",
+    "regiao": "KR",
+    "time_no_worlds_2026": "dk"
+   },
+   "semifinalistas": [
+    {
+     "time": "T1",
+     "regiao": "KR",
+     "time_no_worlds_2026": "t1"
+    },
+    {
+     "time": "Gen.G",
+     "regiao": "KR",
+     "time_no_worlds_2026": "gen-g"
+    }
+   ],
+   "final_placar": "3-2",
+   "mvp_final": {
+    "jogador": "Scout",
+    "time": "EDward Gaming"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Lee Sin",
+     "presenca": 118,
+     "presenca_pct": 97.5,
+     "picks": 58,
+     "bans": 60,
+     "winrate_pct": 56.9
+    },
+    {
+     "campeao": "Lucian",
+     "presenca": 100,
+     "presenca_pct": 82.6,
+     "picks": 34,
+     "bans": 66,
+     "winrate_pct": 52.9
+    },
+    {
+     "campeao": "LeBlanc",
+     "presenca": 100,
+     "presenca_pct": 82.6,
+     "picks": 29,
+     "bans": 71,
+     "winrate_pct": 51.7
+    },
+    {
+     "campeao": "Miss Fortune",
+     "presenca": 98,
+     "presenca_pct": 81.0,
+     "picks": 80,
+     "bans": 18,
+     "winrate_pct": 47.5
+    },
+    {
+     "campeao": "Twisted Fate",
+     "presenca": 92,
+     "presenca_pct": 76.0,
+     "picks": 28,
+     "bans": 64,
+     "winrate_pct": 53.6
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Miss Fortune",
+     "picks": 80,
+     "winrate_pct": 47.5
+    },
+    {
+     "campeao": "Lee Sin",
+     "picks": 58,
+     "winrate_pct": 56.9
+    },
+    {
+     "campeao": "Leona",
+     "picks": 56,
+     "winrate_pct": 53.6
+    },
+    {
+     "campeao": "Xin Zhao",
+     "picks": 45,
+     "winrate_pct": 33.3
+    },
+    {
+     "campeao": "Rakan",
+     "picks": 43,
+     "winrate_pct": 55.8
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "LeBlanc",
+     "bans": 71
+    },
+    {
+     "campeao": "Irelia",
+     "bans": 71
+    },
+    {
+     "campeao": "Yuumi",
+     "bans": 69
+    },
+    {
+     "campeao": "Lucian",
+     "bans": 66
+    },
+    {
+     "campeao": "Twisted Fate",
+     "bans": 64
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Syndra",
+     "picks": 19,
+     "vitorias": 14,
+     "winrate_pct": 73.7
+    },
+    {
+     "campeao": "Qiyana",
+     "picks": 15,
+     "vitorias": 11,
+     "winrate_pct": 73.3
+    },
+    {
+     "campeao": "Kennen",
+     "picks": 30,
+     "vitorias": 20,
+     "winrate_pct": 66.7
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 91,
+   "lider_abates": {
+    "jogador": "Deft",
+    "times": [
+     "Hanwha Life Esports"
+    ],
+    "abates": 78,
+    "jogos": 17
+   },
+   "lider_kda": {
+    "jogador": "Light",
+    "times": [
+     "LNG Esports"
+    ],
+    "kda": 10.11,
+    "jogos": 11
+   },
+   "kda_minimo_jogos": 6,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2021_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2021_Season_World_Championship/Champion_Statistics",
+    "https://lol.fandom.com/wiki/2021_Season_World_Championship/Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2022,
+   "nome": "2022 Season World Championship",
+   "sede": "México e Estados Unidos",
+   "inicio": "2022-09-29",
+   "fim": "2022-11-05",
+   "jogos_total": 127,
+   "campeao": {
+    "time": "DRX",
+    "regiao": "KR",
+    "time_no_worlds_2026": null,
+    "elenco_que_jogou": [
+     "Zeka",
+     "Deft",
+     "Kingen",
+     "Pyosik",
+     "BeryL",
+     "Juhan"
+    ]
+   },
+   "vice": {
+    "time": "T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1"
+   },
+   "semifinalistas": [
+    {
+     "time": "JD Gaming",
+     "regiao": "CN",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Gen.G",
+     "regiao": "KR",
+     "time_no_worlds_2026": "gen-g"
+    }
+   ],
+   "final_placar": "3-2",
+   "mvp_final": {
+    "jogador": "Kingen",
+    "time": "DRX"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Aatrox",
+     "presenca": 125,
+     "presenca_pct": 98.4,
+     "picks": 46,
+     "bans": 79,
+     "winrate_pct": 63.0
+    },
+    {
+     "campeao": "Sejuani",
+     "presenca": 106,
+     "presenca_pct": 83.5,
+     "picks": 49,
+     "bans": 57,
+     "winrate_pct": 49.0
+    },
+    {
+     "campeao": "Sylas",
+     "presenca": 99,
+     "presenca_pct": 78.0,
+     "picks": 50,
+     "bans": 49,
+     "winrate_pct": 66.0
+    },
+    {
+     "campeao": "Yuumi",
+     "presenca": 99,
+     "presenca_pct": 78.0,
+     "picks": 14,
+     "bans": 85,
+     "winrate_pct": 85.7
+    },
+    {
+     "campeao": "Caitlyn",
+     "presenca": 98,
+     "presenca_pct": 77.2,
+     "picks": 12,
+     "bans": 86,
+     "winrate_pct": 41.7
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Sylas",
+     "picks": 50,
+     "winrate_pct": 66.0
+    },
+    {
+     "campeao": "Sejuani",
+     "picks": 49,
+     "winrate_pct": 49.0
+    },
+    {
+     "campeao": "Azir",
+     "picks": 48,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Aatrox",
+     "picks": 46,
+     "winrate_pct": 63.0
+    },
+    {
+     "campeao": "Maokai",
+     "picks": 43,
+     "winrate_pct": 51.2
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Caitlyn",
+     "bans": 86
+    },
+    {
+     "campeao": "Yuumi",
+     "bans": 85
+    },
+    {
+     "campeao": "Aatrox",
+     "bans": 79
+    },
+    {
+     "campeao": "Sejuani",
+     "bans": 57
+    },
+    {
+     "campeao": "Graves",
+     "bans": 50
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Yuumi",
+     "picks": 14,
+     "vitorias": 12,
+     "winrate_pct": 85.7
+    },
+    {
+     "campeao": "Sivir",
+     "picks": 13,
+     "vitorias": 11,
+     "winrate_pct": 84.6
+    },
+    {
+     "campeao": "Gragas",
+     "picks": 12,
+     "vitorias": 9,
+     "winrate_pct": 75.0
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 109,
+   "lider_abates": {
+    "jogador": "Zeka",
+    "times": [
+     "DRX"
+    ],
+    "abates": 121,
+    "jogos": 26
+   },
+   "lider_kda": {
+    "jogador": "Upset",
+    "times": [
+     "Fnatic"
+    ],
+    "kda": 8.8,
+    "jogos": 11
+   },
+   "kda_minimo_jogos": 6,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2022_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2022_Season_World_Championship/Cumulative_Champion_Statistics",
+    "https://lol.fandom.com/wiki/2022_Season_World_Championship/Cumulative_Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2023,
+   "nome": "2023 Season World Championship",
+   "sede": "Coreia do Sul",
+   "inicio": "2023-10-10",
+   "fim": "2023-11-19",
+   "jogos_total": 95,
+   "campeao": {
+    "time": "T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1",
+    "elenco_que_jogou": [
+     "Gumayusi",
+     "Zeus",
+     "Faker",
+     "Oner",
+     "Keria"
+    ]
+   },
+   "vice": {
+    "time": "Weibo Gaming",
+    "regiao": "CN",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "Bilibili Gaming",
+     "regiao": "CN",
+     "time_no_worlds_2026": "blg"
+    },
+    {
+     "time": "JD Gaming",
+     "regiao": "CN",
+     "time_no_worlds_2026": null
+    }
+   ],
+   "final_placar": "3-0",
+   "mvp_final": {
+    "jogador": "Zeus",
+    "time": "T1"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Orianna",
+     "presenca": 89,
+     "presenca_pct": 93.7,
+     "picks": 29,
+     "bans": 60,
+     "winrate_pct": 62.1
+    },
+    {
+     "campeao": "Xayah",
+     "presenca": 85,
+     "presenca_pct": 89.5,
+     "picks": 43,
+     "bans": 42,
+     "winrate_pct": 69.8
+    },
+    {
+     "campeao": "Maokai",
+     "presenca": 84,
+     "presenca_pct": 88.4,
+     "picks": 28,
+     "bans": 56,
+     "winrate_pct": 46.4
+    },
+    {
+     "campeao": "Jarvan IV",
+     "presenca": 73,
+     "presenca_pct": 76.8,
+     "picks": 35,
+     "bans": 38,
+     "winrate_pct": 51.4
+    },
+    {
+     "campeao": "Neeko",
+     "presenca": 73,
+     "presenca_pct": 76.8,
+     "picks": 19,
+     "bans": 54,
+     "winrate_pct": 73.7
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Kai'Sa",
+     "picks": 52,
+     "winrate_pct": 42.3
+    },
+    {
+     "campeao": "Xayah",
+     "picks": 43,
+     "winrate_pct": 69.8
+    },
+    {
+     "campeao": "Rell",
+     "picks": 42,
+     "winrate_pct": 52.4
+    },
+    {
+     "campeao": "Rakan",
+     "picks": 41,
+     "winrate_pct": 56.1
+    },
+    {
+     "campeao": "K'Sante",
+     "picks": 36,
+     "winrate_pct": 50.0
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Orianna",
+     "bans": 60
+    },
+    {
+     "campeao": "Maokai",
+     "bans": 56
+    },
+    {
+     "campeao": "Neeko",
+     "bans": 54
+    },
+    {
+     "campeao": "Rumble",
+     "bans": 51
+    },
+    {
+     "campeao": "Kalista",
+     "bans": 46
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Renata Glasc",
+     "picks": 13,
+     "vitorias": 11,
+     "winrate_pct": 84.6
+    },
+    {
+     "campeao": "Neeko",
+     "picks": 19,
+     "vitorias": 14,
+     "winrate_pct": 73.7
+    },
+    {
+     "campeao": "Viego",
+     "picks": 11,
+     "vitorias": 8,
+     "winrate_pct": 72.7
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 87,
+   "lider_abates": {
+    "jogador": "Slayder",
+    "times": [
+     "GAM Esports"
+    ],
+    "abates": 78,
+    "jogos": 17
+   },
+   "lider_kda": {
+    "jogador": "Gumayusi",
+    "times": [
+     "T1"
+    ],
+    "kda": 10.4,
+    "jogos": 12
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2023_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2023_Season_World_Championship/Cumulative_Champion_Statistics",
+    "https://lol.fandom.com/wiki/2023_Season_World_Championship/Cumulative_Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2024,
+   "nome": "2024 Season World Championship",
+   "sede": "Alemanha, França e Reino Unido",
+   "inicio": "2024-09-25",
+   "fim": "2024-11-02",
+   "jogos_total": 106,
+   "campeao": {
+    "time": "T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1",
+    "elenco_que_jogou": [
+     "Gumayusi",
+     "Faker",
+     "Oner",
+     "Zeus",
+     "Keria"
+    ]
+   },
+   "vice": {
+    "time": "Bilibili Gaming",
+    "regiao": "CN",
+    "time_no_worlds_2026": "blg"
+   },
+   "semifinalistas": [
+    {
+     "time": "Weibo Gaming",
+     "regiao": "CN",
+     "time_no_worlds_2026": null
+    },
+    {
+     "time": "Gen.G",
+     "regiao": "KR",
+     "time_no_worlds_2026": "gen-g"
+    }
+   ],
+   "final_placar": "3-2",
+   "mvp_final": {
+    "jogador": "Faker",
+    "time": "T1"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Yone",
+     "presenca": 99,
+     "presenca_pct": 93.4,
+     "picks": 36,
+     "bans": 63,
+     "winrate_pct": 66.7
+    },
+    {
+     "campeao": "Aurora",
+     "presenca": 96,
+     "presenca_pct": 90.6,
+     "picks": 19,
+     "bans": 77,
+     "winrate_pct": 63.2
+    },
+    {
+     "campeao": "Skarner",
+     "presenca": 95,
+     "presenca_pct": 89.6,
+     "picks": 39,
+     "bans": 56,
+     "winrate_pct": 71.8
+    },
+    {
+     "campeao": "Ashe",
+     "presenca": 83,
+     "presenca_pct": 78.3,
+     "picks": 26,
+     "bans": 57,
+     "winrate_pct": 61.5
+    },
+    {
+     "campeao": "Jax",
+     "presenca": 80,
+     "presenca_pct": 75.5,
+     "picks": 42,
+     "bans": 38,
+     "winrate_pct": 52.4
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Rell",
+     "picks": 54,
+     "winrate_pct": 46.3
+    },
+    {
+     "campeao": "Jax",
+     "picks": 42,
+     "winrate_pct": 52.4
+    },
+    {
+     "campeao": "Skarner",
+     "picks": 39,
+     "winrate_pct": 71.8
+    },
+    {
+     "campeao": "Gnar",
+     "picks": 37,
+     "winrate_pct": 59.5
+    },
+    {
+     "campeao": "Yone",
+     "picks": 36,
+     "winrate_pct": 66.7
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Aurora",
+     "bans": 77
+    },
+    {
+     "campeao": "Yone",
+     "bans": 63
+    },
+    {
+     "campeao": "Ashe",
+     "bans": 57
+    },
+    {
+     "campeao": "Skarner",
+     "bans": 56
+    },
+    {
+     "campeao": "Ziggs",
+     "bans": 49
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Galio",
+     "picks": 11,
+     "vitorias": 8,
+     "winrate_pct": 72.7
+    },
+    {
+     "campeao": "Skarner",
+     "picks": 39,
+     "vitorias": 28,
+     "winrate_pct": 71.8
+    },
+    {
+     "campeao": "Yone",
+     "picks": 36,
+     "vitorias": 24,
+     "winrate_pct": 66.7
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 95,
+   "lider_abates": {
+    "jogador": "knight",
+    "times": [
+     "Bilibili Gaming"
+    ],
+    "abates": 93,
+    "jogos": 20
+   },
+   "lider_kda": {
+    "jogador": "Scout",
+    "times": [
+     "LNG Esports"
+    ],
+    "kda": 9.3,
+    "jogos": 8
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2024_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2024_Season_World_Championship/Cumulative_Champion_Statistics",
+    "https://lol.fandom.com/wiki/2024_Season_World_Championship/Cumulative_Player_Statistics"
+   ]
+  },
+  {
+   "ano": 2025,
+   "nome": "2025 Season World Championship",
+   "sede": "China",
+   "inicio": "2025-10-14",
+   "fim": "2025-11-09",
+   "jogos_total": 84,
+   "campeao": {
+    "time": "T1",
+    "regiao": "KR",
+    "time_no_worlds_2026": "t1",
+    "elenco_que_jogou": [
+     "Gumayusi",
+     "Faker",
+     "Oner",
+     "Doran",
+     "Keria"
+    ]
+   },
+   "vice": {
+    "time": "KT Rolster",
+    "regiao": "KR",
+    "time_no_worlds_2026": null
+   },
+   "semifinalistas": [
+    {
+     "time": "Gen.G",
+     "regiao": "KR",
+     "time_no_worlds_2026": "gen-g"
+    },
+    {
+     "time": "Top Esports",
+     "regiao": "CN",
+     "time_no_worlds_2026": "tes"
+    }
+   ],
+   "final_placar": "3-2",
+   "mvp_final": {
+    "jogador": "Gumayusi",
+    "time": "T1"
+   },
+   "mais_presentes": [
+    {
+     "campeao": "Yunara",
+     "presenca": 74,
+     "presenca_pct": 88.1,
+     "picks": 16,
+     "bans": 58,
+     "winrate_pct": 68.8
+    },
+    {
+     "campeao": "Azir",
+     "presenca": 69,
+     "presenca_pct": 82.1,
+     "picks": 14,
+     "bans": 55,
+     "winrate_pct": 50.0
+    },
+    {
+     "campeao": "Orianna",
+     "presenca": 66,
+     "presenca_pct": 78.6,
+     "picks": 20,
+     "bans": 46,
+     "winrate_pct": 60.0
+    },
+    {
+     "campeao": "Poppy",
+     "presenca": 58,
+     "presenca_pct": 69.0,
+     "picks": 13,
+     "bans": 45,
+     "winrate_pct": 76.9
+    },
+    {
+     "campeao": "Neeko",
+     "presenca": 56,
+     "presenca_pct": 66.7,
+     "picks": 20,
+     "bans": 36,
+     "winrate_pct": 60.0
+    }
+   ],
+   "mais_escolhidos": [
+    {
+     "campeao": "Xin Zhao",
+     "picks": 29,
+     "winrate_pct": 62.1
+    },
+    {
+     "campeao": "K'Sante",
+     "picks": 27,
+     "winrate_pct": 33.3
+    },
+    {
+     "campeao": "Alistar",
+     "picks": 25,
+     "winrate_pct": 56.0
+    },
+    {
+     "campeao": "Taliyah",
+     "picks": 23,
+     "winrate_pct": 52.2
+    },
+    {
+     "campeao": "Ryze",
+     "picks": 23,
+     "winrate_pct": 34.8
+    }
+   ],
+   "mais_banidos": [
+    {
+     "campeao": "Yunara",
+     "bans": 58
+    },
+    {
+     "campeao": "Azir",
+     "bans": 55
+    },
+    {
+     "campeao": "Orianna",
+     "bans": 46
+    },
+    {
+     "campeao": "Poppy",
+     "bans": 45
+    },
+    {
+     "campeao": "Neeko",
+     "bans": 36
+    }
+   ],
+   "melhor_winrate_10_jogos": [
+    {
+     "campeao": "Poppy",
+     "picks": 13,
+     "vitorias": 10,
+     "winrate_pct": 76.9
+    },
+    {
+     "campeao": "Galio",
+     "picks": 13,
+     "vitorias": 10,
+     "winrate_pct": 76.9
+    },
+    {
+     "campeao": "Varus",
+     "picks": 14,
+     "vitorias": 10,
+     "winrate_pct": 71.4
+    }
+   ],
+   "campeoes_diferentes_escolhidos": 95,
+   "lider_abates": {
+    "jogador": "Gumayusi",
+    "times": [
+     "T1"
+    ],
+    "abates": 130,
+    "jogos": 24
+   },
+   "lider_kda": {
+    "jogador": "Viper",
+    "times": [
+     "Hanwha Life Esports"
+    ],
+    "kda": 8.07,
+    "jogos": 9
+   },
+   "kda_minimo_jogos": 5,
+   "fontes": [
+    "https://lol.fandom.com/wiki/2025_Season_World_Championship",
+    "https://lol.fandom.com/wiki/2025_Season_World_Championship/Cumulative_Champion_Statistics",
+    "https://lol.fandom.com/wiki/2025_Season_World_Championship/Cumulative_Player_Statistics"
+   ]
+  }
+ ]
+}

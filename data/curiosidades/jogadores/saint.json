@@ -1,0 +1,53 @@
+{
+  "id": "saint",
+  "jogador": "Saint",
+  "nome_real": "Kang Sung-in",
+  "pais": "Coreia do Sul",
+  "time_id": "lyon",
+  "time": "LYON",
+  "posicao": "mid",
+  "leaguepedia": "https://lol.fandom.com/wiki/Saint_(Kang_Sung-in)",
+  "historia": "Saint (Kang Sung-in, Coreia do Sul) é mid laner da LYON. Faz em 2026 o seu primeiro Mundial. A LYON, seu time, venceu o Lock-In e o Spring da LCS 2026.",
+  "destaques": [
+    {
+      "texto": "Faz em 2026 o seu primeiro Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+      ]
+    },
+    {
+      "texto": "A LYON, seu time, venceu o Lock-In e o Spring da LCS 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+        "https://en.wikipedia.org/wiki/2026_LCS_season"
+      ]
+    }
+  ],
+  "mundiais": {
+    "participacoes_ate_2025": 0,
+    "estreante_2026": true,
+    "jogos": 0,
+    "vitorias": 0,
+    "derrotas": 0,
+    "winrate_pct": null,
+    "abates": 0,
+    "mortes": 0,
+    "assistencias": 0,
+    "kda": null,
+    "titulos": [],
+    "vices": [],
+    "semifinais": [],
+    "mvp_final": [],
+    "times": [],
+    "edicoes": []
+  },
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2026_LCS_season",
+    "https://lol.fandom.com/wiki/Saint_(Kang_Sung-in)",
+    "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+    "mundiais-passados/ (Leaguepedia, estatísticas de cada Worlds 2011-2025)"
+  ],
+  "atualizado_em": "2026-10-20"
+}
