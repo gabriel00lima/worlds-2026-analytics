@@ -2224,7 +2224,6 @@
   async function rankingPalpites() {
     const el = $("#ranking-palpites");
     if (!el) return;
-    // fora do artefato não há perfis compartilhados: só os palpites deste navegador
     if (!DB) {
       const r = pontosPalpites(meuLocal());
       el.innerHTML = r.n
