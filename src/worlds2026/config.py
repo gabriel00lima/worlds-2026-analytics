@@ -1,4 +1,6 @@
-"""Caminhos usados pela coleta e pela geração do site."""
+"""Caminhos, identificadores e chaves usados pela coleta."""
+
+import os
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
@@ -8,5 +10,20 @@ CURIOSIDADES = DADOS / "curiosidades"
 CONTAS_SOLOQ = DADOS / "soloq" / "contas.json"
 
 CACHE = RAIZ / ".cache"
-MODELO = RAIZ / "web" / "modelo.html"
+CACHE_JOGOS = CACHE / "jogos"
+CACHE_IMAGENS = CACHE / "img"
+
+WEB = RAIZ / "web"
 SITE = RAIZ / "docs" / "index.html"
+
+LIGA_WORLDS = "98767975604431411"
+TORNEIO_WORLDS_2026 = "115660540725177488"
+
+# Chave pública que o próprio lolesports.com envia do navegador.
+LOLESPORTS_API_KEY = os.environ.get("LOLESPORTS_API_KEY", "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z")
+RIOT_API_KEY = os.environ.get("RIOT_API_KEY")
+
+
+def preparar_pastas() -> None:
+    for pasta in (CACHE_JOGOS, CACHE_IMAGENS):
+        pasta.mkdir(parents=True, exist_ok=True)

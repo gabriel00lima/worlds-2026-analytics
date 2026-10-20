@@ -18,27 +18,25 @@ A parte em Python busca os dados na API do LoL Esports, processa a linha do temp
 
 ```
 src/worlds2026/
-  coletor.py      busca agenda, times e partidas, processa os jogos e monta o site
-  extras.py       bans da Leaguepedia e partidas de solo queue pela API da Riot
-  config.py       caminhos do projeto
-web/
-  modelo.html     o site (HTML, CSS e JavaScript), onde os dados são injetados
-data/
-  curiosidades/   histórico e curiosidades de cada time e confronto
-  soloq/          contas de solo queue dos jogadores
-scripts/
-  gerar_curiosidades.py
-tests/
-docs/             site publicado no GitHub Pages
+  fontes/           um cliente para cada fonte: LoL Esports, feed livestats, Leaguepedia, Riot, Data Dragon
+  processamento.py  transforma os quadros do feed em lances, série de ouro e estatísticas
+  pipeline.py       as etapas da coleta, da agenda até o site pronto
+  site.py           junta o template, o CSS, o JS e os dados num único index.html
+  cli.py            linha de comando
+web/                o site: index.html, estilo.css e app.js
+data/               curiosidades dos confrontos e contas de solo queue
+scripts/            gerador das curiosidades
+tests/              testes com pytest, incluindo uma coleta completa com as fontes simuladas
+docs/               site publicado no GitHub Pages
 ```
 
 ## Como funciona
 
-O `coletor.py` baixa a agenda, os times, os elencos e o estado de cada jogo, que o feed da Riot entrega de 10 em 10 segundos. Como o feed não diz o que aconteceu, os abates, torres e dragões são encontrados comparando um quadro com o seguinte. Os downloads rodam em paralelo e ficam em cache, então só o que é novo é baixado de novo.
+O feed da Riot entrega o estado de cada jogo de 10 em 10 segundos, mas não diz o que aconteceu. O `processamento.py` encontra os abates, torres e dragões comparando um quadro com o seguinte e desconta as pausas técnicas do relógio. Essa parte não acessa a rede, o que deixa fácil de testar.
 
-O `extras.py` complementa com os bans da Leaguepedia e, se houver uma `RIOT_API_KEY` no ambiente, com as partidas de solo queue dos jogadores.
+Os clientes em `fontes/` cuidam da parte chata: paginação, novas tentativas quando a API falha e cache em disco, para que rodar de novo só baixe o que é novo. Os quadros de cada jogo são buscados em paralelo. Se houver uma `RIOT_API_KEY` no ambiente, entram também as partidas de solo queue dos jogadores.
 
-O site é HTML, CSS e JavaScript sem framework. Os dados entram no `web/modelo.html` e saem num único `docs/index.html`, que o GitHub Pages publica.
+O site é HTML, CSS e JavaScript sem framework. O `site.py` embute tudo num único `docs/index.html`, que o GitHub Pages publica.
 
 ![Prévia de Gen.G x Invictus Gaming](docs/img/previa.png)
 
@@ -48,8 +46,10 @@ O site é HTML, CSS e JavaScript sem framework. Os dados entram no `web/modelo.h
 pip install -e ".[dev]"
 python -m worlds2026            # coleta os dados e atualiza docs/index.html
 python -m worlds2026 --so-site  # só regera o site com o que já está em cache
-pytest
+pytest --cov
 ```
+
+O CI roda `ruff`, `mypy` e os testes a cada push.
 
 ## Limitações
 

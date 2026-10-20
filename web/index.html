@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Central do Worlds 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topo">
+        <div>
+          <div class="eyebrow">League of Legends World Championship</div>
+          <h1>Worlds <span>2026</span></h1>
+          <div class="fases" id="fases"></div>
+        </div>
+        <div class="atualizado" id="atualizado"></div>
+      </header>
+    </div>
+    <div class="faixa">
+      <div class="wrap">
+        <div class="eyebrow" style="margin-bottom: 8px">Próximos jogos · horário de Brasília</div>
+        <div class="faixa-in" id="proximos"></div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div id="dia-topo" style="margin-top: 18px" hidden></div>
+      <nav class="abas" role="tablist" id="abas">
+        <button role="tab" data-aba="playin">Play-In</button>
+        <button role="tab" data-aba="suica">Fase Suíça</button>
+        <button role="tab" data-aba="matamata">Mata-mata</button>
+        <button role="tab" data-aba="destaques">Destaques</button>
+        <button role="tab" data-aba="meta">Meta</button>
+        <button role="tab" data-aba="comparar">Comparar</button>
+        <button role="tab" data-aba="times">Times</button>
+      </nav>
+      <section class="painel" id="p-playin" hidden></section>
+      <section class="painel" id="p-suica" hidden></section>
+      <section class="painel" id="p-matamata" hidden></section>
+      <section class="painel" id="p-destaques" hidden></section>
+      <section class="painel" id="p-meta" hidden></section>
+      <section class="painel" id="p-comparar" hidden></section>
+      <section class="painel" id="p-times" hidden></section>
+      <p class="nota" style="padding-bottom: 40px">
+        Números só do Worlds 2026, vindos da API e do feed de estatísticas do LoL Esports, com ícones do Data
+        Dragon. Na animação, a posição de cada lance no mapa é aproximada pela rota do jogador, porque o feed
+        não traz coordenadas. Bans e arautos não aparecem no feed, então ficam de fora. As curiosidades de
+        histórico são de fora deste Worlds e vêm marcadas quando têm uma fonte só.
+      </p>
+    </div>
+
+    <dialog class="folha" id="folha"><div class="folha-in" id="folha-in"></div></dialog>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+      window.W = /*__DADOS__*/ null;
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
