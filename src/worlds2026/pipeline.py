@@ -10,7 +10,7 @@ from .arquivos import ler_json, salvar_json
 from .fontes import ddragon, leaguepedia, lolesports, riot
 from .jogos import jogo_em_cache, processar_jogo
 from .tempo import iso
-from .texto import norm
+from .texto import norm, sem_caixa_alta
 
 log = logging.getLogger(__name__)
 
@@ -105,7 +105,7 @@ def montar_times(por_codigo: dict[str, Json], titulares: dict[str, list[str]], j
                 {
                     "id": pl["id"],
                     "nick": pl["summonerName"].strip(),
-                    "nome": f"{pl.get('firstName', '')} {pl.get('lastName', '')}".strip(),
+                    "nome": sem_caixa_alta(f"{pl.get('firstName', '')} {pl.get('lastName', '')}".strip(), pessoa=True),
                     "rota": pl["role"],
                     "titular": pl["id"] in tit,
                     "foto": None if "default-headshot" in foto else imagens.miniatura(foto, 160, quadrado=True),
@@ -116,7 +116,7 @@ def montar_times(por_codigo: dict[str, Json], titulares: dict[str, list[str]], j
         times[codigo] = {
             "id": t["id"],
             "codigo": codigo,
-            "nome": t["name"],
+            "nome": sem_caixa_alta(t["name"]),
             "liga": liga.get("name"),
             "regiao": liga.get("region"),
             "logo": imagens.miniatura(t.get("image"), 128),

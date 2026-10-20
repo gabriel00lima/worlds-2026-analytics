@@ -5,6 +5,7 @@ import urllib.parse
 from typing import Any
 
 from .. import config, rede
+from ..texto import sem_caixa_alta
 
 log = logging.getLogger(__name__)
 
@@ -65,7 +66,7 @@ def converter_evento(evento: Json, fase: str) -> Json:
         "times": [
             {
                 "codigo": t["code"],
-                "nome": t["name"],
+                "nome": sem_caixa_alta(t["name"]),
                 "vitorias": (t.get("result") or {}).get("gameWins"),
                 "resultado": (t.get("result") or {}).get("outcome"),
             }

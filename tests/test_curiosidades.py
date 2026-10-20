@@ -22,3 +22,12 @@ def test_ler_curiosidades(tmp_path, monkeypatch):
 def test_sem_pasta(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "CURIOSIDADES", tmp_path / "nada")
     assert curiosidades.ler_curiosidades() == {"times": {}, "confrontos": []}
+
+
+def test_curiosidades_sobre_apostas_ficam_de_fora(tmp_path, monkeypatch):
+    (tmp_path / "times").mkdir()
+    (tmp_path / "confrontos").mkdir()
+    curios = [{"texto": "Favorita nas casas de apostas"}, {"texto": "Odds de 1.5"}, {"texto": "Estreia no Mundial"}]
+    (tmp_path / "times" / "t1.json").write_text(json.dumps({"id": "t1", "curiosidades": curios}))
+    monkeypatch.setattr(config, "CURIOSIDADES", tmp_path)
+    assert curiosidades.ler_curiosidades()["times"]["T1"]["curiosidades"] == [{"texto": "Estreia no Mundial"}]
