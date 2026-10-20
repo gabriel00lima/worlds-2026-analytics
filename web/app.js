@@ -855,7 +855,7 @@
 
   /* ---------- jogo encerrado ---------- */
   function linhaCab(a, b) {
-    return `<div class="l"><span class="v b azul">${esc(a)}</span><span></span><span class="rot"></span><span></span><span class="v verm">${esc(b)}</span></div>`;
+    return `<div class="cab-lados"><span class="azul">${esc(a)}</span><span class="verm">${esc(b)}</span></div>`;
   }
   function linhaCmp(a, b, va, vb, rot) {
     const tot = (va || 0) + (vb || 0) || 1;
@@ -4430,6 +4430,12 @@
     [/^Aos (\d+) min, ouro empatado com (.+)$/, "At $1 min, even gold with $2"],
     [/^Jogo (\d+)$/, "Game $1"],
     [/^Suíça R(\d)$/, "Swiss R$1"],
+    [
+      /^(\d+)(?:–(\d+))?\/(out|nov)(.*)$/,
+      (m, a, b, me, r) => `${me === "out" ? "Oct" : "Nov"} ${a}${b ? "–" + b : ""}${r}`,
+    ],
+    [/^Campeã do Play-In(.*)$/, "Play-In champion$1"],
+    [/^(.+) está no Mundial!$/, "$1 is at Worlds!"],
     [/^(\d+) abates$/, "$1 kills"],
     [/^(\d+) vitórias? · (.+) de aproveitamento$/, "$1 wins · $2 win rate"],
     [
@@ -4555,7 +4561,7 @@
     if (
       e.target.tagName === "IMG" &&
       CAMP_NOME[e.target.alt] &&
-      !e.target.closest("button,a,[data-jogador],[data-partida],[data-time],.clic,canvas")
+      !e.target.closest("button,a,canvas,.faixa-sq,.jornada")
     ) {
       navegar(() => abrirCampeao(CAMP_NOME[e.target.alt]));
       return;

@@ -281,8 +281,8 @@ table.pos th.ord {
 .camps img,
 .bans img,
 .pool-l img,
-.pq img,
-.camp-cards img {
+.camp-cards img,
+img.camp {
   cursor: pointer;
 }
 .topo-bts {
@@ -299,7 +299,9 @@ table.pos th.ord {
   font-size: 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 3px 10px;
+  padding: 3px 12px;
+  white-space: nowrap;
+  line-height: 1.5;
 }
 .bt-sp[aria-pressed="true"] {
   background: var(--gold);
@@ -1571,6 +1573,22 @@ nav.abas.com-ind button[aria-selected="true"] {
 }
 .copiar-link {
   margin-left: auto;
+  margin-right: 14px;
+}
+.cab-lados {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.cab-lados .azul {
+  color: #4ea3f0;
+}
+.cab-lados .verm {
+  color: #f0675c;
+  text-align: right;
 }
 
 .chave,
