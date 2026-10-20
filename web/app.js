@@ -3878,7 +3878,7 @@
     folha.showModal = () => {
       abrir();
       G.fromTo(
-        folha,
+        folhaIn,
         { x: 80, opacity: 0.4 },
         { x: 0, opacity: 1, duration: 0.45, ease: "power3.out", clearProps: "transform,opacity" },
       );
@@ -4099,11 +4099,13 @@
         desenhar();
         e.preventDefault();
       } else if (e.key === "Enter" && res[sel]) {
-        abrirResultado(res[sel]);
+        e.preventDefault();
+        const x = res[sel];
         inp.value = "";
         res = [];
         desenhar();
         inp.blur();
+        setTimeout(() => abrirResultado(x), 0);
       } else if (e.key === "Escape") {
         inp.value = "";
         res = [];
@@ -4371,6 +4373,42 @@
     Agenda: "Schedule",
     "Adicionar ao Google Agenda": "Add to Google Calendar",
   };
+  Object.assign(EN, {
+    "ouro sobre o rival de rota · mínimo 3 jogos": "gold over lane opponent · min. 3 games",
+    "Ainda sem jogos neste Worlds.": "No games at this Worlds yet.",
+    "Começa em": "Starts in",
+    "Estreia neste jogo.": "Debuts in this game.",
+    "sem jogos neste Worlds": "no games at this Worlds",
+    "Baixar todos os jogos (.ics, para iPhone e Outlook)":
+      "Download all games (.ics, for iPhone and Outlook)",
+    "Dê palpites nas prévias dos jogos e acompanhe aqui quantos você acertou.":
+      "Make predictions in the match previews and track your hits here.",
+    "Dano por minuto só nos jogos com placar da Leaguepedia. CS dif. @10 é a diferença de tropas abatidas para o rival da mesma rota aos 10 minutos.":
+      "Damage per minute only in games with a Leaguepedia scoreboard. CS diff @10 is the minion difference to the same-lane opponent at 10 minutes.",
+  });
+  const DIA = {
+      domingo: "Sunday",
+      "segunda-feira": "Monday",
+      "terça-feira": "Tuesday",
+      "quarta-feira": "Wednesday",
+      "quinta-feira": "Thursday",
+      "sexta-feira": "Friday",
+      sábado: "Saturday",
+    },
+    MES = {
+      janeiro: "January",
+      fevereiro: "February",
+      março: "March",
+      abril: "April",
+      maio: "May",
+      junho: "June",
+      julho: "July",
+      agosto: "August",
+      setembro: "September",
+      outubro: "October",
+      novembro: "November",
+      dezembro: "December",
+    };
   const SEM = { seg: "Mon", ter: "Tue", qua: "Wed", qui: "Thu", sex: "Fri", sáb: "Sat", dom: "Sun" };
   const EN_RE = [
     [
@@ -4392,6 +4430,21 @@
     [/^Aos (\d+) min, ouro empatado com (.+)$/, "At $1 min, even gold with $2"],
     [/^Jogo (\d+)$/, "Game $1"],
     [/^Suíça R(\d)$/, "Swiss R$1"],
+    [/^(\d+) abates$/, "$1 kills"],
+    [/^(\d+) vitórias? · (.+) de aproveitamento$/, "$1 wins · $2 win rate"],
+    [
+      /^(domingo|segunda-feira|terça-feira|quarta-feira|quinta-feira|sexta-feira|sábado), (\d+) de (\w+)(?: · (\d+) jogos?)?$/,
+      (m, d, n, me, j) => `${DIA[d]}, ${MES[me] || me} ${n}${j ? ` · ${j} game${j === "1" ? "" : "s"}` : ""}`,
+    ],
+    [
+      /^em (\d+) de (\d+) jogos com bans registrados(?: · Leaguepedia consultada em (.+))?$/,
+      (m, a, b, q) =>
+        `in ${a} of ${b} games with recorded bans${q ? ` · Leaguepedia checked ${trTexto(q)}` : ""}`,
+    ],
+    [/^· Play-In, jogo (\d+)$/, "· Play-In, game $1"],
+    [/^Campanha · (.+)$/, "Record · $1"],
+    [/^Fase Suíça, rodada (\d) · melhor de (\d)$/, "Swiss Stage, round $1 · best of $2"],
+    [/^(.+) · melhor de (\d)$/, (m, a, n) => `${trTexto(a)} · best of ${n}`],
     [/^Ver (.+)$/, "See $1"],
     [/^(\S+) de (.+) \(([A-Z0-9]+)\)$/, "$1 on $2 ($3)"],
     [/^(\d+) jogos?$/, (m, n) => `${n} game${n === "1" ? "" : "s"}`],
