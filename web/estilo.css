@@ -285,6 +285,10 @@ table.pos th.ord {
 .camp-cards img {
   cursor: pointer;
 }
+.topo-bts {
+  display: flex;
+  gap: 6px;
+}
 .topo-dir {
   display: flex;
   flex-direction: column;

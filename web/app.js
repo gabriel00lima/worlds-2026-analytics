@@ -4137,6 +4137,350 @@
     });
   }
 
+  /* ---------- versão em inglês da interface ---------- */
+  // Traduz rótulos, títulos e botões; textos gerados (histórias, narração) continuam em português.
+  const EN = {
+    "A definir": "TBD",
+    "Na disputa": "In contention",
+    Encerrado: "Final",
+    "Ao vivo": "Live",
+    "Mais abates": "Most kills",
+    "Melhor KDA": "Best KDA",
+    "Chave superior · rodada 1": "Upper bracket · round 1",
+    "Chave inferior · rodada 1": "Lower bracket · round 1",
+    "Final da chave superior": "Upper bracket final",
+    "Final da chave inferior": "Lower bracket final",
+    "Final do Play-In": "Play-In final",
+    "Modo sem spoiler ligado: esta aba mostra resultados.":
+      "Spoiler-free mode is on: this tab shows results.",
+    Desligar: "Turn off",
+    "First blood": "First blood",
+    Vitórias: "Wins",
+    "Fase Suíça": "Swiss Stage",
+    Quartas: "Quarterfinals",
+    Semis: "Semis",
+    Final: "Final",
+    "Destaques do dia": "Highlights of the day",
+    "Jogo mais longo": "Longest game",
+    "Maior virada": "Biggest comeback",
+    Times: "Teams",
+    "mínimo 3 jogos": "min. 3 games",
+    Jogos: "Games",
+    Campeões: "Champions",
+    "Abates por jogo": "Kills per game",
+    Campeão: "Champion",
+    "Primeiro dragão": "First dragon",
+    "Primeira torre": "First tower",
+    "Primeiro Barão": "First Baron",
+    Bans: "Bans",
+    Jogadores: "Players",
+    Topo: "Top",
+    Selva: "Jungle",
+    Meio: "Mid",
+    Atirador: "Bot",
+    Suporte: "Support",
+    Jogador: "Player",
+    Time: "Team",
+    Dragões: "Dragons",
+    "Ouro@15": "Gold@15",
+    "Ouro@15 médio": "Avg gold@15",
+    "Participação em abates": "Kill participation",
+    "Dano/min": "Damage/min",
+    "First bloods": "First bloods",
+    Torres: "Towers",
+    Barões: "Barons",
+    Arautos: "Heralds",
+    Vastilarvas: "Voidgrubs",
+    Abates: "Kills",
+    Ouro: "Gold",
+    Visão: "Vision",
+    "Itens finais": "Final items",
+    "Sem spoiler": "No spoilers",
+    "Sem spoiler: ligado": "No spoilers: on",
+    "Próximos jogos · horário de Brasília": "Upcoming games · Brasília time",
+    "horário de Brasília": "Brasília time",
+    "Como foi o Play-In ›": "How the Play-In went ›",
+    "Ver o time": "See the team",
+    "Mata-mata": "Knockouts",
+    Destaques: "Highlights",
+    Meta: "Meta",
+    Comparar: "Compare",
+    "Rodada 1": "Round 1",
+    "Rodada 2": "Round 2",
+    "Rodada 3": "Round 3",
+    "Rodada 4": "Round 4",
+    "Rodada 5": "Round 5",
+    "Todos com 0-0": "Everyone at 0-0",
+    "Grupos 1-0 e 0-1": "1-0 and 0-1 pools",
+    "Grupos 2-0, 1-1 e 0-2": "2-0, 1-1 and 0-2 pools",
+    "Grupos 2-1 e 1-2": "2-1 and 1-2 pools",
+    "Grupo 2-2": "2-2 pool",
+    "Campanhas na Suíça": "Swiss records",
+    "Chance de classificação": "Chance to advance",
+    Classifica: "Advances",
+    "Cai 0-3": "Out 0-3",
+    Semifinais: "Semifinals",
+    "Mais CS por minuto": "Most CS per minute",
+    "sem suportes": "no supports",
+    "Maior vantagem aos 15": "Biggest lead at 15",
+    "ouro sobre o rival de rota": "gold over lane opponent",
+    "Mais dano por minuto": "Most damage per minute",
+    "Maior participação em abates": "Highest kill participation",
+    "Mais first bloods": "Most first bloods",
+    "quem fez o primeiro abate do jogo": "who got the game's first kill",
+    "Maior placar de visão": "Highest vision score",
+    "média por jogo": "average per game",
+    "Por posição": "By position",
+    Todas: "All",
+    "Ouro/min": "Gold/min",
+    "% do ouro": "Gold share",
+    "CS dif. @10": "CS diff @10",
+    "Sentinelas/min": "Wards/min",
+    "Mais escolhidos": "Most picked",
+    "Mais banidos": "Most banned",
+    "Mais presentes": "Highest presence",
+    "escolhidos + banidos": "picked + banned",
+    "% dos jogos": "% of games",
+    "Dragões por jogo": "Dragons per game",
+    "Vantagem média aos 15": "Avg lead at 15",
+    "Arautos por jogo": "Heralds per game",
+    "jogos registrados na Leaguepedia": "games recorded on Leaguepedia",
+    "Jogos mais longos": "Longest games",
+    "duração média": "average length",
+    "Ranking dos palpites": "Prediction leaderboard",
+    "Jogos marcantes": "Notable games",
+    "Mais longo": "Longest",
+    "Mais curto": "Shortest",
+    "Menos abates": "Fewest kills",
+    "Vitórias do lado azul": "Blue side wins",
+    "Vitórias do lado vermelho": "Red side wins",
+    "Duração média": "Average length",
+    "Campeões escolhidos": "Champions picked",
+    "Escolhidos ou banidos": "Picked or banned",
+    "O que mais decide jogo": "What decides games",
+    "quem conseguiu primeiro e venceu": "got it first and won",
+    "À frente aos 15 min": "Ahead at 15 min",
+    Infernal: "Infernal",
+    Quimtec: "Chemtech",
+    Vento: "Cloud",
+    Montanha: "Mountain",
+    Oceano: "Ocean",
+    Hextec: "Hextech",
+    Ancião: "Elder",
+    Presença: "Presence",
+    Escolhas: "Picks",
+    "Aproveit.": "Win rate",
+    "Média histórica": "Historical avg",
+    "Mortes por jogo": "Deaths per game",
+    "Assistências por jogo": "Assists per game",
+    "CS por minuto": "CS per minute",
+    "Dano por minuto": "Damage per minute",
+    "% do dano do time": "Team damage share",
+    "Visão por jogo": "Vision per game",
+    "Buscar jogador, time ou campeão  /": "Search player, team or champion  /",
+    "Buscar jogador, time ou campeão": "Search player, team or champion",
+    Posição: "Position",
+    "Primeiro jogador": "First player",
+    "Segundo jogador": "Second player",
+    "% do dano": "Damage share",
+    "Particip.": "KP",
+    "O jogo dele, lance a lance": "Their game, play by play",
+    Tudo: "All",
+    "Abates e mortes": "Kills and deaths",
+    Objetivos: "Objectives",
+    "Ouro na rota": "Lane gold",
+    "Ver o jogo completo, com o replay narrado ›": "See the full game, with the narrated replay ›",
+    "Ver o jogo completo ›": "See the full game ›",
+    "Filtrar acontecimentos": "Filter events",
+    "Copiar link": "Copy link",
+    "Link copiado": "Link copied",
+    "Modo sem spoiler: os resultados desta tela estão escondidos.":
+      "Spoiler-free mode: results on this screen are hidden.",
+    "Mostrar resultados": "Show results",
+    Fechar: "Close",
+    "‹ Voltar": "‹ Back",
+    "sem jogos ainda": "no games yet",
+    Semifinal: "Semifinal",
+    "▶ Ver o VOD sem spoiler": "▶ Watch the VOD spoiler-free",
+    "Resumo da série": "Series summary",
+    "Assistir ao jogo narrado": "Watch the narrated game",
+    "▶ Assistir ao VOD oficial em português": "▶ Watch the official VOD (Portuguese)",
+    "▶ Assistir ao VOD oficial (em inglês)": "▶ Watch the official VOD (English)",
+    "no YouTube do LoL Esports · o início do jogo no vídeo é aproximado":
+      "on LoL Esports' YouTube · the game start in the video is approximate",
+    "ver na transmissão": "see on stream",
+    "Vantagem aos 15 min": "Lead at 15 min",
+    "Ouro ao longo do jogo": "Gold over time",
+    "Chance de vitória": "Win chance",
+    "% dano": "Damage %",
+    Elenco: "Roster",
+    "Próximo jogo": "Next game",
+    "No torneio": "In the tournament",
+    "Campeões jogados": "Champions played",
+    "Séries disputadas": "Series played",
+    "Nos Mundiais": "At Worlds",
+    "Carreira em Mundiais": "Worlds career",
+    "Neste Worlds": "At this Worlds",
+    "Quem jogou": "Who played it",
+    "Nos Mundiais anteriores": "At past Worlds",
+    "Jornada no Worlds": "Worlds journey",
+    "Números no torneio": "Tournament stats",
+    "Campeões no torneio": "Champions in the tournament",
+    "Solo queue": "Solo queue",
+    "Últimas partidas": "Recent games",
+    Maestria: "Mastery",
+    "Campeões na solo queue": "Solo queue champions",
+    "Estreia no Worlds 2026": "Worlds 2026 debut",
+    "Neste jogo": "This game",
+    Curiosidades: "Fun facts",
+    Prévia: "Preview",
+    "Assistir à prévia narrada": "Watch the narrated preview",
+    "Destaque da série": "Series standout",
+    Voz: "Voice",
+    "▶ Play": "▶ Play",
+    "❚❚ Pausar": "❚❚ Pause",
+    "Lance anterior": "Previous play",
+    "Próximo lance": "Next play",
+    "Tocar ou pausar": "Play or pause",
+    "Narração por voz": "Voice narration",
+    "Voz da narração": "Narration voice",
+    participação: "appearance",
+    participações: "appearances",
+    título: "title",
+    títulos: "titles",
+    finais: "finals",
+    "em jogos": "in games",
+    jogos: "games",
+    vitórias: "wins",
+    abates: "kills",
+    presença: "presence",
+    escolhas: "picks",
+    aproveitamento: "win rate",
+    "Grão-Mestre": "Grandmaster",
+    Mestre: "Master",
+    Desafiante: "Challenger",
+    Diamante: "Diamond",
+    Esmeralda: "Emerald",
+    Platina: "Platinum",
+    "na temporada": "this season",
+    "Mundiais, com 2026": "Worlds, incl. 2026",
+    "Campeão mundial": "World champion",
+    Vice: "Runner-up",
+    "K/D/A total": "Total K/D/A",
+    Agenda: "Schedule",
+    "Adicionar ao Google Agenda": "Add to Google Calendar",
+  };
+  const SEM = { seg: "Mon", ter: "Tue", qua: "Wed", qui: "Thu", sex: "Fri", sáb: "Sat", dom: "Sun" };
+  const EN_RE = [
+    [
+      /^(seg|ter|qua|qui|sex|sáb|dom), (\d\d)\/(\d\d) · (\d\d:\d\d)$/,
+      (m, d, a, b, h) => `${SEM[d]}, ${b}/${a} · ${h}`,
+    ],
+    [
+      /^Dados de (seg|ter|qua|qui|sex|sáb|dom), (\d\d)\/(\d\d) · (\d\d:\d\d) \(Brasília\)$/,
+      (m, d, a, b, h) => `Data from ${SEM[d]}, ${b}/${a} · ${h} (Brasília time)`,
+    ],
+    [/^(.+) derrubou uma torre de (.+)$/, "$1 took a $2 tower"],
+    [/^(.+) derrubou uma torre$/, "$1 took a tower"],
+    [/^(.+) derrubou um inibidor$/, "$1 took an inhibitor"],
+    [/^(.+) pegou o dragão (.+)$/, "$1 took the $2 dragon"],
+    [/^(.+) pegou o Barão$/, "$1 took Baron"],
+    [/^Abateu (.+), o rival de rota$/, "Killed $1, the lane opponent"],
+    [/^Abateu (.+)$/, "Killed $1"],
+    [/^Morreu para (.+)$/, "Died to $1"],
+    [/^Aos (\d+) min, ouro empatado com (.+)$/, "At $1 min, even gold with $2"],
+    [/^Jogo (\d+)$/, "Game $1"],
+    [/^Suíça R(\d)$/, "Swiss R$1"],
+    [/^Ver (.+)$/, "See $1"],
+    [/^(\S+) de (.+) \(([A-Z0-9]+)\)$/, "$1 on $2 ($3)"],
+    [/^(\d+) jogos?$/, (m, n) => `${n} game${n === "1" ? "" : "s"}`],
+    [/^(\d+) jogos$/, "$1 games"],
+    [/^em (\d+) jogos$/, "in $1 games"],
+    [/^banido em (.+) dos jogos$/, "banned in $1 of games"],
+    [
+      /^(.+) · (Topo|Selva|Meio|Atirador|Suporte) · (\d+) jogos?$/,
+      (m, t, r, n) => `${t} · ${EN[r]} · ${n} game${n === "1" ? "" : "s"}`,
+    ],
+    [/^(.+) · (Topo|Selva|Meio|Atirador|Suporte)$/, (m, t, r) => `${t} · ${EN[r]}`],
+    [/^(.+), vitória de (.+)$/, "$1, won by $2"],
+    [/^(.+) · caiu no Play-In$/, "$1 · out in the Play-In"],
+    [/^Campeões · (.+)$/, "Champions · $1"],
+    [/^Ouro contra (.+), com abates e mortes marcados$/, "Gold vs $1, with kills and deaths marked"],
+    [/^(\d+)% de vitórias$/, "$1% wins"],
+  ];
+  let LANG = "pt";
+  try {
+    LANG = localStorage.getItem("lang") === "en" ? "en" : "pt";
+  } catch (_) {}
+  function trTexto(t) {
+    const s = t.trim();
+    if (!s) return t;
+    let r = EN[s];
+    if (r == null)
+      for (const [re, f] of EN_RE) {
+        if (re.test(s)) {
+          r = s.replace(re, f);
+          break;
+        }
+      }
+    return r == null ? t : t.replace(s, r);
+  }
+  function traduzir(raiz) {
+    if (LANG !== "en" || !raiz) return;
+    const w = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT);
+    let n;
+    const L = [];
+    while ((n = w.nextNode()))
+      if (!n.parentElement?.closest("script,style,[data-leg],.lista-ev,.historia,.historia-serie,.nota"))
+        L.push(n);
+    for (const n of L) {
+      const t = trTexto(n.textContent);
+      if (t !== n.textContent) n.textContent = t;
+    }
+    (raiz.querySelectorAll ? raiz : document)
+      .querySelectorAll("[placeholder],[title],[aria-label]")
+      .forEach((e) =>
+        ["placeholder", "title", "aria-label"].forEach((a) => {
+          const v = e.getAttribute(a);
+          if (v) {
+            const t = trTexto(v);
+            if (t !== v) e.setAttribute(a, t);
+          }
+        }),
+      );
+  }
+  function ligarIdioma() {
+    if (!document.documentElement.lang) document.documentElement.lang = "pt-BR";
+    const bt = $("#bt-lang");
+    if (bt) {
+      bt.textContent = LANG === "en" ? "PT" : "EN";
+      bt.title =
+        LANG === "en" ? "Ver em português" : "View in English (generated stories stay in Portuguese)";
+      bt.onclick = () => {
+        try {
+          localStorage.setItem("lang", LANG === "en" ? "pt" : "en");
+        } catch (_) {}
+        location.reload();
+      };
+    }
+    if (LANG !== "en") return;
+    document.documentElement.lang = "en";
+    traduzir(document.body);
+    let fila = new Set(),
+      pend = false;
+    new MutationObserver((ms) => {
+      for (const m of ms) m.addedNodes.forEach((x) => fila.add(x.nodeType === 3 ? x.parentElement : x));
+      if (pend) return;
+      pend = true;
+      requestAnimationFrame(() => {
+        pend = false;
+        const f = [...fila];
+        fila.clear();
+        f.forEach((x) => x && x.isConnected && traduzir(x));
+      });
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+
   /* ---------- navegação ---------- */
   const ABAS = ["playin", "suica", "matamata", "destaques", "meta", "comparar", "times"];
   function aba(nome) {
@@ -4210,6 +4554,7 @@
   painelTimes();
   aplicarSpoiler();
   ligarBusca();
+  ligarIdioma();
   ["p-destaques", "p-meta", "p-comparar"].forEach((id) =>
     new MutationObserver(() => {
       const el = document.getElementById(id);
