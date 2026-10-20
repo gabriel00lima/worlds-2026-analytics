@@ -686,6 +686,41 @@
   // Pilha de telas da folha: abrir um jogador de dentro de um confronto permite voltar ao confronto.
   let pilha = [],
     atual = null;
+  let SEMSP = false;
+  try {
+    SEMSP = localStorage.getItem("semSpoiler") === "1";
+  } catch (_) {}
+  function aplicarSpoiler() {
+    document.body.classList.toggle("sem-spoiler", SEMSP);
+    const bt = $("#bt-spoiler");
+    if (bt) {
+      bt.setAttribute("aria-pressed", SEMSP);
+      bt.textContent = SEMSP ? "Sem spoiler: ligado" : "Sem spoiler";
+    }
+    for (const id of ["p-destaques", "p-meta", "p-comparar"]) {
+      const el = document.getElementById(id);
+      if (el && !el.querySelector(":scope>.sp-nota"))
+        el.insertAdjacentHTML(
+          "afterbegin",
+          `<div class="sp-nota">Modo sem spoiler ligado: esta aba mostra resultados. <button class="link" data-sp-off>Desligar</button></div>`,
+        );
+    }
+  }
+  document.addEventListener("click", (e) => {
+    if (e.target.closest("#bt-spoiler")) {
+      SEMSP = !SEMSP;
+      try {
+        localStorage.setItem("semSpoiler", SEMSP ? "1" : "0");
+      } catch (_) {}
+      aplicarSpoiler();
+    } else if (e.target.closest("[data-sp-off]")) {
+      SEMSP = false;
+      try {
+        localStorage.setItem("semSpoiler", "0");
+      } catch (_) {}
+      aplicarSpoiler();
+    }
+  });
   function navegar(fn) {
     if (folha.open && atual) pilha.push(atual);
     atual = fn;
@@ -713,8 +748,20 @@
   function abrirFolha(html) {
     parar();
     folhaIn.innerHTML =
-      `<div class="barra-folha">${pilha.length ? '<button class="voltar" id="voltar">‹ Voltar</button>' : "<span></span>"}<button class="link copiar-link" id="copiar-link" hidden>Copiar link</button><button class="fechar" aria-label="Fechar" id="fechar">×</button></div>` +
-      html;
+      `<div class="barra-folha">${pilha.length ? '<button class="voltar" id="voltar">‹ Voltar</button>' : "<span></span>"}<button class="link copiar-link" id="copiar-link" hidden>Copiar link</button><button class="fechar" aria-label="Fechar" id="fechar">×</button></div><div class="sp-aviso"><span>Modo sem spoiler: os resultados desta tela estão escondidos.</span><span class="sp-vods"></span><button class="link" id="sp-ver">Mostrar resultados</button></div><div class="sp-conteudo">` +
+      html +
+      `</div>`;
+    folhaIn.classList.toggle("fechada", SEMSP);
+    setTimeout(() => {
+      const v = folhaIn.querySelector(".sp-vods"),
+        a = folhaIn.querySelector(".sp-conteudo .vod a");
+      if (v && a)
+        v.innerHTML = `<a href="${a.href}" target="_blank" rel="noopener">▶ Ver o VOD sem spoiler</a>`;
+    }, 0);
+    $("#sp-ver").onclick = () => {
+      folhaIn.classList.remove("fechada");
+      folhaIn.querySelector(".sp-aviso").hidden = true;
+    };
     if (!folha.open) folha.showModal();
     folha.scrollTop = 0;
     $("#fechar").onclick = () => folha.close();
@@ -813,6 +860,12 @@
     const tot = (va || 0) + (vb || 0) || 1;
     return `<div class="l"><span class="v b">${a}</span><div class="barra esq"><i style="width:${((va || 0) / tot) * 100}%;background:var(--blue)"></i></div><span class="rot">${rot}</span><div class="barra"><i style="width:${((vb || 0) / tot) * 100}%;background:var(--red)"></i></div><span class="v">${b}</span></div>`;
   }
+  // link do VOD no segundo s do jogo (estimado; o vídeo começa no draft)
+  function linkVod(j, s) {
+    const v = j.vod;
+    if (!v) return "";
+    return `https://www.youtube.com/watch?v=${encodeURIComponent(v.yt)}${v.t0 != null ? `&t=${Math.max(0, Math.round(v.t0 + s - 5))}s` : ""}`;
+  }
   function viewJogo(j, extra = "") {
     const T = j.tot,
       f = (x) => x.toLocaleString("pt-BR");
@@ -821,6 +874,7 @@
       `<div class="l"><span class="v b azul">${e?.lado === "blue" ? "✓ " + mmss(e.s) : ""}</span><span></span><span class="rot">${n}</span><span></span><span class="v verm">${e?.lado === "red" ? mmss(e.s) + " ✓" : ""}</span></div>`;
     return `<button class="botao-video" id="ver-video"><span class="play"></span><span><b>Assistir ao jogo narrado</b><span>Os principais lances dos ${min(j.duracao)} minutos, um atrás do outro, no mapa e com narração</span></span></button>
   <div id="area-video"></div>
+  ${j.vod ? `<p class="vod"><a href="${linkVod(j, 0)}" target="_blank" rel="noopener">▶ Assistir ao VOD oficial${j.vod.idioma === "pt-BR" ? " em português" : " (em inglês)"}</a><small>no YouTube do LoL Esports · o início do jogo no vídeo é aproximado</small></p>` : ""}
   <div class="bloco-f"><h3>Jogo ${j.numero} <small>${mini(j.venc)} vitória de ${esc(nomeT(j.venc))} em ${mmss(j.duracao)} · patch ${esc(j.patch)}</small></h3>
     <div class="cmp">${linhaCab(j.az + " · lado azul", j.vm + " · lado vermelho")}
     ${linhaCmp(T.blue.abates, T.red.abates, T.blue.abates, T.red.abates, "Abates")}
@@ -1195,7 +1249,7 @@
     return new Promise((res) => {
       let el = _aud[j.id];
       if (!el) {
-        el = _aud[j.id] = new Audio("audio/" + j.id + ".mp3");
+        el = _aud[j.id] = new Audio(AUDIO[j.id].src || "audio/" + j.id + ".mp3");
         el.preload = "auto";
       }
       let feito = false;
@@ -1593,7 +1647,7 @@
     function mostrar(k) {
       const r = rot[k];
       q("[data-leg]").innerHTML =
-        `<small>${mmss(r.s)} · lance ${k + 1} de ${rot.length}</small>${esc(r.txt)}`;
+        `<small>${mmss(r.s)} · lance ${k + 1} de ${rot.length}${linkVod(j, r.s) ? ` · <a href="${linkVod(j, r.s)}" target="_blank" rel="noopener" title="O momento no vídeo é aproximado">ver na transmissão</a>` : ""}</small>${esc(r.txt)}`;
       area.querySelectorAll(".momento").forEach((b) => b.classList.toggle("atual", +b.dataset.i === k));
       const b = area.querySelector(`.momento[data-i="${k}"]`);
       if (b) {
@@ -3227,7 +3281,7 @@
     for (const j of js) {
       const sinalV = j.vencedor === "blue" ? 1 : -1;
       const pior = Math.min(...j.serie.map((f) => (f[1] - f[2]) * sinalV));
-      if (pior < 0 && (!virada || pior < virada.d)) virada = { j, d: pior };
+      if (pior <= -2500 && (!virada || pior < virada.d)) virada = { j, d: pior };
     }
     let kd = null;
     for (const j of js)
@@ -3347,7 +3401,7 @@
     (v) => v,
   )}</div>
   <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Campeões</h3>
-  <div class="ranking">${lc("Mais escolhidos", `em ${JOGOS.length} jogos`, picks, (k, v) => `${vit[k] || 0} vitórias · ${pct((vit[k] || 0) / v)} de aproveitamento`)}${jogosLp ? lc("Mais banidos", `em ${jogosLp} jogos com bans registrados`, bans, (k, v) => `banido em ${pct(v / jogosLp)} dos jogos`) : ""}${jogosLp ? lc("Mais presentes", "escolhidos + banidos", pres, (k, v) => `${picks[k] || 0} escolhas e ${bans[k] || 0} bans`) : ""}</div>
+  <div class="ranking">${lc("Mais escolhidos", `em ${JOGOS.length} jogos`, picks, (k, v) => `${vit[k] || 0} vitórias · ${pct((vit[k] || 0) / v)} de aproveitamento`)}${jogosLp ? lc("Mais banidos", `em ${jogosLp} de ${JOGOS.length} jogos com bans registrados${W.lpTentativa ? ` · Leaguepedia consultada em ${dataHora(new Date(W.lpTentativa).toISOString())}` : ""}`, bans, (k, v) => `banido em ${pct(v / jogosLp)} dos jogos`) : ""}${jogosLp ? lc("Mais presentes", "escolhidos + banidos", pres, (k, v) => `${picks[k] || 0} escolhas e ${bans[k] || 0} bans`) : ""}</div>
   <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Times</h3>
   <div class="ranking">${lt("First blood", "% dos jogos", (s) => s.pfb, pct)}${lt("Dragões por jogo", "", (s) => s.dragJ, n1)}${lt("Abates por jogo", "", (s) => s.abJ, n1)}${lt("Vantagem média aos 15", "", (s) => s.gd15m, mil)}${lt("Arautos por jogo", "jogos registrados na Leaguepedia", (s) => (s.jogosLp ? s.arautosJ : null), n1)}${lt("Jogos mais longos", "duração média", (s) => s.durM, mmss)}</div>
   <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Ranking dos palpites</h3>
@@ -3763,6 +3817,13 @@
   painelMeta();
   painelComparar();
   painelTimes();
+  aplicarSpoiler();
+  ["p-destaques", "p-meta", "p-comparar"].forEach((id) =>
+    new MutationObserver(() => {
+      const el = document.getElementById(id);
+      if (!el.querySelector(":scope>.sp-nota")) aplicarSpoiler();
+    }).observe(document.getElementById(id), { childList: true }),
+  );
   const h = (location.hash || "").slice(1);
   let inicial = ABAS.includes(h) ? h : null;
   if (!inicial) {

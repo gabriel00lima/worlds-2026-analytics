@@ -144,6 +144,74 @@ header.topo h1 span {
 .fases .agora b {
   color: var(--gold);
 }
+.topo-dir {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+.bt-sp {
+  font-size: 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+.bt-sp[aria-pressed="true"] {
+  background: var(--gold);
+  color: var(--bg);
+  border-color: var(--gold);
+}
+.sp-nota,
+.sp-aviso {
+  display: none;
+}
+.sem-spoiler .sp-nota,
+.sem-spoiler .sp-aviso {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  margin: 0 0 14px;
+  border: 1px dashed var(--gold);
+  border-radius: 10px;
+  font-size: 14px;
+}
+.sem-spoiler #heroi-topo,
+.sem-spoiler #dia-topo,
+.sem-spoiler .historia-serie,
+.sem-spoiler #chances {
+  display: none !important;
+}
+.sem-spoiler .conf .pl {
+  color: transparent !important;
+  background: var(--surface-2);
+  border-radius: 4px;
+  min-width: 1.2em;
+}
+.sem-spoiler .conf .linha.perdeu {
+  opacity: 1;
+}
+.sem-spoiler .rodada .num {
+  filter: blur(5px);
+}
+.sem-spoiler #p-destaques > :not(.sp-nota),
+.sem-spoiler #p-meta > :not(.sp-nota),
+.sem-spoiler #p-comparar > :not(.sp-nota),
+.sem-spoiler .folha-in.fechada .sp-conteudo {
+  filter: blur(16px);
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+}
+.sp-aviso a {
+  color: var(--gold);
+  font-weight: 600;
+}
+.sem-spoiler .folha-in.fechada .sp-conteudo {
+  max-height: 55vh;
+  overflow: hidden;
+}
 .atualizado {
   font-size: 12px;
   color: var(--muted);
@@ -1152,6 +1220,20 @@ nav.abas.com-ind button[aria-selected="true"] {
   50% {
     box-shadow: 0 0 0 5px color-mix(in srgb, var(--red) 25%, transparent);
   }
+}
+.vod {
+  margin: 10px 0 0;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.vod a {
+  font-weight: 600;
+}
+.vod small {
+  color: var(--muted);
+  font-size: 12px;
 }
 .botao-video {
   transition:
@@ -2384,6 +2466,9 @@ tr.clic:hover td {
   }
   .atualizado {
     text-align: left;
+  }
+  .topo-dir {
+    align-items: flex-start;
   }
   .dois {
     grid-template-columns: 1fr;

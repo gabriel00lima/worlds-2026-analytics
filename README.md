@@ -23,7 +23,8 @@ No site dá para:
 - abrir um jogo e assistir aos principais lances num mapa animado, com narração em voz neural e a curva de chance de vitória ao longo da partida;
 - clicar em qualquer jogador e ver como ele foi naquele jogo, no torneio e na solo queue, com elo, histórico de PDL, campeões com mais maestria e um resumo do dia;
 - ver o meta do torneio (campeões mais escolhidos e banidos, com as restrições do Fearless Draft), comparar dois jogadores e conferir os destaques do dia;
-- deixar palpites, adicionar os jogos na agenda e compartilhar o link direto de um time ou jogador.
+- deixar palpites, adicionar os jogos na agenda e compartilhar o link direto de um time ou jogador;
+- ligar o modo sem spoiler, que esconde placares, vencedores e chances para quem ainda vai ver o jogo gravado.
 
 ![Replay de Karmine Corp x MVK](docs/img/replay.png)
 
