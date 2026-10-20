@@ -12,10 +12,10 @@ requires-python = ">=3.10"
 dependencies = ["Pillow>=10.0"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.6", "mypy>=1.11"]
 
 [project.scripts]
-worlds2026 = "worlds2026.coletor:main"
+worlds2026 = "worlds2026.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -23,3 +23,20 @@ where = ["src"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["src"]
+ignore_missing_imports = true
+check_untyped_defs = true
+
+[tool.coverage.run]
+source = ["worlds2026"]
+omit = ["*/__main__.py"]
