@@ -1,0 +1,69 @@
+{
+  "id": "gen-g",
+  "nome": "Gen.G",
+  "sigla": "GEN",
+  "regiao": "LCK",
+  "seed": "LCK #1",
+  "como_classificou": "Campeã da LCK 2026 (3–1 na Hanwha Life na final de 13/09).",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Kiin",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Canyon",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Chovy",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Ruler",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Duro",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://mid.gg/esports/worlds-2026"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "A organização reivindica a linhagem da Samsung (campeã em 2014 e 2017); como Gen.G, semifinal.",
+  "curiosidades": [
+    {
+      "texto": "Bicampeã seguida da LCK (2025 e 2026) e sétimo título da liga; Ruler foi o MVP da final de 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+        "https://news.sbs.co.kr/english/article.do?news_id=N1008750797"
+      ]
+    },
+    {
+      "texto": "É apontada como o elenco mais forte que nunca ganhou um Mundial jogando junto. Ruler (2017) e Canyon (2020) já foram campeões por outros times; Chovy nunca foi.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://mid.gg/esports/worlds-2026",
+        "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship",
+        "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship",
+    "https://mid.gg/esports/worlds-2026",
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008750797",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "atualizado_em": "2026-10-20"
+}

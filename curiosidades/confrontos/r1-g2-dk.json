@@ -1,0 +1,90 @@
+{
+  "id": "r1-g2-dk",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "g2",
+    "nome": "G2 Esports"
+  },
+  "time_b": {
+    "id": "dk",
+    "nome": "Dplus KIA"
+  },
+  "manchete": "Reencontro de 2023 e revanche da EWC",
+  "resumo_historico": "1–1 nos encontros recentes: G2 venceu a estreia do Swiss de 2023, DK venceu na EWC 2026.",
+  "primeiro_encontro_mundial": false,
+  "historico": [
+    {
+      "evento": "Mundial 2023",
+      "data": "2023-10",
+      "fase": "Swiss, rodada 1 (Bo1)",
+      "vencedor": "g2",
+      "placar": "1–0",
+      "fontes": [
+        "https://sports.khan.co.kr/en/article/202610191300007/"
+      ],
+      "confianca": "fonte_unica"
+    },
+    {
+      "evento": "Esports World Cup 2026",
+      "data": "2026-07",
+      "fase": "Grupos (Bo3)",
+      "vencedor": "dk",
+      "placar": "2–0",
+      "fontes": [
+        "https://www.esportsworldcup.com/en/press-releases/dplus-kia-win-lol-at-ewc26",
+        "https://cryptobriefing.com/g2-esports-eliminated-from-ewc-2026-after-loss-to-dplus-kia/"
+      ],
+      "confianca": "confirmado"
+    }
+  ],
+  "curiosidades": [
+    {
+      "texto": "Em 2023 as duas também se enfrentaram na estreia do Swiss, e a G2 venceu.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://sports.khan.co.kr/en/article/202610191300007/"
+      ]
+    },
+    {
+      "texto": "A DK chega como campeã da EWC 2026.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+        "https://www.esportsworldcup.com/en/press-releases/dplus-kia-win-lol-at-ewc26"
+      ]
+    },
+    {
+      "texto": "Duelo de mids campeões e vices: ShowMaker (campeão em 2020) contra Caps (vice em 2018 e 2019).",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://sports.khan.co.kr/en/article/202610191300007/",
+        "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship",
+        "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+        "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "mid",
+      "a": "Caps",
+      "b": "ShowMaker",
+      "nota": "Apontado pela imprensa coreana como o duelo central."
+    }
+  ],
+  "fontes": [
+    "https://cryptobriefing.com/g2-esports-eliminated-from-ewc-2026-after-loss-to-dplus-kia/",
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship",
+    "https://sports.khan.co.kr/en/article/202610191300007/",
+    "https://www.esportsworldcup.com/en/press-releases/dplus-kia-win-lol-at-ewc26",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "dk",
+  "nome": "Dplus KIA",
+  "sigla": "DK",
+  "regiao": "LCK",
+  "seed": "LCK #4",
+  "como_classificou": "Quarta vaga da LCK, garantida pelo bom resultado da Coreia no MSI 2026.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Siwoo",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Lucid",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "ShowMaker",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Smash",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Career",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://www.dexerto.com/league-of-legends/how-to-watch-ewc-2026-league-of-legends-stream-schedule-results-teams-3387307/"
+  ],
+  "titulos_mundiais": [
+    2020
+  ],
+  "melhor_mundial": "Campeã em 2020 como DAMWON Gaming (3–1 na Suning).",
+  "curiosidades": [
+    {
+      "texto": "Campeã da Esports World Cup 2026 com 3–0 na Karmine Corp; Smash foi o MVP. Foi o primeiro grande título internacional do clube em quase seis anos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+        "https://www.koreajoongangdaily.com/sports/dplus-kia-wins-esports-world-cup-league-of-legends-title/12780581",
+        "https://www.esportsworldcup.com/en/press-releases/dplus-kia-win-lol-at-ewc26"
+      ]
+    },
+    {
+      "texto": "ShowMaker é o único remanescente do time campeão mundial de 2020.",
+      "confianca": "inferido",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship",
+    "https://www.dexerto.com/league-of-legends/how-to-watch-ewc-2026-league-of-legends-stream-schedule-results-teams-3387307/",
+    "https://www.esportsworldcup.com/en/press-releases/dplus-kia-win-lol-at-ewc26",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://www.koreajoongangdaily.com/sports/dplus-kia-wins-esports-world-cup-league-of-legends-title/12780581"
+  ],
+  "atualizado_em": "2026-10-20"
+}

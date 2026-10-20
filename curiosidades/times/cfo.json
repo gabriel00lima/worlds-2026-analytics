@@ -1,0 +1,63 @@
+{
+  "id": "cfo",
+  "nome": "CTBC Flying Oyster",
+  "sigla": "CFO",
+  "regiao": "LCP",
+  "seed": "LCP #2",
+  "como_classificou": "Segunda vaga da LCP.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Rest",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Shad0w",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Pout",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Doggo",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Kino",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://liquipedia.net/leagueoflegends/CTBC_Flying_Oyster"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Quartas de final em 2025.",
+  "curiosidades": [
+    {
+      "texto": "Em 2025 chegou às quartas do Mundial, a primeira vez em dez anos que um time da região ficou entre os oito melhores.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal"
+      ]
+    },
+    {
+      "texto": "Pout (mid) e Kino (suporte) entraram no time em abril de 2026.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://liquipedia.net/leagueoflegends/CTBC_Flying_Oyster"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://liquipedia.net/leagueoflegends/CTBC_Flying_Oyster",
+    "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "atualizado_em": "2026-10-20"
+}

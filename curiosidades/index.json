@@ -1,0 +1,87 @@
+{
+  "atualizado_em": "2026-10-20",
+  "confrontos": [
+    {
+      "id": "r1-gen-g-ig",
+      "rodada": 1,
+      "time_a": "gen-g",
+      "time_b": "ig",
+      "manchete": "A campeã da Coreia contra os campeões mundiais de 2018",
+      "arquivo": "confrontos/r1-gen-g-ig.json"
+    },
+    {
+      "id": "r1-tl-cfo",
+      "rodada": 1,
+      "time_a": "tl",
+      "time_b": "cfo",
+      "manchete": "Liquid quer devolver a derrota do First Stand",
+      "arquivo": "confrontos/r1-tl-cfo.json"
+    },
+    {
+      "id": "r1-al-kc",
+      "rodada": 1,
+      "time_a": "al",
+      "time_b": "kc",
+      "manchete": "Revanche da Esports World Cup",
+      "arquivo": "confrontos/r1-al-kc.json"
+    },
+    {
+      "id": "r1-g2-dk",
+      "rodada": 1,
+      "time_a": "g2",
+      "time_b": "dk",
+      "manchete": "Reencontro de 2023 e revanche da EWC",
+      "arquivo": "confrontos/r1-g2-dk.json"
+    },
+    {
+      "id": "r1-hle-tes",
+      "rodada": 1,
+      "time_a": "hle",
+      "time_b": "tes",
+      "manchete": "Campeã do MSI contra JackeyLove",
+      "arquivo": "confrontos/r1-hle-tes.json"
+    },
+    {
+      "id": "r1-los-t1",
+      "rodada": 1,
+      "time_a": "los",
+      "time_b": "t1",
+      "manchete": "O Brasil contra a tricampeã",
+      "arquivo": "confrontos/r1-los-t1.json"
+    },
+    {
+      "id": "r1-tsw-lyon",
+      "rodada": 1,
+      "time_a": "tsw",
+      "time_b": "lyon",
+      "manchete": "Revanche do MSI",
+      "arquivo": "confrontos/r1-tsw-lyon.json"
+    },
+    {
+      "id": "r1-blg-koi",
+      "rodada": 1,
+      "time_a": "blg",
+      "time_b": "koi",
+      "manchete": "A KOI ainda não venceu a BLG em séries",
+      "arquivo": "confrontos/r1-blg-koi.json"
+    }
+  ],
+  "times": {
+    "gen-g": "times/gen-g.json",
+    "ig": "times/ig.json",
+    "tl": "times/tl.json",
+    "cfo": "times/cfo.json",
+    "al": "times/al.json",
+    "kc": "times/kc.json",
+    "g2": "times/g2.json",
+    "dk": "times/dk.json",
+    "hle": "times/hle.json",
+    "tes": "times/tes.json",
+    "los": "times/los.json",
+    "t1": "times/t1.json",
+    "tsw": "times/tsw.json",
+    "lyon": "times/lyon.json",
+    "blg": "times/blg.json",
+    "koi": "times/koi.json"
+  }
+}

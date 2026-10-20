@@ -1,0 +1,71 @@
+{
+  "id": "los",
+  "nome": "LOS",
+  "sigla": "LOS",
+  "regiao": "CBLOL",
+  "seed": "CBLOL #1",
+  "como_classificou": "Campeã da Etapa 2 do CBLOL 2026 (3–2 na FURIA, 10/10, Arena Carioca 1, Rio).",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Zest",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Curse",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Feisty",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Duduhh",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Ackerman",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://egamersworld.com/blog/every-worlds-2026-team-qualified-6Q23AMZcmS",
+    "https://www.strafe.com/news/read/all-cblol-teams-at-worlds-2026-and-how-they-qualified/"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Estreia em Mundiais.",
+  "curiosidades": [
+    {
+      "texto": "Ganhou o título em cima da FURIA como revanche: na Etapa 1, em junho, a FURIA tinha vencido a LOS por 3–1.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml"
+      ]
+    },
+    {
+      "texto": "Montou o elenco em torno de dois coreanos, Zest (top) e Feisty (mid), e chega como grande azarão.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://www.strafe.com/news/read/all-cblol-teams-at-worlds-2026-and-how-they-qualified/"
+      ]
+    },
+    {
+      "texto": "É o único time brasileiro no Swiss: a FURIA caiu no Play-In.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://egamersworld.com/blog/every-worlds-2026-team-qualified-6Q23AMZcmS",
+    "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins",
+    "https://www.strafe.com/news/read/all-cblol-teams-at-worlds-2026-and-how-they-qualified/",
+    "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml"
+  ],
+  "atualizado_em": "2026-10-20"
+}

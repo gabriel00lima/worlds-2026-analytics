@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Segredos / secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Saídas geradas pelo coletor (o site publicado fica em docs/index.html)
+site-worlds/cache/
+site-worlds/dados.json
+site-worlds/index.html
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,63 @@
+{
+  "id": "lyon",
+  "nome": "LYON",
+  "sigla": "LYON",
+  "regiao": "LCS",
+  "seed": "LCS",
+  "como_classificou": "Campeã do Lock-In e do Spring da LCS 2026, vice no Summer.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Dhokla",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Inspired",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Saint",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Berserker",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Isles",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263",
+    "https://en.wikipedia.org/wiki/2026_LCS_season"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Estreia com este elenco.",
+  "curiosidades": [
+    {
+      "texto": "No MSI 2026 chegou à final da chave inferior e só caiu numa virada da HLE, que depois foi campeã.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    },
+    {
+      "texto": "Dhokla entrou no top no lugar de Zamudo, que teve problema de visto.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2026_LCS_season",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "https://www.yardbarker.com/entertainment/articles/worlds_2026_lyon_preview_knocked_off_their_temporary_throne_by_strengthened_rosters/s1_17456_44399263"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "r1-los-t1",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "los",
+    "nome": "LOS"
+  },
+  "time_b": {
+    "id": "t1",
+    "nome": "T1"
+  },
+  "manchete": "O Brasil contra a tricampeã",
+  "resumo_historico": "Nunca se enfrentaram.",
+  "primeiro_encontro_mundial": true,
+  "historico": [],
+  "curiosidades": [
+    {
+      "texto": "Primeiro jogo da história entre LOS e T1.",
+      "confianca": "inferido",
+      "fontes": [
+        "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw"
+      ]
+    },
+    {
+      "texto": "A T1 venceu os três últimos Mundiais e tenta o sétimo título.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://diariodelsur.com.co/noticias/t1-y-faker-preparan-su-debut-en-la-fase-suiza-de-worlds-2026-en-estados-unidos",
+        "https://en.wikipedia.org/wiki/T1_(esports)"
+      ]
+    },
+    {
+      "texto": "Não encontramos registro de time do CBLOL vencendo um time coreano em Mundial. As vitórias mais lembradas do Brasil são KaBuM! sobre a Alliance (2014) e INTZ sobre a EDG (2016).",
+      "confianca": "inferido",
+      "fontes": [
+        "https://www.sheepesports.com/articles/lol-worlds-2024-pain-gaming-the-last-cblol-s-glimmer-turns-into-fireworks/en"
+      ]
+    },
+    {
+      "texto": "A LOS ganhou o CBLOL há menos de duas semanas, em 10/10, numa final de cinco jogos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "mid",
+      "a": "Feisty",
+      "b": "Faker"
+    }
+  ],
+  "fontes": [
+    "https://diariodelsur.com.co/noticias/t1-y-faker-preparan-su-debut-en-la-fase-suiza-de-worlds-2026-en-estados-unidos",
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://en.wikipedia.org/wiki/T1_(esports)",
+    "https://www.sheepesports.com/articles/lol-worlds-2024-pain-gaming-the-last-cblol-s-glimmer-turns-into-fireworks/en",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en",
+    "https://www.techtudo.com.br/noticias/2026/10/final-do-cblol-2026-los-bate-furia-em-revanche-do-primeiro-split-e-e-campea-edjogos.ghtml"
+  ],
+  "atualizado_em": "2026-10-20"
+}

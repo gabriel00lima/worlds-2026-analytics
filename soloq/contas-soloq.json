@@ -1,0 +1,4140 @@
+{
+ "fonte": "Leaguepedia (lol.fandom.com), escalações de 2026 Season World Championship/Main Event e campo ids de cada jogador",
+ "coletado_em": "2026-10-20",
+ "jogadores": [
+  {
+   "time": "Gen.G",
+   "sigla": "GEN",
+   "regiao_liga": "KR",
+   "jogador": "Kiin",
+   "nome": "Kim Gi-in",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Kiin",
+   "dpm_lol": "https://dpm.lol/pro/Kiin",
+   "lolpros": "https://lolpros.gg/player/kiin",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "kiin#KR1",
+     "game_name": "kiin",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "kiin#구독좋아요",
+     "game_name": "kiin",
+     "tag_line": "구독좋아요",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "addddsas#1234",
+     "game_name": "addddsas",
+     "tag_line": "1234",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "123412314#1234",
+     "game_name": "123412314",
+     "tag_line": "1234",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Gen.G",
+   "sigla": "GEN",
+   "regiao_liga": "KR",
+   "jogador": "Canyon",
+   "nome": "Kim Geon-bu",
+   "pais": "South Korea",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Canyon",
+   "dpm_lol": "https://dpm.lol/pro/Canyon",
+   "lolpros": "https://lolpros.gg/player/canyon/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "JUGKlNG#kr",
+     "game_name": "JUGKlNG",
+     "tag_line": "kr",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "asfdwrqe#123",
+     "game_name": "asfdwrqe",
+     "tag_line": "123",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "doyouknowkimchi",
+     "game_name": "doyouknowkimchi",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "밴쿠버#123",
+     "game_name": "밴쿠버",
+     "tag_line": "123",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "São Paulo#3628",
+     "game_name": "São Paulo",
+     "tag_line": "3628",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Gen.G",
+   "sigla": "GEN",
+   "regiao_liga": "KR",
+   "jogador": "Chovy",
+   "nome": "Jeong Ji-hoon",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Chovy",
+   "dpm_lol": "https://dpm.lol/pro/Chovy",
+   "lolpros": "https://lolpros.gg/player/chovy/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "허거덩#0303",
+     "game_name": "허거덩",
+     "tag_line": "0303",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Lehends#원숭이",
+     "game_name": "Lehends",
+     "tag_line": "원숭이",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "KKintube#낀낀이형",
+     "game_name": "KKintube",
+     "tag_line": "낀낀이형",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "gunz#123",
+     "game_name": "gunz",
+     "tag_line": "123",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Gen.G",
+   "sigla": "GEN",
+   "regiao_liga": "KR",
+   "jogador": "Ruler",
+   "nome": "Park Jae-hyuk",
+   "pais": "South Korea",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Ruler",
+   "dpm_lol": "https://dpm.lol/pro/Ruler",
+   "lolpros": "https://lolpros.gg/player/ruler",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "귀찮게하지마#KR3",
+     "game_name": "귀찮게하지마",
+     "tag_line": "KR3",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "glaemfekglaemfdj",
+     "game_name": "glaemfekglaemfdj",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Gen G Ru1er#EUW",
+     "game_name": "Gen G Ru1er",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Ruler#145",
+     "game_name": "Ruler",
+     "tag_line": "145",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Time#125",
+     "game_name": "Time",
+     "tag_line": "125",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Gen.G",
+   "sigla": "GEN",
+   "regiao_liga": "KR",
+   "jogador": "Duro",
+   "nome": "Joo Min-kyu",
+   "pais": "South Korea",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Duro",
+   "dpm_lol": "https://dpm.lol/pro/Duro",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Duro#Gen",
+     "game_name": "Duro",
+     "tag_line": "Gen",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "안녕 캐나다#캐나다",
+     "game_name": "안녕 캐나다",
+     "tag_line": "캐나다",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Rio de Janeiro#브라질",
+     "game_name": "Rio de Janeiro",
+     "tag_line": "브라질",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Anyone's Legend",
+   "sigla": "AL CN",
+   "regiao_liga": "CN",
+   "jogador": "Breathe",
+   "nome": "Chen Chen",
+   "pais": "China",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Breathe",
+   "dpm_lol": "https://dpm.lol/pro/Breathe",
+   "lolpros": "https://lolpros.gg/player/breathe",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "aierlanxiaozhu",
+     "game_name": "aierlanxiaozhu",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "cold skin",
+     "game_name": "cold skin",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Guten Morgen",
+     "game_name": "Guten Morgen",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "buenos dias",
+     "game_name": "buenos dias",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Anyone's Legend",
+   "sigla": "AL CN",
+   "regiao_liga": "CN",
+   "jogador": "Tarzan",
+   "nome": "Lee Seung-yong",
+   "pais": "South Korea",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Tarzan_(Lee_Seung-yong)",
+   "dpm_lol": "https://dpm.lol/pro/Tarzan",
+   "lolpros": "https://lolpros.gg/player/tarzan/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "타 잔#KR1",
+     "game_name": "타 잔",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "fortuna#9817",
+     "game_name": "fortuna",
+     "tag_line": "9817",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Mai Paura#2025",
+     "game_name": "Mai Paura",
+     "tag_line": "2025",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Anyone's Legend",
+   "sigla": "AL CN",
+   "regiao_liga": "CN",
+   "jogador": "Shanks",
+   "nome": "Cui Xiao-Jun",
+   "pais": "China",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Shanks",
+   "dpm_lol": "https://dpm.lol/pro/Shanks",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "xiangshen1#KR1",
+     "game_name": "xiangshen1",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "almid#1111",
+     "game_name": "almid",
+     "tag_line": "1111",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Anyone's Legend",
+   "sigla": "AL CN",
+   "regiao_liga": "CN",
+   "jogador": "Hope",
+   "nome": "Wang Jie",
+   "pais": "China",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Hope_(Wang_Jie)",
+   "dpm_lol": "https://dpm.lol/pro/Hope",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "근데 막 어른이 돼#0303",
+     "game_name": "근데 막 어른이 돼",
+     "tag_line": "0303",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "jusaka#rulo0",
+     "game_name": "jusaka",
+     "tag_line": "rulo0",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Hope#0929",
+     "game_name": "Hope",
+     "tag_line": "0929",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Anyone's Legend",
+   "sigla": "AL CN",
+   "regiao_liga": "CN",
+   "jogador": "Kael",
+   "nome": "Kim Jin-hong",
+   "pais": "South Korea",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Kael_(Kim_Jin-hong)",
+   "dpm_lol": "https://dpm.lol/pro/Kael",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "봄방학기간#KR1",
+     "game_name": "봄방학기간",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "카 엘#0211",
+     "game_name": "카 엘",
+     "tag_line": "0211",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "7 DAY#2025",
+     "game_name": "7 DAY",
+     "tag_line": "2025",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Team Liquid",
+   "sigla": "TL",
+   "regiao_liga": "NA",
+   "jogador": "Morgan",
+   "nome": "Park Ru-han",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Morgan",
+   "dpm_lol": "https://dpm.lol/pro/Morgan",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Morgan5358",
+     "game_name": "Morgan5358",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "보라별사탕",
+     "game_name": "보라별사탕",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "HLE Morgan1",
+     "game_name": "HLE Morgan1",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "5358",
+     "game_name": "5358",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Star is coming",
+     "game_name": "Star is coming",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Team Liquid",
+   "sigla": "TL",
+   "regiao_liga": "NA",
+   "jogador": "Josedeodo",
+   "nome": "Brandon&nbsp;Joel Villegas",
+   "pais": "Argentina",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Josedeodo",
+   "dpm_lol": "https://dpm.lol/pro/Josedeodo",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "Josedeodo#0000",
+     "game_name": "Josedeodo",
+     "tag_line": "0000",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Jose#1129",
+     "game_name": "Jose",
+     "tag_line": "1129",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Josedeodo2#BR1",
+     "game_name": "Josedeodo2",
+     "tag_line": "BR1",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Josedeodo#NA12",
+     "game_name": "Josedeodo",
+     "tag_line": "NA12",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "Josedeodo",
+     "game_name": "Josedeodo",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 5
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "Josedeodo#2929",
+     "game_name": "Josedeodo",
+     "tag_line": "2929",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "Team Liquid",
+   "sigla": "TL",
+   "regiao_liga": "NA",
+   "jogador": "Quid",
+   "nome": "Lim Hyeon-seung",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Quid",
+   "dpm_lol": "https://dpm.lol/pro/Quid",
+   "lolpros": "https://lolpros.gg/player/quid",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "붐칙칵칙",
+     "game_name": "붐칙칵칙",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "quid not quad",
+     "game_name": "quid not quad",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "tree frog",
+     "game_name": "tree frog",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "stupid donut",
+     "game_name": "stupid donut",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Team Liquid",
+   "sigla": "TL",
+   "regiao_liga": "NA",
+   "jogador": "Yeon",
+   "nome": "Sean Sung",
+   "pais": "United States",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Yeon_(Sean_Sung)",
+   "dpm_lol": "https://dpm.lol/pro/Yeon",
+   "lolpros": "https://lolpros.gg/player/yeon",
+   "contas": [
+    {
+     "servidor": "NA",
+     "riot_id": "TL Yeon#7lol",
+     "game_name": "TL Yeon",
+     "tag_line": "7lol",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Autumn Tree#蘇沐秋",
+     "game_name": "Autumn Tree",
+     "tag_line": "蘇沐秋",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "TL Honda Yeon#Rin",
+     "game_name": "TL Honda Yeon",
+     "tag_line": "Rin",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "IHATEYOU#TL7",
+     "game_name": "IHATEYOU",
+     "tag_line": "TL7",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Rin Itoshi#CH273",
+     "game_name": "Rin Itoshi",
+     "tag_line": "CH273",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Team Liquid",
+   "sigla": "TL",
+   "regiao_liga": "NA",
+   "jogador": "CoreJJ",
+   "nome": "Jo Yong-in",
+   "pais": "South Korea",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/CoreJJ",
+   "dpm_lol": "https://dpm.lol/pro/CoreJJ",
+   "lolpros": "https://lolpros.gg/player/corejj/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "리퀴드 코어장전#KR1",
+     "game_name": "리퀴드 코어장전",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "From Iron#1123",
+     "game_name": "From Iron",
+     "tag_line": "1123",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "TL Honda CoreJJ#EUEU",
+     "game_name": "TL Honda CoreJJ",
+     "tag_line": "EUEU",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "avatar2",
+     "game_name": "avatar2",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 4
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "TL Honda CoreJJ#LTAN",
+     "game_name": "TL Honda CoreJJ",
+     "tag_line": "LTAN",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "G2 Esports",
+   "sigla": "G2",
+   "regiao_liga": "EMEA",
+   "jogador": "BrokenBlade",
+   "nome": "Sergen Çelik",
+   "pais": "Germany",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/BrokenBlade",
+   "dpm_lol": "https://dpm.lol/pro/BrokenBlade",
+   "lolpros": "https://lolpros.gg/player/brokenblade-1",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "G2 BrokenBlade#1918",
+     "game_name": "G2 BrokenBlade",
+     "tag_line": "1918",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "BrokenBlade#12345",
+     "game_name": "BrokenBlade",
+     "tag_line": "12345",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "1a2b3c4d5f6",
+     "game_name": "1a2b3c4d5f6",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "str8 beefy mode",
+     "game_name": "str8 beefy mode",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "asdovjstsmapibb",
+     "game_name": "asdovjstsmapibb",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 5
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "YassuoSanchovies",
+     "game_name": "YassuoSanchovies",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 6
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "G2 Fogo de Chão#1918",
+     "game_name": "G2 Fogo de Chão",
+     "tag_line": "1918",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 7
+    }
+   ]
+  },
+  {
+   "time": "G2 Esports",
+   "sigla": "G2",
+   "regiao_liga": "EMEA",
+   "jogador": "SkewMond",
+   "nome": "Rudy Semaan",
+   "pais": "France",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/SkewMond",
+   "dpm_lol": "https://dpm.lol/pro/SkewMond",
+   "lolpros": "https://lolpros.gg/player/skewmond",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "G2 SkewMond#3327",
+     "game_name": "G2 SkewMond",
+     "tag_line": "3327",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "G2 Egghead#Bald",
+     "game_name": "G2 Egghead",
+     "tag_line": "Bald",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "G2 Joga Bonito#G2G2",
+     "game_name": "G2 Joga Bonito",
+     "tag_line": "G2G2",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "G2 Esports",
+   "sigla": "G2",
+   "regiao_liga": "EMEA",
+   "jogador": "Caps",
+   "nome": "Rasmus Borregaard Winther",
+   "pais": "Denmark",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Caps",
+   "dpm_lol": "https://dpm.lol/pro/Caps",
+   "lolpros": "https://lolpros.gg/player/caps",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "G2 Caps#1323",
+     "game_name": "G2 Caps",
+     "tag_line": "1323",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "g2caps1",
+     "game_name": "g2caps1",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "G2 Caps#1324",
+     "game_name": "G2 Caps",
+     "tag_line": "1324",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "G2G2G2#G2G2",
+     "game_name": "G2G2G2",
+     "tag_line": "G2G2",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "G2 Esports",
+   "sigla": "G2",
+   "regiao_liga": "EMEA",
+   "jogador": "Hans Sama",
+   "nome": "Steven Liv",
+   "pais": "France",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Hans_Sama",
+   "dpm_lol": "https://dpm.lol/pro/Hans%20Sama",
+   "lolpros": "https://lolpros.gg/player/hans-sama",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "G2 Hans Sama#12838",
+     "game_name": "G2 Hans Sama",
+     "tag_line": "12838",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "TrackingTheWeebs",
+     "game_name": "TrackingTheWeebs",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "MSF GoHan",
+     "game_name": "MSF GoHan",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "G2 Zoro",
+     "game_name": "G2 Zoro",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Hans von melzer#1234",
+     "game_name": "Hans von melzer",
+     "tag_line": "1234",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "G2G2G2#32235",
+     "game_name": "G2G2G2",
+     "tag_line": "32235",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "G2 Esports",
+   "sigla": "G2",
+   "regiao_liga": "EMEA",
+   "jogador": "Labrov",
+   "nome": "Lampros Papoutsakis",
+   "pais": "Greece",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Labrov",
+   "dpm_lol": "https://dpm.lol/pro/Labrov",
+   "lolpros": "https://lolpros.gg/player/labrov",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "G2 Labrov#8085",
+     "game_name": "G2 Labrov",
+     "tag_line": "8085",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "school phobia#EUW",
+     "game_name": "school phobia",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "G2 cheap book key#6767",
+     "game_name": "G2 cheap book key",
+     "tag_line": "6767",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Alexandre Pato#67679",
+     "game_name": "Alexandre Pato",
+     "tag_line": "67679",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Team Secret Whales",
+   "sigla": "TSTW",
+   "regiao_liga": "APAC",
+   "jogador": "Pun",
+   "nome": "Nguyễn Đăng Khoa",
+   "pais": "Vietnam",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Pun",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "VN",
+     "riot_id": "YB No1Pun",
+     "game_name": "YB No1Pun",
+     "tag_line": "",
+     "platform": "vn2",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    }
+   ]
+  },
+  {
+   "time": "Team Secret Whales",
+   "sigla": "TSTW",
+   "regiao_liga": "APAC",
+   "jogador": "Hizto",
+   "nome": "Lê Văn Hoàng Hải",
+   "pais": "Vietnam",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Hizto",
+   "dpm_lol": "https://dpm.lol/pro/Hizto",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Hizto#KR2",
+     "game_name": "Hizto",
+     "tag_line": "KR2",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "chimorangrua#LCP1",
+     "game_name": "chimorangrua",
+     "tag_line": "LCP1",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Team Secret Whales",
+   "sigla": "TSTW",
+   "regiao_liga": "APAC",
+   "jogador": "Dire",
+   "nome": "Trần Duy Đức",
+   "pais": "Vietnam",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Dire",
+   "dpm_lol": "https://dpm.lol/pro/Dire",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "gaubeo202#KR1",
+     "game_name": "gaubeo202",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "haufo#2204",
+     "game_name": "haufo",
+     "tag_line": "2204",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Team Secret Whales",
+   "sigla": "TSTW",
+   "regiao_liga": "APAC",
+   "jogador": "Eddie",
+   "nome": "Hoàng Công Nghĩa",
+   "pais": "Vietnam",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Eddie",
+   "dpm_lol": "https://dpm.lol/pro/Eddie",
+   "lolpros": "",
+   "contas": []
+  },
+  {
+   "time": "Team Secret Whales",
+   "sigla": "TSTW",
+   "regiao_liga": "APAC",
+   "jogador": "Bie",
+   "nome": "Trần Đức Hiếu",
+   "pais": "Vietnam",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Bie",
+   "dpm_lol": "",
+   "lolpros": "https://lolpros.gg/player/bie",
+   "contas": [
+    {
+     "servidor": "VN",
+     "riot_id": "duchjeu hue",
+     "game_name": "duchjeu hue",
+     "tag_line": "",
+     "platform": "vn2",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "Royal Police",
+     "game_name": "Royal Police",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "keep go1ng",
+     "game_name": "keep go1ng",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "VKE SUP",
+     "game_name": "VKE SUP",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "LOS",
+   "sigla": "LOS",
+   "regiao_liga": "Brazil",
+   "jogador": "Zest",
+   "nome": "Kim Dong-min",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Zest_(Kim_Dong-min)",
+   "dpm_lol": "https://dpm.lol/pro/Zest",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Zest#김동민",
+     "game_name": "Zest",
+     "tag_line": "김동민",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "MONTAGEM XONADA#Funk",
+     "game_name": "MONTAGEM XONADA",
+     "tag_line": "Funk",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "LOS",
+   "sigla": "LOS",
+   "regiao_liga": "Brazil",
+   "jogador": "Curse",
+   "nome": "Raí Yamada",
+   "pais": "Brazil",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Curse_(Raí_Yamada)",
+   "dpm_lol": "https://dpm.lol/pro/Curse",
+   "lolpros": "https://br.lolpros.gg/player/curse",
+   "contas": [
+    {
+     "servidor": "BR",
+     "riot_id": "Murloc Warleader#OTK",
+     "game_name": "Murloc Warleader",
+     "tag_line": "OTK",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "LOS Curse#LOS",
+     "game_name": "LOS Curse",
+     "tag_line": "LOS",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "LOS",
+   "sigla": "LOS",
+   "regiao_liga": "Brazil",
+   "jogador": "Feisty",
+   "nome": "Jeong Seong-hoon",
+   "pais": "Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Feisty",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Seven#KR1",
+     "game_name": "Seven",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    }
+   ]
+  },
+  {
+   "time": "LOS",
+   "sigla": "LOS",
+   "regiao_liga": "Brazil",
+   "jogador": "Duduhh",
+   "nome": "Wallyson&nbsp;Francisco Queiroz da Silva",
+   "pais": "Brazil",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Duduhh",
+   "dpm_lol": "https://dpm.lol/pro/Duduhh",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "BR",
+     "riot_id": "Duduhh#在頂部",
+     "game_name": "Duduhh",
+     "tag_line": "在頂部",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Se Eu Pudesse#2ZD",
+     "game_name": "Se Eu Pudesse",
+     "tag_line": "2ZD",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "LOS Duduhh#LOS",
+     "game_name": "LOS Duduhh",
+     "tag_line": "LOS",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "LOS",
+   "sigla": "LOS",
+   "regiao_liga": "Brazil",
+   "jogador": "Ackerman",
+   "nome": "Gabriel&nbsp;Agustin Aparicio",
+   "pais": "Argentina",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Ackerman_(Gabriel_Aparicio)",
+   "dpm_lol": "https://dpm.lol/pro/Ackerman",
+   "lolpros": "https://lolpros.gg/player/ackerman",
+   "contas": [
+    {
+     "servidor": "BR",
+     "riot_id": "ÁCK#BR1",
+     "game_name": "ÁCK",
+     "tag_line": "BR1",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "ACKÈRMAN#NA1",
+     "game_name": "ACKÈRMAN",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "seventy thirty",
+     "game_name": "seventy thirty",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "ACKERMÁN",
+     "game_name": "ACKERMÁN",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "LOS Ackerman#LOS",
+     "game_name": "LOS Ackerman",
+     "tag_line": "LOS",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Hanwha Life Esports",
+   "sigla": "HLE",
+   "regiao_liga": "KR",
+   "jogador": "Zeus",
+   "nome": "Choi Woo-je",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Zeus",
+   "dpm_lol": "https://dpm.lol/pro/Zeus",
+   "lolpros": "https://lolpros.gg/player/zeus",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Spring#bomm",
+     "game_name": "Spring",
+     "tag_line": "bomm",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "T1 Haaland#NA1",
+     "game_name": "T1 Haaland",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Pom Michutda#EUW",
+     "game_name": "Pom Michutda",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Hanwha Life Esports",
+   "sigla": "HLE",
+   "regiao_liga": "KR",
+   "jogador": "Kanavi",
+   "nome": "Seo Jin-hyeok",
+   "pais": "South Korea",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Kanavi",
+   "dpm_lol": "https://dpm.lol/pro/Kanavi",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "Yagiao",
+     "game_name": "Yagiao",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "vinaka#KR1",
+     "game_name": "vinaka",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "PoAtan#ASP",
+     "game_name": "PoAtan",
+     "tag_line": "ASP",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "srcrd#EUW",
+     "game_name": "srcrd",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "alltimesleepy#NA1",
+     "game_name": "alltimesleepy",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Hanwha Life Esports",
+   "sigla": "HLE",
+   "regiao_liga": "KR",
+   "jogador": "Zeka",
+   "nome": "Kim Geon-woo",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Zeka_(Kim_Geon-woo)",
+   "dpm_lol": "https://dpm.lol/pro/Zeka",
+   "lolpros": "https://lolpros.gg/player/zeka",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "suis#kr7",
+     "game_name": "suis",
+     "tag_line": "kr7",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "Kiruru#kr7",
+     "game_name": "Kiruru",
+     "tag_line": "kr7",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Dkdldb#516",
+     "game_name": "Dkdldb",
+     "tag_line": "516",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Hanwha Life Esports",
+   "sigla": "HLE",
+   "regiao_liga": "KR",
+   "jogador": "Gumayusi",
+   "nome": "Lee Min-hyeong",
+   "pais": "South Korea",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Gumayusi",
+   "dpm_lol": "https://dpm.lol/pro/Gumayusi",
+   "lolpros": "https://lolpros.gg/player/gumayusi",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "T1 Gumayusi#KR1",
+     "game_name": "T1 Gumayusi",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "구르시#녹서스",
+     "game_name": "구르시",
+     "tag_line": "녹서스",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "taco genius#8848",
+     "game_name": "taco genius",
+     "tag_line": "8848",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Beaver Tails#4444",
+     "game_name": "Beaver Tails",
+     "tag_line": "4444",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Hanwha Life Esports",
+   "sigla": "HLE",
+   "regiao_liga": "KR",
+   "jogador": "Delight",
+   "nome": "Yoo Hwan-joong",
+   "pais": "South Korea",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Delight",
+   "dpm_lol": "https://dpm.lol/pro/Delight",
+   "lolpros": "https://lolpros.gg/player/delight",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "플레이리스트겨울#KR1",
+     "game_name": "플레이리스트겨울",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Delight11#kor",
+     "game_name": "Delight11",
+     "tag_line": "kor",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Bilibili Gaming",
+   "sigla": "BLG",
+   "regiao_liga": "CN",
+   "jogador": "Bin",
+   "nome": "Chen Ze-Bin",
+   "pais": "China",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Bin_(Chen_Ze-Bin)",
+   "dpm_lol": "https://dpm.lol/pro/Bin",
+   "lolpros": "https://lolpros.gg/player/bin",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "TurningBackTime",
+     "game_name": "TurningBackTime",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "打野别帮我折谢谢",
+     "game_name": "打野别帮我折谢谢",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "빈 스토리#KR1",
+     "game_name": "빈 스토리",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "rsdfsaasq#1111",
+     "game_name": "rsdfsaasq",
+     "tag_line": "1111",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Bin#K620",
+     "game_name": "Bin",
+     "tag_line": "K620",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "chenzebin#5599",
+     "game_name": "chenzebin",
+     "tag_line": "5599",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "Bilibili Gaming",
+   "sigla": "BLG",
+   "regiao_liga": "CN",
+   "jogador": "Flandre",
+   "nome": "Li Xuan-Jun",
+   "pais": "China",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Flandre",
+   "dpm_lol": "https://dpm.lol/pro/Flandre",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "aierlanlaozhu#KR1",
+     "game_name": "aierlanlaozhu",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "YQSH",
+     "game_name": "YQSH",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "kryst4l#051",
+     "game_name": "kryst4l",
+     "tag_line": "051",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Bilibili Gaming",
+   "sigla": "BLG",
+   "regiao_liga": "CN",
+   "jogador": "Xun",
+   "nome": "Peng Li-Xun",
+   "pais": "China",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Xun",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Xun#OOK",
+     "game_name": "Xun",
+     "tag_line": "OOK",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "eewqoeowqeqwoo#2223",
+     "game_name": "eewqoeowqeqwoo",
+     "tag_line": "2223",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Bilibili Gaming",
+   "sigla": "BLG",
+   "regiao_liga": "CN",
+   "jogador": "Knight",
+   "nome": "Zhuo Ding",
+   "pais": "China",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Knight_(Zhuo_Ding)",
+   "dpm_lol": "https://dpm.lol/pro/Knight",
+   "lolpros": "https://lolpros.gg/player/knight",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "2020karsa",
+     "game_name": "2020karsa",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "쯔지 쌰 쯔지#4165",
+     "game_name": "쯔지 쌰 쯔지",
+     "tag_line": "4165",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "asdfadsasdfads#1234",
+     "game_name": "asdfadsasdfads",
+     "tag_line": "1234",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "paraworld#369",
+     "game_name": "paraworld",
+     "tag_line": "369",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Bilibili Gaming",
+   "sigla": "BLG",
+   "regiao_liga": "CN",
+   "jogador": "Viper",
+   "nome": "Park Do-hyeon",
+   "pais": "South Korea",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Viper_(Park_Do-hyeon)",
+   "dpm_lol": "https://dpm.lol/pro/Viper",
+   "lolpros": "https://lolpros.gg/player/viper-1/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Blue#KR33",
+     "game_name": "Blue",
+     "tag_line": "KR33",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Happy#A33",
+     "game_name": "Happy",
+     "tag_line": "A33",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "1697865",
+     "game_name": "1697865",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Bilibili Gaming",
+   "sigla": "BLG",
+   "regiao_liga": "CN",
+   "jogador": "ON",
+   "nome": "Luo Wen-Jun",
+   "pais": "China",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/ON",
+   "dpm_lol": "https://dpm.lol/pro/ON",
+   "lolpros": "https://lolpros.gg/player/on",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "SUP08WH",
+     "game_name": "SUP08WH",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "KiZiED",
+     "game_name": "KiZiED",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "키보드에음료쏟아서고장내는이도윤#KR1",
+     "game_name": "키보드에음료쏟아서고장내는이도윤",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "BLG 온#KR1",
+     "game_name": "BLG 온",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "onc#12345",
+     "game_name": "onc",
+     "tag_line": "12345",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "TFTChallenger#11111",
+     "game_name": "TFTChallenger",
+     "tag_line": "11111",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "LYON",
+   "sigla": "LYON24",
+   "regiao_liga": "NA",
+   "jogador": "Dhokla",
+   "nome": "Niship Doshi",
+   "pais": "India",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Dhokla",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "NA",
+     "riot_id": "Dhokla#NA1",
+     "game_name": "Dhokla",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "INDIAN SUPERSTAR#LYON",
+     "game_name": "INDIAN SUPERSTAR",
+     "tag_line": "LYON",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "LYON",
+   "sigla": "LYON24",
+   "regiao_liga": "NA",
+   "jogador": "Inspired",
+   "nome": "Kacper Słoma",
+   "pais": "Poland",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Inspired",
+   "dpm_lol": "https://dpm.lol/pro/Inspired",
+   "lolpros": "https://lolpros.gg/player/inspired",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "Inspireeed#EUW",
+     "game_name": "Inspireeed",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "Roguefan123",
+     "game_name": "Roguefan123",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "I will farm#FLY",
+     "game_name": "I will farm",
+     "tag_line": "FLY",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Andrew Barton#FLYGM",
+     "game_name": "Andrew Barton",
+     "tag_line": "FLYGM",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "gobackna#kmc",
+     "game_name": "gobackna",
+     "tag_line": "kmc",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "LYON",
+   "sigla": "LYON24",
+   "regiao_liga": "NA",
+   "jogador": "Saint",
+   "nome": "Kang Sung-in",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Saint_(Kang_Sung-in)",
+   "dpm_lol": "https://dpm.lol/pro/Saint",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Saint#KR0",
+     "game_name": "Saint",
+     "tag_line": "KR0",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "coreano#lyon",
+     "game_name": "coreano",
+     "tag_line": "lyon",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Jesse Pinkman#LYON",
+     "game_name": "Jesse Pinkman",
+     "tag_line": "LYON",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "vamos#lyon",
+     "game_name": "vamos",
+     "tag_line": "lyon",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "LYON",
+   "sigla": "LYON24",
+   "regiao_liga": "NA",
+   "jogador": "Berserker",
+   "nome": "Kim Min-cheol",
+   "pais": "South Korea",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Berserker_(Kim_Min-cheol)",
+   "dpm_lol": "https://dpm.lol/pro/Berserker",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "LYON#09012",
+     "game_name": "LYON",
+     "tag_line": "09012",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "qaxu#KR1",
+     "game_name": "qaxu",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "040444#444",
+     "game_name": "040444",
+     "tag_line": "444",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "LYON",
+   "sigla": "LYON24",
+   "regiao_liga": "NA",
+   "jogador": "Isles",
+   "nome": "Jonah Rosario",
+   "pais": "Australia",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Isles",
+   "dpm_lol": "https://dpm.lol/pro/Isles",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "NA",
+     "riot_id": "Isles1#NA1",
+     "game_name": "Isles1",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Isles2#NA1",
+     "game_name": "Isles2",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Isles3#NA1",
+     "game_name": "Isles3",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "sojourner#LYON",
+     "game_name": "sojourner",
+     "tag_line": "LYON",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Movistar KOI",
+   "sigla": "MKOI",
+   "regiao_liga": "EMEA",
+   "jogador": "Myrwn",
+   "nome": "Alex Pastor Villarejo",
+   "pais": "Spain",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Myrwn",
+   "dpm_lol": "https://dpm.lol/pro/Myrwn",
+   "lolpros": "https://lolpros.gg/player/myrwn/",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "Lamine Yamal#Annie",
+     "game_name": "Lamine Yamal",
+     "tag_line": "Annie",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "MANZANA VAPE#TFNYS",
+     "game_name": "MANZANA VAPE",
+     "tag_line": "TFNYS",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Bb trickz#Tipz",
+     "game_name": "Bb trickz",
+     "tag_line": "Tipz",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Movistar KOI",
+   "sigla": "MKOI",
+   "regiao_liga": "EMEA",
+   "jogador": "Elyoya",
+   "nome": "Javier Prades Batalla",
+   "pais": "Spain",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Elyoya",
+   "dpm_lol": "https://dpm.lol/pro/Elyoya",
+   "lolpros": "https://lolpros.gg/player/elyoya/",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "komanche uchiha#elite",
+     "game_name": "komanche uchiha",
+     "tag_line": "elite",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Andrew Laedis#EUW",
+     "game_name": "Andrew Laedis",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Dani Flow#myrwn",
+     "game_name": "Dani Flow",
+     "tag_line": "myrwn",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Movistar KOI",
+   "sigla": "MKOI",
+   "regiao_liga": "EMEA",
+   "jogador": "Jojopyun",
+   "nome": "Joseph&nbsp;Joon Pyun",
+   "pais": "Canada",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Jojopyun",
+   "dpm_lol": "https://dpm.lol/pro/Jojopyun",
+   "lolpros": "https://lolpros.gg/player/jojopyun",
+   "contas": [
+    {
+     "servidor": "NA",
+     "riot_id": "KOIIIIIIIII#1234",
+     "game_name": "KOIIIIIIIII",
+     "tag_line": "1234",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "torontoooooooo#1234",
+     "game_name": "torontoooooooo",
+     "tag_line": "1234",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "jjjjjjjjjjjj#1234",
+     "game_name": "jjjjjjjjjjjj",
+     "tag_line": "1234",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "VJBYYTF0AO#EUW",
+     "game_name": "VJBYYTF0AO",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "2001 05 09#2001",
+     "game_name": "2001 05 09",
+     "tag_line": "2001",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Movistar KOI",
+   "sigla": "MKOI",
+   "regiao_liga": "EMEA",
+   "jogador": "Supa",
+   "nome": "David Martínez García",
+   "pais": "Spain",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Supa",
+   "dpm_lol": "https://dpm.lol/pro/Supa",
+   "lolpros": "https://lolpros.gg/player/supa/",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "tukaan#tukan",
+     "game_name": "tukaan",
+     "tag_line": "tukan",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Tukaan#tuknn",
+     "game_name": "Tukaan",
+     "tag_line": "tuknn",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Movistar KOI",
+   "sigla": "MKOI",
+   "regiao_liga": "EMEA",
+   "jogador": "Alvaro",
+   "nome": "Álvaro Fernández del Amo",
+   "pais": "Spain",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Alvaro_(Álvaro_Fernández)",
+   "dpm_lol": "https://dpm.lol/pro/Alvaro",
+   "lolpros": "https://lolpros.gg/player/alvaro-1",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "alvarooo#EUW",
+     "game_name": "alvarooo",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Articuno#sup",
+     "game_name": "Articuno",
+     "tag_line": "sup",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "T1",
+   "sigla": "T1",
+   "regiao_liga": "KR",
+   "jogador": "Doran",
+   "nome": "Choi Hyeon-jun",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Doran_(Choi_Hyeon-jun)",
+   "dpm_lol": "https://dpm.lol/pro/Doran",
+   "lolpros": "https://lolpros.gg/player/doran/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "어리고싶다#KR1",
+     "game_name": "어리고싶다",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "DoranPyosikDUO",
+     "game_name": "DoranPyosikDUO",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "HLE TOP#1234",
+     "game_name": "HLE TOP",
+     "tag_line": "1234",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "TOPTOPTOP#1234",
+     "game_name": "TOPTOPTOP",
+     "tag_line": "1234",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "T1",
+   "sigla": "T1",
+   "regiao_liga": "KR",
+   "jogador": "Oner",
+   "nome": "Mun Hyeon-jun",
+   "pais": "South Korea",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Oner",
+   "dpm_lol": "https://dpm.lol/pro/Oner",
+   "lolpros": "https://lolpros.gg/player/oner",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "오 너#111",
+     "game_name": "오 너",
+     "tag_line": "111",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "BONG BONG U#123",
+     "game_name": "BONG BONG U",
+     "tag_line": "123",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "hi hello#12341",
+     "game_name": "hi hello",
+     "tag_line": "12341",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "T1",
+   "sigla": "T1",
+   "regiao_liga": "KR",
+   "jogador": "Faker",
+   "nome": "Lee Sang-hyeok",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Faker",
+   "dpm_lol": "https://dpm.lol/pro/Faker",
+   "lolpros": "https://lolpros.gg/player/faker/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Hide on bush#KR1",
+     "game_name": "Hide on bush",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Hide on bush#61151",
+     "game_name": "Hide on bush",
+     "tag_line": "61151",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Hide on bush#canad",
+     "game_name": "Hide on bush",
+     "tag_line": "canad",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "dakjshdkj",
+     "game_name": "dakjshdkj",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 4
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "19960507",
+     "game_name": "19960507",
+     "tag_line": "",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 5
+    },
+    {
+     "servidor": "VN",
+     "riot_id": "mid24",
+     "game_name": "mid24",
+     "tag_line": "",
+     "platform": "vn2",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "T1",
+   "sigla": "T1",
+   "regiao_liga": "KR",
+   "jogador": "Peyz",
+   "nome": "Kim Su-hwan",
+   "pais": "South Korea",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Peyz",
+   "dpm_lol": "https://dpm.lol/pro/Peyz",
+   "lolpros": "https://lolpros.gg/player/peyz",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Peyz#KR11",
+     "game_name": "Peyz",
+     "tag_line": "KR11",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "qwewqrsad2w#11111",
+     "game_name": "qwewqrsad2w",
+     "tag_line": "11111",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "T1",
+   "sigla": "T1",
+   "regiao_liga": "KR",
+   "jogador": "Keria",
+   "nome": "Ryu Min-seok",
+   "pais": "South Korea",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Keria",
+   "dpm_lol": "https://dpm.lol/pro/Keria",
+   "lolpros": "https://lolpros.gg/player/keria",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "역천괴#ker3",
+     "game_name": "역천괴",
+     "tag_line": "ker3",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "PurpleKeria",
+     "game_name": "PurpleKeria",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Ai Aqua Ruby#66298",
+     "game_name": "Ai Aqua Ruby",
+     "tag_line": "66298",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "durcjsrhl#1014",
+     "game_name": "durcjsrhl",
+     "tag_line": "1014",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Top Esports",
+   "sigla": "TES",
+   "regiao_liga": "CN",
+   "jogador": "369",
+   "nome": "Bai Jia-Hao",
+   "pais": "China",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/369",
+   "dpm_lol": "https://dpm.lol/pro/369",
+   "lolpros": "https://lolpros.gg/player/369",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "haohaohao",
+     "game_name": "haohaohao",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "qsxmiocmio#KR1",
+     "game_name": "qsxmiocmio",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "JZDKVFYPNO#EUW",
+     "game_name": "JZDKVFYPNO",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "MM9 ghost#NA1",
+     "game_name": "MM9 ghost",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Top Esports",
+   "sigla": "TES",
+   "regiao_liga": "CN",
+   "jogador": "Tian",
+   "nome": "Gao Tian-Liang",
+   "pais": "China",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Tian",
+   "dpm_lol": "https://dpm.lol/pro/Tian",
+   "lolpros": "https://lolpros.gg/player/tian/",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "Tian9999",
+     "game_name": "Tian9999",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "xinnian09",
+     "game_name": "xinnian09",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "diming",
+     "game_name": "diming",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "G2SejuaniJankos",
+     "game_name": "G2SejuaniJankos",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "EU funny game",
+     "game_name": "EU funny game",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 5
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "S11Tian",
+     "game_name": "S11Tian",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "Top Esports",
+   "sigla": "TES",
+   "regiao_liga": "CN",
+   "jogador": "Creme",
+   "nome": "Lin Jian",
+   "pais": "China",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Creme",
+   "dpm_lol": "https://dpm.lol/pro/Creme",
+   "lolpros": "https://lolpros.gg/player/creme",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "livinli#KR1",
+     "game_name": "livinli",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "我就是天",
+     "game_name": "我就是天",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Top Esports",
+   "sigla": "TES",
+   "regiao_liga": "CN",
+   "jogador": "JackeyLove",
+   "nome": "Yu Wen-Bo",
+   "pais": "China",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/JackeyLove",
+   "dpm_lol": "https://dpm.lol/pro/JackeyLove",
+   "lolpros": "https://lolpros.gg/player/jackeylove/",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "JackeyLove",
+     "game_name": "JackeyLove",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "qweasdqweasdqw#KR1",
+     "game_name": "qweasdqweasdqw",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "我就是我#tian",
+     "game_name": "我就是我",
+     "tag_line": "tian",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "eeevoLyekcaJ#NA1",
+     "game_name": "eeevoLyekcaJ",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  },
+  {
+   "time": "Top Esports",
+   "sigla": "TES",
+   "regiao_liga": "CN",
+   "jogador": "Zhuo",
+   "nome": "Wang Xu-Zhuo",
+   "pais": "China",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Zhuo",
+   "dpm_lol": "https://dpm.lol/pro/Zhuo",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "SUPG0D 12",
+     "game_name": "SUPG0D 12",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    }
+   ]
+  },
+  {
+   "time": "CTBC Flying Oyster",
+   "sigla": "CFO",
+   "regiao_liga": "APAC",
+   "jogador": "Rest",
+   "nome": "Hsu Shih-Chieh",
+   "pais": "Taiwan",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Rest",
+   "dpm_lol": "https://dpm.lol/pro/Rest",
+   "lolpros": "https://lolpros.gg/player/rest/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "ieada#KR1",
+     "game_name": "ieada",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "no15ff",
+     "game_name": "no15ff",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "dsfsqw#123",
+     "game_name": "dsfsqw",
+     "tag_line": "123",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "CTBC Flying Oyster",
+   "sigla": "CFO",
+   "regiao_liga": "APAC",
+   "jogador": "Shad0w",
+   "nome": "Zhao Zhi-Qiang",
+   "pais": "Italy",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Shad0w",
+   "dpm_lol": "https://dpm.lol/pro/Shad0w",
+   "lolpros": "https://lolpros.gg/player/shad0w",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "The Qiaang#The",
+     "game_name": "The Qiaang",
+     "tag_line": "The",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "在线中翻",
+     "game_name": "在线中翻",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "JZADfans#KR1",
+     "game_name": "JZADfans",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "CTBC Flying Oyster",
+   "sigla": "CFO",
+   "regiao_liga": "APAC",
+   "jogador": "POUT",
+   "nome": "Han In-woong",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/POUT",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Shadow PoutPout",
+     "game_name": "Shadow PoutPout",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    }
+   ]
+  },
+  {
+   "time": "CTBC Flying Oyster",
+   "sigla": "CFO",
+   "regiao_liga": "APAC",
+   "jogador": "Doggo",
+   "nome": "Chiu Tzu-Chuan",
+   "pais": "Taiwan",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Doggo",
+   "dpm_lol": "https://dpm.lol/pro/Doggo",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "xinsuixiaogou#6666",
+     "game_name": "xinsuixiaogou",
+     "tag_line": "6666",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Iceland 18Y",
+     "game_name": "Iceland 18Y",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "BYG Liang",
+     "game_name": "BYG Liang",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "fish0il#hongq",
+     "game_name": "fish0il",
+     "tag_line": "hongq",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "TW",
+     "riot_id": "小柴銓#tw2",
+     "game_name": "小柴銓",
+     "tag_line": "tw2",
+     "platform": "tw2",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    },
+    {
+     "servidor": "BR",
+     "riot_id": "Doggokule#1234",
+     "game_name": "Doggokule",
+     "tag_line": "1234",
+     "platform": "br1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "CTBC Flying Oyster",
+   "sigla": "CFO",
+   "regiao_liga": "APAC",
+   "jogador": "Kino",
+   "nome": "Chu&nbsp;Wu Hsin-Jung",
+   "pais": "Taiwan",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Kino",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "kino丶pwdd",
+     "game_name": "kino丶pwdd",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "LanPeiFang",
+     "game_name": "LanPeiFang",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Dplus KIA",
+   "sigla": "Dplus",
+   "regiao_liga": "KR",
+   "jogador": "Siwoo",
+   "nome": "Jeon Si-woo",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Siwoo",
+   "dpm_lol": "https://dpm.lol/pro/Siwoo",
+   "lolpros": "",
+   "contas": []
+  },
+  {
+   "time": "Dplus KIA",
+   "sigla": "Dplus",
+   "regiao_liga": "KR",
+   "jogador": "Lucid",
+   "nome": "Choi Yong-hyeok",
+   "pais": "South Korea",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Lucid_(Choi_Yong-hyeok)",
+   "dpm_lol": "https://dpm.lol/pro/Lucid",
+   "lolpros": "https://lolpros.gg/player/lucid",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "DK Lucid",
+     "game_name": "DK Lucid",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "nicemeetyou",
+     "game_name": "nicemeetyou",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Dplus KIA",
+   "sigla": "Dplus",
+   "regiao_liga": "KR",
+   "jogador": "ShowMaker",
+   "nome": "Heo Su",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/ShowMaker",
+   "dpm_lol": "https://dpm.lol/pro/ShowMaker",
+   "lolpros": "https://lolpros.gg/player/showmaker/",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "DK ShowMaker",
+     "game_name": "DK ShowMaker",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "ShowMaker",
+     "game_name": "ShowMaker",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "DWG KIA",
+     "game_name": "DWG KIA",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "Syndra",
+     "game_name": "Syndra",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 4
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "wanshanghaowanan",
+     "game_name": "wanshanghaowanan",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 5
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "WWVWVVWVWVWVWVWW",
+     "game_name": "WWVWVVWVWVWVWVWW",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "Dplus KIA",
+   "sigla": "Dplus",
+   "regiao_liga": "KR",
+   "jogador": "Smash",
+   "nome": "Shin Geum-jae",
+   "pais": "South Korea",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Smash_(Shin_Geum-jae)",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "DK Smash#KR7",
+     "game_name": "DK Smash",
+     "tag_line": "KR7",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "사옥 지박령#KR4",
+     "game_name": "사옥 지박령",
+     "tag_line": "KR4",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "Smash#KR2",
+     "game_name": "Smash",
+     "tag_line": "KR2",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Dplus KIA",
+   "sigla": "Dplus",
+   "regiao_liga": "KR",
+   "jogador": "Career",
+   "nome": "Oh Hyeong-seok",
+   "pais": "South Korea",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Career",
+   "dpm_lol": "",
+   "lolpros": "",
+   "contas": []
+  },
+  {
+   "time": "Invictus Gaming",
+   "sigla": "IG",
+   "regiao_liga": "CN",
+   "jogador": "TheShy",
+   "nome": "Kang Seung-lok",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/TheShy",
+   "dpm_lol": "https://dpm.lol/pro/TheShy",
+   "lolpros": "https://lolpros.gg/player/theshy/",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "qeawasdasd",
+     "game_name": "qeawasdasd",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "The shy#asdf",
+     "game_name": "The shy",
+     "tag_line": "asdf",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "스몰더 아빠#tsts",
+     "game_name": "스몰더 아빠",
+     "tag_line": "tsts",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "눈사람#cold1",
+     "game_name": "눈사람",
+     "tag_line": "cold1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "baxsxasd",
+     "game_name": "baxsxasd",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 5
+    }
+   ]
+  },
+  {
+   "time": "Invictus Gaming",
+   "sigla": "IG",
+   "regiao_liga": "CN",
+   "jogador": "Wei",
+   "nome": "Yan Yang-Wei",
+   "pais": "China",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Wei_(Yan_Yang-Wei)",
+   "dpm_lol": "https://dpm.lol/pro/Wei",
+   "lolpros": "https://lolpros.gg/player/wei",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Kimman#zxfkk",
+     "game_name": "Kimman",
+     "tag_line": "zxfkk",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "aassddwwe#blg",
+     "game_name": "aassddwwe",
+     "tag_line": "blg",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "SMBBMS#NA1",
+     "game_name": "SMBBMS",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Invictus Gaming",
+   "sigla": "IG",
+   "regiao_liga": "CN",
+   "jogador": "Rookie",
+   "nome": "Song Eui-jin",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Rookie",
+   "dpm_lol": "https://dpm.lol/pro/Rookie",
+   "lolpros": "https://lolpros.gg/player/rookie/",
+   "contas": [
+    {
+     "servidor": "CN",
+     "riot_id": "把我当成一颗树叭",
+     "game_name": "把我当成一颗树叭",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 1
+    },
+    {
+     "servidor": "CN",
+     "riot_id": "QWEASDQWE123",
+     "game_name": "QWEASDQWE123",
+     "tag_line": "",
+     "platform": "",
+     "regional": "",
+     "consultavel_api": "nao",
+     "obs": "servidor chinês (fora da API da Riot)",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "모든일은같이#KR1",
+     "game_name": "모든일은같이",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "dyjkbysb#KR1",
+     "game_name": "dyjkbysb",
+     "tag_line": "KR1",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "asdfzxcvasdfwqer#KR2",
+     "game_name": "asdfzxcvasdfwqer",
+     "tag_line": "KR2",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 5
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "v0PnXqLxFmfcD83s",
+     "game_name": "v0PnXqLxFmfcD83s",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 6
+    }
+   ]
+  },
+  {
+   "time": "Invictus Gaming",
+   "sigla": "IG",
+   "regiao_liga": "CN",
+   "jogador": "JiaQi",
+   "nome": "Zi Jia-Qi",
+   "pais": "China",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/JiaQi",
+   "dpm_lol": "https://dpm.lol/pro/JiaQi",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "영원의바다에내몸을던져라",
+     "game_name": "영원의바다에내몸을던져라",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    }
+   ]
+  },
+  {
+   "time": "Invictus Gaming",
+   "sigla": "IG",
+   "regiao_liga": "CN",
+   "jogador": "Meiko",
+   "nome": "Tian Ye",
+   "pais": "China",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Meiko",
+   "dpm_lol": "https://dpm.lol/pro/Meiko",
+   "lolpros": "https://lolpros.gg/player/meiko",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "qweasdqweasdb#1372",
+     "game_name": "qweasdqweasdb",
+     "tag_line": "1372",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "cinema",
+     "game_name": "cinema",
+     "tag_line": "",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "iv0ry tower",
+     "game_name": "iv0ry tower",
+     "tag_line": "",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Karmine Corp",
+   "sigla": "KCORP",
+   "regiao_liga": "EMEA",
+   "jogador": "Canna",
+   "nome": "Kim Chang-dong",
+   "pais": "South Korea",
+   "posicao": "top",
+   "leaguepedia": "https://lol.fandom.com/wiki/Canna",
+   "dpm_lol": "https://dpm.lol/pro/Canna",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "칸 나#0211",
+     "game_name": "칸 나",
+     "tag_line": "0211",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "K C#kcwin",
+     "game_name": "K C",
+     "tag_line": "kcwin",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Karmine Corp",
+   "sigla": "KCORP",
+   "regiao_liga": "EMEA",
+   "jogador": "Yike",
+   "nome": "Martin Sundelin",
+   "pais": "Sweden",
+   "posicao": "jungle",
+   "leaguepedia": "https://lol.fandom.com/wiki/Yike",
+   "dpm_lol": "https://dpm.lol/pro/Yike",
+   "lolpros": "https://lolpros.gg/player/yike/",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "KC Yiken#1111",
+     "game_name": "KC Yiken",
+     "tag_line": "1111",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "YIK#YIK",
+     "game_name": "YIK",
+     "tag_line": "YIK",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    }
+   ]
+  },
+  {
+   "time": "Karmine Corp",
+   "sigla": "KCORP",
+   "regiao_liga": "EMEA",
+   "jogador": "kyeahoo",
+   "nome": "Kang Ye-hoo",
+   "pais": "South Korea",
+   "posicao": "mid",
+   "leaguepedia": "https://lol.fandom.com/wiki/Kyeahoo",
+   "dpm_lol": "https://dpm.lol/pro/kyeahoo",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "KR",
+     "riot_id": "Yo제끼럽 왔썹",
+     "game_name": "Yo제끼럽 왔썹",
+     "tag_line": "",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "nao",
+     "obs": "sem tag: nome antigo, antes do Riot ID",
+     "ordem": 1
+    }
+   ]
+  },
+  {
+   "time": "Karmine Corp",
+   "sigla": "KCORP",
+   "regiao_liga": "EMEA",
+   "jogador": "Caliste",
+   "nome": "Caliste Henry-Hennebert",
+   "pais": "France",
+   "posicao": "adc",
+   "leaguepedia": "https://lol.fandom.com/wiki/Caliste",
+   "dpm_lol": "https://dpm.lol/pro/Caliste",
+   "lolpros": "https://lolpros.gg/player/caliste",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "KC NEXT ADKING#EUW",
+     "game_name": "KC NEXT ADKING",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "I NEED SOLOQ#EUW",
+     "game_name": "I NEED SOLOQ",
+     "tag_line": "EUW",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "KC Caliste#0001",
+     "game_name": "KC Caliste",
+     "tag_line": "0001",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    }
+   ]
+  },
+  {
+   "time": "Karmine Corp",
+   "sigla": "KCORP",
+   "regiao_liga": "EMEA",
+   "jogador": "Busio",
+   "nome": "Alan Cwalina",
+   "pais": "United States",
+   "posicao": "suporte",
+   "leaguepedia": "https://lol.fandom.com/wiki/Busio",
+   "dpm_lol": "https://dpm.lol/pro/Busio",
+   "lolpros": "",
+   "contas": [
+    {
+     "servidor": "EUW",
+     "riot_id": "basil#fan",
+     "game_name": "basil",
+     "tag_line": "fan",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 1
+    },
+    {
+     "servidor": "EUW",
+     "riot_id": "OG Mithy#Moo",
+     "game_name": "OG Mithy",
+     "tag_line": "Moo",
+     "platform": "euw1",
+     "regional": "europe",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 2
+    },
+    {
+     "servidor": "NA",
+     "riot_id": "Busio JNG#NA1",
+     "game_name": "Busio JNG",
+     "tag_line": "NA1",
+     "platform": "na1",
+     "regional": "americas",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 3
+    },
+    {
+     "servidor": "KR",
+     "riot_id": "MADHATTER#HAT",
+     "game_name": "MADHATTER",
+     "tag_line": "HAT",
+     "platform": "kr",
+     "regional": "asia",
+     "consultavel_api": "sim",
+     "obs": "",
+     "ordem": 4
+    }
+   ]
+  }
+ ]
+}

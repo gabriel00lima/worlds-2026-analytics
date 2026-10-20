@@ -1,0 +1,54 @@
+{
+  "id": "koi",
+  "nome": "Movistar KOI",
+  "sigla": "MKOI",
+  "regiao": "LEC",
+  "seed": "LEC #2",
+  "como_classificou": "Vice da LEC Summer 2026.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Myrwn",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Elyoya",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Jojopyun",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Supa",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Alvaro",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://rft.gg/match/12396-bilibili-gaming-vs-movistar-koi-2026-07-15"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Sem campanha marcante com o nome atual.",
+  "curiosidades": [
+    {
+      "texto": "Perdeu a final da LEC Summer 2026 para a G2 por 3–0.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://esports.gg/news/league-of-legends/lec-summer-2026-playoffs-results/",
+    "https://rft.gg/match/12396-bilibili-gaming-vs-movistar-koi-2026-07-15"
+  ],
+  "atualizado_em": "2026-10-20"
+}

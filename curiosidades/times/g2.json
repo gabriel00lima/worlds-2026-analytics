@@ -1,0 +1,72 @@
+{
+  "id": "g2",
+  "nome": "G2 Esports",
+  "sigla": "G2",
+  "regiao": "LEC",
+  "seed": "LEC #1",
+  "como_classificou": "Campeã da LEC Summer 2026 (3–0 na Movistar KOI na final).",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "BrokenBlade",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "SkewMond",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Caps",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Hans Sama",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Labrov",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.dexerto.com/league-of-legends/how-to-watch-ewc-2026-league-of-legends-stream-schedule-results-teams-3387307/"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Vice-campeã em 2019 (0–3 para a FunPlus Phoenix).",
+  "curiosidades": [
+    {
+      "texto": "Eliminou a T1 do MSI 2026, encerrando a sequência de top 4 internacional da T1.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://dotesports.com/league-of-legends/news/g2-esports-eliminate-t1-from-msi-2026-ending-legendary-international-top-four-streak"
+      ]
+    },
+    {
+      "texto": "Caps foi vice mundial duas vezes seguidas: 2018 pela Fnatic e 2019 pela G2.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+        "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship"
+      ]
+    },
+    {
+      "texto": "Foi campeã do MSI 2019, até hoje o último MSI vencido por um time europeu.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2019_Mid-Season_Invitational"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/g2-esports-eliminate-t1-from-msi-2026-ending-legendary-international-top-four-streak",
+    "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2019_Mid-Season_Invitational",
+    "https://www.dexerto.com/league-of-legends/how-to-watch-ewc-2026-league-of-legends-stream-schedule-results-teams-3387307/"
+  ],
+  "atualizado_em": "2026-10-20"
+}

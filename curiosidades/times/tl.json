@@ -1,0 +1,62 @@
+{
+  "id": "tl",
+  "nome": "Team Liquid",
+  "sigla": "TL",
+  "regiao": "LCS",
+  "seed": "LCS",
+  "como_classificou": "Uma das vagas da LCS.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Morgan",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Josedeodo",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Quid",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Yeon",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "CoreJJ",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Nunca chegou a uma semifinal de Mundial.",
+  "curiosidades": [
+    {
+      "texto": "O suporte CoreJJ é campeão mundial: venceu o Mundial de 2017 pela Samsung Galaxy.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship"
+      ]
+    },
+    {
+      "texto": "Há divergência na escalação: outra fonte lista Reignover e UmTi no elenco recente.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://egamersworld.com/lol/match/q8qUtLA6g/team-liquid-vs-ctbc-flying-oyster-zaN6r1ueRf"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://egamersworld.com/lol/match/q8qUtLA6g/team-liquid-vs-ctbc-flying-oyster-zaN6r1ueRf",
+    "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "r1-al-kc",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "al",
+    "nome": "Anyone's Legend"
+  },
+  "time_b": {
+    "id": "kc",
+    "nome": "Karmine Corp"
+  },
+  "manchete": "Revanche da Esports World Cup",
+  "resumo_historico": "Último encontro: KC 2–0 nas quartas da EWC 2026 (18–11 e 12–4 em abates).",
+  "primeiro_encontro_mundial": true,
+  "historico": [
+    {
+      "evento": "Esports World Cup 2026",
+      "data": "2026-07-17",
+      "fase": "Quartas (Bo3)",
+      "vencedor": "kc",
+      "placar": "2–0",
+      "fontes": [
+        "https://escorenews.com/en/lol/esports-world-cup-2026/playoff/all-gamers-anyone-s-legen-vs-karmine-corp-639031",
+        "https://rft.gg/match/12407-anyone-s-legend-vs-karmine-corp-2026-07-17"
+      ],
+      "confianca": "confirmado"
+    }
+  ],
+  "curiosidades": [
+    {
+      "texto": "A KC estreia em Mundiais e chega embalada pelo Play-In, onde perdeu só dois mapas.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+        "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins"
+      ]
+    },
+    {
+      "texto": "Na EWC a KC venceu a AL e depois eliminou a T1 antes de perder a final.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://escorenews.com/en/lol/esports-world-cup-2026/playoff/all-gamers-anyone-s-legen-vs-karmine-corp-639031",
+        "https://www.sheepesports.com/en/lol/matches/Esports%20World%20Cup%202026_Semifinals_1",
+        "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp"
+      ]
+    },
+    {
+      "texto": "A AL é a primeira cabeça de chave da China.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "bot",
+      "a": "Hope",
+      "b": "Caliste",
+      "nota": "Caliste e Busio foram os destaques da KC no Play-In."
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://escorenews.com/en/lol/esports-world-cup-2026/playoff/all-gamers-anyone-s-legen-vs-karmine-corp-639031",
+    "https://rft.gg/match/12407-anyone-s-legend-vs-karmine-corp-2026-07-17",
+    "https://www.gosugamers.net/lol/news/78825-dplus-kia-crowned-2026-league-of-legends-esports-world-cup-champions-after-defeating-karmine-corp",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://www.gosugamers.net/lol/news/79364-karmine-corp-sweep-mvk-esports-furia-eliminate-cloud9-kia-on-day-2-of-worlds-2026-play-ins",
+    "https://www.invenglobal.com/articles/27333/karmine-corp-claims-final-main-event-spot-defeats-mvk-in-play-in-final",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en",
+    "https://www.sheepesports.com/en/lol/matches/Esports%20World%20Cup%202026_Semifinals_1"
+  ],
+  "atualizado_em": "2026-10-20"
+}

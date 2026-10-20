@@ -1,0 +1,68 @@
+{
+  "id": "r1-hle-tes",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "hle",
+    "nome": "Hanwha Life Esports"
+  },
+  "time_b": {
+    "id": "tes",
+    "nome": "Top Esports"
+  },
+  "manchete": "Campeã do MSI contra JackeyLove",
+  "resumo_historico": "Não achamos encontro anterior em Mundial. Em 2024 as duas passaram do Swiss com 3–1 sem se cruzar.",
+  "primeiro_encontro_mundial": true,
+  "historico": [],
+  "curiosidades": [
+    {
+      "texto": "Em 2024 as duas fizeram 3–1 no Swiss e foram às quartas, sem se enfrentar.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://liquipedia.net/leagueoflegends/World_Championship/2024",
+        "https://www.gosugamers.net/lol/news/73426-worlds-2024-top-esports-defeat-dplus-kia-hanwha-life-outplay-flyquest-to-qualify-for-quarterfinals"
+      ]
+    },
+    {
+      "texto": "A HLE é a atual campeã do MSI.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    },
+    {
+      "texto": "Três campeões mundiais no bot e no top: Zeus e Gumayusi (pela T1) de um lado, JackeyLove (pela IG, 2018) do outro.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en",
+        "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+        "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "atirador",
+      "a": "Gumayusi",
+      "b": "JackeyLove"
+    },
+    {
+      "posicao": "top",
+      "a": "Zeus",
+      "b": "369"
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship",
+    "https://liquipedia.net/leagueoflegends/World_Championship/2024",
+    "https://www.gosugamers.net/lol/news/73426-worlds-2024-top-esports-defeat-dplus-kia-hanwha-life-outplay-flyquest-to-qualify-for-quarterfinals",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en"
+  ],
+  "atualizado_em": "2026-10-20"
+}

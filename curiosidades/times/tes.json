@@ -1,0 +1,63 @@
+{
+  "id": "tes",
+  "nome": "Top Esports",
+  "sigla": "TES",
+  "regiao": "LPL",
+  "seed": "LPL #3",
+  "como_classificou": "Terceira vaga da LPL.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "369",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Tian",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Creme",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "JackeyLove",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Zhuo",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Semifinal em 2020 (caiu para a Suning).",
+  "curiosidades": [
+    {
+      "texto": "O atirador JackeyLove foi campeão mundial em 2018 pela IG, adversária chinesa deste mesmo Mundial.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship"
+      ]
+    },
+    {
+      "texto": "Tian (jungle) foi campeão mundial em 2019 pela FunPlus Phoenix.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2019_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2020_League_of_Legends_World_Championship",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "atualizado_em": "2026-10-20"
+}

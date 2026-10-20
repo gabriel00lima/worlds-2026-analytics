@@ -1,0 +1,56 @@
+{
+  "id": "tsw",
+  "nome": "Team Secret Whales",
+  "sigla": "TSW",
+  "regiao": "LCP",
+  "seed": "LCP #1",
+  "como_classificou": "Campeã e primeira cabeça de chave da LCP.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Pun",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Hizto",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Dire",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Eddie",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Bie",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://lol.fandom.com/wiki/Team_Secret_Whales",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Sem campanha marcante.",
+  "curiosidades": [
+    {
+      "texto": "Foi eliminada do MSI 2026 justamente pela LYON, por 3–0.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://liquipedia.net/leagueoflegends/Match:ID_MSI26Brakt_R02-M004"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://liquipedia.net/leagueoflegends/Match:ID_MSI26Brakt_R02-M004",
+    "https://lol.fandom.com/wiki/Team_Secret_Whales",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "atualizado_em": "2026-10-20"
+}

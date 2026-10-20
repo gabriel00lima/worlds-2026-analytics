@@ -1,0 +1,64 @@
+{
+  "id": "al",
+  "nome": "Anyone's Legend",
+  "sigla": "AL",
+  "regiao": "LPL",
+  "seed": "LPL #1",
+  "como_classificou": "Campeã da final do Split 3 da LPL 2026, seu segundo título.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Breathe",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Tarzan",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Shanks",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Hope",
+      "confianca": "fonte_unica"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Kael",
+      "confianca": "fonte_unica"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Sem campanha marcante em Mundiais até aqui.",
+  "curiosidades": [
+    {
+      "texto": "Primeira cabeça de chave da China em 2026, com o segundo título de LPL da história do clube.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+        "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+      ]
+    },
+    {
+      "texto": "Fontes divergem sobre o top: uma lista Breathe, outra (mais antiga) lista Flandre.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+        "https://egamersworld.com/blog/every-worlds-2026-team-qualified-6Q23AMZcmS"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://egamersworld.com/blog/every-worlds-2026-team-qualified-6Q23AMZcmS",
+    "https://en.wikipedia.org/wiki/Anyone%27s_Legend",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "atualizado_em": "2026-10-20"
+}

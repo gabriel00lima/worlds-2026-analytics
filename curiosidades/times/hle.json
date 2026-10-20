@@ -1,0 +1,73 @@
+{
+  "id": "hle",
+  "nome": "Hanwha Life Esports",
+  "sigla": "HLE",
+  "regiao": "LCK",
+  "seed": "LCK #2",
+  "como_classificou": "Campeã do MSI 2026 e vice da LCK 2026.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Zeus",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Kanavi",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Zeka",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Gumayusi",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Delight",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Quartas de final.",
+  "curiosidades": [
+    {
+      "texto": "Campeã do MSI 2026 em casa (Daejeon), com virada de 3–2 sobre a BLG; Zeus foi o MVP da final. Primeiro MSI do clube e quinto da Coreia.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+        "https://rdy.gg/en/lol/news/hle-wins-msi-2026"
+      ]
+    },
+    {
+      "texto": "Tem dois ex-campeões mundiais pela T1: Zeus (2023) e Gumayusi.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en",
+        "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship"
+      ]
+    },
+    {
+      "texto": "Perdeu a final da LCK 2026 para a Gen.G por 3–1.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2023_League_of_Legends_World_Championship",
+    "https://rdy.gg/en/lol/news/hle-wins-msi-2026",
+    "https://www.gosugamers.net/lol/news/79163-gen-g-are-the-2026-lck-season-champions-after-defeating-hanwha-life-esports",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en"
+  ],
+  "atualizado_em": "2026-10-20"
+}

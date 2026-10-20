@@ -1,0 +1,995 @@
+<title>Central do Worlds 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: faixa de transmissão no topo (próximos jogos), chaves por fase em abas, painel de confronto em folha lateral/inteira. */
+:root{
+  --bg:#f3f1ea; --surface:#ffffff; --surface-2:#e9e6dc; --line:#d6d1c2;
+  --fg:#18202a; --muted:#5d6672; --gold:#9a7425; --gold-soft:#efe3c4;
+  --blue:#1f6fb8; --red:#c23b32; --good:#2c7a4b;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c141d; --surface:#142130; --surface-2:#1b2b3d; --line:#26384c;
+  --fg:#e9edf2; --muted:#93a1b2; --gold:#d9b46a; --gold-soft:#3a3121;
+  --blue:#4ea3f0; --red:#f0675c; --good:#5cc489;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c141d; --surface:#142130; --surface-2:#1b2b3d; --line:#26384c;
+  --fg:#e9edf2; --muted:#93a1b2; --gold:#d9b46a; --gold-soft:#3a3121;
+  --blue:#4ea3f0; --red:#f0675c; --good:#5cc489;
+  color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:.01em;text-wrap:balance;margin:0;line-height:1.05}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--gold)}
+.azul{color:var(--blue)} .verm{color:var(--red)}
+
+header.topo{padding-block:28px 18px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end}
+header.topo h1{font-size:clamp(44px,7vw,78px);text-transform:uppercase;letter-spacing:-.01em}
+header.topo h1 span{color:var(--gold)}
+.fases{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:var(--muted)}
+.fases b{color:var(--fg);font-weight:600}
+.fases .agora b{color:var(--gold)}
+.atualizado{font-size:12px;color:var(--muted);text-align:right}
+
+.faixa{border-block:1px solid var(--line);background:var(--surface);padding-block:12px}
+.faixa-in{display:flex;gap:10px;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}
+.prox{flex:0 0 auto;min-width:190px;border:1px solid var(--line);border-radius:var(--r);padding:8px 12px;background:var(--bg);cursor:pointer;text-align:left}
+.prox:hover{border-color:var(--gold)}
+.prox .quando{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:10px}
+.prox .vs{display:flex;align-items:center;gap:8px;margin-top:4px;font-family:var(--display);font-weight:700;font-size:20px}
+.prox .vs img{width:22px;height:22px;object-fit:contain}
+.prox.primeiro{border-color:var(--gold);background:var(--gold-soft)}
+.contagem{font-family:var(--mono);font-size:12px;color:var(--gold)}
+
+nav.abas{display:flex;gap:4px;margin-block:22px 14px;border-bottom:1px solid var(--line);overflow-x:auto}
+nav.abas button{background:none;border:0;padding:10px 14px;font-family:var(--display);font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+nav.abas button[aria-selected="true"]{color:var(--fg);border-color:var(--gold)}
+section.painel{padding-bottom:40px}
+.nota{font-size:13px;color:var(--muted);max-width:72ch}
+
+.conf{display:block;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:8px 10px;cursor:pointer;transition:border-color .15s,transform .15s}
+.conf:hover{border-color:var(--gold);transform:translateY(-1px)}
+.conf .meta{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted);margin-bottom:4px}
+.conf .linha{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;padding:2px 0}
+.conf .linha img{width:22px;height:22px;object-fit:contain}
+.conf .linha .nm{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.conf .linha .pl{font-family:var(--mono);font-weight:600;min-width:1.2em;text-align:right}
+.conf .linha.perdeu{opacity:.55}
+.conf .linha.ganhou .pl{color:var(--gold)}
+.tag{font-family:var(--display);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:11px;padding:1px 6px;border-radius:4px;background:var(--surface-2);color:var(--muted)}
+.tag.fim{background:transparent;border:1px solid var(--line)}
+.tag.vivo{background:var(--red);color:#fff}
+.vazio{width:22px;height:22px;border-radius:50%;border:1px dashed var(--line);display:inline-block;flex:0 0 auto}
+
+.suica{display:grid;grid-template-columns:repeat(5,minmax(200px,1fr));gap:14px;overflow-x:auto;padding-bottom:8px}
+.rodada h3{font-size:20px;text-transform:uppercase;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.rodada h3 small{font-family:var(--body);font-weight:500;font-size:12px;color:var(--muted);text-transform:none}
+.rodada .lista{display:grid;gap:8px;margin-top:8px}
+.grupo-rec{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px}
+.classif{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.classif .t{display:grid;grid-template-columns:26px 1fr auto auto;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;text-align:left}
+.classif .t img{width:26px;height:26px;object-fit:contain}
+.pill{font-family:var(--display);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:99px}
+.pill.ok{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.pill.fora{background:color-mix(in srgb,var(--red) 16%,transparent);color:var(--red)}
+.pill.jog{background:var(--surface-2);color:var(--muted)}
+
+.chave,.playin{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:22px;align-items:center;overflow-x:auto;padding-bottom:8px}
+.chave .col,.playin .bloco{display:grid;gap:14px;align-content:center}
+.chave .col h3{font-size:18px;text-transform:uppercase;color:var(--muted)}
+.final-dest .conf{border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft)}
+.playin h4{font-size:14px;text-transform:uppercase;color:var(--muted);margin-bottom:-6px}
+
+.grade-times{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cartao-time{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;cursor:pointer;text-align:center;display:grid;gap:6px;justify-items:center}
+.cartao-time:hover{border-color:var(--gold)}
+.cartao-time img{width:56px;height:56px;object-fit:contain}
+.cartao-time b{font-family:var(--display);font-size:20px}
+.cartao-time small{color:var(--muted);font-size:12px}
+
+dialog.folha{border:0;padding:0;margin:0 0 0 auto;height:100%;max-height:100%;width:min(980px,100%);max-width:100%;background:var(--bg);color:var(--fg);box-shadow:-20px 0 60px rgba(0,0,0,.35)}
+dialog.folha::backdrop{background:rgba(8,12,18,.55)}
+.folha-in{padding-block:calc(14px + env(safe-area-inset-top,0px)) calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.fechar{background:var(--surface);border:1px solid var(--line);border-radius:99px;width:38px;height:38px;cursor:pointer;font-size:20px;line-height:1;z-index:3}
+.placarao{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin-block:10px 18px}
+.placarao .lado{display:flex;align-items:center;gap:12px;min-width:0}
+.placarao .lado.dir{justify-content:flex-end;text-align:right}
+.placarao img{width:64px;height:64px;object-fit:contain;flex:0 0 auto}
+.placarao h2{font-size:clamp(22px,4vw,36px)}
+.placarao .centro{text-align:center}
+.placarao .pts{font-family:var(--display);font-size:clamp(40px,7vw,64px);font-weight:700;line-height:1}
+.placarao .pts .x{color:var(--muted);font-size:.5em;vertical-align:middle;margin-inline:6px}
+.sub-abas{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.sub-abas button{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 14px;cursor:pointer;font-weight:600}
+.sub-abas button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.bloco-f{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:14px;min-width:0}
+.bloco-f h3{font-size:20px;text-transform:uppercase;margin-bottom:10px;display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.bloco-f h3 small{font-family:var(--body);font-size:12px;font-weight:500;color:var(--muted);text-transform:none}
+.dois{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.botao-video{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;border-radius:var(--r);border:1px solid var(--gold);background:var(--gold-soft);cursor:pointer;text-align:left;margin-bottom:14px}
+.botao-video .play{width:46px;height:46px;border-radius:50%;background:var(--gold);display:grid;place-items:center;flex:0 0 auto}
+.botao-video .play::before{content:"";border-left:15px solid var(--bg);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.botao-video b{font-family:var(--display);font-size:22px;text-transform:uppercase;display:block}
+.botao-video span span{font-size:13px;color:var(--muted)}
+
+.tab-wrap{overflow-x:auto}
+table.est{border-collapse:collapse;width:100%;font-size:13.5px;min-width:760px}
+table.est th{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:12px;color:var(--muted);text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+table.est td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.est th:first-child,table.est td:first-child{text-align:left}
+table.est tr.sep td{border-bottom:2px solid var(--fg)}
+.jog{display:flex;align-items:center;gap:8px;font-family:var(--body)}
+.jog .foto{width:34px;height:34px;border-radius:50%;object-fit:cover;background:var(--surface-2);flex:0 0 auto;display:inline-block}
+.jog .camp{width:28px;height:28px;border-radius:5px}
+.jog b{font-weight:600}
+.jog small{display:block;color:var(--muted);font-size:11px}
+.itens{display:flex;gap:2px}
+.itens img{width:22px;height:22px;border-radius:3px}
+.pos{color:var(--good)} .neg{color:var(--red)}
+
+.cmp{display:grid;gap:8px}
+.cmp .l{display:grid;grid-template-columns:70px 1fr 150px 1fr 70px;align-items:center;gap:8px;font-size:13px}
+.cmp .l .v{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:600}
+.cmp .l .v.b{text-align:right}
+.cmp .l .rot{text-align:center;color:var(--muted);font-size:12px}
+.cmp .barra{height:8px;background:var(--surface-2);border-radius:99px;overflow:hidden;display:flex}
+.cmp .barra.esq{justify-content:flex-end}
+.cmp .barra i{display:block;height:100%;border-radius:99px}
+
+.duelos{display:grid;gap:10px}
+.duelo{display:grid;grid-template-columns:1fr 70px 1fr;gap:10px;align-items:center;background:var(--bg);border-radius:8px;padding:10px}
+.duelo .p{display:flex;gap:10px;align-items:center;min-width:0}
+.duelo .p.dir{flex-direction:row-reverse;text-align:right}
+.duelo .p img.f{width:58px;height:58px;border-radius:50%;object-fit:cover;background:var(--surface-2);flex:0 0 auto}
+.duelo .p b{font-family:var(--display);font-size:21px;display:block}
+.duelo .ns{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.duelo .rota{text-align:center;font-family:var(--display);font-weight:600;text-transform:uppercase;color:var(--gold);font-size:13px}
+.sem-foto{width:58px;height:58px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-family:var(--display);font-weight:700;color:var(--muted);flex:0 0 auto}
+
+.campanha{display:grid;gap:6px}
+.campanha .r{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;font-size:13.5px}
+.res{font-family:var(--display);font-weight:700;width:22px;height:22px;border-radius:5px;display:inline-grid;place-items:center;font-size:13px}
+.res.v{background:color-mix(in srgb,var(--good) 20%,transparent);color:var(--good)}
+.res.d{background:color-mix(in srgb,var(--red) 18%,transparent);color:var(--red)}
+.link{background:none;border:0;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.camps{display:flex;flex-wrap:wrap;gap:6px}
+.camps .c{display:flex;align-items:center;gap:6px;background:var(--bg);border-radius:6px;padding:3px 8px 3px 3px;font-size:12.5px}
+.camps .c img{width:26px;height:26px;border-radius:4px}
+.curios{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.curios li{font-size:14px;padding-left:14px;position:relative;max-width:75ch}
+.curios li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.conf-tag{font-size:11px;color:var(--muted);margin-left:6px}
+.relogio{font-family:var(--mono);font-size:clamp(22px,4vw,34px);font-weight:600;color:var(--gold)}
+
+.palpite{display:grid;gap:10px}
+.palpite .opcoes{display:flex;gap:8px;flex-wrap:wrap}
+.palpite .opcoes button{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:8px 14px;cursor:pointer;font-weight:600;display:flex;align-items:center;gap:8px}
+.palpite .opcoes button img{width:20px;height:20px;object-fit:contain}
+.palpite .opcoes button[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-soft)}
+.votos{height:14px;border-radius:99px;overflow:hidden;display:flex;background:var(--surface-2)}
+.votos i{display:block;height:100%}
+
+/* reprodutor: sempre escuro, como uma tela de transmissão */
+.player{background:#0a1118;color:#e9edf2;border-radius:12px;overflow:hidden;margin-bottom:14px;--pmut:#8d9aab;--blue:#4ea3f0;--red:#f0675c}
+.player .tela{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)}
+.player canvas.mapa{width:100%;aspect-ratio:1/1;display:block;background:#13221a}
+.player .lado-d{padding:14px;display:grid;grid-template-rows:auto auto auto 1fr;gap:10px;min-width:0}
+.player .hud{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.player .hud .t{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:22px;min-width:0}
+.player .hud .t.dir{justify-content:flex-end}
+.player .hud img{width:30px;height:30px;object-fit:contain}
+.player .clock{font-family:var(--mono);font-size:22px;text-align:center}
+.player .linha-hud{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-family:var(--mono);font-size:13px;color:var(--pmut)}
+.player .linha-hud .dir{text-align:right}
+.player .linha-hud b{color:#e9edf2}
+.player .drags{display:flex;gap:3px;flex-wrap:wrap;min-height:12px}
+.player .drags i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.player .drags.dir{justify-content:flex-end}
+.player .legenda{min-height:80px;font-size:17px;line-height:1.35;background:rgba(255,255,255,.06);border-radius:8px;padding:10px 12px;font-weight:500;align-self:start}
+.player .legenda small{display:block;font-family:var(--mono);font-size:11px;color:#d9b46a;margin-bottom:3px}
+.player .controles{display:flex;align-items:center;gap:8px;padding:10px 14px;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap}
+.player .controles button{background:rgba(255,255,255,.09);border:0;border-radius:6px;padding:6px 12px;cursor:pointer;color:#e9edf2;font-weight:600}
+.player .controles button[aria-pressed="true"]{background:#d9b46a;color:#0a1118}
+.player .trilha{flex:1 1 160px;position:relative;height:26px;cursor:pointer;min-width:120px}
+.player .trilha .base{position:absolute;left:0;right:0;top:11px;height:4px;background:rgba(255,255,255,.14);border-radius:99px}
+.player .trilha .feito{position:absolute;left:0;top:11px;height:4px;background:#d9b46a;border-radius:99px}
+.player .trilha .mk{position:absolute;top:6px;width:3px;height:14px;border-radius:2px}
+.player .lista-ev{max-height:130px;overflow:auto;font-size:12.5px;color:var(--pmut);display:grid;gap:3px;width:100%}
+.player .lista-ev b{color:#e9edf2;font-weight:500}
+.player .slide{padding:24px;min-height:380px;display:grid;align-content:center;gap:16px}
+.player .slide h4{font-family:var(--display);font-size:clamp(26px,4.5vw,42px);text-transform:uppercase}
+.player .slide .grande{font-family:var(--display);font-size:clamp(34px,6vw,60px);font-weight:700;line-height:1;color:#d9b46a;text-align:center}
+.player .slide .lado-a-lado{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;justify-items:center}
+.player .slide img.lg{width:min(110px,22vw);height:min(110px,22vw);object-fit:contain}
+.player .slide img.fp{width:min(130px,26vw);height:min(130px,26vw);border-radius:50%;object-fit:cover;background:#1b2b3d;flex:0 0 auto}
+.player .slide .barras{display:grid;grid-template-columns:1fr auto 1fr;gap:10px 12px;align-items:center;font-family:var(--mono)}
+.player .slide .barras .rot{text-align:center;font-family:var(--body);color:var(--pmut);font-size:13px}
+.player .slide .bar{height:12px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden;display:flex}
+.player .slide .bar.esq{justify-content:flex-end}
+.player .slide .bar i{height:100%;width:0;transition:width 1s ease}
+.player .slide .rodape{font-size:14px;color:var(--pmut);border-top:1px solid rgba(255,255,255,.08);padding-top:10px}
+.fade{animation:subir .6s ease both}
+@keyframes subir{from{opacity:.4;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}.conf{transition:none}.player .slide .bar i{transition:none}}
+
+
+.barra-folha{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;z-index:3;margin-bottom:6px;pointer-events:none}
+.barra-folha>*{pointer-events:auto}
+.voltar{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 14px;cursor:pointer;font-weight:600}
+tr.clic,.clic{cursor:pointer}
+tr.clic:hover td{background:var(--surface-2)}
+.duelo .p[data-jogador]:hover b,.clic:hover b{color:var(--gold)}
+.linha-bans{display:grid;grid-template-columns:60px 1fr;align-items:center;gap:10px;padding:4px 0}
+.bans{display:flex;gap:6px;flex-wrap:wrap}
+.bans img{width:34px;height:34px;border-radius:6px;filter:grayscale(.85);opacity:.85}
+.player .controles button.momento{display:block;font-weight:400;width:100%;text-align:left;background:none;border:0;border-radius:6px;padding:4px 6px;color:#8d9aab;cursor:pointer;font-size:12.5px}
+.player .controles button.momento:hover{background:rgba(255,255,255,.06)}
+.player .controles button.momento.atual{color:#e9edf2;background:rgba(217,180,106,.16)}
+.player .momento .num{color:#d9b46a;margin-right:4px}
+.player .lista-ev{max-height:150px}
+.player .clock.rapido::after{content:" ⏩";font-size:14px}
+.player select{background:rgba(255,255,255,.09);color:#e9edf2;border:0;border-radius:6px;padding:6px 8px;max-width:200px;font:inherit;font-size:13px}
+.player select option{color:#111;background:#fff}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+.tile{background:var(--bg);border-radius:8px;padding:8px 10px;min-width:0}
+.tile b{display:block;font-family:var(--display);font-size:24px;line-height:1.1;font-variant-numeric:tabular-nums}
+.tile span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.perfil{display:flex;gap:16px;align-items:center;margin-block:6px 18px}
+.perfil .f{width:104px;height:104px;border-radius:50%;object-fit:cover;background:var(--surface-2);flex:0 0 auto}
+.perfil h2{font-size:clamp(32px,5vw,48px)}
+.lista-linhas{display:grid;gap:6px}
+.lista-linhas .r{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--bg);border-radius:8px;padding:6px 10px;font-size:13.5px;text-align:left;border:0;width:100%}
+.lista-linhas button.r{cursor:pointer}
+.lista-linhas button.r:hover{outline:1px solid var(--gold)}
+.lista-linhas .r img{width:30px;height:30px;border-radius:5px}
+.ranking{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.ranking ol{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.ranking li button{display:grid;grid-template-columns:20px 34px 1fr auto;gap:8px;align-items:center;width:100%;background:none;border:0;padding:4px 2px;cursor:pointer;text-align:left;border-radius:6px}
+.ranking li button:hover{background:var(--surface-2)}
+.ranking li .ord{font-family:var(--mono);color:var(--muted);font-size:12px}
+.ranking li img.f{width:34px;height:34px;border-radius:50%;object-fit:cover;background:var(--surface-2)}
+.ranking li img.c{width:34px;height:34px;border-radius:6px}
+.ranking li .val{font-family:var(--mono);font-weight:600;font-variant-numeric:tabular-nums}
+.ranking li small{display:block;color:var(--muted);font-size:11.5px}
+.ranking li:first-child .val{color:var(--gold)}
+
+@media (max-width:760px){
+  header.topo{grid-template-columns:1fr}
+  .atualizado{text-align:left}
+  .dois{grid-template-columns:1fr}
+  .player .tela{grid-template-columns:1fr}
+  .cmp .l{grid-template-columns:52px 1fr 92px 1fr 52px;gap:6px}
+  .duelo{grid-template-columns:1fr 46px 1fr;gap:6px;padding:8px}
+  .duelo .p img.f,.sem-foto{width:40px;height:40px}
+  .duelo .p b{font-size:17px}
+  .duelo .ns{font-size:10.5px}
+  .placarao img{width:40px;height:40px}
+  .placarao{gap:8px}
+}
+</style>
+
+<div class="wrap">
+  <header class="topo">
+    <div>
+      <div class="eyebrow">League of Legends World Championship</div>
+      <h1>Worlds <span>2026</span></h1>
+      <div class="fases" id="fases"></div>
+    </div>
+    <div class="atualizado" id="atualizado"></div>
+  </header>
+</div>
+<div class="faixa"><div class="wrap">
+  <div class="eyebrow" style="margin-bottom:8px">Próximos jogos · horário de Brasília</div>
+  <div class="faixa-in" id="proximos"></div>
+</div></div>
+<div class="wrap">
+  <nav class="abas" role="tablist" id="abas">
+    <button role="tab" data-aba="playin">Play-In</button>
+    <button role="tab" data-aba="suica">Fase Suíça</button>
+    <button role="tab" data-aba="matamata">Mata-mata</button>
+    <button role="tab" data-aba="destaques">Destaques</button>
+    <button role="tab" data-aba="times">Times</button>
+  </nav>
+  <section class="painel" id="p-playin" hidden></section>
+  <section class="painel" id="p-suica" hidden></section>
+  <section class="painel" id="p-matamata" hidden></section>
+  <section class="painel" id="p-destaques" hidden></section>
+  <section class="painel" id="p-times" hidden></section>
+  <p class="nota" style="padding-bottom:40px">Números só do Worlds 2026, vindos da API e do feed de estatísticas do LoL Esports, com ícones do Data Dragon. Na animação, a posição de cada lance no mapa é aproximada pela rota do jogador, porque o feed não traz coordenadas. Bans e arautos não aparecem no feed, então ficam de fora. As curiosidades de histórico são de fora deste Worlds e vêm marcadas quando têm uma fonte só.</p>
+</div>
+
+<dialog class="folha" id="folha"><div class="folha-in" id="folha-in"></div></dialog>
+
+<script>
+window.W=/*__DADOS__*/null;
+</script>
+<script>
+(function(){
+"use strict";
+const W=window.W;
+const $=(s,r=document)=>r.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const TZ="America/Sao_Paulo";
+const fmt=(iso,o)=>new Intl.DateTimeFormat("pt-BR",{timeZone:TZ,...o}).format(new Date(iso));
+const dataHora=iso=>fmt(iso,{weekday:"short",day:"2-digit",month:"2-digit"}).replace(/\./g,"")+" · "+fmt(iso,{hour:"2-digit",minute:"2-digit"});
+const hora=iso=>fmt(iso,{hour:"2-digit",minute:"2-digit"});
+const horaFalada=iso=>{const [h,m]=hora(iso).split(":");return +h+(m==="00"?" horas":" e "+(+m))};
+const mmss=s=>{s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+const min=s=>Math.max(1,Math.round(s/60));
+const pct=(x,d=0)=>x==null||isNaN(x)?"–":(x*100).toFixed(d)+"%";
+const n1=(x,d=1)=>x==null||isNaN(x)?"–":Number(x).toLocaleString("pt-BR",{minimumFractionDigits:d,maximumFractionDigits:d});
+const mil=x=>x==null||isNaN(x)?"–":(x>0?"+":x<0?"−":"")+(Math.abs(x)/1000).toLocaleString("pt-BR",{maximumFractionDigits:1})+"k";
+const sinal=x=>x==null?"–":(x>0?"+":x<0?"−":"")+Math.abs(Math.round(x));
+const ROTAS=["top","jungle","mid","bottom","support"];
+const ROTA_PT={top:"Topo",jungle:"Selva",mid:"Meio",bottom:"Atirador",support:"Suporte"};
+const ROTA_LANE={top:"rota do topo",jungle:"selva",mid:"rota do meio",bottom:"rota de baixo",support:"rota de baixo"};
+const DRAG={cloud:["Vento","#9fd3e6"],infernal:["Infernal","#e8613a"],mountain:["Montanha","#b08a5a"],ocean:["Oceano","#3e8ed0"],hextech:["Hextec","#5fd3c8"],chemtech:["Quimtec","#a3c43c"],elder:["Ancião","#d7c9ff"]};
+const PARADO=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- índices ---------- */
+const TIMES=W.times;const porId={};Object.values(TIMES).forEach(t=>porId[t.id]=t.codigo);
+const PARTIDAS=W.partidas.slice().sort((a,b)=>a.inicio.localeCompare(b.inicio));
+const PID={};PARTIDAS.forEach(p=>PID[p.id]=p);
+const JOGOS=W.jogos.map(analisar);
+const jogosDe=pid=>JOGOS.filter(j=>j.partida===pid).sort((a,b)=>a.numero-b.numero);
+const logo=c=>TIMES[c]?.logo||"";
+const nomeT=c=>TIMES[c]?.nome||c;
+const FOTO={};Object.values(TIMES).forEach(t=>t.jogadores.forEach(p=>FOTO[p.id]=p.foto));
+const camp=k=>W.campeoes[k]||{nome:k,icone:""};
+const img=(src,cls,alt="",st="")=>src?`<img class="${cls||""}" src="${src}" alt="${esc(alt)}" ${st?`style="${st}"`:""}>`:`<span class="vazio ${cls||""}"></span>`;
+const mini=c=>img(logo(c),"",c,"width:18px;height:18px;object-fit:contain;vertical-align:-4px");
+
+function analisar(j){
+  const az=porId[j.timeAzul],vm=porId[j.timeVermelho];
+  const fim=j.serie[j.serie.length-1];
+  const em=s=>j.serie.reduce((a,b)=>Math.abs(b[0]-s)<Math.abs(a[0]-s)?b:a);
+  const s15=j.duracao>=900?em(900):null;
+  const jog=j.jogadores.map(x=>{const p=fim[3][x.pid-1]||[0,0,0,0,0,0];
+    return {...x,time:x.lado==="blue"?az:vm,ouro:p[0],k:p[1],d:p[2],a:p[3],cs:p[4],nivel:p[5],ouro15:s15?s15[3][x.pid-1][0]:null,cs15:s15?s15[3][x.pid-1][4]:null}});
+  jog.forEach(x=>{const op=jog.find(y=>y.lado!==x.lado&&y.rota===x.rota);x.gd15=(x.ouro15!=null&&op)?x.ouro15-op.ouro15:null;x.csd15=(x.cs15!=null&&op)?x.cs15-op.cs15:null});
+  const ev=j.eventos.slice().sort((a,b)=>a.s-b.s);
+  const primeiro=t=>ev.find(e=>e.tipo===t);
+  const contar=(t,l)=>ev.filter(e=>e.tipo===t&&e.lado===l).reduce((s,e)=>s+(e.n||1),0);
+  const tot={};for(const l of ["blue","red"])tot[l]={abates:contar("abate",l),dragoes:contar("dragao",l),barons:contar("barao",l),torres:contar("torre",l),ouro:l==="blue"?fim[1]:fim[2]};
+  return {...j,az,vm,venc:j.vencedor==="blue"?az:vm,lados:{blue:az,red:vm},jog,ev,fim,s15,fb:primeiro("abate"),fd:primeiro("dragao"),ft:primeiro("torre"),fbar:primeiro("barao"),tot};
+}
+const ladoDe=(j,c)=>j.az===c?"blue":j.vm===c?"red":null;
+const outro=l=>l==="blue"?"red":"blue";
+const kda=x=>(x.k+x.a)/Math.max(1,x.d);
+
+/* ---------- estatísticas agregadas deste Worlds ---------- */
+function statsTime(c){
+  const js=JOGOS.filter(j=>j.az===c||j.vm===c);if(!js.length)return null;
+  const r={jogos:js.length,v:0,fb:0,fd:0,ft:0,fbar:0,drag:0,bar:0,tor:0,abates:0,mortes:0,dur:0,gd15:[],camps:{},dragTipos:{},bansPor:{},bansContra:{},jogosLp:0,arautos:0,larvas:0};
+  for(const j of js){const l=ladoDe(j,c),o=outro(l);
+    if(j.venc===c)r.v++;
+    if(j.fb?.lado===l)r.fb++;if(j.fd?.lado===l)r.fd++;if(j.ft?.lado===l)r.ft++;if(j.fbar?.lado===l)r.fbar++;
+    r.drag+=j.tot[l].dragoes;r.bar+=j.tot[l].barons;r.tor+=j.tot[l].torres;r.abates+=j.tot[l].abates;r.mortes+=j.tot[o].abates;r.dur+=j.duracao;
+    j.ev.filter(e=>e.tipo==="dragao"&&e.lado===l).forEach(e=>r.dragTipos[e.dragao]=(r.dragTipos[e.dragao]||0)+1);
+    if(j.s15)r.gd15.push(l==="blue"?j.s15[1]-j.s15[2]:j.s15[2]-j.s15[1]);
+    j.jog.filter(x=>x.lado===l).forEach(x=>r.camps[x.campeao]=(r.camps[x.campeao]||0)+1);
+    if(j.lp){r.jogosLp=(r.jogosLp||0)+1;
+      j.lp.bans[l].forEach(b=>r.bansPor[b]=(r.bansPor[b]||0)+1);j.lp.bans[o].forEach(b=>r.bansContra[b]=(r.bansContra[b]||0)+1);
+      r.arautos+=j.lp.arautos[l]||0;r.larvas+=j.lp.larvas[l]||0}
+  }
+  const n=r.jogos;
+  return {...r,arautosJ:r.jogosLp?r.arautos/r.jogosLp:null,larvasJ:r.jogosLp?r.larvas/r.jogosLp:null,wr:r.v/n,pfb:r.fb/n,pfd:r.fd/n,pft:r.ft/n,pfbar:r.fbar/n,dragJ:r.drag/n,barJ:r.bar/n,torJ:r.tor/n,abJ:r.abates/n,morJ:r.mortes/n,durM:r.dur/n,gd15m:r.gd15.length?r.gd15.reduce((a,b)=>a+b,0)/r.gd15.length:null};
+}
+const _sj={};
+function statsJogador(id){
+  if(id in _sj)return _sj[id];
+  const L=[];for(const j of JOGOS)for(const x of j.jog)if(x.jogadorId===id)L.push({...x,j,dur:j.duracao,venceu:j.venc===x.time,fbK:j.fb?.por?.[0]===x.pid?1:0,fbM:j.fb?.vitimas?.[0]===x.pid?1:0});
+  if(!L.length)return _sj[id]=null;
+  const s=f=>L.reduce((a,x)=>a+(x[f]||0),0);
+  const media=f=>{const v=L.filter(x=>x[f]!=null);return v.length?v.reduce((a,x)=>a+x[f],0)/v.length:null};
+  const camps={},det={};L.forEach(x=>{camps[x.campeao]=(camps[x.campeao]||0)+1;const c=det[x.campeao]=det[x.campeao]||{j:0,v:0,k:0,d:0,a:0};c.j++;c.v+=x.venceu?1:0;c.k+=x.k;c.d+=x.d;c.a+=x.a});
+  const k=s("k"),d=s("d"),a=s("a"),m=s("dur")/60;
+  const comDano=L.filter(x=>x.danoTotal!=null);
+  return _sj[id]={jogos:L.length,linhas:L,k,d,a,kda:(k+a)/Math.max(1,d),csm:s("cs")/m,gd15:media("gd15"),dano:media("dano"),kp:media("kp"),camps,det,v:L.filter(x=>x.venceu).length,
+    dpm:comDano.length?comDano.reduce((t,x)=>t+x.danoTotal,0)/(comDano.reduce((t,x)=>t+x.dur,0)/60):null,visao:media("visao"),fbK:s("fbK"),fbM:s("fbM"),wardsM:s("wards")/m};
+}
+function acharJogador(id){
+  for(const t of Object.values(TIMES))for(const p of t.jogadores)if(p.id===id)return {pl:p,time:t.codigo};
+  for(const j of JOGOS)for(const x of j.jog)if(x.jogadorId===id)return {pl:{id,nick:x.nick,nome:"",rota:x.rota,foto:null},time:x.time};
+  return null;
+}
+function campanha(c){
+  return PARTIDAS.filter(p=>p.estado==="completed"&&p.times.some(t=>t.codigo===c)).map(p=>{
+    const eu=p.times.find(t=>t.codigo===c),ele=p.times.find(t=>t.codigo!==c);
+    return {p,venceu:eu.resultado==="win",placar:`${eu.vitorias}-${ele.vitorias}`,adv:ele.codigo};
+  });
+}
+function recordeSuica(c,antesDe){
+  let v=0,d=0;for(const p of PARTIDAS){if(p.fase!=="swiss"||p.estado!=="completed")continue;if(antesDe&&p.inicio>=antesDe)continue;
+    const eu=p.times.find(t=>t.codigo===c);if(!eu)continue;eu.resultado==="win"?v++:d++}
+  return [v,d];
+}
+
+/* ---------- fases ---------- */
+const SUICA=PARTIDAS.filter(p=>p.fase==="swiss");
+const RODADAS=[SUICA.slice(0,8),SUICA.slice(8,16),SUICA.slice(16,24),SUICA.slice(24,30),SUICA.slice(30,33)];
+const MATA=PARTIDAS.filter(p=>p.fase==="knockouts");
+const PLAYIN=PARTIDAS.filter(p=>p.fase==="play_ins");
+const NOMES_PLAYIN=["Chave superior · rodada 1","Chave superior · rodada 1","Final da chave superior","Chave inferior · rodada 1","Final da chave inferior","Final do Play-In"];
+const NOMES_MATA=["Quartas de final 1","Quartas de final 2","Quartas de final 3","Quartas de final 4","Semifinal 1","Semifinal 2","Grande final"];
+function rotuloFase(p,curto){
+  if(p.fase==="swiss"){const r=RODADAS.findIndex(x=>x.includes(p));return curto?`Suíça R${r+1}`:`Fase Suíça, rodada ${r+1}`}
+  if(p.fase==="knockouts"){const n=NOMES_MATA[MATA.indexOf(p)]||p.bloco;return curto?n.replace("Quartas de final","Quartas").replace("Grande final","Final"):n}
+  return curto?"Play-In":"Play-In, "+(NOMES_PLAYIN[PLAYIN.indexOf(p)]||"").toLowerCase();
+}
+
+/* ---------- topo ---------- */
+function topo(){
+  const hoje=fmt(new Date().toISOString(),{year:"numeric",month:"2-digit",day:"2-digit"}).split("/").reverse().join("-");
+  const fases=[["Play-In","2026-10-15","2026-10-18","15–18/out · Los Angeles"],["Fase Suíça","2026-10-23","2026-10-31","23–31/out · Allen, Texas"],["Quartas","2026-11-03","2026-11-06","3–6/nov"],["Semis","2026-11-07","2026-11-08","7–8/nov"],["Final","2026-11-14","2026-11-14","14/nov · Nova York"]];
+  $("#fases").innerHTML=fases.map(([n,a,b,t])=>`<span class="${hoje>=a&&hoje<=b?"agora":""}"><b>${n}</b> ${t}</span>`).join("");
+  $("#atualizado").innerHTML=`Dados de ${dataHora(W.atualizado)} (Brasília)<br>Patch ${esc(JOGOS[0]?.patch||"–")}`;
+  const fut=PARTIDAS.filter(p=>p.estado!=="completed").slice(0,16);
+  $("#proximos").innerHTML=fut.length?fut.map((p,i)=>{const [a,b]=p.times;const tbd=a.codigo==="TBD";
+    return `<button class="prox ${i===0?"primeiro":""}" data-partida="${p.id}"><div class="quando"><span>${dataHora(p.inicio)}</span><span>${rotuloFase(p,true)}</span></div>
+      <div class="vs">${tbd?'<span class="vazio"></span><span class="muted" style="font-size:16px">A definir</span>':`${img(logo(a.codigo),"",a.codigo)}${esc(a.codigo)} <span class="muted" style="font-size:14px">×</span> ${esc(b.codigo)}${img(logo(b.codigo),"",b.codigo)}`}</div>
+      ${i===0?`<div class="contagem" data-contagem="${p.inicio}"></div>`:""}</button>`}).join(""):'<span class="muted">O torneio terminou.</span>';
+}
+function contagens(){
+  document.querySelectorAll("[data-contagem]").forEach(el=>{
+    const ms=new Date(el.dataset.contagem)-Date.now();
+    if(ms<=0){el.textContent="já começou";return}
+    const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
+    el.textContent=(d?d+"d ":"")+String(h).padStart(2,"0")+"h "+String(m).padStart(2,"0")+"m "+String(s).padStart(2,"0")+"s";
+  });
+}
+
+/* ---------- cartões e painéis ---------- */
+function cartao(p,extra=""){
+  const fim=p.estado==="completed",vivo=p.estado==="inProgress";
+  const linha=t=>`<div class="linha ${fim?(t.resultado==="win"?"ganhou":"perdeu"):""}">${t.codigo==="TBD"?'<span class="vazio"></span>':img(logo(t.codigo),"",t.codigo)}<span class="nm">${t.codigo==="TBD"?'<span class="muted">A definir</span>':esc(nomeT(t.codigo))}</span><span class="pl">${fim||vivo?(t.vitorias??0):""}</span></div>`;
+  const tag=fim?'<span class="tag fim">Encerrado</span>':vivo?'<span class="tag vivo">Ao vivo</span>':`<span class="tag">MD${p.melhorDe}</span>`;
+  return `<button class="conf" data-partida="${p.id}"><div class="meta"><span>${dataHora(p.inicio)}</span>${tag}</div>${linha(p.times[0])}${linha(p.times[1])}${extra}</button>`;
+}
+function painelPlayin(){
+  const g=i=>PLAYIN[i]?`<h4>${NOMES_PLAYIN[i]}</h4>${cartao(PLAYIN[i])}`:"";
+  $("#p-playin").innerHTML=`<p class="nota" style="margin:0 0 16px">Quatro times em dupla eliminação, todas as séries em melhor de 5. Só o campeão do Play-In avançou para a Fase Suíça. Clique numa série para ver os jogos, os números de cada jogador e assistir ao jogo narrado.</p>
+  <div class="playin"><div class="bloco">${g(0)}${g(1)}</div><div class="bloco">${g(2)}${g(3)}</div><div class="bloco">${g(4)}${g(5)}</div></div>`;
+}
+function painelSuica(){
+  const datas=r=>{const d=[...new Set(r.map(p=>fmt(p.inicio,{day:"2-digit",month:"2-digit"})))];return d.length>1?d[0].slice(0,2)+" a "+d[d.length-1]:d[0]};
+  const grupos=["Todos com 0-0","Grupos 1-0 e 0-1","Grupos 2-0, 1-1 e 0-2","Grupos 2-1 e 1-2","Grupo 2-2"];
+  const cols=RODADAS.map((r,i)=>`<div class="rodada"><h3>Rodada ${i+1} <small>${datas(r)}</small></h3><div class="grupo-rec">${grupos[i]}</div><div class="lista">${r.map(p=>{
+      let rec="";if(p.times[0].codigo!=="TBD"&&i>0){const ra=recordeSuica(p.times[0].codigo,p.inicio);rec=`<div class="grupo-rec">grupo ${ra[0]}-${ra[1]}</div>`}
+      return cartao(p,rec)}).join("")}</div></div>`).join("");
+  const cods=[...new Set(SUICA.flatMap(p=>p.times.map(t=>t.codigo)).filter(c=>c!=="TBD"))];
+  const tab=cods.map(c=>({c,r:recordeSuica(c)})).sort((x,y)=>(y.r[0]-y.r[1])-(x.r[0]-x.r[1])||nomeT(x.c).localeCompare(nomeT(y.c)));
+  $("#p-suica").innerHTML=`<p class="nota" style="margin:0 0 16px">16 times. Três vitórias classificam para o mata-mata e três derrotas eliminam. Séries que valem vaga ou eliminação são em melhor de 3 e as demais em melhor de 1. Depois de cada rodada há um sorteio entre times com a mesma campanha, por isso os confrontos seguintes aparecem como "a definir".</p>
+  <div class="suica">${cols}</div>
+  <h3 style="margin-top:26px;font-size:22px;text-transform:uppercase">Campanhas na Suíça</h3>
+  <div class="classif">${tab.map(({c,r})=>`<button class="t" data-time="${c}">${img(logo(c),"",c)}<b>${esc(nomeT(c))}</b><span class="num">${r[0]}-${r[1]}</span>${r[0]>=3?'<span class="pill ok">Classificado</span>':r[1]>=3?'<span class="pill fora">Eliminado</span>':'<span class="pill jog">Na disputa</span>'}</button>`).join("")}</div>`;
+}
+function painelMata(){
+  const c=i=>MATA[i]?cartao(MATA[i]):"";
+  $("#p-matamata").innerHTML=`<p class="nota" style="margin:0 0 16px">Os oito classificados da Fase Suíça em eliminação simples, tudo em melhor de 5. Quartas e semis em Allen, no Texas, e a final no Barclays Center, em Nova York.</p>
+  <div class="chave"><div class="col"><h3>Quartas</h3>${c(0)}${c(1)}${c(2)}${c(3)}</div><div class="col"><h3>Semifinais</h3>${c(4)}${c(5)}</div><div class="col final-dest"><h3>Final · 14/nov</h3>${c(6)}</div></div>`;
+}
+function painelTimes(){
+  const naSuica=c=>SUICA.some(p=>p.times.some(t=>t.codigo===c));
+  const cods=Object.keys(TIMES).sort((a,b)=>naSuica(b)-naSuica(a)||nomeT(a).localeCompare(nomeT(b)));
+  $("#p-times").innerHTML=`<div class="grade-times">${cods.map(c=>`<button class="cartao-time" data-time="${c}">${img(logo(c),"",c)}<b>${esc(c)}</b><small>${esc(nomeT(c))} · ${esc(TIMES[c].liga||"")}${naSuica(c)?"":" · caiu no Play-In"}</small></button>`).join("")}</div>`;
+}
+
+/* ---------- folha ---------- */
+const folha=$("#folha"),folhaIn=$("#folha-in");
+let pararPlayer=null;
+const parar=()=>{if(pararPlayer){pararPlayer();pararPlayer=null}try{speechSynthesis.cancel()}catch(_){}};
+// Pilha de telas da folha: abrir um jogador de dentro de um confronto permite voltar ao confronto.
+let pilha=[],atual=null;
+function navegar(fn){if(folha.open&&atual)pilha.push(atual);atual=fn;fn()}
+function abrirFolha(html){parar();folhaIn.innerHTML=`<div class="barra-folha">${pilha.length?'<button class="voltar" id="voltar">‹ Voltar</button>':"<span></span>"}<button class="fechar" aria-label="Fechar" id="fechar">×</button></div>`+html;if(!folha.open)folha.showModal();folha.scrollTop=0;
+  $("#fechar").onclick=()=>folha.close();const v=$("#voltar");if(v)v.onclick=()=>{atual=pilha.pop();atual()}}
+folha.addEventListener("click",e=>{if(e.target===folha)folha.close()});
+folha.addEventListener("close",()=>{parar();pilha=[];atual=null});
+
+function placarao(p){
+  const [a,b]=p.times;const temPlacar=p.estado==="completed"||p.estado==="inProgress";
+  const lado=(t,dir)=>`<div class="lado ${dir?"dir":""}">${dir?"":img(logo(t.codigo),"",t.codigo)}<div style="min-width:0"><h2>${t.codigo==="TBD"?"A definir":esc(nomeT(t.codigo))}</h2><div class="muted" style="font-size:13px">${esc(TIMES[t.codigo]?.liga||"")}</div></div>${dir?img(logo(t.codigo),"",t.codigo):""}</div>`;
+  return `<div class="eyebrow">${rotuloFase(p)} · melhor de ${p.melhorDe}</div>
+  <div class="placarao">${lado(a)}<div class="centro">${temPlacar?`<div class="pts">${a.vitorias??0}<span class="x">×</span>${b.vitorias??0}</div>`:`<div class="pts" style="font-size:30px;color:var(--muted)">×</div>`}<div class="muted" style="font-size:12.5px">${dataHora(p.inicio)}</div></div>${lado(b,true)}</div>`;
+}
+function abrirPartida(id,k0=0){
+  const p=PID[id];if(!p)return;
+  const js=jogosDe(id);
+  if(!js.length){abrirFolha(placarao(p)+previa(p));ligarPrevia(p);return}
+  abrirFolha(placarao(p)+`<div class="sub-abas" id="sub">${js.map((j,i)=>`<button data-j="${i}" aria-pressed="false">Jogo ${j.numero}</button>`).join("")}<button data-j="resumo" aria-pressed="false">Resumo da série</button></div><div id="conteudo-jogo"></div>`);
+  const mostra=k=>{document.querySelectorAll("#sub button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.j===String(k)));parar();atual=()=>abrirPartida(id,k);
+    $("#conteudo-jogo").innerHTML=k==="resumo"?resumoSerie(p,js):viewJogo(js[k]);if(k!=="resumo")ligarJogo(js[k])};
+  document.querySelectorAll("#sub button").forEach(b=>b.onclick=()=>mostra(b.dataset.j==="resumo"?"resumo":+b.dataset.j));
+  mostra(k0==="resumo"||js[k0]?k0:0);
+}
+
+/* ---------- jogo encerrado ---------- */
+function linhaCab(a,b){return `<div class="l"><span class="v b azul">${esc(a)}</span><span></span><span class="rot"></span><span></span><span class="v verm">${esc(b)}</span></div>`}
+function linhaCmp(a,b,va,vb,rot){
+  const tot=(va||0)+(vb||0)||1;
+  return `<div class="l"><span class="v b">${a}</span><div class="barra esq"><i style="width:${(va||0)/tot*100}%;background:var(--blue)"></i></div><span class="rot">${rot}</span><div class="barra"><i style="width:${(vb||0)/tot*100}%;background:var(--red)"></i></div><span class="v">${b}</span></div>`;
+}
+function viewJogo(j){
+  const T=j.tot,f=x=>x.toLocaleString("pt-BR");
+  const s15=j.s15?(j.s15[1]-j.s15[2]):null;
+  const primeiro=(n,e)=>`<div class="l"><span class="v b azul">${e?.lado==="blue"?"✓ "+mmss(e.s):""}</span><span></span><span class="rot">${n}</span><span></span><span class="v verm">${e?.lado==="red"?mmss(e.s)+" ✓":""}</span></div>`;
+  return `<button class="botao-video" id="ver-video"><span class="play"></span><span><b>Assistir ao jogo narrado</b><span>Os principais lances dos ${min(j.duracao)} minutos, um atrás do outro, no mapa e com narração</span></span></button>
+  <div id="area-video"></div>
+  <div class="bloco-f"><h3>Jogo ${j.numero} <small>${mini(j.venc)} vitória de ${esc(nomeT(j.venc))} em ${mmss(j.duracao)} · patch ${esc(j.patch)}</small></h3>
+    <div class="cmp">${linhaCab(j.az+" · lado azul",j.vm+" · lado vermelho")}
+    ${linhaCmp(T.blue.abates,T.red.abates,T.blue.abates,T.red.abates,"Abates")}
+    ${linhaCmp((T.blue.ouro/1000).toFixed(1)+"k",(T.red.ouro/1000).toFixed(1)+"k",T.blue.ouro,T.red.ouro,"Ouro")}
+    ${linhaCmp(T.blue.torres,T.red.torres,T.blue.torres,T.red.torres,"Torres")}
+    ${linhaCmp(T.blue.dragoes,T.red.dragoes,T.blue.dragoes,T.red.dragoes,"Dragões")}
+    ${linhaCmp(T.blue.barons,T.red.barons,T.blue.barons,T.red.barons,"Barões")}
+    ${j.lp?linhaCmp(j.lp.arautos.blue??0,j.lp.arautos.red??0,j.lp.arautos.blue??0,j.lp.arautos.red??0,"Arautos")+linhaCmp(j.lp.larvas.blue??0,j.lp.larvas.red??0,j.lp.larvas.blue??0,j.lp.larvas.red??0,"Vastilarvas"):""}
+    ${s15!=null?linhaCmp(s15>0?mil(s15):"",s15<0?mil(-s15):"",Math.max(0,s15),Math.max(0,-s15),"Vantagem aos 15 min"):""}
+    ${primeiro("First blood",j.fb)}${primeiro("Primeiro dragão",j.fd)}${primeiro("Primeira torre",j.ft)}${primeiro("Primeiro Barão",j.fbar)}</div></div>
+  <div class="bloco-f"><h3>Bans</h3>${j.lp?["blue","red"].map(l=>`<div class="linha-bans"><b class="${l==="blue"?"azul":"verm"}">${esc(j.lados[l])}</b><div class="bans">${j.lp.bans[l].map(b=>`<span title="${esc(camp(b).nome)}">${img(camp(b).icone,"",camp(b).nome)}</span>`).join("")||'<span class="muted">sem bans</span>'}</div></div>`).join(""):'<p class="muted" style="margin:0">Os bans deste jogo ainda não foram registrados na Leaguepedia.</p>'}</div>
+  <div class="bloco-f"><h3>Ouro ao longo do jogo <small>diferença entre os times; acima da linha, vantagem de ${esc(j.az)}</small></h3>${graficoOuro(j,j.duracao,false)}</div>
+  <div class="bloco-f"><h3>Jogadores <small>clique num jogador para ver os números dele · Ouro@15: diferença para o rival de rota aos 15 min</small></h3>${tabelaJogadores(j)}</div>`;
+}
+function graficoOuro(j,ate,escuro){
+  const L=640,H=150,pad=34;const S=j.serie;const dmax=Math.max(2000,...S.map(x=>Math.abs(x[1]-x[2])));const lim=Math.ceil(dmax/2000)*2000;
+  const X=s=>pad+(s/j.duracao)*(L-pad-8),Y=d=>H/2-(d/lim)*(H/2-14);
+  const pts=S.filter(x=>x[0]<=ate).map(x=>`${X(x[0]).toFixed(1)},${Y(x[1]-x[2]).toFixed(1)}`).join(" ");
+  const fg=escuro?"#e9edf2":"var(--fg)",az=escuro?"#4ea3f0":"var(--blue)",vm=escuro?"#f0675c":"var(--red)";
+  const ticks=[];for(let m=0;m*60<=j.duracao;m+=5)ticks.push(m);
+  const id="g"+j.id+(escuro?"e":"");
+  return `<svg viewBox="0 0 ${L} ${H}" style="width:100%;height:auto;display:block" role="img" aria-label="Diferença de ouro entre os times">
+    ${ticks.map(m=>`<line x1="${X(m*60)}" x2="${X(m*60)}" y1="8" y2="${H-16}" stroke="${fg}" stroke-opacity=".1"/><text x="${X(m*60)}" y="${H-3}" font-size="10" text-anchor="middle" fill="${fg}" fill-opacity=".6" font-family="JetBrains Mono,monospace">${m}'</text>`).join("")}
+    <line x1="${pad}" x2="${L-8}" y1="${H/2}" y2="${H/2}" stroke="${fg}" stroke-opacity=".35"/>
+    <text x="0" y="${Y(lim)+4}" font-size="10" fill="${az}" font-family="JetBrains Mono,monospace">+${lim/1000}k</text>
+    <text x="0" y="${Y(-lim)+4}" font-size="10" fill="${vm}" font-family="JetBrains Mono,monospace">+${lim/1000}k</text>
+    <clipPath id="${id}a"><rect x="0" y="0" width="${L}" height="${H/2}"/></clipPath><clipPath id="${id}b"><rect x="0" y="${H/2}" width="${L}" height="${H/2}"/></clipPath>
+    <polyline points="${pts}" fill="none" stroke="${az}" stroke-width="2.2" stroke-linejoin="round" clip-path="url(#${id}a)"/>
+    <polyline points="${pts}" fill="none" stroke="${vm}" stroke-width="2.2" stroke-linejoin="round" clip-path="url(#${id}b)"/>
+  </svg>`;
+}
+function tabelaJogadores(j){
+  const linha=x=>{const c=camp(x.campeao);const foto=FOTO[x.jogadorId];
+    const dpm=x.danoTotal!=null?Math.round(x.danoTotal/(j.duracao/60)):null;
+    return `<tr class="clic ${x.pid===5?"sep":""}" data-jogador="${x.jogadorId}" data-jogo="${j.id}" tabindex="0"><td><div class="jog">${foto?`<img class="foto" src="${foto}" alt="">`:`<span class="foto"></span>`}${img(c.icone,"camp",c.nome)}<span><b class="${x.lado==="blue"?"azul":"verm"}">${esc(x.nick)}</b><small>${esc(c.nome)} · ${ROTA_PT[x.rota]||x.rota}</small></span></div></td>
+    <td>${x.k}/${x.d}/${x.a}</td><td>${n1(kda(x))}</td><td>${x.cs}</td><td>${n1(x.cs/(j.duracao/60))}</td><td>${(x.ouro/1000).toFixed(1)}k</td>
+    <td class="${x.gd15>0?"pos":x.gd15<0?"neg":""}">${sinal(x.gd15)}</td><td>${dpm??"–"}</td><td>${pct(x.dano)}</td><td>${pct(x.kp)}</td><td>${x.visao??x.wards??"–"}</td>
+    <td><div class="itens">${(x.itens||[]).filter(i=>W.itens[i]).map(i=>`<img src="${W.itens[i].icone}" alt="${esc(W.itens[i].nome)}" title="${esc(W.itens[i].nome)}">`).join("")}</div></td></tr>`};
+  return `<div class="tab-wrap"><table class="est"><thead><tr><th>Jogador</th><th>K/D/A</th><th>KDA</th><th>CS</th><th>CS/min</th><th>Ouro</th><th>Ouro@15</th><th title="Dano a campeões por minuto">DPM</th><th title="Parcela do dano a campeões do time">% dano</th><th title="Participação em abates">KP</th><th title="Placar de visão (ou sentinelas colocadas quando a Leaguepedia não tem o jogo)">Visão</th><th>Itens finais</th></tr></thead><tbody>${j.jog.map(linha).join("")}</tbody></table></div>`;
+}
+function resumoSerie(p,js){
+  const [A,B]=p.times.map(t=>t.codigo);
+  const soma=(c,f)=>js.reduce((s,j)=>s+f(j,ladoDe(j,c)),0);
+  const linhas=[["Abates",(j,l)=>j.tot[l].abates],["Torres",(j,l)=>j.tot[l].torres],["Dragões",(j,l)=>j.tot[l].dragoes],["Barões",(j,l)=>j.tot[l].barons],["First bloods",(j,l)=>j.fb?.lado===l?1:0]];
+  const ac={};for(const j of js)for(const x of j.jog){const y=ac[x.jogadorId]=ac[x.jogadorId]||{...x,k:0,d:0,a:0,camps:[]};y.k+=x.k;y.d+=x.d;y.a+=x.a;y.camps.push(x.campeao)}
+  const venc=(p.times.find(t=>t.resultado==="win")||{}).codigo;
+  const mvp=Object.values(ac).filter(x=>x.time===venc).sort((a,b)=>kda(b)-kda(a))[0];
+  return `<div class="bloco-f"><h3>Série</h3><div class="cmp">${linhaCab(A,B)}${linhas.map(([n,f])=>{const a=soma(A,f),b=soma(B,f);return linhaCmp(a,b,a,b,n)}).join("")}</div></div>
+   ${mvp?`<div class="bloco-f"><h3>Destaque da série <small>melhor KDA do vencedor</small></h3><div class="jog clic" data-jogador="${mvp.jogadorId}">${FOTO[mvp.jogadorId]?`<img class="foto" style="width:64px;height:64px" src="${FOTO[mvp.jogadorId]}" alt="">`:""}<span><b style="font-family:var(--display);font-size:24px">${esc(mvp.nick)}</b><small style="font-size:13px">${ROTA_PT[mvp.rota]} do ${esc(nomeT(mvp.time))} · ${mvp.k}/${mvp.d}/${mvp.a} na série · KDA ${n1(kda(mvp))} · ${mvp.camps.map(c=>esc(camp(c).nome)).join(", ")}</small></span></div></div>`:""}
+   <div class="bloco-f"><h3>Jogo a jogo</h3><div class="campanha">${js.map(j=>`<div class="r"><span class="res v">${j.numero}</span><span>${mini(j.venc)} <b>${esc(nomeT(j.venc))}</b> venceu em ${mmss(j.duracao)} · abates ${j.tot.blue.abates} × ${j.tot.red.abates}</span><span class="muted num" style="font-size:12px">${esc(j.az)} no azul</span></div>`).join("")}</div></div>`;
+}
+
+/* ---------- narração de um jogo ---------- */
+function roteiroJogo(j){
+  const jg=pid=>j.jog[pid-1];const T=l=>nomeT(j.lados[l]);const R=[];const add=(s,txt,tipo,ev)=>R.push({s,txt,tipo,ev});
+  add(0,`Jogo ${j.numero}. ${T("blue")} começa do lado azul e ${T("red")} do lado vermelho.`,"inicio");
+  const fb=j.fb;
+  if(fb){const k=jg(fb.por[0]),v=jg(fb.vitimas[0]);
+    add(fb.s,k&&v?`${k.nick}, de ${camp(k.campeao).nome}, consegue o first blood para ${T(fb.lado)} aos ${min(fb.s)} minutos, em cima de ${v.nick}${v.rota==="jungle"?" na selva":" na "+ROTA_LANE[v.rota]}.`:`${T(fb.lado)} consegue o first blood aos ${min(fb.s)} minutos.`,"abate",fb)}
+  if(j.fd){const mas=fb&&fb.lado!==j.fd.lado?"Mas o":"O";add(j.fd.s,`${mas} primeiro dragão, ${DRAG[j.fd.dragao]?"de "+DRAG[j.fd.dragao][0]:""}, fica com ${T(j.fd.lado)} aos ${min(j.fd.s)} minutos.`,"dragao",j.fd)}
+  if(j.ft)add(j.ft.s,`${T(j.ft.lado)} derruba a primeira torre do jogo aos ${min(j.ft.s)} minutos.`,"torre",j.ft);
+  const ab=j.ev.filter(e=>e.tipo==="abate");const lutas=[];let cur=null;
+  for(const e of ab){if(cur&&e.s-cur.fim<=30){cur.fim=e.s;cur.ev.push(e)}else{cur={ini:e.s,fim:e.s,ev:[e]};lutas.push(cur)}}
+  for(const l of lutas){const b=l.ev.filter(e=>e.lado==="blue").reduce((s,e)=>s+e.n,0),r=l.ev.filter(e=>e.lado==="red").reduce((s,e)=>s+e.n,0);
+    if(b+r<3||l.ev.includes(fb))continue;
+    const v=b>r?"blue":r>b?"red":null;const por={};l.ev.forEach(e=>e.por.forEach(p=>por[p]=(por[p]||0)+1));
+    const top=Object.entries(por).sort((a,b)=>b[1]-a[1])[0];const heroi=top&&top[1]>=3?jg(+top[0]):null;
+    add(l.ini,v?`${b+r>=5?"Luta grande":"Briga"} aos ${min(l.ini)} minutos: ${T(v)} leva a melhor, ${Math.max(b,r)} abates a ${Math.min(b,r)}.${heroi?` ${heroi.nick} faz ${top[1]} abates na luta.`:""}`:`Troca de abates aos ${min(l.ini)} minutos, ${b} para cada lado.`,"luta",{...l.ev[0],lado:v||l.ev[0].lado})}
+  for(const l of ["blue","red"]){const ds=j.ev.filter(e=>e.tipo==="dragao"&&e.lado===l&&e.dragao!=="elder");if(ds.length>=4)add(ds[3].s,`${T(l)} garante a alma do dragão aos ${min(ds[3].s)} minutos.`,"dragao",ds[3])}
+  j.ev.filter(e=>e.tipo==="dragao"&&e.dragao==="elder").forEach(e=>add(e.s,`Dragão Ancião para ${T(e.lado)} aos ${min(e.s)} minutos.`,"dragao",e));
+  j.ev.filter(e=>e.tipo==="barao").forEach((e,i)=>add(e.s,`${T(e.lado)} ${i?"pega mais um":"garante o"} Barão aos ${min(e.s)} minutos.`,"barao",e));
+  for(const l of ["blue","red"]){const e=j.ev.find(e=>e.tipo==="inibidor"&&e.lado===l);if(e)add(e.s,`${T(l)} quebra o primeiro inibidor aos ${min(e.s)} minutos e abre a base adversária.`,"inibidor",e)}
+  for(const m of [15]){if(m*60>j.duracao-90)break;const x=j.serie.reduce((a,b)=>Math.abs(b[0]-m*60)<Math.abs(a[0]-m*60)?b:a);const d=x[1]-x[2];
+    add(m*60,Math.abs(d)<800?`Aos ${m} minutos, o ouro está praticamente empatado.`:`Aos ${m} minutos, ${T(d>0?"blue":"red")} lidera com ${(Math.abs(d)/1000).toFixed(1).replace(".",",")} mil de ouro de vantagem.`,"ouro")}
+  let ant=0;for(const x of j.serie){const d=x[1]-x[2];if(x[0]>600&&ant&&Math.sign(d)!==Math.sign(ant)&&Math.abs(ant)>2500&&Math.abs(d)>500){add(x[0],`Virada! ${T(d>0?"blue":"red")} passa à frente no ouro aos ${min(x[0])} minutos.`,"ouro");ant=d;continue}if(Math.abs(d)>Math.abs(ant)||Math.sign(d)!==Math.sign(ant))ant=d}
+  const vl=j.vencedor;const melhor=j.jog.filter(x=>x.lado===vl).sort((a,b)=>kda(b)-kda(a))[0];
+  add(j.duracao,`Fim de jogo aos ${min(j.duracao)} minutos: vitória de ${T(vl)}, com ${j.tot[vl].abates} abates contra ${j.tot[outro(vl)].abates}.${melhor?` Destaque para ${melhor.nick}, de ${camp(melhor.campeao).nome}, com ${melhor.k}, ${melhor.d} e ${melhor.a}.`:""}`,"fim",{lado:vl});
+  return R.sort((a,b)=>a.s-b.s);
+}
+
+/* ---------- voz ---------- */
+let vozLigada=true;
+// Vozes "Natural"/"Online" (Edge) e as do Google (Chrome) soam bem melhor que as vozes locais padrão.
+function notaVoz(v){const n=v.name;let s=0;if(/natural|neural|online/i.test(n))s+=50;if(/google/i.test(n))s+=30;if(/francisca|thalita|antonio|luciana|felipe|camila|vitoria|donato/i.test(n))s+=15;if(/pt[-_]BR/i.test(v.lang))s+=10;if(!v.localService)s+=5;return s}
+function vozesPt(){try{return speechSynthesis.getVoices().filter(x=>/^pt/i.test(x.lang)).sort((a,b)=>notaVoz(b)-notaVoz(a))}catch(_){return []}}
+function vozPt(){const vs=vozesPt();let nome=null;try{nome=localStorage.getItem("voz")}catch(_){}return vs.find(v=>v.name===nome)||vs[0]||null}
+function seletorVoz(){const vs=vozesPt();if(vs.length<2)return "";const atual=vozPt();
+  return `<select data-escolhe-voz aria-label="Voz da narração">${vs.map(v=>`<option ${v===atual?"selected":""} value="${esc(v.name)}">${esc(v.name.replace(/^(Microsoft|Google) /,"").replace(/ - .*| Online.*| \(.*\)/,"")+(/natural|online/i.test(v.name)?" (natural)":""))}</option>`).join("")}</select>`}
+function ligarSeletorVoz(raiz){const s=raiz.querySelector("[data-escolhe-voz]");if(s)s.onchange=()=>{try{localStorage.setItem("voz",s.value)}catch(_){}}}
+try{speechSynthesis.addEventListener("voiceschanged",()=>document.querySelectorAll("[data-lugar-voz]").forEach(el=>{el.innerHTML=seletorVoz();ligarSeletorVoz(el)}))}catch(_){}
+function falar(txt,vel){
+  return new Promise(res=>{
+    const espera=()=>setTimeout(res,Math.min(4200,1200+txt.length*30)/vel);
+    if(!vozLigada||!("speechSynthesis" in window)){espera();return}
+    try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);u.lang="pt-BR";const v=vozPt();if(v)u.voice=v;u.rate=Math.min(1.5,(/google/i.test(v?.name||"")?1.1:1.04)*Math.sqrt(vel));u.pitch=1;
+      let feito=false;const t0=Date.now(),minimo=Math.min(4200,1200+txt.length*30)/vel;const ok=()=>{if(!feito){feito=true;setTimeout(res,Math.max(0,minimo*.5-(Date.now()-t0)))}};u.onend=ok;u.onerror=()=>{if(!feito){feito=true;setTimeout(res,Math.max(0,minimo-(Date.now()-t0)))}};setTimeout(ok,3000+txt.length*85);speechSynthesis.speak(u)}catch(_){espera()}
+  });
+}
+
+/* ---------- mapa ---------- */
+const imgCache={};function im(src){if(!src)return null;if(!imgCache[src]){const i=new Image();i.src=src;imgCache[src]=i}return imgCache[src]}
+const POS={top:[[.12,.32],[.15,.15],[.32,.12]],mid:[[.42,.58],[.5,.5],[.58,.42]],bottom:[[.68,.88],[.85,.85],[.88,.68]],jungle:[[.28,.5],[.47,.72],[.53,.28],[.72,.5],[.34,.64],[.66,.36]]};
+POS.support=POS.bottom;const DRAGAO=[.67,.69],BARAO=[.33,.31];
+function posEvento(e,j,seed){
+  const r=k=>{const x=Math.sin(seed*91.7+k*47.3)*43758.5453;return x-Math.floor(x)};
+  let b;
+  if(e.tipo==="dragao")b=DRAGAO;else if(e.tipo==="barao")b=BARAO;
+  else if(e.tipo==="abate"){const v=j.jog[(e.vitimas[0]||e.por[0]||1)-1];const op=POS[v?.rota]||POS.mid;b=op[Math.floor(r(1)*op.length)]}
+  else if(e.tipo==="torre"||e.tipo==="inibidor"){const d=e.tipo==="inibidor"?.07:.18+r(3)*.12;b=e.lado==="blue"?[.9-d*(r(2)<.5?1:.3),.1+d*(r(2)<.5?.3:1)]:[.1+d*(r(2)<.5?1:.3),.9-d*(r(2)<.5?.3:1)]}
+  else b=[.5,.5];
+  return [b[0]+(r(4)-.5)*.05,b[1]+(r(5)-.5)*.05];
+}
+function desenharMapa(cv,j,t,marcas){
+  const ctx=cv.getContext("2d");const S=cv.width,c=x=>x*S;
+  ctx.fillStyle="#13221a";ctx.fillRect(0,0,S,S);
+  ctx.fillStyle="#1a3123";[[.3,.56,.15],[.53,.76,.13],[.44,.26,.15],[.74,.47,.13]].forEach(([x,y,r])=>{ctx.beginPath();ctx.arc(c(x),c(y),c(r),0,7);ctx.fill()});
+  ctx.strokeStyle="#1d4660";ctx.lineWidth=c(.07);ctx.lineCap="round";ctx.beginPath();ctx.moveTo(c(.06),c(.06));ctx.quadraticCurveTo(c(.5),c(.5),c(.94),c(.94));ctx.stroke();
+  ctx.strokeStyle="#3e4d38";ctx.lineWidth=c(.035);ctx.lineJoin="round";ctx.beginPath();
+  ctx.moveTo(c(.12),c(.88));ctx.lineTo(c(.12),c(.12));ctx.lineTo(c(.88),c(.12));
+  ctx.moveTo(c(.12),c(.88));ctx.lineTo(c(.88),c(.88));ctx.lineTo(c(.88),c(.12));
+  ctx.moveTo(c(.15),c(.85));ctx.lineTo(c(.85),c(.15));ctx.stroke();
+  [["#6b5a2c",DRAGAO],["#4b3a66",BARAO]].forEach(([cor,[x,y]])=>{ctx.fillStyle=cor;ctx.beginPath();ctx.arc(c(x),c(y),c(.045),0,7);ctx.fill()});
+  [["#4ea3f0",[.1,.9]],["#f0675c",[.9,.1]]].forEach(([cor,[x,y]])=>{ctx.fillStyle=cor;ctx.globalAlpha=.22;ctx.beginPath();ctx.arc(c(x),c(y),c(.14),0,7);ctx.fill();ctx.globalAlpha=1;ctx.beginPath();ctx.arc(c(x),c(y),c(.035),0,7);ctx.fill()});
+  ctx.textAlign="center";
+  for(const m of marcas){const idade=t-m.s;if(idade<0||idade>80)continue;const a=1-idade/80;const [x,y]=m.p;const cor=m.e.lado==="blue"?"#4ea3f0":"#f0675c";
+    ctx.globalAlpha=Math.max(.15,a);
+    if(m.e.tipo==="abate"){const v=j.jog[(m.e.vitimas[0]||1)-1],k=j.jog[(m.e.por[0]||1)-1];const iv=im(camp(v?.campeao).icone),ik=im(camp(k?.campeao).icone);const R=c(.045);
+      ctx.strokeStyle=cor;ctx.lineWidth=3;ctx.beginPath();ctx.arc(c(x),c(y),R+3+(PARADO?0:(1-a)*16),0,7);ctx.stroke();
+      if(iv&&iv.complete&&iv.naturalWidth){ctx.save();ctx.beginPath();ctx.arc(c(x),c(y),R,0,7);ctx.clip();ctx.filter="grayscale(1) brightness(.75)";ctx.drawImage(iv,c(x)-R,c(y)-R,R*2,R*2);ctx.restore()}
+      ctx.strokeStyle="#fff";ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(c(x)-R*.45,c(y)-R*.45);ctx.lineTo(c(x)+R*.45,c(y)+R*.45);ctx.moveTo(c(x)+R*.45,c(y)-R*.45);ctx.lineTo(c(x)-R*.45,c(y)+R*.45);ctx.stroke();
+      if(ik&&ik.complete&&ik.naturalWidth){const r2=R*.62,kx=c(x)+R*.95,ky=c(y)-R*.95;ctx.save();ctx.beginPath();ctx.arc(kx,ky,r2,0,7);ctx.clip();ctx.drawImage(ik,kx-r2,ky-r2,r2*2,r2*2);ctx.restore();ctx.strokeStyle=cor;ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(kx,ky,r2,0,7);ctx.stroke()}
+      if(m.e.n>1){ctx.fillStyle="#fff";ctx.font=`700 ${Math.round(S*.04)}px Barlow Condensed,sans-serif`;ctx.fillText("×"+m.e.n,c(x),c(y)+R+S*.04)}
+    } else {
+      const R=c(m.e.tipo==="barao"?.055:.042);ctx.fillStyle=m.e.tipo==="dragao"?(DRAG[m.e.dragao]?.[1]||cor):m.e.tipo==="barao"?"#a77ce8":cor;
+      ctx.beginPath();if(m.e.tipo==="torre"||m.e.tipo==="inibidor")ctx.rect(c(x)-R*.55,c(y)-R*.55,R*1.1,R*1.1);else ctx.arc(c(x),c(y),R*.7,0,7);ctx.fill();
+      ctx.strokeStyle=cor;ctx.lineWidth=3;ctx.beginPath();ctx.arc(c(x),c(y),R+(PARADO?0:(1-a)*18),0,7);ctx.stroke();
+      ctx.fillStyle="#fff";ctx.font=`700 ${Math.round(S*.032)}px Barlow Condensed,sans-serif`;ctx.fillText({dragao:DRAG[m.e.dragao]?.[0]||"Dragão",barao:"Barão",torre:"Torre",inibidor:"Inibidor"}[m.e.tipo]||"",c(x),c(y)+R+S*.04);
+    }
+    ctx.globalAlpha=1;
+  }
+  ctx.textAlign="left";
+}
+
+/* ---------- reprodutor de jogo (o "vídeo") ---------- */
+function playerJogo(area,j){
+  // Mostra só os momentos narrados: avança rápido pelo mapa até o próximo lance e narra, sem trechos parados.
+  const rot=roteiroJogo(j);
+  const marcas=j.ev.map((e,i)=>({s:e.s,e,p:posEvento(e,j,i+1)}));
+  const cor=e=>e?.lado==="red"?"#f0675c":e?.lado==="blue"?"#4ea3f0":"#d9b46a";
+  area.innerHTML=`<div class="player"><div class="tela"><canvas class="mapa" width="720" height="720" aria-label="Mapa com os lances do jogo"></canvas>
+    <div class="lado-d"><div class="hud"><div class="t">${img(logo(j.az),"",j.az)}${esc(j.az)}</div><div class="clock" data-clock>0:00</div><div class="t dir">${esc(j.vm)}${img(logo(j.vm),"",j.vm)}</div></div>
+      <div style="display:grid;gap:4px"><div class="linha-hud"><span>Abates <b data-k="blue">0</b> · Torres <b data-t="blue">0</b></span><span class="dir">Torres <b data-t="red">0</b> · Abates <b data-k="red">0</b></span></div>
+      <div class="linha-hud"><span>Ouro <b data-g="blue">2,5k</b></span><span class="dir">Ouro <b data-g="red">2,5k</b></span></div>
+      <div class="linha-hud"><div class="drags" data-d="blue"></div><div class="drags dir" data-d="red"></div></div></div>
+      <div data-graf></div>
+      <div class="legenda" data-leg aria-live="polite"><small>Lance 1 de ${rot.length}</small>${esc(rot[0].txt)}</div></div></div>
+    <div class="controles"><button data-ant aria-label="Lance anterior">⏮</button><button data-play>▶ Play</button><button data-prox aria-label="Próximo lance">⏭</button>
+      <div class="trilha" data-trilha><div class="base"></div><div class="feito" data-feito></div>${rot.map((r,i)=>`<i class="mk" data-i="${i}" title="${mmss(r.s)}" style="left:calc(${r.s/j.duracao*100}% - 1px);background:${cor(r.ev)}"></i>`).join("")}</div>
+      <button data-voz aria-pressed="${vozLigada}">Voz</button><span data-lugar-voz>${seletorVoz()}</span></div>
+    <div class="controles" style="border:0;padding-top:0"><div class="lista-ev" data-lista>${rot.map((r,i)=>`<button class="momento" data-i="${i}"><span class="num">${mmss(r.s)}</span> ${esc(r.txt)}</button>`).join("")}</div></div></div>`;
+  const cv=area.querySelector("canvas"),q=s=>area.querySelector(s);
+  ligarSeletorVoz(area);
+  let t=0,i=0,tocando=false,token=0,ultGraf=-99,terminou=false;
+  const em=s=>{let a=j.serie[0];for(const x of j.serie){if(x[0]<=s)a=x;else break}return a};
+  function hud(){
+    q("[data-clock]").textContent=mmss(t);
+    const ev=j.ev.filter(e=>e.s<=t);
+    for(const l of ["blue","red"]){
+      q(`[data-k="${l}"]`).textContent=ev.filter(e=>e.tipo==="abate"&&e.lado===l).reduce((s,e)=>s+e.n,0);
+      q(`[data-t="${l}"]`).textContent=ev.filter(e=>e.tipo==="torre"&&e.lado===l).length;
+      q(`[data-d="${l}"]`).innerHTML=ev.filter(e=>e.tipo==="dragao"&&e.lado===l).map(e=>`<i title="${DRAG[e.dragao]?.[0]||e.dragao}" style="background:${DRAG[e.dragao]?.[1]||"#888"}"></i>`).join("")+ev.filter(e=>e.tipo==="barao"&&e.lado===l).map(()=>`<i title="Barão" style="background:#a77ce8;border-radius:50%"></i>`).join("");
+    }
+    const x=em(t);q('[data-g="blue"]').textContent=(x[1]/1000).toFixed(1).replace(".",",")+"k";q('[data-g="red"]').textContent=(x[2]/1000).toFixed(1).replace(".",",")+"k";
+    q("[data-feito]").style.width=(t/j.duracao*100)+"%";
+    if(Math.abs(t-ultGraf)>=15){q("[data-graf]").innerHTML=graficoOuro(j,t,true);ultGraf=t}
+    desenharMapa(cv,j,t,marcas);
+  }
+  function mostrar(k){const r=rot[k];q("[data-leg]").innerHTML=`<small>${mmss(r.s)} · lance ${k+1} de ${rot.length}</small>${esc(r.txt)}`;
+    area.querySelectorAll(".momento").forEach(b=>b.classList.toggle("atual",+b.dataset.i===k));
+    const b=area.querySelector(`.momento[data-i="${k}"]`);if(b){const l=q("[data-lista]");l.scrollTop=b.offsetTop-l.offsetTop-30}}
+  const espera=ms=>new Promise(r=>setTimeout(r,ms));
+  function avancar(alvo,ms,meu){
+    return new Promise(res=>{const t0=t;if(PARADO||ms<=0||alvo<=t0){t=alvo;hud();res();return}
+      const ini=performance.now();q("[data-clock]").classList.add("rapido");
+      const f=now=>{if(meu!==token){res();return}const p=Math.min(1,(now-ini)/ms);t=t0+(alvo-t0)*(1-Math.pow(1-p,2));hud();
+        if(p<1)requestAnimationFrame(f);else{q("[data-clock]").classList.remove("rapido");res()}};requestAnimationFrame(f)});
+  }
+  function botao(){q("[data-play]").textContent=tocando?"❚❚ Pausar":terminou?"↺ Rever":"▶ Play"}
+  async function tocar(k){
+    const meu=++token;tocando=true;terminou=false;botao();try{speechSynthesis.cancel()}catch(_){}
+    for(i=k;i<rot.length;i++){
+      const r=rot[i];
+      await avancar(r.s,Math.min(1800,Math.max(450,(r.s-t)*6)),meu);if(meu!==token)return;
+      mostrar(i);await falar(r.txt,1);if(meu!==token)return;await espera(350);if(meu!==token)return;
+    }
+    i=rot.length-1;tocando=false;terminou=true;botao();
+  }
+  function pausar(){token++;tocando=false;try{speechSynthesis.cancel()}catch(_){}botao()}
+  function irPara(k){k=Math.max(0,Math.min(rot.length-1,k));token++;if(t>rot[k].s)t=Math.max(0,rot[k].s-20);ultGraf=-99;tocar(k)}
+  q("[data-play]").onclick=()=>{if(tocando)pausar();else if(terminou){t=0;ultGraf=-99;tocar(0)}else tocar(i)};
+  q("[data-ant]").onclick=()=>irPara(i-1);
+  q("[data-prox]").onclick=()=>irPara(i+1);
+  q("[data-trilha]").onclick=e=>{const mk=e.target.closest("[data-i]");let k;if(mk)k=+mk.dataset.i;else{const b=e.currentTarget.getBoundingClientRect();const s=(e.clientX-b.left)/b.width*j.duracao;k=rot.findIndex(r=>r.s>=s);if(k<0)k=rot.length-1}
+    irPara(k)};
+  q("[data-lista]").onclick=e=>{const b=e.target.closest("[data-i]");if(!b)return;irPara(+b.dataset.i)};
+  q("[data-voz]").onclick=e=>{vozLigada=!vozLigada;e.currentTarget.setAttribute("aria-pressed",vozLigada);if(!vozLigada)try{speechSynthesis.cancel()}catch(_){}};
+  hud();
+  j.jog.forEach(x=>{const im_=im(camp(x.campeao).icone);if(im_&&!im_.complete)im_.addEventListener("load",()=>{if(!tocando)desenharMapa(cv,j,t,marcas)})});
+  return ()=>{token++;tocando=false;try{speechSynthesis.cancel()}catch(_){}};
+}
+function ligarJogo(j){
+  const b=$("#ver-video");if(!b)return;
+  b.onclick=()=>{b.hidden=true;pararPlayer=playerJogo($("#area-video"),j);$("#area-video [data-play]").click()};
+}
+
+/* ---------- prévia de confronto futuro ---------- */
+function curiosConfronto(a,b){const k=[a,b].sort().join("|");return (W.curiosidades?.confrontos||[]).find(c=>c.times.join("|")===k)}
+const titulares=c=>(TIMES[c]?.jogadores||[]).filter(p=>p.titular);
+const tagC=c=>c==="inferido"?'<span class="conf-tag">ao que tudo indica</span>':c==="fonte_unica"?'<span class="conf-tag">fonte única</span>':"";
+function topCamps(s,n=8){return s?Object.entries(s.camps).sort((a,b)=>b[1]-a[1]).slice(0,n).map(([k,v])=>`<span class="c">${img(camp(k).icone,"",camp(k).nome)}${esc(camp(k).nome)} <span class="muted num">${v}</span></span>`).join(""):'<span class="muted">Ainda sem jogos neste Worlds.</span>'}
+function previa(p){
+  const [A,B]=p.times.map(t=>t.codigo);
+  if(A==="TBD"||B==="TBD")return `<div class="bloco-f"><h3>Confronto a definir</h3><p style="margin-top:0">${p.fase==="swiss"?"Os times deste jogo saem do sorteio feito ao fim da rodada anterior, entre times com a mesma campanha.":"Os times deste jogo saem dos resultados da fase anterior."} Quando o confronto for definido, esta página mostra a prévia completa.</p>
+    <div class="eyebrow">Começa em</div><div class="relogio" data-contagem="${p.inicio}"></div><p class="muted" style="margin-bottom:0">${fmt(p.inicio,{weekday:"long",day:"numeric",month:"long"})}, ${hora(p.inicio)} (Brasília) · melhor de ${p.melhorDe}</p></div>`;
+  const sa=statsTime(A),sb=statsTime(B),cur=curiosConfronto(A,B);
+  const camp_=c=>{const l=campanha(c);return l.length?`<div class="campanha">${l.map(x=>`<div class="r"><span class="res ${x.venceu?"v":"d"}">${x.venceu?"V":"D"}</span><button class="link" data-partida="${x.p.id}">${x.venceu?"Venceu":"Perdeu para"} ${esc(nomeT(x.adv))} · ${rotuloFase(x.p,true)}</button><span class="num">${x.placar}</span></div>`).join("")}</div>`:`<p class="muted" style="margin:0">Estreia neste jogo.</p>`};
+  const cmpL=(sa||sb)?[["Vitórias","wr",pct],["First blood","pfb",pct],["Primeiro dragão","pfd",pct],["Primeira torre","pft",pct],["Dragões por jogo","dragJ",n1],["Barões por jogo","barJ",n1],["Abates por jogo","abJ",n1],["Vantagem aos 15","gd15m",mil],["Duração média","durM",mmss]].map(([n,k,f])=>{
+      const va=sa?.[k],vb=sb?.[k];const pos=v=>v==null||!sa||!sb?0:k==="gd15m"?Math.max(0,v+4000):v;
+      return linhaCmp(sa?f(va):"–",sb?f(vb):"–",pos(va),pos(vb),n)}).join(""):"";
+  const duelos=ROTAS.map(r=>{
+    const pa=titulares(A).find(x=>x.rota===r),pb=titulares(B).find(x=>x.rota===r);
+    const lado=(pl,dir)=>{if(!pl)return `<div class="p ${dir?"dir":""}"><span class="sem-foto">?</span></div>`;const st=statsJogador(pl.id);
+      return `<div class="p ${dir?"dir":""}" data-jogador="${pl.id}" style="cursor:pointer">${pl.foto?`<img class="f" src="${pl.foto}" alt="${esc(pl.nick)}">`:`<span class="sem-foto">${esc(pl.nick[0])}</span>`}<div style="min-width:0"><b>${esc(pl.nick)}</b><div class="ns">${st?`KDA ${n1(st.kda)} · ${n1(st.csm)} CS/min<br>Ouro@15 ${sinal(st.gd15)} · dano ${pct(st.dano)}`:"sem jogos neste Worlds"}</div></div></div>`};
+    return `<div class="duelo">${lado(pa)}<div class="rota">${ROTA_PT[r]}</div>${lado(pb,true)}</div>`}).join("");
+  const cA=W.curiosidades?.times?.[A],cB=W.curiosidades?.times?.[B];
+  const fatos=[...(cur?.curiosidades||[]),...(cA?.curiosidades||[]).slice(0,2),...(cB?.curiosidades||[]).slice(0,2)];
+  return `<div class="bloco-f" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><div class="eyebrow">Começa em</div><div class="relogio" data-contagem="${p.inicio}"></div></div><div style="text-align:right"><b>${fmt(p.inicio,{weekday:"long",day:"numeric",month:"long"})}</b><br><span class="relogio" style="font-size:24px">${hora(p.inicio)}</span> <span class="muted">Brasília</span></div></div>
+  <button class="botao-video" id="ver-previa"><span class="play"></span><span><b>Assistir à prévia narrada</b><span>${!sa&&!sb?"Elencos, histórico e curiosidades do confronto":"Como cada time chega, duelo de destaque e curiosidades"}</span></span></button>
+  <div id="area-video"></div>
+  ${cur?.manchete?`<div class="bloco-f"><h3>${esc(cur.manchete)}</h3><p style="margin:0">${esc(cur.resumo_historico||"")}</p></div>`:""}
+  <div class="dois"><div class="bloco-f"><h3>Campanha · ${esc(A)}</h3>${camp_(A)}</div><div class="bloco-f"><h3>Campanha · ${esc(B)}</h3>${camp_(B)}</div></div>
+  <div class="bloco-f"><h3>Duelo por posição <small>números só deste Worlds · clique num jogador</small></h3><div class="duelos">${duelos}</div></div>
+  ${cmpL?`<div class="bloco-f"><h3>Comparativo dos times <small>${sa?sa.jogos:0} × ${sb?sb.jogos:0} jogos neste Worlds</small></h3><div class="cmp">${linhaCab(A,B)}${cmpL}</div></div>`:`<div class="bloco-f"><h3>Comparativo dos times</h3><p class="muted" style="margin:0">Nenhum dos dois jogou ainda neste Worlds. O comparativo aparece depois da primeira partida de cada um.</p></div>`}
+  <div class="dois"><div class="bloco-f"><h3>Campeões · ${esc(A)}</h3><div class="camps">${topCamps(sa)}</div></div><div class="bloco-f"><h3>Campeões · ${esc(B)}</h3><div class="camps">${topCamps(sb)}</div></div></div>
+  ${(sa?.jogosLp||sb?.jogosLp)?`<div class="dois"><div class="bloco-f"><h3>Bans · ${esc(A)}</h3>${blocoBans(A,sa)}</div><div class="bloco-f"><h3>Bans · ${esc(B)}</h3>${blocoBans(B,sb)}</div></div>`:""}
+  ${fatos.length?`<div class="bloco-f"><h3>Curiosidades <small>histórico de fora deste Worlds</small></h3><ul class="curios">${fatos.map(f=>`<li>${esc(f.texto)}${tagC(f.confianca)}</li>`).join("")}</ul></div>`:""}
+  <div class="bloco-f"><h3>Seu palpite</h3><div class="palpite" id="palpite"></div></div>`;
+}
+function ligarPrevia(p){
+  contagens();
+  const b=$("#ver-previa");if(b)b.onclick=()=>{b.hidden=true;pararPlayer=playerPrevia($("#area-video"),p)};
+  const pal=$("#palpite");if(pal)montarPalpite(pal,p);
+}
+function roteiroPrevia(p){
+  const [A,B]=p.times.map(t=>t.codigo);const sa=statsTime(A),sb=statsTime(B),cur=curiosConfronto(A,B);const S=[];
+  S.push({tipo:"abre",txt:`${rotuloFase(p)}. ${nomeT(A)} contra ${nomeT(B)}, ${fmt(p.inicio,{weekday:"long"})} às ${horaFalada(p.inicio)}, horário de Brasília, numa série melhor de ${p.melhorDe}.`});
+  const cp=c=>{const l=campanha(c);if(!l.length)return `${nomeT(c)} estreia neste jogo.`;const v=l.filter(x=>x.venceu).length,d=l.length-v;return `${nomeT(c)} chega com ${v} ${v===1?"série vencida":"séries vencidas"} e ${d} ${d===1?"perdida":"perdidas"} neste Worlds.`};
+  S.push({tipo:"campanha",txt:cp(A)+" "+cp(B)});
+  if(sa||sb){
+    const fr=[];for(const [n,k] of [["o first blood","pfb"],["o primeiro dragão","pfd"],["a primeira torre","pft"]]){const t=[[A,sa],[B,sb]].filter(x=>x[1]).sort((x,y)=>y[1][k]-x[1][k])[0];if(t&&t[1][k]>=.6)fr.push(`${nomeT(t[0])} pegou ${n} em ${pct(t[1][k])} dos jogos`)}
+    S.push({tipo:"barras",txt:fr.length?fr.join(". ")+".":"Nos números do torneio, os dois times chegam equilibrados.",linhas:[["Vitórias","wr"],["First blood","pfb"],["Primeiro dragão","pfd"],["Primeira torre","pft"],["Dragões/jogo","dragJ"],["Barões/jogo","barJ"]]});
+    const cand=[A,B].flatMap(c=>titulares(c).map(pl=>({pl,c,st:statsJogador(pl.id)}))).filter(x=>x.st);
+    const g=cand.filter(x=>x.st.gd15!=null).sort((a,b)=>b.st.gd15-a.st.gd15)[0];
+    const k=cand.slice().sort((a,b)=>b.st.kda-a.st.kda)[0];
+    if(g&&g.st.gd15>300)S.push({tipo:"jogador",x:g,txt:`De olho em ${g.pl.nick}, ${ROTA_PT[g.pl.rota].toLowerCase()} do ${nomeT(g.c)}. Aos 15 minutos ele tem, em média, ${Math.round(g.st.gd15)} de ouro a mais que o rival de rota: um começo de jogo agressivo.`});
+    if(k&&k!==g)S.push({tipo:"jogador",x:k,txt:`${k.pl.nick}, do ${nomeT(k.c)}, tem o melhor KDA do confronto neste Worlds: ${n1(k.st.kda)}, com ${k.st.k} abates e ${k.st.d} mortes em ${k.st.jogos} jogos.`});
+    const cs=[[A,sa],[B,sb]].filter(x=>x[1]).map(([c,s])=>{const t=Object.entries(s.camps).sort((a,b)=>b[1]-a[1])[0];return t&&t[1]>1?`${nomeT(c)} já jogou de ${camp(t[0]).nome} ${t[1]} vezes`:""}).filter(Boolean);
+    if(cs.length&&p.melhorDe>1)S.push({tipo:"camps",txt:`De olho no draft: ${cs.join(" e ")}. Com o Fearless, cada campeão só pode ser usado uma vez por time na série.`});
+  } else S.push({tipo:"texto",tit:"Sem jogos ainda",txt:`Nenhum dos dois entrou em campo neste Worlds, então ainda não há números do torneio. Vamos aos elencos.`});
+  S.push({tipo:"elencos",txt:`${nomeT(A)} vem com ${titulares(A).map(x=>x.nick).join(", ")}. ${nomeT(B)} com ${titulares(B).map(x=>x.nick).join(", ")}.`});
+  if(cur?.resumo_historico)S.push({tipo:"texto",tit:cur.manchete||"Histórico",txt:cur.resumo_historico});
+  (cur?.curiosidades||[]).filter(f=>f.confianca==="confirmado").slice(0,3).forEach(f=>S.push({tipo:"texto",tit:"Curiosidade",txt:f.texto}));
+  S.push({tipo:"fim",txt:`E você, quem leva? Deixe seu palpite logo abaixo.`});
+  return S;
+}
+function playerPrevia(area,p){
+  const [A,B]=p.times.map(t=>t.codigo);const sa=statsTime(A),sb=statsTime(B);
+  const S=roteiroPrevia(p);let i=0,ativo=true,pausado=false,token=0;
+  area.innerHTML=`<div class="player"><div data-slide></div><div class="controles"><button data-play>❚❚ Pausar</button><div class="trilha" style="cursor:default"><div class="base"></div><div class="feito" data-feito></div></div><button data-voz aria-pressed="${vozLigada}">Voz</button><span data-lugar-voz>${seletorVoz()}</span><button data-prox>Próximo ›</button></div></div>`;
+  ligarSeletorVoz(area);
+  const q=s=>area.querySelector(s);const lg=(c,cls="lg")=>img(logo(c),cls,c);
+  const vds=c=>campanha(c).map(x=>`<span class="res ${x.venceu?"v":"d"}" style="margin:2px">${x.venceu?"V":"D"}</span>`).join("")||'<span style="color:var(--pmut)">estreia</span>';
+  function render(s){
+    let h="";
+    if(s.tipo==="abre")h=`<div class="lado-a-lado fade">${lg(A)}<div class="grande">×</div>${lg(B)}</div><h4 class="fade" style="text-align:center">${esc(nomeT(A))} × ${esc(nomeT(B))}</h4><p class="fade" style="text-align:center;color:var(--pmut);margin:0">${dataHora(p.inicio)} · Brasília · melhor de ${p.melhorDe}</p>`;
+    else if(s.tipo==="campanha")h=`<h4 class="fade">Como chegam</h4><div class="lado-a-lado fade"><div style="text-align:center">${lg(A)}<div style="margin-top:8px">${vds(A)}</div></div><span></span><div style="text-align:center">${lg(B)}<div style="margin-top:8px">${vds(B)}</div></div></div>`;
+    else if(s.tipo==="barras")h=`<h4 class="fade">Números do torneio</h4><div style="display:flex;justify-content:space-between;font-family:var(--display);font-weight:700;font-size:20px"><span style="color:var(--blue)">${esc(A)}</span><span style="color:var(--red)">${esc(B)}</span></div><div class="barras">${s.linhas.map(([n,k])=>{const va=sa?.[k]??0,vb=sb?.[k]??0,m=k.endsWith("J")?Math.max(va,vb,.01):1;const f=k.endsWith("J")?n1:pct;
+      return `<div style="display:grid;gap:4px"><span style="text-align:right">${sa?f(va):"–"}</span><div class="bar esq"><i data-w="${va/m*100}" style="background:var(--blue)"></i></div></div><span class="rot">${n}</span><div style="display:grid;gap:4px"><span>${sb?f(vb):"–"}</span><div class="bar"><i data-w="${vb/m*100}" style="background:var(--red)"></i></div></div>`}).join("")}</div>`;
+    else if(s.tipo==="jogador"){const x=s.x;h=`<div class="fade" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">${x.pl.foto?`<img class="fp" src="${x.pl.foto}" alt="">`:""}<div><div class="eyebrow">${esc(nomeT(x.c))} · ${ROTA_PT[x.pl.rota]}</div><h4>${esc(x.pl.nick)}</h4><div class="num" style="color:var(--pmut);margin-top:6px">KDA ${n1(x.st.kda)} · Ouro@15 ${sinal(x.st.gd15)} · ${n1(x.st.csm)} CS/min · dano ${pct(x.st.dano)}</div></div></div>`}
+    else if(s.tipo==="camps")h=`<h4 class="fade">Campeões mais usados</h4>${[[A,sa],[B,sb]].filter(x=>x[1]).map(([c,st])=>`<div class="fade" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">${img(logo(c),"",c,"width:34px;height:34px;object-fit:contain")}${Object.entries(st.camps).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([k,v])=>`<span style="display:inline-flex;align-items:center;gap:4px;font-size:13px">${img(camp(k).icone,"",camp(k).nome,"width:40px;height:40px;border-radius:6px")}×${v}</span>`).join("")}</div>`).join("")}`;
+    else if(s.tipo==="elencos")h=`<h4 class="fade">Os titulares</h4>${[A,B].map(c=>`<div class="fade" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">${img(logo(c),"",c,"width:34px;height:34px;object-fit:contain")}${titulares(c).map(pl=>`<div style="text-align:center;width:70px">${pl.foto?`<img src="${pl.foto}" style="width:56px;height:56px;border-radius:50%;object-fit:cover;background:#1b2b3d" alt="">`:`<div style="width:56px;height:56px;border-radius:50%;background:#1b2b3d;margin:auto"></div>`}<div style="font-size:12px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(pl.nick)}</div></div>`).join("")}</div>`).join("")}`;
+    else if(s.tipo==="fim")h=`<div class="lado-a-lado fade">${lg(A)}<div class="grande">Quem<br>leva?</div>${lg(B)}</div>`;
+    else h=`<div class="eyebrow fade">${esc(s.tit||"")}</div><p class="fade" style="font-size:clamp(19px,2.6vw,26px);line-height:1.35;margin:0;max-width:42ch">${esc(s.txt)}</p>`;
+    q("[data-slide]").innerHTML=`<div class="slide">${h}${s.tipo==="texto"?"":`<div class="rodape">${esc(s.txt)}</div>`}</div>`;
+    requestAnimationFrame(()=>requestAnimationFrame(()=>q("[data-slide]").querySelectorAll("[data-w]").forEach(el=>el.style.width=el.dataset.w+"%")));
+    q("[data-feito]").style.width=((i+1)/S.length*100)+"%";
+  }
+  async function rodar(){const meu=++token;
+    while(ativo&&!pausado&&i<S.length&&meu===token){render(S[i]);await falar(S[i].txt,1);await new Promise(r=>setTimeout(r,700));if(meu!==token||pausado||!ativo)return;if(i===S.length-1)break;i++}
+    if(meu===token&&i===S.length-1&&!pausado){pausado=true;q("[data-play]").textContent="↺ Rever"}}
+  q("[data-play]").onclick=()=>{const rever=q("[data-play]").textContent.includes("Rever");if(rever)i=0;pausado=!pausado&&!rever;q("[data-play]").textContent=pausado?"▶ Continuar":"❚❚ Pausar";if(pausado){token++;try{speechSynthesis.cancel()}catch(_){}}else rodar()};
+  q("[data-prox]").onclick=()=>{try{speechSynthesis.cancel()}catch(_){}i=Math.min(S.length-1,i+1);pausado=false;q("[data-play]").textContent="❚❚ Pausar";rodar()};
+  q("[data-voz]").onclick=e=>{vozLigada=!vozLigada;e.currentTarget.setAttribute("aria-pressed",vozLigada);if(!vozLigada)try{speechSynthesis.cancel()}catch(_){}};
+  rodar();
+  return ()=>{ativo=false;token++;try{speechSynthesis.cancel()}catch(_){}};
+}
+
+/* ---------- palpites: salvos no navegador (localStorage) ---------- */
+let DB=null,MEU_ID=null,TODOS={};const ouvintes=new Set();
+function meuLocal(){try{return JSON.parse(localStorage.getItem("palpites")||"{}")}catch(_){return {}}}
+function salvarLocal(o){try{localStorage.setItem("palpites",JSON.stringify(o))}catch(_){}}
+function montarPalpite(el,p){
+  const [A,B]=p.times.map(t=>t.codigo);const vence=Math.ceil(p.melhorDe/2);
+  const placares=p.melhorDe===1?[]:Array.from({length:vence},(_,k)=>`${vence}-${k}`);
+  const meus=()=>DB&&MEU_ID?(TODOS[MEU_ID]||meuLocal()):meuLocal();
+  const desenha=()=>{
+    const meu=meus()[p.id]||{};
+    const votos=(DB?Object.values(TODOS):[meuLocal()]).map(x=>x[p.id]).filter(Boolean);
+    const va=votos.filter(v=>v.time===A).length,vb=votos.filter(v=>v.time===B).length,tot=va+vb;
+    el.innerHTML=`<div class="opcoes">${[A,B].map(c=>`<button data-voto="${c}" aria-pressed="${meu.time===c}">${img(logo(c),"",c)}${esc(nomeT(c))}</button>`).join("")}</div>
+      ${placares.length&&meu.time?`<div class="opcoes">${placares.map(s=>`<button data-placar="${s}" aria-pressed="${meu.placar===s}">${esc(meu.time)} ${s}</button>`).join("")}</div>`:""}
+      ${tot?`<div class="votos"><i style="width:${va/tot*100}%;background:var(--blue)"></i><i style="width:${vb/tot*100}%;background:var(--red)"></i></div><div class="muted num" style="font-size:12.5px;display:flex;justify-content:space-between;gap:8px"><span>${esc(A)} ${pct(va/tot)}</span><span>${tot} ${tot===1?"palpite":"palpites"}${DB?"":" neste navegador"}</span><span>${esc(B)} ${pct(vb/tot)}</span></div>`:`<div class="muted" style="font-size:13px">Ninguém palpitou ainda. Escolha quem vence${placares.length?" e o placar":""}.</div>`}`;
+    el.querySelectorAll("[data-voto]").forEach(b=>b.onclick=()=>gravar({time:b.dataset.voto,placar:null}));
+    el.querySelectorAll("[data-placar]").forEach(b=>b.onclick=()=>gravar({...meu,placar:b.dataset.placar}));
+  };
+  async function gravar(v){
+    const novo={...meus(),[p.id]:v};salvarLocal(novo);
+    if(DB&&MEU_ID){TODOS[MEU_ID]=novo;try{await DB.collection("palpites").doc(MEU_ID).set({picks:novo,em:new Date().toISOString()})}catch(_){}}
+    desenha();
+  }
+  ouvintes.clear();ouvintes.add(desenha);desenha();
+}
+
+/* ---------- time ---------- */
+function abrirTime(c){
+  const t=TIMES[c];if(!t)return;const s=statsTime(c);const cur=W.curiosidades?.times?.[c];
+  const prox=PARTIDAS.find(p=>p.estado!=="completed"&&p.times.some(x=>x.codigo===c));
+  const elenco=t.jogadores.map(pl=>{const st=statsJogador(pl.id);
+    return `<div class="duelo clic" data-jogador="${pl.id}" style="grid-template-columns:1fr auto"><div class="p">${pl.foto?`<img class="f" src="${pl.foto}" alt="">`:`<span class="sem-foto">${esc(pl.nick[0])}</span>`}<div style="min-width:0"><b>${esc(pl.nick)}</b><div class="ns">${esc(pl.nome)}${pl.titular?"":" · reserva"}</div></div></div><div class="ns" style="text-align:right"><span class="rota" style="display:block">${ROTA_PT[pl.rota]||pl.rota}</span>${st?`${st.k}/${st.d}/${st.a} · KDA ${n1(st.kda)}<br>${n1(st.csm)} CS/min · Ouro@15 ${sinal(st.gd15)}<br>dano ${pct(st.dano)} · KP ${pct(st.kp)}`:"sem jogos ainda"}</div></div>`}).join("");
+  abrirFolha(`<div class="placarao" style="grid-template-columns:auto 1fr"><div>${img(t.logo,"",c)}</div><div style="min-width:0"><div class="eyebrow">${esc(t.liga||"")}${cur?.seed?" · "+esc(cur.seed):""}</div><h2>${esc(t.nome)}</h2>${cur?.como_classificou?`<div class="muted">${esc(cur.como_classificou)}</div>`:""}</div></div>
+  ${prox?`<div class="bloco-f"><h3>Próximo jogo <small>horário de Brasília</small></h3>${cartao(prox)}</div>`:""}
+  <div class="bloco-f"><h3>Elenco <small>números só deste Worlds</small></h3><div class="duelos">${elenco}</div></div>
+  ${s?`<div class="bloco-f"><h3>No torneio <small>${s.jogos} ${s.jogos===1?"jogo":"jogos"} · ${s.v} ${s.v===1?"vitória":"vitórias"}</small></h3><div class="cmp">${[["First blood",s.pfb],["Primeiro dragão",s.pfd],["Primeira torre",s.pft],["Primeiro Barão",s.pfbar],["Vitórias",s.wr]].map(([n,v])=>`<div class="l" style="grid-template-columns:130px 1fr 52px"><span class="rot" style="text-align:left">${n}</span><div class="barra"><i style="width:${v*100}%;background:var(--gold)"></i></div><span class="v">${pct(v)}</span></div>`).join("")}</div>
+    <p class="muted num" style="font-size:12.5px;margin:10px 0 0">${n1(s.abJ)} abates e ${n1(s.morJ)} mortes por jogo · ${n1(s.dragJ)} dragões · ${n1(s.barJ)} barões · duração média ${mmss(s.durM)} · vantagem aos 15 ${mil(s.gd15m)}</p></div>
+  <div class="bloco-f"><h3>Campeões jogados</h3><div class="camps">${topCamps(s,40)}</div></div>
+  <div class="bloco-f"><h3>Bans</h3>${blocoBans(c,s)}</div>`:`<div class="bloco-f"><p class="muted" style="margin:0">${esc(t.nome)} ainda não jogou neste Worlds.</p></div>`}
+  <div class="bloco-f"><h3>Séries disputadas</h3><div style="display:grid;gap:8px">${campanha(c).map(x=>cartao(x.p)).join("")||'<p class="muted" style="margin:0">Nenhuma ainda.</p>'}</div></div>
+  ${cur?.curiosidades?.length?`<div class="bloco-f"><h3>Curiosidades <small>histórico de fora deste Worlds</small></h3><ul class="curios">${cur.titulos_mundiais?.length?`<li>Títulos mundiais: ${cur.titulos_mundiais.join(", ")}.</li>`:""}${cur.curiosidades.map(f=>`<li>${esc(f.texto)}${tagC(f.confianca)}</li>`).join("")}</ul></div>`:""}`);
+  contagens();
+}
+
+/* ---------- jogador ---------- */
+const tile=(v,r)=>`<div class="tile"><b>${v}</b><span>${r}</span></div>`;
+const TIER={IRON:"Ferro",BRONZE:"Bronze",SILVER:"Prata",GOLD:"Ouro",PLATINUM:"Platina",EMERALD:"Esmeralda",DIAMOND:"Diamante",MASTER:"Mestre",GRANDMASTER:"Grão-Mestre",CHALLENGER:"Desafiante"};
+function graficoDuelo(j,x){
+  const op=j.jog.find(y=>y.lado!==x.lado&&y.rota===x.rota);if(!op)return "";
+  const L=640,H=130,pad=34;const S=j.serie.map(s=>[s[0],s[3][x.pid-1][0]-s[3][op.pid-1][0]]);
+  const lim=Math.ceil(Math.max(1000,...S.map(s=>Math.abs(s[1])))/1000)*1000;
+  const X=s=>pad+(s/j.duracao)*(L-pad-8),Y=d=>H/2-(d/lim)*(H/2-14);const pts=S.map(s=>`${X(s[0]).toFixed(1)},${Y(s[1]).toFixed(1)}`).join(" ");
+  const ticks=[];for(let m=0;m*60<=j.duracao;m+=5)ticks.push(m);
+  return `<div class="muted" style="font-size:12.5px;margin-bottom:4px">Diferença de ouro para ${esc(op.nick)} (${esc(camp(op.campeao).nome)}) ao longo do jogo</div>
+  <svg viewBox="0 0 ${L} ${H}" style="width:100%;height:auto;display:block" role="img" aria-label="Diferença de ouro contra o rival de rota">
+  ${ticks.map(m=>`<line x1="${X(m*60)}" x2="${X(m*60)}" y1="6" y2="${H-16}" stroke="var(--fg)" stroke-opacity=".1"/><text x="${X(m*60)}" y="${H-3}" font-size="10" text-anchor="middle" fill="var(--fg)" fill-opacity=".6" font-family="JetBrains Mono,monospace">${m}'</text>`).join("")}
+  <line x1="${pad}" x2="${L-8}" y1="${H/2}" y2="${H/2}" stroke="var(--fg)" stroke-opacity=".35"/>
+  <text x="0" y="${Y(lim)+4}" font-size="10" fill="var(--good)" font-family="JetBrains Mono,monospace">+${lim/1000}k</text><text x="0" y="${Y(-lim)+4}" font-size="10" fill="var(--red)" font-family="JetBrains Mono,monospace">−${lim/1000}k</text>
+  <clipPath id="dp${j.id}${x.pid}a"><rect x="0" y="0" width="${L}" height="${H/2}"/></clipPath><clipPath id="dp${j.id}${x.pid}b"><rect x="0" y="${H/2}" width="${L}" height="${H/2}"/></clipPath>
+  <polyline points="${pts}" fill="none" stroke="var(--good)" stroke-width="2.2" clip-path="url(#dp${j.id}${x.pid}a)"/><polyline points="${pts}" fill="none" stroke="var(--red)" stroke-width="2.2" clip-path="url(#dp${j.id}${x.pid}b)"/></svg>`;
+}
+function abrirJogador(id,jogoId){
+  const a=acharJogador(id);if(!a)return;const {pl,time}=a;const st=statsJogador(id);
+  const j=jogoId?JOGOS.find(g=>g.id===jogoId):null;const x=j?.jog.find(y=>y.jogadorId===id);
+  const foto=pl.foto||FOTO[id];
+  let html=`<div class="perfil">${foto?`<img class="f" src="${foto}" alt="${esc(pl.nick)}">`:`<span class="sem-foto" style="width:104px;height:104px;font-size:36px">${esc(pl.nick[0])}</span>`}<div style="min-width:0"><div class="eyebrow">${mini(time)} ${esc(nomeT(time))} · ${ROTA_PT[pl.rota]||pl.rota}</div><h2>${esc(pl.nick)}</h2>${pl.nome?`<div class="muted">${esc(pl.nome)}</div>`:""}</div></div>`;
+  if(x){const c=camp(x.campeao),venceu=j.venc===time,adv=j.lados[outro(x.lado)],p=PID[j.partida];
+    const dpm=x.danoTotal!=null?Math.round(x.danoTotal/(j.duracao/60)):null;
+    html+=`<div class="bloco-f"><h3>Neste jogo <small>${rotuloFase(p,true)} · jogo ${j.numero} contra ${esc(nomeT(adv))}</small></h3>
+      <div style="display:flex;gap:14px;align-items:center;margin-bottom:12px;flex-wrap:wrap">${img(c.icone,"",c.nome,"width:64px;height:64px;border-radius:10px")}<div><b style="font-family:var(--display);font-size:26px">${esc(c.nome)}</b><div><span class="res ${venceu?"v":"d"}">${venceu?"V":"D"}</span> <span class="muted">${venceu?"Vitória":"Derrota"} em ${mmss(j.duracao)}</span></div></div>
+      <div class="itens" style="margin-left:auto">${(x.itens||[]).filter(i=>W.itens[i]).map(i=>`<img src="${W.itens[i].icone}" alt="${esc(W.itens[i].nome)}" title="${esc(W.itens[i].nome)}" style="width:32px;height:32px">`).join("")}</div></div>
+      <div class="tiles">${tile(`${x.k}/${x.d}/${x.a}`,"K/D/A")}${tile(n1(kda(x)),"KDA")}${tile(x.cs,"CS")}${tile(n1(x.cs/(j.duracao/60)),"CS/min")}${tile((x.ouro/1000).toFixed(1)+"k","Ouro")}${tile(sinal(x.gd15),"Ouro@15")}${tile(dpm??"–","Dano/min")}${tile(pct(x.dano),"% do dano")}${tile(pct(x.kp),"Particip.")}${tile(x.visao??"–","Visão")}${tile(x.wards??"–","Sentinelas")}${tile(x.nivel,"Nível")}</div>
+      <div style="margin-top:14px">${graficoDuelo(j,x)}</div>
+      <button class="link" style="margin-top:8px" data-partida="${j.partida}" data-k="${jogosDe(j.partida).indexOf(j)}">Ver o jogo completo ›</button></div>`}
+  if(st){
+    html+=`<div class="bloco-f"><h3>No Worlds 2026 <small>${st.jogos} ${st.jogos===1?"jogo":"jogos"} · ${st.v} ${st.v===1?"vitória":"vitórias"}</small></h3>
+      <div class="tiles">${tile(`${st.k}/${st.d}/${st.a}`,"K/D/A total")}${tile(n1(st.kda),"KDA")}${tile(n1(st.csm),"CS/min")}${tile(sinal(st.gd15),"Ouro@15 médio")}${tile(st.dpm?Math.round(st.dpm):"–","Dano/min")}${tile(pct(st.dano),"% do dano")}${tile(pct(st.kp),"Particip.")}${tile(st.visao!=null?n1(st.visao,0):"–","Visão média")}${tile(st.fbK,"First bloods")}</div></div>
+    <div class="bloco-f"><h3>Campeões no torneio</h3><div class="lista-linhas">${Object.entries(st.det).sort((a,b)=>b[1].j-a[1].j).map(([k,c])=>`<div class="r">${img(camp(k).icone,"",camp(k).nome)}<span><b>${esc(camp(k).nome)}</b> <span class="muted">${c.j} ${c.j===1?"jogo":"jogos"} · ${c.v}V ${c.j-c.v}D</span></span><span class="num">${c.k}/${c.d}/${c.a} · KDA ${n1((c.k+c.a)/Math.max(1,c.d))}</span></div>`).join("")}</div></div>
+    <div class="bloco-f"><h3>Jogos</h3><div class="lista-linhas">${st.linhas.map(y=>{const g=y.j,adv=g.lados[outro(y.lado)];return `<button class="r" data-jogador="${id}" data-jogo="${g.id}">${img(camp(y.campeao).icone,"",camp(y.campeao).nome)}<span><span class="res ${y.venceu?"v":"d"}">${y.venceu?"V":"D"}</span> contra <b>${esc(nomeT(adv))}</b> <span class="muted">· ${rotuloFase(PID[g.partida],true)}, jogo ${g.numero}</span></span><span class="num">${y.k}/${y.d}/${y.a}</span></button>`}).join("")}</div></div>`;
+  } else html+=`<div class="bloco-f"><h3>No Worlds 2026</h3><p class="muted" style="margin:0">${esc(pl.nick)} ainda não jogou neste Worlds. Os números aparecem depois da primeira partida.</p></div>`;
+  html+=blocoSoloq(pl);
+  abrirFolha(html);
+}
+function blocoSoloq(pl){
+  const sq=pl.soloq,ct=pl.contas;
+  const links=ct?Object.entries(ct.links||{}).map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${{dpm_lol:"dpm.lol",lolpros:"lolpros.gg",leaguepedia:"Leaguepedia"}[k]||k}</a>`).join(" · "):"";
+  let h=`<div class="bloco-f"><h3>Solo queue <small>fora do Worlds</small></h3>`;
+  if(sq){
+    const vit=sq.partidas.filter(p=>p[3]).length;const camps={};sq.partidas.forEach(p=>{const c=camps[p[2]]=camps[p[2]]||{j:0,v:0};c.j++;c.v+=p[3]?1:0});
+    h+=`<div class="tiles">${tile(sq.elo?`${TIER[sq.elo.tier]||sq.elo.tier} ${["MASTER","GRANDMASTER","CHALLENGER"].includes(sq.elo.tier)?"":sq.elo.rank}`:"Sem elo","Elo atual")}${tile(sq.elo?sq.elo.leaguePoints+" PDL":"–","Pontos")}${tile(sq.elo?`${sq.elo.wins}V ${sq.elo.losses}D`:"–","Na temporada")}${tile(`${vit}V ${sq.partidas.length-vit}D`,`Últimas ${sq.partidas.length}`)}</div>
+    <p class="muted" style="font-size:12.5px">Conta ${sq.link?`<a href="${esc(sq.link)}" target="_blank" rel="noopener">${esc(sq.conta)}</a>`:esc(sq.conta)} (${esc(sq.servidor)})</p>
+    <div class="camps">${Object.entries(camps).sort((a,b)=>b[1].j-a[1].j).map(([k,c])=>`<span class="c">${img(camp(k).icone,"",camp(k).nome)}${esc(camp(k).nome)} <span class="muted num">${c.j} · ${c.v}V</span></span>`).join("")}</div>
+    <div class="lista-linhas" style="margin-top:10px">${sq.partidas.map(p=>`<div class="r">${img(camp(p[2]).icone,"",camp(p[2]).nome)}<span><span class="res ${p[3]?"v":"d"}">${p[3]?"V":"D"}</span> ${esc(camp(p[2]).nome)} <span class="muted">· ${p[0]?dataHora(new Date(p[0]).toISOString()):""}</span></span><span class="num">${p[4]}/${p[5]}/${p[6]} · ${p[7]} CS</span></div>`).join("")}</div>`;
+  } else if(ct&&ct.contas.length){
+    h+=`<p class="muted" style="margin-top:0;font-size:13px">Elo e partidas recentes aparecem aqui assim que a chave da API da Riot for configurada. Por enquanto, as contas conhecidas (fonte: Leaguepedia):</p>
+    <div class="lista-linhas">${ct.contas.slice(0,8).map(c=>`<div class="r"><span class="tag">${esc(c.servidor||"")}</span><span>${c.link?`<a href="${esc(c.link)}" target="_blank" rel="noopener">${esc(c.riotId)}</a>`:esc(c.riotId)}</span><span></span></div>`).join("")}</div>`;
+  } else h+=`<p class="muted" style="margin:0">Não encontramos contas de solo queue conhecidas deste jogador.</p>`;
+  return h+(links?`<p style="font-size:13px;margin-bottom:0">Mais sobre o jogador: ${links}</p>`:"")+`</div>`;
+}
+
+/* ---------- destaques do torneio ---------- */
+function painelDestaques(){
+  if(!JOGOS.length){$("#p-destaques").innerHTML='<p class="muted">Os destaques aparecem depois dos primeiros jogos.</p>';return}
+  const ids=[...new Set(JOGOS.flatMap(j=>j.jog.map(x=>x.jogadorId)))];
+  const J=ids.map(id=>({id,st:statsJogador(id),...acharJogador(id)}));
+  const lj=(titulo,sub,val,fmt_,filtro=()=>true,asc=false)=>{const l=J.filter(x=>filtro(x)&&val(x)!=null).sort((a,b)=>asc?val(a)-val(b):val(b)-val(a)).slice(0,5);
+    return `<div class="bloco-f"><h3>${titulo} <small>${sub||""}</small></h3><ol>${l.map((x,i)=>`<li><button data-jogador="${x.id}"><span class="ord">${i+1}</span>${x.pl.foto?`<img class="f" src="${x.pl.foto}" alt="">`:`<span class="sem-foto" style="width:34px;height:34px;font-size:14px">${esc(x.pl.nick[0])}</span>`}<span><b>${esc(x.pl.nick)}</b><small>${esc(x.time)} · ${ROTA_PT[x.pl.rota]||""} · ${x.st.jogos} ${x.st.jogos===1?"jogo":"jogos"}</small></span><span class="val">${fmt_(val(x))}</span></button></li>`).join("")}</ol></div>`};
+  const min3=x=>x.st.jogos>=3;
+  // campeões
+  const picks={},vit={},bans={};let jogosLp=0;
+  for(const j of JOGOS){for(const x of j.jog){picks[x.campeao]=(picks[x.campeao]||0)+1;if(j.venc===x.time)vit[x.campeao]=(vit[x.campeao]||0)+1}
+    if(j.lp){jogosLp++;["blue","red"].forEach(l=>j.lp.bans[l].forEach(b=>bans[b]=(bans[b]||0)+1))}}
+  const lc=(titulo,sub,obj,fmt_)=>{const l=Object.entries(obj).sort((a,b)=>b[1]-a[1]).slice(0,5);
+    return `<div class="bloco-f"><h3>${titulo} <small>${sub}</small></h3><ol>${l.map(([k,v],i)=>`<li><button style="cursor:default"><span class="ord">${i+1}</span>${img(camp(k).icone,"c",camp(k).nome)}<span><b>${esc(camp(k).nome)}</b><small>${fmt_(k,v)}</small></span><span class="val">${v}</span></button></li>`).join("")}</ol></div>`};
+  const pres={};Object.keys({...picks,...bans}).forEach(k=>pres[k]=(picks[k]||0)+(bans[k]||0));
+  // times
+  const ts=Object.keys(TIMES).map(c=>({c,s:statsTime(c)})).filter(x=>x.s);
+  const lt=(titulo,sub,val,fmt_)=>{const l=ts.filter(x=>val(x.s)!=null).sort((a,b)=>val(b.s)-val(a.s)).slice(0,5);
+    return `<div class="bloco-f"><h3>${titulo} <small>${sub||""}</small></h3><ol>${l.map((x,i)=>`<li><button data-time="${x.c}"><span class="ord">${i+1}</span>${img(logo(x.c),"c",x.c,"object-fit:contain")}<span><b>${esc(nomeT(x.c))}</b><small>${x.s.jogos} jogos</small></span><span class="val">${fmt_(val(x.s))}</span></button></li>`).join("")}</ol></div>`};
+  // jogos marcantes
+  const jm=(titulo,j,txt)=>j?`<button class="r" data-partida="${j.partida}" data-k="${jogosDe(j.partida).indexOf(j)}"><span class="eyebrow" style="min-width:120px">${titulo}</span><span>${mini(j.az)} ${esc(j.az)} × ${esc(j.vm)} ${mini(j.vm)} <span class="muted">· ${rotuloFase(PID[j.partida],true)}, jogo ${j.numero}</span></span><span class="num">${txt(j)}</span></button>`:"";
+  const porDur=JOGOS.slice().sort((a,b)=>b.duracao-a.duracao),porAb=JOGOS.slice().sort((a,b)=>(b.tot.blue.abates+b.tot.red.abates)-(a.tot.blue.abates+a.tot.red.abates));
+  $("#p-destaques").innerHTML=`<p class="nota" style="margin:0 0 16px">Rankings com os ${JOGOS.length} jogos já disputados neste Worlds. Bans, dano por minuto e visão vêm da Leaguepedia, que tem ${jogosLp} desses jogos registrados até agora. Clique num jogador ou time para ver mais.</p>
+  <h3 style="font-size:22px;text-transform:uppercase;margin-bottom:10px">Jogadores</h3>
+  <div class="ranking">${lj("Mais abates","",x=>x.st.k,v=>v)}${lj("Melhor KDA","mínimo 3 jogos",x=>x.st.kda,n1,min3)}${lj("Mais CS por minuto","sem suportes",x=>x.st.csm,n1,x=>x.pl.rota!=="support")}
+  ${lj("Maior vantagem aos 15","ouro sobre o rival de rota",x=>x.st.gd15,sinal)}${lj("Mais dano por minuto","",x=>x.st.dpm,v=>Math.round(v))}${lj("Maior participação em abates","mínimo 3 jogos",x=>x.st.kp,pct,min3)}
+  ${lj("Mais first bloods","quem fez o primeiro abate do jogo",x=>x.st.fbK||null,v=>v)}${lj("Maior placar de visão","média por jogo",x=>x.st.visao,v=>Math.round(v))}${lj("Mais mortes","",x=>x.st.d,v=>v)}</div>
+  <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Campeões</h3>
+  <div class="ranking">${lc("Mais escolhidos",`em ${JOGOS.length} jogos`,picks,(k,v)=>`${vit[k]||0} vitórias · ${pct((vit[k]||0)/v)} de aproveitamento`)}${jogosLp?lc("Mais banidos",`em ${jogosLp} jogos com bans registrados`,bans,(k,v)=>`banido em ${pct(v/jogosLp)} dos jogos`):""}${jogosLp?lc("Mais presentes","escolhidos + banidos",pres,(k,v)=>`${picks[k]||0} escolhas e ${bans[k]||0} bans`):""}</div>
+  <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Times</h3>
+  <div class="ranking">${lt("First blood","% dos jogos",s=>s.pfb,pct)}${lt("Dragões por jogo","",s=>s.dragJ,n1)}${lt("Abates por jogo","",s=>s.abJ,n1)}${lt("Vantagem média aos 15","",s=>s.gd15m,mil)}${lt("Arautos por jogo","jogos registrados na Leaguepedia",s=>s.jogosLp?s.arautosJ:null,n1)}${lt("Jogos mais longos","duração média",s=>s.durM,mmss)}</div>
+  <h3 style="font-size:22px;text-transform:uppercase;margin:22px 0 10px">Jogos marcantes</h3>
+  <div class="bloco-f"><div class="lista-linhas">${jm("Mais longo",porDur[0],j=>mmss(j.duracao))}${jm("Mais curto",porDur[porDur.length-1],j=>mmss(j.duracao))}${jm("Mais abates",porAb[0],j=>`${j.tot.blue.abates+j.tot.red.abates} abates`)}${jm("Menos abates",porAb[porAb.length-1],j=>`${j.tot.blue.abates+j.tot.red.abates} abates`)}</div></div>`;
+}
+function blocoBans(c,s){
+  if(!s||!s.jogosLp)return `<p class="muted" style="margin:0">Sem bans registrados ainda.</p>`;
+  const top=o=>Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([k,v])=>`<span class="c">${img(camp(k).icone,"",camp(k).nome)}${esc(camp(k).nome)} <span class="muted num">${v}</span></span>`).join("")||'<span class="muted">nenhum</span>';
+  return `<div class="muted" style="font-size:12px;margin-bottom:6px">Banidos por ${esc(c)}</div><div class="camps">${top(s.bansPor)}</div><div class="muted" style="font-size:12px;margin:10px 0 6px">Banidos contra ${esc(c)}</div><div class="camps">${top(s.bansContra)}</div><div class="muted" style="font-size:11.5px;margin-top:8px">${s.jogosLp} de ${s.jogos} jogos com bans registrados</div>`;
+}
+
+/* ---------- navegação ---------- */
+const ABAS=["playin","suica","matamata","destaques","times"];
+function aba(nome){ABAS.forEach(a=>{$("#p-"+a).hidden=a!==nome;$(`[data-aba="${a}"]`).setAttribute("aria-selected",a===nome)});try{localStorage.setItem("aba",nome)}catch(_){}}
+document.addEventListener("click",e=>{
+  const ab=e.target.closest("[data-aba]");if(ab){aba(ab.dataset.aba);return}
+  const jg=e.target.closest("[data-jogador]");if(jg){const id=jg.dataset.jogador,jo=jg.dataset.jogo;navegar(()=>abrirJogador(id,jo));return}
+  const pa=e.target.closest("[data-partida]");if(pa){const id=pa.dataset.partida,k=pa.dataset.k;navegar(()=>abrirPartida(id,k?+k:0));return}
+  const ti=e.target.closest("[data-time]");if(ti){const c=ti.dataset.time;navegar(()=>abrirTime(c))}
+});
+topo();painelPlayin();painelSuica();painelMata();painelDestaques();painelTimes();
+const h=(location.hash||"").slice(1);let inicial=ABAS.includes(h)?h:null;
+if(!inicial){try{inicial=localStorage.getItem("aba")}catch(_){}}
+if(!ABAS.includes(inicial)){const d=new Date().toISOString();inicial=d<"2026-10-21"?"suica":d<"2026-11-01"?"suica":"matamata"}
+aba(inicial);
+if(/^p\d+$/.test(h))navegar(()=>abrirPartida(h.slice(1)));
+contagens();setInterval(contagens,1000);
+})();
+</script>

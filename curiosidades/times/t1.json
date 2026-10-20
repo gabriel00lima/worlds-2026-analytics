@@ -1,0 +1,89 @@
+{
+  "id": "t1",
+  "nome": "T1",
+  "sigla": "T1",
+  "regiao": "LCK",
+  "seed": "LCK #3",
+  "como_classificou": "Terceira vaga da LCK.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Doran",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Oner",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Faker",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Peyz",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Keria",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "titulos_mundiais": [
+    2013,
+    2015,
+    2016,
+    2023,
+    2024,
+    2025
+  ],
+  "melhor_mundial": "Seis vezes campeã, incluindo os três últimos Mundiais.",
+  "curiosidades": [
+    {
+      "texto": "Tricampeã seguida (2023, 2024, 2025) e dona de seis títulos: busca o sétimo.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://diariodelsur.com.co/noticias/t1-y-faker-preparan-su-debut-en-la-fase-suiza-de-worlds-2026-en-estados-unidos",
+        "https://en.wikipedia.org/wiki/T1_(esports)",
+        "https://en.wikipedia.org/wiki/2025_League_of_Legends_World_Championship"
+      ]
+    },
+    {
+      "texto": "Faker esteve em todos os seis títulos do clube.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/T1_(esports)"
+      ]
+    },
+    {
+      "texto": "Não ganha um título nacional desde a primavera de 2022 e costuma crescer só no Mundial.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://diariodelsur.com.co/noticias/t1-y-faker-preparan-su-debut-en-la-fase-suiza-de-worlds-2026-en-estados-unidos"
+      ]
+    },
+    {
+      "texto": "Em 2026 caiu para a G2 no MSI e para a Karmine Corp na semifinal da EWC.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://dotesports.com/league-of-legends/news/g2-esports-eliminate-t1-from-msi-2026-ending-legendary-international-top-four-streak",
+        "https://www.sheepesports.com/en/lol/matches/Esports%20World%20Cup%202026_Semifinals_1"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://diariodelsur.com.co/noticias/t1-y-faker-preparan-su-debut-en-la-fase-suiza-de-worlds-2026-en-estados-unidos",
+    "https://dotesports.com/league-of-legends/news/g2-esports-eliminate-t1-from-msi-2026-ending-legendary-international-top-four-streak",
+    "https://en.wikipedia.org/wiki/2025_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/T1_(esports)",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://www.sheepesports.com/en/lol/matches/Esports%20World%20Cup%202026_Semifinals_1"
+  ],
+  "atualizado_em": "2026-10-20"
+}

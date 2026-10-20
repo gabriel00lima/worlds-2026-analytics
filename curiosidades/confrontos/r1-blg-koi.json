@@ -1,0 +1,80 @@
+{
+  "id": "r1-blg-koi",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "blg",
+    "nome": "Bilibili Gaming"
+  },
+  "time_b": {
+    "id": "koi",
+    "nome": "Movistar KOI"
+  },
+  "manchete": "A KOI ainda não venceu a BLG em séries",
+  "resumo_historico": "BLG venceu os dois encontros conhecidos (3–1 no MSI 2025 e na EWC 2026).",
+  "primeiro_encontro_mundial": true,
+  "historico": [
+    {
+      "evento": "MSI 2025",
+      "data": "2025-07-03",
+      "fase": "Chave superior, rodada 1 (Bo5)",
+      "vencedor": "blg",
+      "placar": "3–1",
+      "fontes": [
+        "https://liquipedia.net/leagueoflegends/Match:ID_MSI25Brakt_R01-M004",
+        "https://www.yardbarker.com/video_games/articles/msi_2025_movistar_koi_versus_bilibili_gaming_the_east_destroys_west_hope/s1_17458_42412187"
+      ],
+      "confianca": "confirmado"
+    },
+    {
+      "evento": "Esports World Cup 2026",
+      "data": "2026-07-15",
+      "fase": "Fase de grupos",
+      "vencedor": "blg",
+      "placar": "1–0",
+      "fontes": [
+        "https://rft.gg/match/12396-bilibili-gaming-vs-movistar-koi-2026-07-15"
+      ],
+      "confianca": "fonte_unica"
+    }
+  ],
+  "curiosidades": [
+    {
+      "texto": "No MSI 2025 a KOI tirou dois mapas da BLG, um deles com atuação de destaque de Jojopyun.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.yardbarker.com/video_games/articles/msi_2025_movistar_koi_versus_bilibili_gaming_the_east_destroys_west_hope/s1_17458_42412187"
+      ]
+    },
+    {
+      "texto": "A BLG foi vice-campeã do MSI 2026, perdendo a final para a HLE por 3–2.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "atirador",
+      "a": "Viper",
+      "b": "Supa"
+    },
+    {
+      "posicao": "mid",
+      "a": "Knight",
+      "b": "Jojopyun"
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://liquipedia.net/leagueoflegends/Match:ID_MSI25Brakt_R01-M004",
+    "https://rft.gg/match/12396-bilibili-gaming-vs-movistar-koi-2026-07-15",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en",
+    "https://www.yardbarker.com/video_games/articles/msi_2025_movistar_koi_versus_bilibili_gaming_the_east_destroys_west_hope/s1_17458_42412187"
+  ],
+  "atualizado_em": "2026-10-20"
+}

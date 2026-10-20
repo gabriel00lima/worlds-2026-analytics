@@ -1,0 +1,55 @@
+{
+  "id": "r1-tsw-lyon",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "tsw",
+    "nome": "Team Secret Whales"
+  },
+  "time_b": {
+    "id": "lyon",
+    "nome": "LYON"
+  },
+  "manchete": "Revanche do MSI",
+  "resumo_historico": "Último encontro: LYON 3–0, eliminando a TSW do MSI 2026.",
+  "primeiro_encontro_mundial": true,
+  "historico": [
+    {
+      "evento": "MSI 2026",
+      "data": "2026-07",
+      "fase": "Chave eliminatória (Bo5)",
+      "vencedor": "lyon",
+      "placar": "3–0",
+      "fontes": [
+        "https://liquipedia.net/leagueoflegends/Match:ID_MSI26Brakt_R02-M004"
+      ],
+      "confianca": "confirmado"
+    }
+  ],
+  "curiosidades": [
+    {
+      "texto": "A LYON varreu a TSW no MSI e depois foi até a final da chave inferior.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://liquipedia.net/leagueoflegends/Match:ID_MSI26Brakt_R02-M004",
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "jungle",
+      "a": "Hizto",
+      "b": "Inspired"
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://liquipedia.net/leagueoflegends/Match:ID_MSI26Brakt_R02-M004",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en"
+  ],
+  "atualizado_em": "2026-10-20"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "blg",
+  "nome": "Bilibili Gaming",
+  "sigla": "BLG",
+  "regiao": "LPL",
+  "seed": "LPL #2",
+  "como_classificou": "Segunda vaga da LPL.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "Bin",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "XUN",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Knight",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "Viper",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "ON",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026"
+  ],
+  "titulos_mundiais": [],
+  "melhor_mundial": "Vice-campeã em 2024 (2–3 para a T1).",
+  "curiosidades": [
+    {
+      "texto": "Vice do MSI 2026: venceu a HLE por 3–1 na final da chave superior e perdeu a revanche na grande final por 3–2.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+        "https://rdy.gg/en/lol/news/hle-wins-msi-2026"
+      ]
+    },
+    {
+      "texto": "Viper, campeão mundial de 2021 pela EDG, voltou à China pela BLG depois de jogar na HLE.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en",
+        "https://en.wikipedia.org/wiki/2021_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2021_League_of_Legends_World_Championship",
+    "https://en.wikipedia.org/wiki/2024_League_of_Legends_World_Championship",
+    "https://rdy.gg/en/lol/news/hle-wins-msi-2026",
+    "https://www.gosugamers.net/lol/news/79314-all-teams-and-players-qualified-for-the-league-of-legends-world-championship-2026",
+    "https://www.sheepesports.com/articles/hanwha-life-esports-crowned-msi-2026-champion-after-3-2-against-bilibili-gaming/en",
+    "https://www.sheepesports.com/en/all/articles/lol-hanwha-life-esports-completed-2026-lck-roster/en"
+  ],
+  "atualizado_em": "2026-10-20"
+}

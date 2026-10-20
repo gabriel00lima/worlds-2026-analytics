@@ -1,0 +1,70 @@
+{
+  "id": "r1-tl-cfo",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "tl",
+    "nome": "Team Liquid"
+  },
+  "time_b": {
+    "id": "cfo",
+    "nome": "CTBC Flying Oyster"
+  },
+  "manchete": "Liquid quer devolver a derrota do First Stand",
+  "resumo_historico": "Único encontro conhecido: CFO 2–0 no First Stand 2025.",
+  "primeiro_encontro_mundial": true,
+  "historico": [
+    {
+      "evento": "First Stand 2025",
+      "data": "2025-03-13",
+      "fase": "Round robin (Bo3)",
+      "vencedor": "cfo",
+      "placar": "2–0",
+      "fontes": [
+        "https://rft.gg/match/12712-team-liquid-vs-ctbc-flying-oyster-2025-03-13"
+      ],
+      "confianca": "confirmado"
+    }
+  ],
+  "curiosidades": [
+    {
+      "texto": "A CFO chegou às quartas no Mundial de 2025, algo que a região não fazia havia dez anos.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal"
+      ]
+    },
+    {
+      "texto": "Nas casas de aposta a Liquid é favorita (1,35 contra 2,90).",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://egamersworld.com/lol/match/q8qUtLA6g/team-liquid-vs-ctbc-flying-oyster-zaN6r1ueRf"
+      ]
+    },
+    {
+      "texto": "CoreJJ, suporte da Liquid, é campeão mundial de 2017.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "mid",
+      "a": "Quid",
+      "b": "Pout"
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://egamersworld.com/lol/match/q8qUtLA6g/team-liquid-vs-ctbc-flying-oyster-zaN6r1ueRf",
+    "https://en.wikipedia.org/wiki/2017_League_of_Legends_World_Championship",
+    "https://rft.gg/match/12712-team-liquid-vs-ctbc-flying-oyster-2025-03-13",
+    "https://www.e4equip.com/post/ctbc-flying-oyster-worlds-2025-quarterfinal",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en"
+  ],
+  "atualizado_em": "2026-10-20"
+}

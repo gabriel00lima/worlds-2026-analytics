@@ -1,0 +1,66 @@
+{
+  "id": "ig",
+  "nome": "Invictus Gaming",
+  "sigla": "IG",
+  "regiao": "LPL",
+  "seed": "LPL #4",
+  "como_classificou": "Quarta vaga da LPL, vinda pela chave inferior dos playoffs do Split 3.",
+  "elenco": [
+    {
+      "posicao": "top",
+      "jogador": "TheShy",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "jungle",
+      "jogador": "Wei",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "mid",
+      "jogador": "Rookie",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "atirador",
+      "jogador": "JiaQi",
+      "confianca": "confirmado"
+    },
+    {
+      "posicao": "suporte",
+      "jogador": "Meiko",
+      "confianca": "confirmado"
+    }
+  ],
+  "elenco_fontes": [
+    "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/",
+    "https://mid.gg/esports/worlds-2026"
+  ],
+  "titulos_mundiais": [
+    2018
+  ],
+  "melhor_mundial": "Campeã em 2018 (3–0 na Fnatic, em Incheon).",
+  "curiosidades": [
+    {
+      "texto": "TheShy e Rookie foram campeões mundiais juntos pela IG em 2018 e voltam ao Mundial lado a lado pelo segundo ano seguido.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/",
+        "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship"
+      ]
+    },
+    {
+      "texto": "Em 2025 a IG teve de passar pelo Play-In; em 2026 entrou direto no Swiss.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/"
+      ]
+    }
+  ],
+  "fontes": [
+    "https://en.wikipedia.org/wiki/2018_League_of_Legends_World_Championship",
+    "https://mid.gg/esports/worlds-2026",
+    "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/"
+  ],
+  "atualizado_em": "2026-10-20"
+}

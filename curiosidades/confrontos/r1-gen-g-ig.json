@@ -1,0 +1,87 @@
+{
+  "id": "r1-gen-g-ig",
+  "fase": "Swiss",
+  "rodada": 1,
+  "data": "2026-10-23",
+  "formato": "Bo1",
+  "time_a": {
+    "id": "gen-g",
+    "nome": "Gen.G"
+  },
+  "time_b": {
+    "id": "ig",
+    "nome": "Invictus Gaming"
+  },
+  "manchete": "A campeã da Coreia contra os campeões mundiais de 2018",
+  "resumo_historico": "Nunca se enfrentaram em Mundial nem em MSI. Nos dois encontros conhecidos, deu Gen.G.",
+  "primeiro_encontro_mundial": true,
+  "historico": [
+    {
+      "evento": "Mid-Season Cup 2020",
+      "data": "2020-05-29",
+      "fase": "Grupos",
+      "vencedor": "gen-g",
+      "placar": "1–0",
+      "fontes": [
+        "https://tips.gg/archive/geng-lol-vs-invictus-gaming-lol/"
+      ],
+      "confianca": "confirmado"
+    },
+    {
+      "evento": "Puyuan Esports Festival 2025 (exibição)",
+      "data": "2025-12-27",
+      "fase": "Grupos",
+      "vencedor": "gen-g",
+      "placar": "2–0",
+      "fontes": [
+        "https://tips.gg/archive/geng-lol-vs-invictus-gaming-lol/"
+      ],
+      "confianca": "fonte_unica"
+    }
+  ],
+  "curiosidades": [
+    {
+      "texto": "Primeiro encontro das duas em Mundiais.",
+      "confianca": "inferido",
+      "fontes": [
+        "https://tips.gg/archive/geng-lol-vs-invictus-gaming-lol/"
+      ]
+    },
+    {
+      "texto": "TheShy e Rookie, campeões de 2018 pela IG, contra o elenco da Gen.G que nunca ganhou o Mundial junto.",
+      "confianca": "confirmado",
+      "fontes": [
+        "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/",
+        "https://mid.gg/esports/worlds-2026"
+      ]
+    },
+    {
+      "texto": "Um site de previsões dá 93% de chance para a Gen.G.",
+      "confianca": "fonte_unica",
+      "fontes": [
+        "https://tips.gg/archive/geng-lol-vs-invictus-gaming-lol/"
+      ]
+    }
+  ],
+  "duelos": [
+    {
+      "posicao": "mid",
+      "a": "Chovy",
+      "b": "Rookie",
+      "nota": "Dois dos mids mais premiados de suas regiões."
+    },
+    {
+      "posicao": "top",
+      "a": "Kiin",
+      "b": "TheShy"
+    }
+  ],
+  "fontes": [
+    "https://dotesports.com/league-of-legends/news/worlds-2026-swiss-stage-draw",
+    "https://mid.gg/esports/worlds-2026",
+    "https://tips.gg/archive/geng-lol-vs-invictus-gaming-lol/",
+    "https://www.sheepesports.com/en/articles/worlds-2026-swiss-stage-round-1-draw/en",
+    "https://www.strafe.com/news/read/all-lpl-teams-at-worlds-2026-and-how-they-qualified/"
+  ],
+  "atualizado_em": "2026-10-20"
+}
