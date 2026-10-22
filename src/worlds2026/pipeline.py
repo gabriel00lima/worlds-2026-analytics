@@ -130,6 +130,8 @@ def anexar_soloq(times: dict[str, Json], so_cache: bool, campeao_por_id: dict[st
     contas = riot.contas_soloq()
     arq = config.SOLOQ_PARTIDAS
     soloq: dict[str, Json] = {}
+    if not config.RIOT_API_KEY and not so_cache:
+        log.info("solo queue: RIOT_API_KEY não está no ambiente, mantendo os dados da última coleta")
     if config.RIOT_API_KEY and not so_cache:
         soloq = riot.soloq(contas, config.RIOT_API_KEY, campeao_por_id or {})
         if soloq:

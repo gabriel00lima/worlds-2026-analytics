@@ -164,3 +164,38 @@ def test_cliente_tenta_de_novo_quando_a_rede_falha(monkeypatch):
     monkeypatch.setattr(riot.time, "sleep", lambda s: None)
     assert riot.ClienteRiot("c").get("kr", "/x") == {"ok": True}
     assert len(tentativas) == 3
+
+
+def test_puuid_de_outra_chave_e_buscado_de_novo(monkeypatch):
+    """O puuid é cifrado por chave: o salvo com a chave antiga dá HTTP 400 e precisa ser trocado."""
+    chamadas = []
+
+    def get(self, regiao, caminho):
+        chamadas.append(caminho)
+        self.status = None
+        if caminho.startswith("/riot/account"):
+            return {"puuid": "novo"}
+        if "by-puuid/velho/" in caminho:
+            self.status = 400
+            return None
+        return ["KR_1"]
+
+    monkeypatch.setattr(riot.ClienteRiot, "get", get)
+    cache = {"puuid": {"a#KR1": "velho"}, "partidas": {}}
+    conta = {"riotId": "a#KR1", "gameName": "a", "tagLine": "KR1", "regional": "asia"}
+    assert riot._partidas_recentes(riot.ClienteRiot("c"), conta, cache) == ("novo", ["KR_1"])
+    assert cache["puuid"]["a#KR1"] == "novo"
+    assert len(chamadas) == 3
+
+
+def test_http_400_nao_tenta_de_novo(monkeypatch):
+    tentativas = []
+
+    def urlopen(req, timeout):
+        tentativas.append(1)
+        raise urllib.error.HTTPError(req.full_url, 400, "Bad Request", {}, None)
+
+    monkeypatch.setattr(riot.urllib.request, "urlopen", urlopen)
+    cliente = riot.ClienteRiot("c")
+    assert cliente.get("kr", "/x") is None
+    assert len(tentativas) == 1 and cliente.status == 400 and cliente.falhas == 1

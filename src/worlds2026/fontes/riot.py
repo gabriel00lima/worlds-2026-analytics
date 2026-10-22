@@ -31,9 +31,13 @@ class ClienteRiot:
 
     def __init__(self, chave: str):
         self.chave = chave
+        self.falhas = 0  # chamadas que ficaram sem resposta, para o resumo no fim da coleta
+        self.ultimo_erro: str | None = None
+        self.status: int | None = None  # código HTTP de erro da última chamada
 
     def get(self, regiao: str, caminho: str) -> Any:
         url = f"https://{regiao}.api.riotgames.com{caminho}"
+        self.status = None
         for _ in range(6):
             req = urllib.request.Request(url, headers={"X-Riot-Token": self.chave})
             try:
@@ -48,9 +52,15 @@ class ClienteRiot:
                     continue
                 if e.code in (401, 403):
                     raise ChaveRecusada("chave da Riot recusada (expirada ou inválida)") from e
+                self.status, self.ultimo_erro = e.code, f"HTTP {e.code}"
+                if e.code == 400:  # pedido inválido não melhora tentando de novo
+                    self.falhas += 1
+                    return None
                 time.sleep(3)
-            except (urllib.error.URLError, TimeoutError, ConnectionError):
+            except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+                self.ultimo_erro = str(getattr(e, "reason", e))
                 time.sleep(5)  # rede instável: tenta de novo em vez de derrubar a coleta inteira
+        self.falhas += 1
         return None
 
 
@@ -87,22 +97,34 @@ def contas_soloq() -> dict[str, Json]:
     return out
 
 
-def _conta_mais_ativa(riot: ClienteRiot, contas: list[Json], cache: Json) -> tuple[Json, str, list[str]] | None:
-    """Entre as contas consultáveis, a que jogou a ranqueada mais recente."""
-    melhor = None
-    for c in [c for c in contas if c["api"]][:4]:
+def _partidas_recentes(riot: ClienteRiot, c: Json, cache: Json) -> tuple[str | None, list[str]]:
+    """puuid da conta e ids das últimas ranqueadas.
+
+    O puuid é cifrado por chave: depois de trocar a chave da Riot, o salvo dá HTTP 400 e é buscado de novo.
+    """
+    for _ in range(2):
         if c["riotId"] not in cache["puuid"]:
             nome, tag = urllib.parse.quote(c["gameName"]), urllib.parse.quote(c["tagLine"])
             conta = riot.get(c["regional"], f"/riot/account/v1/accounts/by-riot-id/{nome}/{tag}")
             cache["puuid"][c["riotId"]] = conta and conta["puuid"]
         puuid = cache["puuid"][c["riotId"]]
         if not puuid:
+            return None, []
+        caminho = f"/lol/match/v5/matches/by-puuid/{puuid}/ids?queue={FILA_RANQUEADA_SOLO}&count=20"
+        ids = riot.get(c["regional"], caminho)
+        if ids is None and riot.status == 400:
+            del cache["puuid"][c["riotId"]]
             continue
-        ids = (
-            riot.get(c["regional"], f"/lol/match/v5/matches/by-puuid/{puuid}/ids?queue={FILA_RANQUEADA_SOLO}&count=20")
-            or []
-        )
-        if ids and (not melhor or ids[0] > melhor[2][0]):
+        return puuid, ids or []
+    return None, []
+
+
+def _conta_mais_ativa(riot: ClienteRiot, contas: list[Json], cache: Json) -> tuple[Json, str, list[str]] | None:
+    """Entre as contas consultáveis, a que jogou a ranqueada mais recente."""
+    melhor = None
+    for c in [c for c in contas if c["api"]][:4]:
+        puuid, ids = _partidas_recentes(riot, c, cache)
+        if puuid and ids and (not melhor or ids[0] > melhor[2][0]):
             melhor = (c, puuid, ids)
     return melhor
 
@@ -184,7 +206,8 @@ def soloq(contas: dict[str, Json], chave: str, campeao_por_id: dict[str, str]) -
             elo = next((e for e in filas if e.get("queueType") == "RANKED_SOLO_5x5"), None)
             partidas = []
             for mid in ids:
-                if mid not in cache["partidas"]:
+                # partidas guardadas com a chave antiga têm os puuid antigos: baixa de novo
+                if mid not in cache["partidas"] or puuid not in cache["partidas"][mid]["p"]:
                     m = riot.get(c["regional"], f"/lol/match/v5/matches/{mid}")
                     if not m:
                         continue
@@ -208,4 +231,11 @@ def soloq(contas: dict[str, Json], chave: str, campeao_por_id: dict[str, str]) -
         log.warning("solo queue interrompida: %s", e)
     finally:
         salvar_json(arq, cache)
+    if riot.falhas:
+        log.warning(
+            "solo queue: %d jogadores atualizados, %d chamadas sem resposta (último erro: %s)",
+            len(out),
+            riot.falhas,
+            riot.ultimo_erro,
+        )
     return out
